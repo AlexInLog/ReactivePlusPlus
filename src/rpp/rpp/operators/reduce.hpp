@@ -143,7 +143,7 @@ namespace rpp::operators
      * @see https://reactivex.io/documentation/operators/reduce.html
      */
     template<typename Seed, typename Accumulator>
-        requires (!utils::is_not_template_callable<Accumulator> || std::same_as<std::decay_t<Seed>, std::invoke_result_t<Accumulator, std::decay_t<Seed> &&, rpp::utils::convertible_to_any>>)
+        requires (!utils::is_not_template_callable<Accumulator> || std::same_as<std::decay_t<Seed>, std::invoke_result_t<Accumulator, std::decay_t<Seed>&&, rpp::utils::convertible_to_any>>)
     auto reduce(Seed&& seed, Accumulator&& accumulator)
     {
         return details::reduce_t<std::decay_t<Seed>, std::decay_t<Accumulator>>{std::forward<Seed>(seed), std::forward<Accumulator>(accumulator)};

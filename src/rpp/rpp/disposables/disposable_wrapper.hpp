@@ -31,7 +31,7 @@ namespace rpp::details
         static_assert(std::derived_from<TDisposable, interface_disposable>);
 
         template<typename... TArgs>
-            requires (std::constructible_from<TDisposable, TArgs && ...> && !rpp::constraint::variadic_decayed_same_as<auto_dispose_wrapper, TArgs...>)
+            requires (std::constructible_from<TDisposable, TArgs&&...> && !rpp::constraint::variadic_decayed_same_as<auto_dispose_wrapper, TArgs...>)
         explicit auto_dispose_wrapper(TArgs&&... args)
             : m_data{std::forward<TArgs>(args)...}
         {
@@ -160,7 +160,7 @@ namespace rpp
          * \endcode
          */
         template<std::derived_from<TDisposable> TTarget = TDefaultMake, typename... TArgs>
-            requires (std::constructible_from<TTarget, TArgs && ...>)
+            requires (std::constructible_from<TTarget, TArgs&&...>)
         [[nodiscard]] static disposable_wrapper_impl make(TArgs&&... args)
         {
             const auto ptr      = std::make_shared<details::auto_dispose_wrapper<TTarget>>(std::forward<TArgs>(args)...);
