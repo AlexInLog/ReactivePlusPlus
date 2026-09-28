@@ -23,7 +23,7 @@ namespace rpp::schedulers
     {
     public:
         template<typename... Args>
-            requires (!rpp::constraint::variadic_decayed_same_as<worker<Strategy>, Args...> && rpp::constraint::is_constructible_from<Strategy, Args && ...>)
+            requires (!rpp::constraint::variadic_decayed_same_as<worker<Strategy>, Args...> && rpp::constraint::is_constructible_from<Strategy, Args&&...>)
         explicit worker(Args&&... args)
             : m_strategy(std::forward<Args>(args)...)
         {

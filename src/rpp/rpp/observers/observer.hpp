@@ -182,7 +182,7 @@ namespace rpp
         }
 
         template<typename... Args>
-            requires (constraint::is_constructible_from<Strategy, Args && ...> && !rpp::constraint::variadic_decayed_same_as<observer, Args...>)
+            requires (constraint::is_constructible_from<Strategy, Args&&...> && !rpp::constraint::variadic_decayed_same_as<observer, Args...>)
         explicit observer(Args&&... args)
             : Base{DisposableStrategy{}, std::forward<Args>(args)...}
         {
@@ -214,7 +214,7 @@ namespace rpp
         }
 
         template<typename... Args>
-            requires (constraint::is_constructible_from<Strategy, Args && ...> && !rpp::constraint::variadic_decayed_same_as<observer, Args...>)
+            requires (constraint::is_constructible_from<Strategy, Args&&...> && !rpp::constraint::variadic_decayed_same_as<observer, Args...>)
         explicit observer(Args&&... args)
             : Base{DisposableStrategy{}, std::forward<Args>(args)...}
         {
