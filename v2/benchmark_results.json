@@ -241658,6 +241658,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00179701884341902,
             "commit": "6037a515",
             "commit_message": "schedulers: run_loop and new_thread re-arm the timer wait when an earlier schedulable is queued (#763)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.09666607029322,
+            "medianAbsolutePercentError(elapsed)": 0.000895315879356622,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.08973200305177,
+            "medianAbsolutePercentError(elapsed)": 0.00161143710760381,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272287469765026,
+            "medianAbsolutePercentError(elapsed)": 0.00044197339398658,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.7564591295180403,
+            "medianAbsolutePercentError(elapsed)": 0.00104031597471365,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 25703.972972973002,
+            "medianAbsolutePercentError(elapsed)": 0.0151111862254521,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 41654.592592592606,
+            "medianAbsolutePercentError(elapsed)": 0.010342255848972,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 98.9472708738764,
+            "medianAbsolutePercentError(elapsed)": 0.0057391460745298,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 128.622518903592,
+            "medianAbsolutePercentError(elapsed)": 0.00381087597543553,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272532918178728,
+            "medianAbsolutePercentError(elapsed)": 0.000861232339891045,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.1188128525877,
+            "medianAbsolutePercentError(elapsed)": 0.000809220193528418,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 29.2296476923468,
+            "medianAbsolutePercentError(elapsed)": 0.00208339828907436,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.545020830344509,
+            "medianAbsolutePercentError(elapsed)": 0.00147867769986233,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.81475018471146,
+            "medianAbsolutePercentError(elapsed)": 0.000782815248498647,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 51.8538662033015,
+            "medianAbsolutePercentError(elapsed)": 0.00136679372931975,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 171.471706520125,
+            "medianAbsolutePercentError(elapsed)": 0.00246108677534571,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 229.57938282647598,
+            "medianAbsolutePercentError(elapsed)": 0.00113582928399325,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 158.03819301848,
+            "medianAbsolutePercentError(elapsed)": 0.00159295488181859,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 141.16476873330498,
+            "medianAbsolutePercentError(elapsed)": 0.00677489187527413,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 340.64972483004203,
+            "medianAbsolutePercentError(elapsed)": 0.00179301940599415,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 193.360077332044,
+            "medianAbsolutePercentError(elapsed)": 0.00511991968505227,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272777309443619,
+            "medianAbsolutePercentError(elapsed)": 0.00184918998037238,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27293733333333303,
+            "medianAbsolutePercentError(elapsed)": 0.00153133940777101,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272385410907141,
+            "medianAbsolutePercentError(elapsed)": 0.00103346222193449,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 161.576317689531,
+            "medianAbsolutePercentError(elapsed)": 0.00512521346952496,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.594994410812502,
+            "medianAbsolutePercentError(elapsed)": 0.00312272731418584,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1047.86775178026,
+            "medianAbsolutePercentError(elapsed)": 0.00355882348698108,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272259972071386,
+            "medianAbsolutePercentError(elapsed)": 0.000398858258289716,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.6307665010646,
+            "medianAbsolutePercentError(elapsed)": 0.00657798495515636,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27230170542069904,
+            "medianAbsolutePercentError(elapsed)": 0.000476724341406216,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27303166149623304,
+            "medianAbsolutePercentError(elapsed)": 0.00195712337903699,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272458118259898,
+            "medianAbsolutePercentError(elapsed)": 0.00109652710364026,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272365167024857,
+            "medianAbsolutePercentError(elapsed)": 0.000312627542460998,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27232974509241303,
+            "medianAbsolutePercentError(elapsed)": 0.000295224880826045,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272258680481385,
+            "medianAbsolutePercentError(elapsed)": 0.00038903730306699,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272496464430682,
+            "medianAbsolutePercentError(elapsed)": 0.00124363415319238,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27234649438883995,
+            "medianAbsolutePercentError(elapsed)": 0.000475088013385962,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 766.788151963941,
+            "medianAbsolutePercentError(elapsed)": 0.00453335809377436,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 102.918257418257,
+            "medianAbsolutePercentError(elapsed)": 0.00229925258051153,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 12.935671261876601,
+            "medianAbsolutePercentError(elapsed)": 0.000981990472998292,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15672.328571428601,
+            "medianAbsolutePercentError(elapsed)": 0.004525223231194,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 23004.2666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00166023751213566,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 18.8734036139075,
+            "medianAbsolutePercentError(elapsed)": 0.00662196679266044,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 11.7115323628403,
+            "medianAbsolutePercentError(elapsed)": 0.000759720705914766,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1485.0790960452,
+            "medianAbsolutePercentError(elapsed)": 0.00369075907157699,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3924.7119205298004,
+            "medianAbsolutePercentError(elapsed)": 0.00372329749476065,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 1.86983764749579,
+            "medianAbsolutePercentError(elapsed)": 0.0023473427105868,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 305.738333333333,
+            "medianAbsolutePercentError(elapsed)": 0.00359853719183048,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 1.8663703772344202,
+            "medianAbsolutePercentError(elapsed)": 0.00074837954017393,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 306.496117084827,
+            "medianAbsolutePercentError(elapsed)": 0.00463174019587158,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.310839601366691,
+            "medianAbsolutePercentError(elapsed)": 0.000741383657066278,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 697.78813559322,
+            "medianAbsolutePercentError(elapsed)": 0.00222861198374472,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 3.4467012579564997,
+            "medianAbsolutePercentError(elapsed)": 0.000701998241529124,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 1070.42826552463,
+            "medianAbsolutePercentError(elapsed)": 0.00117604885665279,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 34766.4642857143,
+            "medianAbsolutePercentError(elapsed)": 0.0384510298318609,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 36893.8275862069,
+            "medianAbsolutePercentError(elapsed)": 0.024410682306427,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 56094.3684210526,
+            "medianAbsolutePercentError(elapsed)": 0.021102597127264,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 46098.0625,
+            "medianAbsolutePercentError(elapsed)": 0.030120495235819,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 128.22507682851898,
+            "medianAbsolutePercentError(elapsed)": 0.00559267744998679,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2262.91189427313,
+            "medianAbsolutePercentError(elapsed)": 0.00294153788239565,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 148.32727024070002,
+            "medianAbsolutePercentError(elapsed)": 0.00506447797156977,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3572.5909090909104,
+            "medianAbsolutePercentError(elapsed)": 0.00374939181510848,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.31089363677521203,
+            "medianAbsolutePercentError(elapsed)": 0.000980087243256819,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 732.34236453202,
+            "medianAbsolutePercentError(elapsed)": 0.00185845549627337,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 59.6641429953891,
+            "medianAbsolutePercentError(elapsed)": 0.000619748946991901,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 2177.15311909263,
+            "medianAbsolutePercentError(elapsed)": 0.000730972938228214,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 32.7169901825973,
+            "medianAbsolutePercentError(elapsed)": 0.000779914575872451,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 3106.59459459459,
+            "medianAbsolutePercentError(elapsed)": 0.00207900207900195,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 1.5552514498424899,
+            "medianAbsolutePercentError(elapsed)": 0.000760531748454161,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 289.678003291278,
+            "medianAbsolutePercentError(elapsed)": 0.00945044954649074,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 4.9793930637096,
+            "medianAbsolutePercentError(elapsed)": 0.000752227766848616,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 376.738153738154,
+            "medianAbsolutePercentError(elapsed)": 0.00589098367903971,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 62.6775269368907,
+            "medianAbsolutePercentError(elapsed)": 0.0160723241969384,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 821.897518014412,
+            "medianAbsolutePercentError(elapsed)": 0.00470606669990668,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 157.05676170546698,
+            "medianAbsolutePercentError(elapsed)": 0.00304818294699151,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3425.94,
+            "medianAbsolutePercentError(elapsed)": 0.00266368566762435,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 239.708490962589,
+            "medianAbsolutePercentError(elapsed)": 0.0043794371969182,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3169.96021220159,
+            "medianAbsolutePercentError(elapsed)": 0.0018641521079559,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 162.673947180585,
+            "medianAbsolutePercentError(elapsed)": 0.00449741051664481,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3665.11262798635,
+            "medianAbsolutePercentError(elapsed)": 0.00236103353687697,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 145.784364261168,
+            "medianAbsolutePercentError(elapsed)": 0.00412886989465123,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 418.187960155912,
+            "medianAbsolutePercentError(elapsed)": 0.0375124038720778,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3605.49831649832,
+            "medianAbsolutePercentError(elapsed)": 0.00361056651779775,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 225.020504731861,
+            "medianAbsolutePercentError(elapsed)": 0.00789329969502661,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2143.9739292364998,
+            "medianAbsolutePercentError(elapsed)": 0.00277800997159611,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 830.0679824561399,
+            "medianAbsolutePercentError(elapsed)": 0.00168586976215082,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311140648821065,
+            "medianAbsolutePercentError(elapsed)": 0.000892008650624389,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 845.619243421053,
+            "medianAbsolutePercentError(elapsed)": 0.00458801272520954,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311080260848647,
+            "medianAbsolutePercentError(elapsed)": 0.00103602312235006,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 851.399106478034,
+            "medianAbsolutePercentError(elapsed)": 0.00177949128809777,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31083091147635,
+            "medianAbsolutePercentError(elapsed)": 0.000321162785197399,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 907.015044247788,
+            "medianAbsolutePercentError(elapsed)": 0.00415706280681881,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 139.91278277459799,
+            "medianAbsolutePercentError(elapsed)": 0.00840292382725625,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2338.2033333333297,
+            "medianAbsolutePercentError(elapsed)": 0.0045764568515029,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 13.7249197804238,
+            "medianAbsolutePercentError(elapsed)": 0.0019469442905358,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1573.27338129496,
+            "medianAbsolutePercentError(elapsed)": 0.00212490781545945,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1360.00710900474,
+            "medianAbsolutePercentError(elapsed)": 0.00281413872141296,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2385.322,
+            "medianAbsolutePercentError(elapsed)": 0.00331170366628087,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310851354868387,
+            "medianAbsolutePercentError(elapsed)": 0.00126545659029244,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1087.04888416578,
+            "medianAbsolutePercentError(elapsed)": 0.00785253985631228,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 18.049668984887,
+            "medianAbsolutePercentError(elapsed)": 0.000823831317177161,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1129.59586056645,
+            "medianAbsolutePercentError(elapsed)": 0.0112246998909933,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311145333333333,
+            "medianAbsolutePercentError(elapsed)": 0.00129468942767606,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 845.016129032258,
+            "medianAbsolutePercentError(elapsed)": 0.00297914463976064,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310899065460563,
+            "medianAbsolutePercentError(elapsed)": 0.000930629027097146,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1261.11488862837,
+            "medianAbsolutePercentError(elapsed)": 0.00318091916641787,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31085454184114497,
+            "medianAbsolutePercentError(elapsed)": 0.000729788793295228,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 959.424623115578,
+            "medianAbsolutePercentError(elapsed)": 0.00330662623209342,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310886907354128,
+            "medianAbsolutePercentError(elapsed)": 0.000289057230769703,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 989.232258064516,
+            "medianAbsolutePercentError(elapsed)": 0.00514282779596122,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.3109087326544,
+            "medianAbsolutePercentError(elapsed)": 0.00129202552888505,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 866.534921939195,
+            "medianAbsolutePercentError(elapsed)": 0.00507605645104666,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310827614723327,
+            "medianAbsolutePercentError(elapsed)": 0.000611864132413216,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 832.897694524496,
+            "medianAbsolutePercentError(elapsed)": 0.0072623969880509,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310897307802542,
+            "medianAbsolutePercentError(elapsed)": 0.000476907035080709,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2002.9940594059399,
+            "medianAbsolutePercentError(elapsed)": 0.000860938482211656,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31102665014424696,
+            "medianAbsolutePercentError(elapsed)": 0.000934636346089549,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 916.23671875,
+            "medianAbsolutePercentError(elapsed)": 0.00489099424476905,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1010.45292368682,
+            "medianAbsolutePercentError(elapsed)": 0.00945245212839262,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2074.4197292069603,
+            "medianAbsolutePercentError(elapsed)": 0.00223067264914751,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 131.000603573153,
+            "medianAbsolutePercentError(elapsed)": 0.0108911450094617,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 583.0426315789471,
+            "medianAbsolutePercentError(elapsed)": 0.00571854592058887,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 14.7912079995389,
+            "medianAbsolutePercentError(elapsed)": 0.00107125851031225,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 34.8311262577085,
+            "medianAbsolutePercentError(elapsed)": 0.000657186919754761,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 17755.6615384615,
+            "medianAbsolutePercentError(elapsed)": 0.00164676400419428,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 203294.2,
+            "medianAbsolutePercentError(elapsed)": 0.00715897596802895,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 20388.5,
+            "medianAbsolutePercentError(elapsed)": 0.0250315565315287,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 32828.972972973,
+            "medianAbsolutePercentError(elapsed)": 0.00236160949138072,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 13.3780040160129,
+            "medianAbsolutePercentError(elapsed)": 0.000825720207957437,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1417.36541143654,
+            "medianAbsolutePercentError(elapsed)": 0.00311863085835736,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.5947769681600805,
+            "medianAbsolutePercentError(elapsed)": 0.000146714224457994,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1422.8458692971599,
+            "medianAbsolutePercentError(elapsed)": 0.00126798290891197,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1464.13171355499,
+            "medianAbsolutePercentError(elapsed)": 0.00527929108512229,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 6344.42021276596,
+            "medianAbsolutePercentError(elapsed)": 0.00405051428176377,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1074.4626865671598,
+            "medianAbsolutePercentError(elapsed)": 0.00286050374922106,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 23793.3255813953,
+            "medianAbsolutePercentError(elapsed)": 0.00294195934872217,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
         }
     ],
     "ci-macos": [
@@ -483319,6 +484552,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.154858823529412,
             "commit": "6037a515",
             "commit_message": "schedulers: run_loop and new_thread re-arm the timer wait when an earlier schedulable is queued (#763)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.468331540050421,
+            "medianAbsolutePercentError(elapsed)": 0.000296833060676163,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.47206983944035597,
+            "medianAbsolutePercentError(elapsed)": 0.00822586203393959,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31435967753688,
+            "medianAbsolutePercentError(elapsed)": 0.00712093013682415,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.77682259148977,
+            "medianAbsolutePercentError(elapsed)": 0.00434665407482258,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 26510.1351351351,
+            "medianAbsolutePercentError(elapsed)": 0.0740796325495753,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 31640.300000000003,
+            "medianAbsolutePercentError(elapsed)": 0.111262478441859,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 164.652905638665,
+            "medianAbsolutePercentError(elapsed)": 0.00770749017532006,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 184.089705103302,
+            "medianAbsolutePercentError(elapsed)": 0.00881965164456555,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31214219858352,
+            "medianAbsolutePercentError(elapsed)": 7.03163697920257e-05,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 49.1105178605179,
+            "medianAbsolutePercentError(elapsed)": 0.00564352895500839,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 30.0581004323622,
+            "medianAbsolutePercentError(elapsed)": 0.00318938692707231,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.47235771996013703,
+            "medianAbsolutePercentError(elapsed)": 0.00890473771433263,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.32679281069364,
+            "medianAbsolutePercentError(elapsed)": 0.0130413240187054,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 62.3732085596492,
+            "medianAbsolutePercentError(elapsed)": 0.00313065626661845,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 204.259930582337,
+            "medianAbsolutePercentError(elapsed)": 0.00854070806495826,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 316.319346662912,
+            "medianAbsolutePercentError(elapsed)": 0.00972252369569002,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 222.18267132256702,
+            "medianAbsolutePercentError(elapsed)": 0.0802168910393994,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 262.349899261249,
+            "medianAbsolutePercentError(elapsed)": 0.0243058315349326,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 640.41464728056,
+            "medianAbsolutePercentError(elapsed)": 0.0350028359192661,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 305.924814179531,
+            "medianAbsolutePercentError(elapsed)": 0.018672606120486,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.359877524055012,
+            "medianAbsolutePercentError(elapsed)": 0.00967671162194619,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.81757665107662,
+            "medianAbsolutePercentError(elapsed)": 0.0215251641396695,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.36705137568508095,
+            "medianAbsolutePercentError(elapsed)": 0.0299745463434384,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 251.058139534884,
+            "medianAbsolutePercentError(elapsed)": 0.194324328183001,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 20.4820844958151,
+            "medianAbsolutePercentError(elapsed)": 0.103718756949762,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1144.2161862527698,
+            "medianAbsolutePercentError(elapsed)": 0.0129361516845636,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.356967994077877,
+            "medianAbsolutePercentError(elapsed)": 0.00904790813366523,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.358121042464996,
+            "medianAbsolutePercentError(elapsed)": 0.00892644336509936,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.312144225831751,
+            "medianAbsolutePercentError(elapsed)": 7.23337261238896e-05,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31214200400077496,
+            "medianAbsolutePercentError(elapsed)": 6.66739685678325e-05,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.533674828758214,
+            "medianAbsolutePercentError(elapsed)": 0.0106520202772537,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31214493966564,
+            "medianAbsolutePercentError(elapsed)": 0.000109412633445699,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.313902666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00566237122097298,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.312159310876188,
+            "medianAbsolutePercentError(elapsed)": 0.00014067277324668,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.7602472130628,
+            "medianAbsolutePercentError(elapsed)": 0.00153318942245435,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.357416147500364,
+            "medianAbsolutePercentError(elapsed)": 0.0486237732922817,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2892.1178343949,
+            "medianAbsolutePercentError(elapsed)": 0.0382179661502968,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 175.217418159358,
+            "medianAbsolutePercentError(elapsed)": 0.0141467921406198,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 20.8215297450425,
+            "medianAbsolutePercentError(elapsed)": 0.0048824617376014,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16034.5,
+            "medianAbsolutePercentError(elapsed)": 0.0042246530166613,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 11309.7826086957,
+            "medianAbsolutePercentError(elapsed)": 0.0172517960322517,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 29.278366365694797,
+            "medianAbsolutePercentError(elapsed)": 0.0156021720468804,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 9.981235637095699,
+            "medianAbsolutePercentError(elapsed)": 0.0161160049855957,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2042.1871657753998,
+            "medianAbsolutePercentError(elapsed)": 0.0623868836002689,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3518.9298780487798,
+            "medianAbsolutePercentError(elapsed)": 0.00452632554586453,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.48999083389947506,
+            "medianAbsolutePercentError(elapsed)": 0.0111873381349956,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 456.223048327138,
+            "medianAbsolutePercentError(elapsed)": 0.113734955937369,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.504110305446013,
+            "medianAbsolutePercentError(elapsed)": 0.0403355852672922,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 395.870429534966,
+            "medianAbsolutePercentError(elapsed)": 0.0650144460687075,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.341403555187624,
+            "medianAbsolutePercentError(elapsed)": 0.0143619062017458,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 888.618677042802,
+            "medianAbsolutePercentError(elapsed)": 0.0283728764214121,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 3.93321983834239,
+            "medianAbsolutePercentError(elapsed)": 0.0147256909717369,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 1067.833,
+            "medianAbsolutePercentError(elapsed)": 0.0131465348686601,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 26443.0975609756,
+            "medianAbsolutePercentError(elapsed)": 0.057438108355685,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 26677.075,
+            "medianAbsolutePercentError(elapsed)": 0.0259239098088588,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 31683.333333333303,
+            "medianAbsolutePercentError(elapsed)": 0.0433040893934904,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 33212.25,
+            "medianAbsolutePercentError(elapsed)": 0.0219542281245077,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 183.100016183849,
+            "medianAbsolutePercentError(elapsed)": 0.0225246554963092,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2332.61255411255,
+            "medianAbsolutePercentError(elapsed)": 0.00393036218569047,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 200.320643642072,
+            "medianAbsolutePercentError(elapsed)": 0.0117055908280382,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3806.83038869258,
+            "medianAbsolutePercentError(elapsed)": 0.0283709365406925,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.356773283555305,
+            "medianAbsolutePercentError(elapsed)": 0.0241687082934637,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 919.963026655202,
+            "medianAbsolutePercentError(elapsed)": 0.0360617087801193,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 59.164040778498595,
+            "medianAbsolutePercentError(elapsed)": 0.0258122830254115,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 2428.45939675174,
+            "medianAbsolutePercentError(elapsed)": 0.0780637233283538,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 36.0121466117346,
+            "medianAbsolutePercentError(elapsed)": 0.0531546460520224,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2843.54820936639,
+            "medianAbsolutePercentError(elapsed)": 0.0255812070307706,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.558233722071664,
+            "medianAbsolutePercentError(elapsed)": 0.0254957757147887,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 359.595684039088,
+            "medianAbsolutePercentError(elapsed)": 0.100126518109455,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 4.41675069567362,
+            "medianAbsolutePercentError(elapsed)": 0.0202865248156586,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 485.588981198076,
+            "medianAbsolutePercentError(elapsed)": 0.0151180732825242,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 71.5639518611811,
+            "medianAbsolutePercentError(elapsed)": 0.0206412855023426,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 751.847745750185,
+            "medianAbsolutePercentError(elapsed)": 0.0188705112290213,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 230.48358275631,
+            "medianAbsolutePercentError(elapsed)": 0.0669408763402412,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2960.0,
+            "medianAbsolutePercentError(elapsed)": 0.000522207536836218,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 322.013666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00666773795169733,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2894.8051948051902,
+            "medianAbsolutePercentError(elapsed)": 0.0041541531056388,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 207.751417004049,
+            "medianAbsolutePercentError(elapsed)": 0.00885679113348422,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3295.00641025641,
+            "medianAbsolutePercentError(elapsed)": 0.00227658113998817,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 214.976195239048,
+            "medianAbsolutePercentError(elapsed)": 0.010520847791771,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 505.86903690369,
+            "medianAbsolutePercentError(elapsed)": 0.0077625236777419,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2970.22190201729,
+            "medianAbsolutePercentError(elapsed)": 0.00505713577317337,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 292.91568522483897,
+            "medianAbsolutePercentError(elapsed)": 0.0139618507070391,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2186.32075471698,
+            "medianAbsolutePercentError(elapsed)": 0.0350323574018633,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 888.045891931902,
+            "medianAbsolutePercentError(elapsed)": 0.0418048610369478,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.38908456705846295,
+            "medianAbsolutePercentError(elapsed)": 0.104688946611791,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1022.05114822547,
+            "medianAbsolutePercentError(elapsed)": 0.0482347301654622,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 3.23414057655283,
+            "medianAbsolutePercentError(elapsed)": 0.0947522394979795,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1082.90389016018,
+            "medianAbsolutePercentError(elapsed)": 0.128780248903263,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.355257670584182,
+            "medianAbsolutePercentError(elapsed)": 0.0220997563529118,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1014.3415492957699,
+            "medianAbsolutePercentError(elapsed)": 0.0244688737051502,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 209.370948616601,
+            "medianAbsolutePercentError(elapsed)": 0.0547691088382706,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2154.61847389558,
+            "medianAbsolutePercentError(elapsed)": 0.00430062429696573,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 17.1252470520308,
+            "medianAbsolutePercentError(elapsed)": 0.0354225573341497,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1072.5490196078401,
+            "medianAbsolutePercentError(elapsed)": 0.0321683861790814,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1148.0596175478101,
+            "medianAbsolutePercentError(elapsed)": 0.0120403918050746,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2125.08917197452,
+            "medianAbsolutePercentError(elapsed)": 0.0128923781768879,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.351088572091668,
+            "medianAbsolutePercentError(elapsed)": 0.0339171512379182,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1453.49590163934,
+            "medianAbsolutePercentError(elapsed)": 0.148957371156332,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.41339521523446,
+            "medianAbsolutePercentError(elapsed)": 0.0703514079276757,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1606.45520231214,
+            "medianAbsolutePercentError(elapsed)": 0.193140910364111,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.45640762406539304,
+            "medianAbsolutePercentError(elapsed)": 0.242880039196198,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1023.2996357012801,
+            "medianAbsolutePercentError(elapsed)": 0.0735908575314643,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.392650883711067,
+            "medianAbsolutePercentError(elapsed)": 0.021472289925732,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1787.1328,
+            "medianAbsolutePercentError(elapsed)": 0.0380140146666026,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.01255319735073,
+            "medianAbsolutePercentError(elapsed)": 0.185100539986455,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1225.72075869336,
+            "medianAbsolutePercentError(elapsed)": 0.0536708397439336,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.39575360036707596,
+            "medianAbsolutePercentError(elapsed)": 0.111900975068879,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1153.9084435401799,
+            "medianAbsolutePercentError(elapsed)": 0.0190263568671061,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.36976794850287303,
+            "medianAbsolutePercentError(elapsed)": 0.0574186010947858,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 900.409669211196,
+            "medianAbsolutePercentError(elapsed)": 0.0260380149017135,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.374177847892037,
+            "medianAbsolutePercentError(elapsed)": 0.0409450340339684,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 952.1441202475679,
+            "medianAbsolutePercentError(elapsed)": 0.0300608898727218,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.94179728093233,
+            "medianAbsolutePercentError(elapsed)": 0.0531492946644874,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2159.63227016886,
+            "medianAbsolutePercentError(elapsed)": 0.04975557811305,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.363690673422622,
+            "medianAbsolutePercentError(elapsed)": 0.0469621870774966,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1046.00469043152,
+            "medianAbsolutePercentError(elapsed)": 0.031520213180833,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 3500.0,
+            "medianAbsolutePercentError(elapsed)": 0.0123147568357339,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4455.78367346939,
+            "medianAbsolutePercentError(elapsed)": 0.0225784048226686,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 204.520419072055,
+            "medianAbsolutePercentError(elapsed)": 0.0536678999455594,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 720.81127129751,
+            "medianAbsolutePercentError(elapsed)": 0.0146216153299079,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 23.3974840854281,
+            "medianAbsolutePercentError(elapsed)": 0.0414266047633273,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 47.239220392286704,
+            "medianAbsolutePercentError(elapsed)": 0.0247779367905877,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 19641.5344827586,
+            "medianAbsolutePercentError(elapsed)": 0.0363207880894522,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 139104.25,
+            "medianAbsolutePercentError(elapsed)": 0.0141363635960953,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 12055.5517241379,
+            "medianAbsolutePercentError(elapsed)": 0.00577986155008582,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 32186.187500000004,
+            "medianAbsolutePercentError(elapsed)": 0.0115008265182616,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 11.756889272809099,
+            "medianAbsolutePercentError(elapsed)": 0.0601837534637185,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1579.10474631751,
+            "medianAbsolutePercentError(elapsed)": 0.0704470571276556,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 6.5272130595758995,
+            "medianAbsolutePercentError(elapsed)": 0.0301113320567548,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1411.1036931818198,
+            "medianAbsolutePercentError(elapsed)": 0.0198278539371916,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1547.46949602122,
+            "medianAbsolutePercentError(elapsed)": 0.0140020151566615,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 6830.55,
+            "medianAbsolutePercentError(elapsed)": 0.10271929715628,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 2184.1546184739,
+            "medianAbsolutePercentError(elapsed)": 0.0670759461759905,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 19640.625,
+            "medianAbsolutePercentError(elapsed)": 0.0546261158390518,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
         }
     ],
     "ci-ubuntu-clang": [
@@ -724980,6 +727446,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00259043798678183,
             "commit": "6037a515",
             "commit_message": "schedulers: run_loop and new_thread re-arm the timer wait when an earlier schedulable is queued (#763)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.550861899526771,
+            "medianAbsolutePercentError(elapsed)": 0.00171259053828504,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.550564505440218,
+            "medianAbsolutePercentError(elapsed)": 0.000967615976689034,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.276155365302598,
+            "medianAbsolutePercentError(elapsed)": 0.0136310578652767,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.54874766619606,
+            "medianAbsolutePercentError(elapsed)": 0.00237786692538422,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 25094.4565217391,
+            "medianAbsolutePercentError(elapsed)": 0.00562506729837412,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 29611.823529411802,
+            "medianAbsolutePercentError(elapsed)": 0.0131580470079041,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 108.585761226725,
+            "medianAbsolutePercentError(elapsed)": 0.00412175926658767,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 123.89562581204001,
+            "medianAbsolutePercentError(elapsed)": 0.00129274725918157,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.2724018102279,
+            "medianAbsolutePercentError(elapsed)": 0.00041842205159122,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.6640382435563,
+            "medianAbsolutePercentError(elapsed)": 0.000627361210246022,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 28.339487773913998,
+            "medianAbsolutePercentError(elapsed)": 0.000534010838996855,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.602171229416119,
+            "medianAbsolutePercentError(elapsed)": 0.0477144985477599,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.5408877795392497,
+            "medianAbsolutePercentError(elapsed)": 0.0009715910378217,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 46.688590245639006,
+            "medianAbsolutePercentError(elapsed)": 0.00955072654823289,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 125.514254518986,
+            "medianAbsolutePercentError(elapsed)": 0.00593101843083236,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 182.248046875,
+            "medianAbsolutePercentError(elapsed)": 0.000763064037437436,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 123.49026148714101,
+            "medianAbsolutePercentError(elapsed)": 0.00167518129636216,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 114.89403539436299,
+            "medianAbsolutePercentError(elapsed)": 0.00173330723523812,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 308.11685190748,
+            "medianAbsolutePercentError(elapsed)": 0.00392944223348542,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 154.152333804809,
+            "medianAbsolutePercentError(elapsed)": 0.00237443126565825,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272240973579006,
+            "medianAbsolutePercentError(elapsed)": 0.000589872700151545,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272451849961887,
+            "medianAbsolutePercentError(elapsed)": 0.000826459143238209,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.307859565191062,
+            "medianAbsolutePercentError(elapsed)": 0.0103687982175316,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 113.80497491638799,
+            "medianAbsolutePercentError(elapsed)": 0.000227016251922203,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 11.985186978627901,
+            "medianAbsolutePercentError(elapsed)": 0.000553769037835055,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 761.124338624339,
+            "medianAbsolutePercentError(elapsed)": 0.00182169901990208,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272475223632006,
+            "medianAbsolutePercentError(elapsed)": 0.000804084646305549,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27267320346514795,
+            "medianAbsolutePercentError(elapsed)": 0.00124121718261399,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272445808019015,
+            "medianAbsolutePercentError(elapsed)": 0.00068912311180865,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272203818032981,
+            "medianAbsolutePercentError(elapsed)": 0.000435472403515967,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272413542158436,
+            "medianAbsolutePercentError(elapsed)": 0.00108788882085959,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272397823635396,
+            "medianAbsolutePercentError(elapsed)": 0.000474136950253811,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.307671134996168,
+            "medianAbsolutePercentError(elapsed)": 0.00589356586894779,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27252252485823397,
+            "medianAbsolutePercentError(elapsed)": 0.000751670808457887,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272737431027614,
+            "medianAbsolutePercentError(elapsed)": 0.00105399784059021,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27231925210712,
+            "medianAbsolutePercentError(elapsed)": 0.000416945110000856,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 882.120272314675,
+            "medianAbsolutePercentError(elapsed)": 0.00276405619799435,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 116.990625357265,
+            "medianAbsolutePercentError(elapsed)": 0.00304222255736672,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.960884908975,
+            "medianAbsolutePercentError(elapsed)": 0.00132981213586011,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14208.5789473684,
+            "medianAbsolutePercentError(elapsed)": 0.00257757813749388,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14857.8115942029,
+            "medianAbsolutePercentError(elapsed)": 0.00165840224677956,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16.3569375192867,
+            "medianAbsolutePercentError(elapsed)": 0.00151133824346634,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 5.44895500688008,
+            "medianAbsolutePercentError(elapsed)": 0.00133817990020671,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1197.22690992018,
+            "medianAbsolutePercentError(elapsed)": 0.00236013405112825,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3755.57654723127,
+            "medianAbsolutePercentError(elapsed)": 0.001733345198695,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.650891936475161,
+            "medianAbsolutePercentError(elapsed)": 0.0156168326591203,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 273.987857961054,
+            "medianAbsolutePercentError(elapsed)": 0.00228568069023767,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.639452804377565,
+            "medianAbsolutePercentError(elapsed)": 0.0025863493693641,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 277.469205834684,
+            "medianAbsolutePercentError(elapsed)": 0.00844842531813791,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.31087722249140803,
+            "medianAbsolutePercentError(elapsed)": 0.00120127371742983,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 565.6930933852141,
+            "medianAbsolutePercentError(elapsed)": 0.00430303554665181,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 4.04392114887164,
+            "medianAbsolutePercentError(elapsed)": 0.000804044706773838,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 798.090240641711,
+            "medianAbsolutePercentError(elapsed)": 0.00269980279310994,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 35051.176470588194,
+            "medianAbsolutePercentError(elapsed)": 0.0262949017922917,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 37523.4285714286,
+            "medianAbsolutePercentError(elapsed)": 0.00737355418839755,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 41557.7142857143,
+            "medianAbsolutePercentError(elapsed)": 0.0345097911120546,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 44681.600000000006,
+            "medianAbsolutePercentError(elapsed)": 0.030532897388615,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 130.656606551343,
+            "medianAbsolutePercentError(elapsed)": 0.00962866881208618,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2381.5010940919,
+            "medianAbsolutePercentError(elapsed)": 0.00151367138015841,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 148.812867094659,
+            "medianAbsolutePercentError(elapsed)": 0.000799290932525727,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3759.62408759124,
+            "medianAbsolutePercentError(elapsed)": 0.00309018743833086,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.311068435360509,
+            "medianAbsolutePercentError(elapsed)": 0.00129863511424924,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 790.1023513139701,
+            "medianAbsolutePercentError(elapsed)": 0.00105835996312894,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 58.7281732792691,
+            "medianAbsolutePercentError(elapsed)": 0.000396559502847178,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 2213.22912621359,
+            "medianAbsolutePercentError(elapsed)": 0.00339197936174974,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 31.1025164717151,
+            "medianAbsolutePercentError(elapsed)": 0.000558818557923564,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 3215.90502793296,
+            "medianAbsolutePercentError(elapsed)": 0.00139267978941653,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 1.55478734040684,
+            "medianAbsolutePercentError(elapsed)": 0.000753487634627583,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 283.820088300221,
+            "medianAbsolutePercentError(elapsed)": 0.0029482435136943,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 4.04443376114686,
+            "medianAbsolutePercentError(elapsed)": 0.000829001053708177,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 406.42409802586803,
+            "medianAbsolutePercentError(elapsed)": 0.00280114460397437,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 57.7086217398527,
+            "medianAbsolutePercentError(elapsed)": 0.00497624723332616,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 851.676009892828,
+            "medianAbsolutePercentError(elapsed)": 0.00700109452272599,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 164.060926560405,
+            "medianAbsolutePercentError(elapsed)": 0.00428208872500099,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3290.19770773639,
+            "medianAbsolutePercentError(elapsed)": 0.00127837271654878,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 226.571270962048,
+            "medianAbsolutePercentError(elapsed)": 0.00336207140383396,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3356.0593750000003,
+            "medianAbsolutePercentError(elapsed)": 0.00234188257549608,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 143.636686714051,
+            "medianAbsolutePercentError(elapsed)": 0.00306803246616904,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3795.9018181818196,
+            "medianAbsolutePercentError(elapsed)": 0.00191275421410507,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 143.369975855702,
+            "medianAbsolutePercentError(elapsed)": 0.000733981986835217,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 381.484547069272,
+            "medianAbsolutePercentError(elapsed)": 0.000492481179200124,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3418.84911242604,
+            "medianAbsolutePercentError(elapsed)": 0.0022025286422799,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 216.26698113207502,
+            "medianAbsolutePercentError(elapsed)": 0.00388219453704705,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2295.25349301397,
+            "medianAbsolutePercentError(elapsed)": 0.00279648647948518,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 856.872754491018,
+            "medianAbsolutePercentError(elapsed)": 0.00279805188381884,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31105029254412897,
+            "medianAbsolutePercentError(elapsed)": 0.00143086092877815,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 879.106495468278,
+            "medianAbsolutePercentError(elapsed)": 0.00280652052334626,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31187401521134,
+            "medianAbsolutePercentError(elapsed)": 0.00425097641994714,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 848.6877567789651,
+            "medianAbsolutePercentError(elapsed)": 0.0042361955784046,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.621540534884087,
+            "medianAbsolutePercentError(elapsed)": 0.000573938766835062,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 976.385620915033,
+            "medianAbsolutePercentError(elapsed)": 0.00226838618850176,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 139.264638199949,
+            "medianAbsolutePercentError(elapsed)": 0.00108739389133244,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2324.50489236791,
+            "medianAbsolutePercentError(elapsed)": 0.00190485021584153,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 13.9952169047111,
+            "medianAbsolutePercentError(elapsed)": 0.000801443783817959,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1567.17789757412,
+            "medianAbsolutePercentError(elapsed)": 0.00118739714031924,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 900.949545078577,
+            "medianAbsolutePercentError(elapsed)": 0.00246854081315748,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2526.2686915887803,
+            "medianAbsolutePercentError(elapsed)": 0.00781473527356225,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311097997531184,
+            "medianAbsolutePercentError(elapsed)": 0.00119403917640322,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1192.1261633919298,
+            "medianAbsolutePercentError(elapsed)": 0.00140792078245743,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310771323989863,
+            "medianAbsolutePercentError(elapsed)": 0.00080434143433482,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1206.9340527577901,
+            "medianAbsolutePercentError(elapsed)": 0.00367040512486961,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311128666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00110063263386941,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 845.086219081272,
+            "medianAbsolutePercentError(elapsed)": 0.00231997575065415,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311036844797005,
+            "medianAbsolutePercentError(elapsed)": 0.00101900001468647,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1421.2961992136302,
+            "medianAbsolutePercentError(elapsed)": 0.00298261375406029,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310908082279932,
+            "medianAbsolutePercentError(elapsed)": 0.000440820834801233,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1009.02533783784,
+            "medianAbsolutePercentError(elapsed)": 0.000700492026865984,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310756806916085,
+            "medianAbsolutePercentError(elapsed)": 0.000848614174775163,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1091.74796747967,
+            "medianAbsolutePercentError(elapsed)": 0.00198226727820725,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31776517737938,
+            "medianAbsolutePercentError(elapsed)": 0.0157253050233099,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 885.9690189328741,
+            "medianAbsolutePercentError(elapsed)": 0.00124301680788046,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310836459802069,
+            "medianAbsolutePercentError(elapsed)": 0.000185609454851901,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 871.773033707865,
+            "medianAbsolutePercentError(elapsed)": 0.00100490297257614,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310947042627216,
+            "medianAbsolutePercentError(elapsed)": 0.00109790767732538,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2023.13214990138,
+            "medianAbsolutePercentError(elapsed)": 0.000828847487723785,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310803916047326,
+            "medianAbsolutePercentError(elapsed)": 0.000844184347532569,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1005.24279475983,
+            "medianAbsolutePercentError(elapsed)": 0.00131133027359315,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1183.77040261153,
+            "medianAbsolutePercentError(elapsed)": 0.00283939780245664,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2186.30769230769,
+            "medianAbsolutePercentError(elapsed)": 0.00274688030267952,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 138.486027463262,
+            "medianAbsolutePercentError(elapsed)": 0.000763635749766874,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 670.799423631124,
+            "medianAbsolutePercentError(elapsed)": 0.00163966702630014,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 19.236503228713,
+            "medianAbsolutePercentError(elapsed)": 0.00221397657663198,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 52.7854195323246,
+            "medianAbsolutePercentError(elapsed)": 0.0012155949871053,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 17385.2222222222,
+            "medianAbsolutePercentError(elapsed)": 0.00167670009591114,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 213577.6,
+            "medianAbsolutePercentError(elapsed)": 0.0048743398939312,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 20315.862745098,
+            "medianAbsolutePercentError(elapsed)": 0.00102211419312279,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 41039.560000000005,
+            "medianAbsolutePercentError(elapsed)": 0.00135659071137586,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 11.5097586900966,
+            "medianAbsolutePercentError(elapsed)": 0.000871971607595252,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1294.89763779528,
+            "medianAbsolutePercentError(elapsed)": 0.000803934592573422,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.9061925762587295,
+            "medianAbsolutePercentError(elapsed)": 0.000924298447072151,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1318.11316397229,
+            "medianAbsolutePercentError(elapsed)": 0.00218876256942669,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1192.76627906977,
+            "medianAbsolutePercentError(elapsed)": 0.000959259421262495,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 6518.90062111801,
+            "medianAbsolutePercentError(elapsed)": 0.00203881085046597,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1250.0055309734498,
+            "medianAbsolutePercentError(elapsed)": 0.00840571213736604,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 27651.261904761897,
+            "medianAbsolutePercentError(elapsed)": 0.00185432470698935,
+            "commit": "9b71aebd",
+            "commit_message": "Fix gcc"
         }
     ],
     "ci-windows": [
