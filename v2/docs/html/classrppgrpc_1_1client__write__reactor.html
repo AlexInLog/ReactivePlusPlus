@@ -147,6 +147,7 @@ class rppgrpc::client_write_reactor&lt; Request &gt;</div><p>RPP's based impleme
 <li>to pass values TO stream you can emit values to observer obtained via <span class="tt">reactor-&gt;get_observer()</span></li>
 <li>reactor provides <span class="tt">reactor-&gt;get_observable()</span> method but such as observable emits nothing and can be used only to be notified about completion/error</li>
 </ul>
+<dl class="section warning"><dt>Warning</dt><dd>After <span class="tt">init()</span> the call may end at any moment (connection refused, deadline, cancel) and the reactor deletes itself in <span class="tt">OnDone</span>. Obtain the observer and emit the first values before <span class="tt">init()</span>: they are posted and sent once the call starts. Emitting from outside the reactor's callbacks after <span class="tt">init()</span> races with the end of the call (gRPC requires a hold for that, see <span class="tt">grpc::ClientWriteReactor::AddHold</span>).</dd></dl>
 <div class="fragment"><div class="line">        <span class="keyword">auto</span> channel = grpc::CreateChannel(<span class="stringliteral">&quot;localhost:50051&quot;</span>, grpc::InsecureChannelCredentials());</div>
 <div class="line">        <span class="keyword">auto</span> stub    = TestService::NewStub(channel);</div>
 <div class="line"> </div>
@@ -155,10 +156,9 @@ class rppgrpc::client_write_reactor&lt; Request &gt;</div><p>RPP's based impleme
 <div class="line">        Response            resp{};</div>
 <div class="line">        stub-&gt;async()-&gt;ClientSide(&amp;ctx, &amp;resp, reactor);</div>
 <div class="line">        reactor-&gt;get_observable().subscribe([](<span class="keyword">const</span> <a class="code hl_struct" href="structrpp_1_1utils_1_1none.html">rpp::utils::none</a>&amp;) { });</div>
+<div class="line">        reactor-&gt;get_observer().on_next(Request{}); <span class="comment">// posted until init() starts the call</span></div>
 <div class="line"> </div>
 <div class="line">        reactor-&gt;init();</div>
-<div class="line"> </div>
-<div class="line">        reactor-&gt;get_observer().on_next(Request{});</div>
 </div><!-- fragment --> <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="client_reactor_8cpp-example.html#_a2">client_reactor.cpp</a>.</dd>
 </dl>
 </div><hr/>The documentation for this class was generated from the following file:<ul>

@@ -212,71 +212,73 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('new__thread_8h
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                        {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                            <span class="comment">// Sleep until the current top is due, and wake as soon as the top changes</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                            <span class="comment">// (an earlier schedulable was queued), so the loop recomputes the wait.</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                            <span class="keyword">const</span> <span class="keyword">auto</span>* <span class="keyword">const</span> top = state-&gt;queue.top().get();</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                            state-&gt;cv.wait_until(lock, top-&gt;get_timepoint(), [&amp;] { return state-&gt;queue.is_empty() || state-&gt;queue.top().get() != top || state-&gt;queue.top()-&gt;is_disposed() || worker_strategy::now() &gt;= state-&gt;queue.top()-&gt;get_timepoint(); });</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                        }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                    }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    <span class="keyword">auto</span> top = state-&gt;queue.pop();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    state-&gt;has_fresh_data.store(!state-&gt;queue.is_empty());</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    lock.unlock();</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                    {</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                        <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> res = top-&gt;make_advanced_call())</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                        {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                            <span class="keywordflow">if</span> (!top-&gt;is_disposed())</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                            {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                                <span class="keywordflow">if</span> (res-&gt;can_run_immediately() &amp;&amp; !state-&gt;has_fresh_data.load())</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                                <span class="keyword">const</span> <span class="keyword">auto</span> tp = top-&gt;handle_advanced_call(res.value());</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                                state-&gt;queue.emplace(tp, std::move(top));</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                            }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                        }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                    }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                current_thread::get_queue() = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            std::shared_ptr&lt;queue_data&gt; m_state = std::make_shared&lt;queue_data&gt;();</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            RPP_CALL_DURING_CONSTRUCTION(m_state-&gt;queue = <a class="code hl_class" href="classrpp_1_1schedulers_1_1details_1_1schedulables__queue.html">details::schedulables_queue&lt;current_thread::worker_strategy&gt;</a>(m_state));</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                            <span class="comment">// The copy keeps the waited-for top alive, so its address cannot be reused</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                            <span class="comment">// by a newly queued schedulable while we wait.</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                            <span class="keyword">const</span> <span class="keyword">auto</span> top = state-&gt;queue.top();</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                            state-&gt;cv.wait_until(lock, top-&gt;get_timepoint(), [&amp;] { return state-&gt;queue.is_empty() || state-&gt;queue.top().get() != top.get() || state-&gt;queue.top()-&gt;is_disposed() || worker_strategy::now() &gt;= state-&gt;queue.top()-&gt;get_timepoint(); });</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>                            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                        }</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                    }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                    <span class="keyword">auto</span> top = state-&gt;queue.pop();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    state-&gt;has_fresh_data.store(!state-&gt;queue.is_empty());</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                    lock.unlock();</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>                    <span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                    {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                        <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span> res = top-&gt;make_advanced_call())</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                        {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                            <span class="keywordflow">if</span> (!top-&gt;is_disposed())</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                            {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                                <span class="keywordflow">if</span> (res-&gt;can_run_immediately() &amp;&amp; !state-&gt;has_fresh_data.load())</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                                <span class="keyword">const</span> <span class="keyword">auto</span> tp = top-&gt;handle_advanced_call(res.value());</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                                state-&gt;queue.emplace(tp, std::move(top));</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                            }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>                        }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                    }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>                }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                current_thread::get_queue() = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            std::shared_ptr&lt;queue_data&gt; m_state = std::make_shared&lt;queue_data&gt;();</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            std::thread m_thread{&amp;data_thread, m_state};</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        };</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">public</span>:</div>
-<div class="foldopen" id="foldopen00131" data-start="{" data-end="};">
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classrpp_1_1schedulers_1_1new__thread_1_1worker__strategy.html">  131</a></span>        <span class="keyword">class </span>worker_strategy</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        {</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            worker_strategy() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            <span class="keyword">template</span>&lt;<a class="code hl_concept" href="conceptrpp_1_1schedulers_1_1constraint_1_1schedulable__handler.html">rpp::schedulers::constraint::schedulable_handler</a> Handler, <span class="keyword">typename</span>... Args, <a class="code hl_concept" href="conceptrpp_1_1schedulers_1_1constraint_1_1schedulable__fn.html">constraint::schedulable_fn</a>&lt;Handler, Args...&gt; Fn&gt;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>            <span class="keywordtype">void</span> defer_to(time_point tp, Fn&amp;&amp; fn, Handler&amp;&amp; handler, Args&amp;&amp;... args)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="keyword">            </span>{</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>                m_state-&gt;defer_to(tp, std::forward&lt;Fn&gt;(fn), std::forward&lt;Handler&gt;(handler), std::forward&lt;Args&gt;(args)...);</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            }</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="keyword">static</span> rpp::schedulers::time_point now() { <span class="keywordflow">return</span> details::now(); }</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            RPP_CALL_DURING_CONSTRUCTION(m_state-&gt;queue = <a class="code hl_class" href="classrpp_1_1schedulers_1_1details_1_1schedulables__queue.html">details::schedulables_queue&lt;current_thread::worker_strategy&gt;</a>(m_state));</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            std::thread m_thread{&amp;data_thread, m_state};</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        };</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="};">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="classrpp_1_1schedulers_1_1new__thread_1_1worker__strategy.html">  133</a></span>        <span class="keyword">class </span>worker_strategy</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        {</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            worker_strategy() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>            <span class="keyword">template</span>&lt;<a class="code hl_concept" href="conceptrpp_1_1schedulers_1_1constraint_1_1schedulable__handler.html">rpp::schedulers::constraint::schedulable_handler</a> Handler, <span class="keyword">typename</span>... Args, <a class="code hl_concept" href="conceptrpp_1_1schedulers_1_1constraint_1_1schedulable__fn.html">constraint::schedulable_fn</a>&lt;Handler, Args...&gt; Fn&gt;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordtype">void</span> defer_to(time_point tp, Fn&amp;&amp; fn, Handler&amp;&amp; handler, Args&amp;&amp;... args)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">            </span>{</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                m_state-&gt;defer_to(tp, std::forward&lt;Fn&gt;(fn), std::forward&lt;Handler&gt;(handler), std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            }</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            std::shared_ptr&lt;state_t&gt; m_state = std::make_shared&lt;state_t&gt;();</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        };</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="keyword">static</span> rpp::schedulers::time_point now() { <span class="keywordflow">return</span> details::now(); }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            std::shared_ptr&lt;state_t&gt; m_state = std::make_shared&lt;state_t&gt;();</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        };</div>
 </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <span class="keyword">static</span> <a class="code hl_class" href="classrpp_1_1schedulers_1_1worker.html">rpp::schedulers::worker&lt;worker_strategy&gt;</a> create_worker()</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classrpp_1_1schedulers_1_1worker.html">rpp::schedulers::worker&lt;worker_strategy&gt;</a>{};</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    };</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keyword">static</span> <a class="code hl_class" href="classrpp_1_1schedulers_1_1worker.html">rpp::schedulers::worker&lt;worker_strategy&gt;</a> create_worker()</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        {</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classrpp_1_1schedulers_1_1worker.html">rpp::schedulers::worker&lt;worker_strategy&gt;</a>{};</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    };</div>
 </div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>} <span class="comment">// namespace rpp::schedulers</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>} <span class="comment">// namespace rpp::schedulers</span></div>
 <div class="ttc" id="aclassrpp_1_1schedulers_1_1details_1_1schedulables__queue_html"><div class="ttname"><a href="classrpp_1_1schedulers_1_1details_1_1schedulables__queue.html">rpp::schedulers::details::schedulables_queue</a></div><div class="ttdef"><b>Definition</b> queue.hpp:206</div></div>
 <div class="ttc" id="aclassrpp_1_1schedulers_1_1new__thread_html"><div class="ttname"><a href="classrpp_1_1schedulers_1_1new__thread.html">rpp::schedulers::new_thread</a></div><div class="ttdoc">Scheduler which schedules invoking of schedulables to another thread via queueing tasks with priority...</div><div class="ttdef"><b>Definition</b> new_thread.hpp:31</div></div>
 <div class="ttc" id="aclassrpp_1_1schedulers_1_1worker_html"><div class="ttname"><a href="classrpp_1_1schedulers_1_1worker.html">rpp::schedulers::worker</a></div><div class="ttdef"><b>Definition</b> worker.hpp:23</div></div>

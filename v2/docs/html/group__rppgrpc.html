@@ -155,10 +155,9 @@ Topics</h2></td></tr>
 <div class="line">        <span class="keyword">const</span> <span class="keyword">auto</span>          reactor = <span class="keyword">new</span> <a class="code hl_class" href="classrppgrpc_1_1client__bidi__reactor.html">rppgrpc::client_bidi_reactor&lt;Request, Response&gt;</a>();</div>
 <div class="line">        stub-&gt;async()-&gt;Bidirectional(&amp;ctx, reactor);</div>
 <div class="line">        reactor-&gt;get_observable().subscribe([](<span class="keyword">const</span> Response&amp;) { });</div>
+<div class="line">        reactor-&gt;get_observer().on_next(Request{}); <span class="comment">// posted until init() starts the call</span></div>
 <div class="line"> </div>
 <div class="line">        reactor-&gt;init();</div>
-<div class="line"> </div>
-<div class="line">        reactor-&gt;get_observer().on_next(Request{});</div>
 </div><!-- fragment --> </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
