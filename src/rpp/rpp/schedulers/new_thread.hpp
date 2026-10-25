@@ -89,8 +89,10 @@ namespace rpp::schedulers
                         {
                             // Sleep until the current top is due, and wake as soon as the top changes
                             // (an earlier schedulable was queued), so the loop recomputes the wait.
-                            const auto* const top = state->queue.top().get();
-                            state->cv.wait_until(lock, top->get_timepoint(), [&] { return state->queue.is_empty() || state->queue.top().get() != top || state->queue.top()->is_disposed() || worker_strategy::now() >= state->queue.top()->get_timepoint(); });
+                            // The copy keeps the waited-for top alive, so its address cannot be reused
+                            // by a newly queued schedulable while we wait.
+                            const auto top = state->queue.top();
+                            state->cv.wait_until(lock, top->get_timepoint(), [&] { return state->queue.is_empty() || state->queue.top().get() != top.get() || state->queue.top()->is_disposed() || worker_strategy::now() >= state->queue.top()->get_timepoint(); });
                             continue;
                         }
                     }
