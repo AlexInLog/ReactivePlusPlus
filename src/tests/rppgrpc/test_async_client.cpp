@@ -367,3 +367,57 @@ TEST_CASE("async client reactor")
     server->Shutdown();
     server->Wait();
 }
+
+TEST_CASE("async client reactor: call that ends during init()")
+{
+    // The context is cancelled before init(), so the call ends as soon as StartCall() is
+    // issued, and gRPC may run OnDone (which deletes the reactor) on one of its own threads
+    // while init() has not returned yet. init() must not use the reactor after StartCall().
+    // A violation is a use-after-free; AddressSanitizer reports it.
+    constexpr int iterations = 300;
+
+    grpc::ServerBuilder builder{};
+    auto                mock_service = std::make_unique<service>();
+    ALLOW_CALL(*mock_service, ServerSide(trompeloeil::_, trompeloeil::_, trompeloeil::_)).RETURN(grpc::Status::CANCELLED);
+    ALLOW_CALL(*mock_service, ClientSide(trompeloeil::_, trompeloeil::_, trompeloeil::_)).RETURN(grpc::Status::CANCELLED);
+    ALLOW_CALL(*mock_service, Bidirectional(trompeloeil::_, trompeloeil::_)).RETURN(grpc::Status::CANCELLED);
+    builder.RegisterService(mock_service.get());
+
+    auto       server = builder.BuildAndStart();
+    const auto stub   = TestService::NewStub(server->InProcessChannel({}), {});
+
+    // Starts one call with an already cancelled context and waits for the reactor's terminal,
+    // which it emits from OnDone. Context and request outlive the call.
+    const auto run_call = [](auto* reactor, auto&& bind) {
+        grpc::ClientContext ctx{};
+        Request             request{};
+        Response            response{};
+        const auto          done = std::make_shared<std::promise<void>>();
+        reactor->get_observable().subscribe([](const auto&) { },
+                                            [done](const std::exception_ptr&) { done->set_value(); },
+                                            [done] { done->set_value(); });
+        bind(ctx, request, response, reactor);
+        ctx.TryCancel();
+        reactor->init();
+        return done->get_future().wait_for(std::chrono::seconds{5}) == std::future_status::ready;
+    };
+
+    SUBCASE("bidirectional")
+    {
+        for (int i = 0; i < iterations; ++i)
+            REQUIRE(run_call(new rppgrpc::client_bidi_reactor<Request, Response>(), [&](auto& ctx, auto&, auto&, auto* r) { stub->async()->Bidirectional(&ctx, r); }));
+    }
+    SUBCASE("server-side")
+    {
+        for (int i = 0; i < iterations; ++i)
+            REQUIRE(run_call(new rppgrpc::client_read_reactor<Response>(), [&](auto& ctx, auto& req, auto&, auto* r) { stub->async()->ServerSide(&ctx, &req, r); }));
+    }
+    SUBCASE("client-side")
+    {
+        for (int i = 0; i < iterations; ++i)
+            REQUIRE(run_call(new rppgrpc::client_write_reactor<Request>(), [&](auto& ctx, auto&, auto& resp, auto* r) { stub->async()->ClientSide(&ctx, &resp, r); }));
+    }
+
+    server->Shutdown();
+    server->Wait();
+}

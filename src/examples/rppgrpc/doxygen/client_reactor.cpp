@@ -19,10 +19,9 @@ int main() // NOLINT(bugprone-exception-escape)
         const auto          reactor = new rppgrpc::client_bidi_reactor<Request, Response>();
         stub->async()->Bidirectional(&ctx, reactor);
         reactor->get_observable().subscribe([](const Response&) { });
+        reactor->get_observer().on_next(Request{}); // posted until init() starts the call
 
         reactor->init();
-
-        reactor->get_observer().on_next(Request{});
         //! [bidi_reactor]
     }
     {
@@ -49,10 +48,9 @@ int main() // NOLINT(bugprone-exception-escape)
         Response            resp{};
         stub->async()->ClientSide(&ctx, &resp, reactor);
         reactor->get_observable().subscribe([](const rpp::utils::none&) { });
+        reactor->get_observer().on_next(Request{}); // posted until init() starts the call
 
         reactor->init();
-
-        reactor->get_observer().on_next(Request{});
         //! [write_reactor]
     }
 
