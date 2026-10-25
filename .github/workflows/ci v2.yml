@@ -58,7 +58,7 @@ jobs:
       uses: jurplel/install-qt-action@v4
       with:
         cache: true
-        version: "6.2.*"
+        version: "6.10.*"
 
     - name: conan detect profile
       if: steps.check_cache.outputs.cache-hit != 'true' || github.event_name == 'schedule'
@@ -107,7 +107,7 @@ jobs:
       uses: jurplel/install-qt-action@v4
       with:
         cache: true
-        version: "6.2.*"
+        version: "6.10.*"
 
     - name: get conan
       uses: turtlebrowser/get-conan@main
@@ -148,7 +148,7 @@ jobs:
         build_type: [{config: Release, test_preset: ci-tests}, {config: Debug, test_preset: ci-tests-debug}]
         optimization_disabled: [{mode: 0, postfix: ""}, {mode: 1, postfix: " (Optimizations disabled)"}]
 
-    timeout-minutes: 20
+    timeout-minutes: 40
     runs-on: ${{ matrix.config.os }}
     name: ${{ matrix.type }} ${{ matrix.config.name }} ${{ matrix.build_type.config }}${{ matrix.optimization_disabled.postfix}}
 
@@ -184,7 +184,7 @@ jobs:
       uses: jurplel/install-qt-action@v4
       with:
         cache: true
-        version: "6.2.*"
+        version: "6.10.*"
 
     - name: get conan
       uses: turtlebrowser/get-conan@main
@@ -218,6 +218,8 @@ jobs:
         path: ${{github.workspace}}/build/test_results/benchmarks_results.json
 
   docs:
+    timeout-minutes: 20
+
     name: Build Doxygen Docs
     runs-on: ubuntu-22.04
 
@@ -249,7 +251,8 @@ jobs:
         destination_dir: v2/docs
 
   use_rpp_as_package:
-    timeout-minutes: 20
+    timeout-minutes: 40
+    needs: ["cache_deps"]
 
     runs-on: ubuntu-22.04
     name: Test RPP as package - ubuntu-22.04
@@ -263,7 +266,7 @@ jobs:
       uses: jurplel/install-qt-action@v4
       with:
         cache: true
-        version: "6.2.*"
+        version: "6.10.*"
 
     - name: Install project and build
       env:

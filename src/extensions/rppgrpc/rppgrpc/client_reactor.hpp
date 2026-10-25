@@ -28,6 +28,8 @@ namespace rppgrpc
      * - to access values FROM stream you can subscribe to observable obtained via `reactor->get_observable()` (same observable WOULD emit on_completed in case of successful stream termination and on_error in case of some errors with grpc stream)
      * - to pass values TO stream you can emit values to observer obtained via `reactor->get_observer()`
      *
+     * @warning After `init()` the call may end at any moment (connection refused, deadline, cancel) and the reactor deletes itself in `OnDone`. Obtain the observer and emit the first values before `init()`: they are posted and sent once the call starts. Emitting from outside the reactor's callbacks after `init()` races with the end of the call (gRPC requires a hold for that, see `grpc::ClientBidiReactor::AddHold`).
+     *
      * @snippet client_reactor.cpp bidi_reactor
      *
      * @ingroup rppgrpc_reactors
@@ -44,8 +46,12 @@ namespace rppgrpc
 
         void init()
         {
-            Base::StartCall();
+            // The first read is posted before StartCall(): gRPC keeps it until the call starts and
+            // counts it as an outstanding operation. StartCall() is the last use of the reactor in
+            // init(), because a call that ends at once may run OnDone (and so `delete this`) on a
+            // gRPC thread before StartCall() has even returned.
             details::base_reader<Response>::handle_read_done(true);
+            Base::StartCall();
         }
 
         using details::base_writer<Request>::get_observer;
@@ -102,6 +108,8 @@ namespace rppgrpc
      * - call `reactor->init()` method for actual starting of grpc logic
      * - to pass values TO stream you can emit values to observer obtained via `reactor->get_observer()`
      * - reactor provides `reactor->get_observable()` method but such as observable emits nothing and can be used only to be notified about completion/error
+     *
+     * @warning After `init()` the call may end at any moment (connection refused, deadline, cancel) and the reactor deletes itself in `OnDone`. Obtain the observer and emit the first values before `init()`: they are posted and sent once the call starts. Emitting from outside the reactor's callbacks after `init()` races with the end of the call (gRPC requires a hold for that, see `grpc::ClientWriteReactor::AddHold`).
      *
      * @snippet client_reactor.cpp write_reactor
      *
@@ -182,8 +190,12 @@ namespace rppgrpc
 
         void init()
         {
-            Base::StartCall();
+            // The first read is posted before StartCall(): gRPC keeps it until the call starts and
+            // counts it as an outstanding operation. StartCall() is the last use of the reactor in
+            // init(), because a call that ends at once may run OnDone (and so `delete this`) on a
+            // gRPC thread before StartCall() has even returned.
             details::base_reader<Response>::handle_read_done(true);
+            Base::StartCall();
         }
 
         using details::base_reader<Response>::get_observable;

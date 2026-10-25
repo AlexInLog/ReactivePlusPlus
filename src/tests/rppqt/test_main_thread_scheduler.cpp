@@ -29,15 +29,17 @@ TEST_CASE("main_thread_scheduler schedules actions to main thread")
 
     int              argc{};
     QCoreApplication application{argc, nullptr};
-    QTimer::singleShot(10, &application, [&] { application.exit(); });
 
 
     SUBCASE("submitting action to main scheduler from another thread")
     {
+        // exit on completion instead of a fixed deadline: slow setup could let the deadline expire before the action runs
+        QTimer::singleShot(std::chrono::seconds{5}, &application, [&] { application.exit(); });
         std::promise<std::thread::id> execution_thread{};
         std::thread{[&] {
             rppqt::schedulers::main_thread_scheduler::create_worker().schedule([&](const auto&) -> rpp::schedulers::optional_delay_from_now {
                 execution_thread.set_value(std::this_thread::get_id());
+                application.exit();
                 return {};
             },
                                                                                observer);
@@ -54,6 +56,7 @@ TEST_CASE("main_thread_scheduler schedules actions to main thread")
 
     SUBCASE("nothing happens for disposed handler")
     {
+        QTimer::singleShot(10, &application, [&] { application.exit(); });
         std::promise<std::thread::id> execution_thread{};
         std::thread{[&] {
             rppqt::schedulers::main_thread_scheduler::create_worker().schedule([&](const auto&) -> rpp::schedulers::optional_delay_from_now {
@@ -73,11 +76,15 @@ TEST_CASE("main_thread_scheduler schedules actions to main thread")
     auto test_recursive_scheduling = [&](const auto& duration) {
         SUBCASE("recursive scheduling to main thread")
         {
+            // exit on completion instead of a fixed deadline: slow setup could let the deadline expire mid-chain
+            QTimer::singleShot(std::chrono::seconds{5}, &application, [&] { application.exit(); });
             std::string execution{};
             std::thread{[&] {
                 rppqt::schedulers::main_thread_scheduler::create_worker().schedule([&](const auto&) {
                     rppqt::schedulers::main_thread_scheduler::create_worker().schedule([&](const auto&) -> rpp::schedulers::optional_delay_from_now {
                         execution += "inner ";
+                        if (execution == "outer inner outer inner ")
+                            QTimer::singleShot(10, &application, [&] { application.exit(); });
                         return {};
                     },
                                                                                        observer);
