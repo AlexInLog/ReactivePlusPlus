@@ -5,7 +5,7 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          https://www.boost.org/LICENSE_1_0.txt)
 //
-// Project home: https://github.com/victimsnino/ReactivePlusPlus
+// Project home: https://github.com/AlexInLog/ReactivePlusPlus
 //
 
 #pragma once
@@ -87,7 +87,12 @@ namespace rpp::schedulers
                     {
                         if (const auto now = worker_strategy::now(); now < state->queue.top()->get_timepoint())
                         {
-                            state->cv.wait_for(lock, state->queue.top()->get_timepoint() - now, [&] { return state->queue.top()->is_disposed() || worker_strategy::now() >= state->queue.top()->get_timepoint(); });
+                            // Sleep until the current top is due, and wake as soon as the top changes
+                            // (an earlier schedulable was queued), so the loop recomputes the wait.
+                            // The copy keeps the waited-for top alive, so its address cannot be reused
+                            // by a newly queued schedulable while we wait.
+                            const auto top = state->queue.top();
+                            state->cv.wait_until(lock, top->get_timepoint(), [&] { return state->queue.is_empty() || state->queue.top().get() != top.get() || state->queue.top()->is_disposed() || worker_strategy::now() >= state->queue.top()->get_timepoint(); });
                             continue;
                         }
                     }

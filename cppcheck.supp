@@ -8,6 +8,8 @@ shadowFunction
 
 unusedVariable
 
+unusedFunction
+
 localMutex
 
 unmatchedSuppression

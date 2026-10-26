@@ -11,7 +11,7 @@ jobs:
   process_benchmarks:
     runs-on: ubuntu-22.04
 
-    if: github.repository_owner == 'victimsnino' && github.event.workflow_run.conclusion == 'success'
+    if: github.repository_owner == 'AlexInLog' && github.event.workflow_run.conclusion == 'success'
 
     steps:
       - uses: haya14busa/action-workflow_run-status@main

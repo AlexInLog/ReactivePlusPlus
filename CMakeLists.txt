@@ -28,7 +28,7 @@ project(
     ReactivePlusPlus
     VERSION 2.2.3
     DESCRIPTION "ReactivePlusPlus is library for building asynchronous event-driven streams of data with help of sequences of primitive operators in the declarative form"
-    HOMEPAGE_URL "https://github.com/victimsnino/ReactivePlusPlus"
+    HOMEPAGE_URL "https://github.com/AlexInLog/ReactivePlusPlus"
     LANGUAGES CXX
 )
 
