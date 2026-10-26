@@ -12,7 +12,7 @@ env:
 
 jobs:
   pvs:
-    if: github.repository_owner == 'victimsnino' && github.event.workflow_run.conclusion == 'success' && false
+    if: github.repository_owner == 'AlexInLog' && github.event.workflow_run.conclusion == 'success' && false
 
     runs-on: ubuntu-22.04
     timeout-minutes: 10
@@ -20,7 +20,7 @@ jobs:
     steps:
     - uses: haya14busa/action-workflow_run-status@main
 
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
@@ -31,7 +31,7 @@ jobs:
       uses: jurplel/install-qt-action@v4
       with:
         cache: true
-        version: "6.2.*"
+        version: "6.10.*"
 
     - name: get conan
       uses: turtlebrowser/get-conan@main
@@ -84,12 +84,12 @@ jobs:
   sonarcloud_and_coverage:
     runs-on: ubuntu-22.04
 
-    if: github.repository_owner == 'victimsnino' && github.event.workflow_run.conclusion == 'success' && false
+    if: github.repository_owner == 'AlexInLog' && github.event.workflow_run.conclusion == 'success' && false
 
     steps:
     - uses: haya14busa/action-workflow_run-status@main
 
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         fetch-depth: 0
@@ -103,7 +103,7 @@ jobs:
       uses: jurplel/install-qt-action@v4
       with:
         cache: true
-        version: "6.2.*"
+        version: "6.10.*"
 
     - name: get conan
       uses: turtlebrowser/get-conan@main

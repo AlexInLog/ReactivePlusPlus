@@ -62,7 +62,7 @@ Include(FetchContent)
 
 FetchContent_Declare(
     RPP
-    GIT_REPOSITORY https://github.com/victimsnino/ReactivePlusPlus.git
+    GIT_REPOSITORY https://github.com/AlexInLog/ReactivePlusPlus.git
     GIT_TAG        origin/v2
 )
 

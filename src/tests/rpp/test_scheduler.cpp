@@ -5,7 +5,7 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          https://www.boost.org/LICENSE_1_0.txt)
 //
-// Project home: https://github.com/victimsnino/ReactivePlusPlus
+// Project home: https://github.com/AlexInLog/ReactivePlusPlus
 //
 
 #include <doctest/doctest.h>
@@ -18,6 +18,7 @@
 #include <rpp/operators/subscribe_on.hpp>
 #include <rpp/schedulers.hpp>
 #include <rpp/schedulers/test_scheduler.hpp>
+#include <rpp/sources/create.hpp>
 #include <rpp/sources/just.hpp>
 
 #include "rpp/disposables/fwd.hpp"
@@ -792,6 +793,8 @@ TEST_CASE("new_thread works till end")
 
     const auto vals = std::array{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
+    auto checked = std::make_shared<std::atomic_bool>();
+
     REQUIRE_CALL(*mock, on_next_lvalue(trompeloeil::_)).TIMES(10).IN_SEQUENCE(s);
 
     auto done = std::make_shared<std::atomic_bool>();
@@ -803,11 +806,20 @@ TEST_CASE("new_thread works till end")
                                                                })
                           .IN_SEQUENCE(s);
 
-    rpp::source::from_iterable(vals)
+    // gate emission outside of the mock: trompeloeil holds its global lock while running side effects
+    rpp::source::create<int>([checked, vals](const auto& obs) {
+        while (!checked->load())
+        {
+        };
+        for (const auto v : vals)
+            obs.on_next(v);
+        obs.on_completed();
+    })
         | rpp::operators::subscribe_on(rpp::schedulers::new_thread{})
         | rpp::operators::subscribe(mock);
 
     const bool before = last->is_satisfied();
+    checked->store(true);
 
     wait(last);
 
@@ -1067,4 +1079,73 @@ TEST_CASE("thread_pool shares same thread")
     first_job_done.store(true);
 
     CHECK(f.get());
+}
+
+TEST_CASE("timer queued while the worker waits for a later one runs at its own time")
+{
+    // The worker is already waiting for a schedulable due in `later`. A second one, due
+    // in `earlier` (much sooner), is queued from another thread. It has to run after
+    // about `earlier`, not when the wait for the first one ends.
+    constexpr auto later   = std::chrono::seconds{3};
+    constexpr auto earlier = std::chrono::milliseconds{50};
+    constexpr auto bound   = std::chrono::seconds{1};
+
+    auto       d    = rpp::composite_disposable_wrapper::make();
+    auto       obs  = mock_observer_strategy<int>{}.get_observer(d).as_dynamic();
+    const auto noop = [](const auto&) {
+        return rpp::schedulers::optional_delay_from_now{};
+    };
+
+    SUBCASE("run_loop")
+    {
+        auto scheduler = rpp::schedulers::run_loop{};
+        auto worker    = scheduler.create_worker();
+        worker.schedule(later, noop, obs);
+
+        std::atomic_bool                      earlier_ran{};
+        std::chrono::steady_clock::time_point queued_at{};
+        std::chrono::steady_clock::time_point ran_at{};
+
+        auto other = std::thread{[&] {
+            std::this_thread::sleep_for(std::chrono::milliseconds{100}); // dispatch() below waits for `later` by now
+            queued_at = std::chrono::steady_clock::now();
+            worker.schedule(
+                earlier,
+                [&](const auto&) {
+                    ran_at = std::chrono::steady_clock::now();
+                    earlier_ran.store(true);
+                    return rpp::schedulers::optional_delay_from_now{};
+                },
+                obs);
+        }};
+
+        while (!earlier_ran.load())
+            scheduler.dispatch();
+        other.join();
+
+        CHECK(ran_at - queued_at < bound);
+    }
+
+    SUBCASE("new_thread")
+    {
+        auto worker = rpp::schedulers::new_thread::create_worker();
+        worker.schedule(later, noop, obs);
+        std::this_thread::sleep_for(std::chrono::milliseconds{100}); // the worker thread waits for `later` by now
+
+        std::promise<std::chrono::steady_clock::time_point> ran_at{};
+        const auto                                          queued_at = std::chrono::steady_clock::now();
+        worker.schedule(
+            earlier,
+            [&ran_at](const auto&) {
+                ran_at.set_value(std::chrono::steady_clock::now());
+                return rpp::schedulers::optional_delay_from_now{};
+            },
+            obs);
+
+        auto f = ran_at.get_future();
+        REQUIRE(f.wait_for(later * 2) == std::future_status::ready);
+        CHECK(f.get() - queued_at < bound);
+    }
+
+    d.dispose();
 }

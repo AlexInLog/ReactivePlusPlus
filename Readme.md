@@ -1,14 +1,14 @@
 # ReactivePlusPlus
 
-[![CI v2](https://github.com/victimsnino/ReactivePlusPlus/actions/workflows/ci%20v2.yml/badge.svg?branch=v2)](https://github.com/victimsnino/ReactivePlusPlus/actions/workflows/ci%20v2.yml)
-[![codecov](https://codecov.io/gh/victimsnino/ReactivePlusPlus/branch/v2/graph/badge.svg?token=INEHPRF18E)](https://app.codecov.io/gh/victimsnino/ReactivePlusPlus/tree/v2)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=victimsnino_ReactivePlusPlus&metric=ncloc&branch=v2)](https://sonarcloud.io/summary/new_code?id=victimsnino_ReactivePlusPlus&branch=v2)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=victimsnino_ReactivePlusPlus&metric=sqale_rating&branch=v2)](https://sonarcloud.io/summary/new_code?id=victimsnino_ReactivePlusPlus&branch=v2)
-![GitHub commit activity (v2)](https://img.shields.io/github/commit-activity/m/victimsnino/ReactivePlusPlus/v2)
+[![CI v2](https://github.com/AlexInLog/ReactivePlusPlus/actions/workflows/ci%20v2.yml/badge.svg?branch=v2)](https://github.com/AlexInLog/ReactivePlusPlus/actions/workflows/ci%20v2.yml)
+[![codecov](https://codecov.io/gh/AlexInLog/ReactivePlusPlus/branch/v2/graph/badge.svg?token=INEHPRF18E)](https://app.codecov.io/gh/AlexInLog/ReactivePlusPlus/tree/v2)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=AlexInLog_ReactivePlusPlus&metric=ncloc&branch=v2)](https://sonarcloud.io/summary/new_code?id=AlexInLog_ReactivePlusPlus&branch=v2)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=AlexInLog_ReactivePlusPlus&metric=sqale_rating&branch=v2)](https://sonarcloud.io/summary/new_code?id=AlexInLog_ReactivePlusPlus&branch=v2)
+![GitHub commit activity (v2)](https://img.shields.io/github/commit-activity/m/AlexInLog/ReactivePlusPlus/v2)
 
-[![User guide](https://img.shields.io/badge/User_guide-link-green)](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/index.html)
-[![API Reference](https://img.shields.io/badge/API_Reference-link-green)](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/topics.html)
-[![Benchmarks](https://img.shields.io/badge/Benchmarks-link-green)](https://victimsnino.github.io/ReactivePlusPlus/v2/benchmark)
+[![User guide](https://img.shields.io/badge/User_guide-link-green)](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/index.html)
+[![API Reference](https://img.shields.io/badge/API_Reference-link-green)](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/topics.html)
+[![Benchmarks](https://img.shields.io/badge/Benchmarks-link-green)](https://AlexInLog.github.io/ReactivePlusPlus/v2/benchmark)
 
 [![Join the chat in Discord: https://discord.gg/KWMR3RNkVz](https://img.shields.io/badge/Discord-Chat!-brightgreen.svg)](https://discord.gg/KWMR3RNkVz)
 [![Conan Center](https://img.shields.io/conan/v/reactiveplusplus)](https://conan.io/center/recipes/reactiveplusplus)
@@ -41,9 +41,9 @@ There we are creating observable (soure of emissions/values/data) to emit value 
 
 
 Also RPP supports out of box:
--  QT as rppqt module. Checkout [RPPQT reference](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/group__rppqt.html).
--  gRPC as rppgrpc module. Checkout [RPPgRPC reference](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/group__rppgrpc.html).
--  boost::asio as rppasio module. Checkout [RPPASIO reference](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/group__rppasio.html).
+-  QT as rppqt module. Checkout [RPPQT reference](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/group__rppqt.html).
+-  gRPC as rppgrpc module. Checkout [RPPgRPC reference](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/group__rppgrpc.html).
+-  boost::asio as rppasio module. Checkout [RPPASIO reference](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/group__rppasio.html).
 
 ## What about existing Reactive Extension libraries for C++?
 
@@ -60,11 +60,11 @@ Another implementation, [another-rxcpp](https://github.com/CODIANZ/another-rxcpp
    - Concepts provide more clear errors and checks: you will understand that pass something incorrect before compilation in IDE or during compilation with understandable errors instead of _"invalid template class map_invalid_t"_
    - Everywhere while possible used deduction of template arguments, for example, type of values of observable by type of subscriber used in on_subscribe and etc
 - **ReactivePlusPlus** keeps balance between performance and type-erasing mechanism
-- **ReactivePlusPlus** is fast: every part of code written with performance in mind. Starting from tests over amount of copies/move and finishing to Continuous Benchmarking. Benchmarks prove that RPP faster than RxCPP in most cases: [Continuous benchmarking results and comparison with RxCpp](https://victimsnino.github.io/ReactivePlusPlus/v2/benchmark)
+- **ReactivePlusPlus** is fast: every part of code written with performance in mind. Starting from tests over amount of copies/move and finishing to Continuous Benchmarking. Benchmarks prove that RPP faster than RxCPP in most cases: [Continuous benchmarking results and comparison with RxCpp](https://AlexInLog.github.io/ReactivePlusPlus/v2/benchmark)
 
-Currently ReactivePlusPlus is still under development but it has a lot of implemented operators for now. List of implemented features can be found in [API Reference](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/topics.html) with very detailed documentation for each of them.
+Currently ReactivePlusPlus is still under development but it has a lot of implemented operators for now. List of implemented features can be found in [API Reference](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/topics.html) with very detailed documentation for each of them.
 
-Main advantages of ReactivePlusPlus are that it is written in Modern C++ with Performance and Usage in mind. v2 is written to follow the [**"zero-overhead principle"**](https://en.cppreference.com/w/cpp/language/Zero-overhead_principle). As a result, it is fast, readable, easy to use, and well-documented. This is proven by [continuous benchmarking results of v2 and comparison with RxCpp](https://victimsnino.github.io/ReactivePlusPlus/v2/benchmark).
+Main advantages of ReactivePlusPlus are that it is written in Modern C++ with Performance and Usage in mind. v2 is written to follow the [**"zero-overhead principle"**](https://en.cppreference.com/w/cpp/language/Zero-overhead_principle). As a result, it is fast, readable, easy to use, and well-documented. This is proven by [continuous benchmarking results of v2 and comparison with RxCpp](https://AlexInLog.github.io/ReactivePlusPlus/v2/benchmark).
 
 ## Usage
 
@@ -80,16 +80,16 @@ If you are going to know more details about developing for RPP check [HACKING](H
 
 ## Documentation:
 
-Check detailed [User Guide/Tutorial](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/index.html) (to learn more details about ReactivePlusPlus or reactive programming paradigm itself) and extensive [API Reference of RPP](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/topics.html) (to know how to apply ReactivePlusPlus properly).
+Check detailed [User Guide/Tutorial](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/index.html) (to learn more details about ReactivePlusPlus or reactive programming paradigm itself) and extensive [API Reference of RPP](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/topics.html) (to know how to apply ReactivePlusPlus properly).
 
 
 ## Useful links
-- [User Guide](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/index.html)
-- [API Reference](https://victimsnino.github.io/ReactivePlusPlus/v2/docs/html/topics.html)
-- [Examples](https://github.com/victimsnino/ReactivePlusPlus/tree/v2/src/examples)
+- [User Guide](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/index.html)
+- [API Reference](https://AlexInLog.github.io/ReactivePlusPlus/v2/docs/html/topics.html)
+- [Examples](https://github.com/AlexInLog/ReactivePlusPlus/tree/v2/src/examples)
 - [reactivex.io](https://reactivex.io) describes everything related to reactive programming.
 - [rxmarbles](https://rxmarbles.com/) interactive diagrams of observables/operators
-- [Continuous benchmarking results and comparison with RxCpp](https://victimsnino.github.io/ReactivePlusPlus/v2/benchmark)
+- [Continuous benchmarking results and comparison with RxCpp](https://AlexInLog.github.io/ReactivePlusPlus/v2/benchmark)
 - [BUILDING](BUILDING.md)
 - [CONTRIBUTING](CONTRIBUTING.md)
 

@@ -5,7 +5,7 @@
 //    (See accompanying file LICENSE_1_0.txt or copy at
 //          https://www.boost.org/LICENSE_1_0.txt)
 //
-// Project home: https://github.com/victimsnino/ReactivePlusPlus
+// Project home: https://github.com/AlexInLog/ReactivePlusPlus
 //
 
 #pragma once
@@ -112,6 +112,9 @@ namespace rpp::operators
 
     template<typename Fn>
     auto scan(Fn&& accumulator);
+
+    template<template<typename> typename Subject = rpp::subjects::publish_subject>
+    auto share();
 
     auto skip(size_t count);
 

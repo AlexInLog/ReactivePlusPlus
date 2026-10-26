@@ -8,7 +8,7 @@
     ],
     "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
     "sonarlint.connectedMode.project": {
-      "connectionId": "victimsnino",
-      "projectKey": "victimsnino_ReactivePlusPlus"
+      "connectionId": "AlexInLog",
+      "projectKey": "AlexInLog_ReactivePlusPlus"
     }
 }
