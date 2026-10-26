@@ -17,6 +17,9 @@
 #include <rpp/operators/map.hpp>
 #include <rpp/operators/multicast.hpp>
 #include <rpp/operators/publish.hpp>
+#include <rpp/operators/ref_count.hpp>
+#include <rpp/operators/share.hpp>
+#include <rpp/sources/create.hpp>
 #include <rpp/sources/just.hpp>
 #include <rpp/subjects/publish_subject.hpp>
 
@@ -334,6 +337,97 @@ TEST_CASE("ref_count")
                     CHECK(observer_2.get_total_on_next_count() == 0);
                     CHECK(observer_2.get_on_error_count() == 0);
                     CHECK(observer_2.get_on_completed_count() == 0);
+                }
+            }
+        }
+    }
+}
+
+TEST_CASE("share")
+{
+    auto observer_1 = mock_observer_strategy<int>{};
+    auto observer_2 = mock_observer_strategy<int>{};
+
+    SUBCASE("share is multicast + ref_count")
+    {
+        auto source = rpp::source::just(1);
+        static_assert(rpp::constraint::decayed_same_as<decltype(source | rpp::ops::share()),
+                                                       decltype(source | rpp::ops::publish() | rpp::ops::ref_count())>);
+    }
+
+    SUBCASE("shared observable over subject")
+    {
+        size_t subscriptions_count{};
+        auto   subj = rpp::subjects::publish_subject<int>{};
+
+        auto observable = rpp::source::create<int>([&](auto&& obs) {
+                              ++subscriptions_count;
+                              subj.get_observable().subscribe(std::forward<decltype(obs)>(obs));
+                          })
+                        | rpp::ops::share();
+
+        SUBCASE("original observable is not subscribed before any subscription")
+        {
+            CHECK(subscriptions_count == 0);
+        }
+        SUBCASE("subscribe both observers")
+        {
+            observable.subscribe(observer_1);
+            auto sub = rpp::composite_disposable_wrapper::make();
+            observable.subscribe(rpp::composite_disposable_wrapper{sub}, observer_2);
+
+            SUBCASE("original observable is subscribed only once")
+            {
+                CHECK(subscriptions_count == 1);
+            }
+            SUBCASE("send value")
+            {
+                subj.get_observer().on_next(1);
+                SUBCASE("both observers obtain values")
+                {
+                    auto validate = [](auto observer) {
+                        CHECK(observer.get_received_values() == std::vector{1});
+                        CHECK(observer.get_total_on_next_count() == 1);
+                        CHECK(observer.get_on_error_count() == 0);
+                        CHECK(observer.get_on_completed_count() == 0);
+                    };
+                    validate(observer_1);
+                    validate(observer_2);
+                }
+            }
+            SUBCASE("unsubscribe second observer and send value")
+            {
+                sub.dispose();
+                subj.get_observer().on_next(1);
+                SUBCASE("only first observer obtains values")
+                {
+                    CHECK(observer_1.get_received_values() == std::vector{1});
+                    CHECK(observer_2.get_total_on_next_count() == 0);
+                }
+                SUBCASE("original observable is still subscribed")
+                {
+                    CHECK(subscriptions_count == 1);
+                }
+            }
+        }
+        SUBCASE("subscribe, unsubscribe everything and subscribe again")
+        {
+            auto sub = rpp::composite_disposable_wrapper::make();
+            observable.subscribe(rpp::composite_disposable_wrapper{sub}, observer_1);
+            sub.dispose();
+
+            observable.subscribe(observer_2);
+            SUBCASE("original observable is subscribed again")
+            {
+                CHECK(subscriptions_count == 2);
+            }
+            SUBCASE("send value")
+            {
+                subj.get_observer().on_next(1);
+                SUBCASE("only second observer obtains values")
+                {
+                    CHECK(observer_1.get_total_on_next_count() == 0);
+                    CHECK(observer_2.get_received_values() == std::vector{1});
                 }
             }
         }

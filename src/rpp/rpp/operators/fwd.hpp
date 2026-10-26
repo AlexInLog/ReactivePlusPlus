@@ -113,6 +113,9 @@ namespace rpp::operators
     template<typename Fn>
     auto scan(Fn&& accumulator);
 
+    template<template<typename> typename Subject = rpp::subjects::publish_subject>
+    auto share();
+
     auto skip(size_t count);
 
     template<rpp::constraint::observable TObservable, rpp::constraint::observable... TObservables>
