@@ -43,7 +43,7 @@ namespace rpp
         using optimal_disposables_strategy = typename Strategy::optimal_disposables_strategy;
 
         template<typename... Args>
-            requires (!constraint::variadic_decayed_same_as<observable<Type, Strategy>, Args...> && constraint::is_constructible_from<Strategy, Args && ...>)
+            requires (!constraint::variadic_decayed_same_as<observable<Type, Strategy>, Args...> && constraint::is_constructible_from<Strategy, Args&&...>)
         observable(Args&&... args)
             : m_strategy{std::forward<Args>(args)...}
         {

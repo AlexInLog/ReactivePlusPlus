@@ -151,7 +151,7 @@ namespace rpp::operators
      * @see https://reactivex.io/documentation/operators/scan.html
      */
     template<typename InitialValue, typename Fn>
-        requires (!utils::is_not_template_callable<Fn> || std::same_as<std::decay_t<InitialValue>, std::invoke_result_t<Fn, std::decay_t<InitialValue> &&, rpp::utils::convertible_to_any>>)
+        requires (!utils::is_not_template_callable<Fn> || std::same_as<std::decay_t<InitialValue>, std::invoke_result_t<Fn, std::decay_t<InitialValue>&&, rpp::utils::convertible_to_any>>)
     auto scan(InitialValue&& initial_value, Fn&& accumulator)
     {
         return details::scan_t<std::decay_t<InitialValue>, std::decay_t<Fn>>{std::forward<InitialValue>(initial_value), std::forward<Fn>(accumulator)};

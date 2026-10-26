@@ -90,7 +90,7 @@ namespace rpp::operators
     auto publish();
 
     template<typename Seed, typename Accumulator>
-        requires (!utils::is_not_template_callable<Accumulator> || std::same_as<std::decay_t<Seed>, std::invoke_result_t<Accumulator, std::decay_t<Seed> &&, rpp::utils::convertible_to_any>>)
+        requires (!utils::is_not_template_callable<Accumulator> || std::same_as<std::decay_t<Seed>, std::invoke_result_t<Accumulator, std::decay_t<Seed>&&, rpp::utils::convertible_to_any>>)
     auto reduce(Seed&& seed, Accumulator&& accumulator);
 
     template<typename Accumulator>
@@ -107,7 +107,7 @@ namespace rpp::operators
     auto retry();
 
     template<typename InitialValue, typename Fn>
-        requires (!utils::is_not_template_callable<Fn> || std::same_as<std::decay_t<InitialValue>, std::invoke_result_t<Fn, std::decay_t<InitialValue> &&, rpp::utils::convertible_to_any>>)
+        requires (!utils::is_not_template_callable<Fn> || std::same_as<std::decay_t<InitialValue>, std::invoke_result_t<Fn, std::decay_t<InitialValue>&&, rpp::utils::convertible_to_any>>)
     auto scan(InitialValue&& initial_value, Fn&& accumulator);
 
     template<typename Fn>
