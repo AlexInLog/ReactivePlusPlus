@@ -45,7 +45,7 @@ jobs:
       uses: turtlebrowser/get-conan@main
 
     - name: check cache
-      uses: actions/cache/restore@v5
+      uses: actions/cache/restore@v6
       id: check_cache
       with:
           path: ${{ env.CONAN_HOME }}
@@ -74,7 +74,7 @@ jobs:
 
     - name: Force Save Cache
       if: steps.check_cache.outputs.cache-hit != 'true' || github.event_name == 'schedule'
-      uses: actions/cache/save@v5
+      uses: actions/cache/save@v6
       with:
         path: ${{ env.CONAN_HOME }}
         key: deps-${{ matrix.config.name }}-${{ matrix.build_type.config }}-${{ hashFiles('**/conanfile.py') }}-${{ hashFiles('**/CMakePresets.json') }}
@@ -113,7 +113,7 @@ jobs:
       uses: turtlebrowser/get-conan@main
 
     - name: cache deps
-      uses: actions/cache@v5
+      uses: actions/cache@v6
       with:
           path: ${{ env.CONAN_HOME }}
           key: deps-ci-ubuntu-clang-Release-${{ hashFiles('**/conanfile.py') }}-${{ hashFiles('**/CMakePresets.json') }}
@@ -190,7 +190,7 @@ jobs:
       uses: turtlebrowser/get-conan@main
 
     - name: cache deps
-      uses: actions/cache@v5
+      uses: actions/cache@v6
       with:
           path: ${{ env.CONAN_HOME }}
           key: deps-${{ matrix.config.name }}-${{ matrix.build_type.config }}-${{ hashFiles('**/conanfile.py') }}-${{ hashFiles('**/CMakePresets.json') }}
