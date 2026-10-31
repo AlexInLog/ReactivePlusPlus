@@ -244124,6 +244124,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00491023364772362,
             "commit": "3f97f6fa",
             "commit_message": "fix test"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.720024417370387,
+            "medianAbsolutePercentError(elapsed)": 0.00082609884777529,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 407.81728742094197,
+            "medianAbsolutePercentError(elapsed)": 0.0034433937336942,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.7210394686625841,
+            "medianAbsolutePercentError(elapsed)": 0.00175966421497387,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 408.948398576512,
+            "medianAbsolutePercentError(elapsed)": 0.00350451115370729,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.240234790754228,
+            "medianAbsolutePercentError(elapsed)": 0.00119074777531871,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1062.7039922103202,
+            "medianAbsolutePercentError(elapsed)": 0.00629236495389248,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 1.68201672828568,
+            "medianAbsolutePercentError(elapsed)": 0.000976818732866208,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 1564.22844827586,
+            "medianAbsolutePercentError(elapsed)": 0.003257590809125,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 46316.0909090909,
+            "medianAbsolutePercentError(elapsed)": 0.0189052555725736,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 47780.052631578896,
+            "medianAbsolutePercentError(elapsed)": 0.0374297378841027,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 58805.8947368421,
+            "medianAbsolutePercentError(elapsed)": 0.0117542169299876,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 51664.7619047619,
+            "medianAbsolutePercentError(elapsed)": 0.0193133173215387,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 187.515258028439,
+            "medianAbsolutePercentError(elapsed)": 0.0030106572094594,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3322.85975609756,
+            "medianAbsolutePercentError(elapsed)": 0.000911758855384655,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 217.98510597670398,
+            "medianAbsolutePercentError(elapsed)": 0.00163135537749908,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4915.65957446809,
+            "medianAbsolutePercentError(elapsed)": 0.00258831918260576,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.24024970077541802,
+            "medianAbsolutePercentError(elapsed)": 0.000866260813399492,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1114.4329580347999,
+            "medianAbsolutePercentError(elapsed)": 0.000615480043976716,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 34.8412830038477,
+            "medianAbsolutePercentError(elapsed)": 0.00113768164898292,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 3296.36555891239,
+            "medianAbsolutePercentError(elapsed)": 0.00139061001016935,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 19.9273944975075,
+            "medianAbsolutePercentError(elapsed)": 0.00117111134739334,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 4741.221198156681,
+            "medianAbsolutePercentError(elapsed)": 0.00151330139948741,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.48237298745269197,
+            "medianAbsolutePercentError(elapsed)": 0.00162176461300845,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 432.987612612613,
+            "medianAbsolutePercentError(elapsed)": 0.00132548013051847,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 2.17972565288048,
+            "medianAbsolutePercentError(elapsed)": 0.022733535052704,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 518.7407239819009,
+            "medianAbsolutePercentError(elapsed)": 0.00275566041366128,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 49.3041986533431,
+            "medianAbsolutePercentError(elapsed)": 0.00232437804458053,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1165.9797979798002,
+            "medianAbsolutePercentError(elapsed)": 0.00345975495704557,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 239.54770396790002,
+            "medianAbsolutePercentError(elapsed)": 0.00101004951901993,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5839.17258883249,
+            "medianAbsolutePercentError(elapsed)": 0.000819914481996226,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 352.378304153793,
+            "medianAbsolutePercentError(elapsed)": 0.00059923633700047,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4637.95967741936,
+            "medianAbsolutePercentError(elapsed)": 0.00156841294145452,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 243.756252649428,
+            "medianAbsolutePercentError(elapsed)": 0.00237860513429448,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5591.16019417476,
+            "medianAbsolutePercentError(elapsed)": 0.00100947687748137,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 218.009762308998,
+            "medianAbsolutePercentError(elapsed)": 0.000976542229253617,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 552.4918378093729,
+            "medianAbsolutePercentError(elapsed)": 0.00160567692863703,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5942.30256410256,
+            "medianAbsolutePercentError(elapsed)": 0.00370218431724038,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 249.59649122807002,
+            "medianAbsolutePercentError(elapsed)": 0.00162249042258277,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3072.19714285714,
+            "medianAbsolutePercentError(elapsed)": 0.000732441171509595,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1238.4139784946199,
+            "medianAbsolutePercentError(elapsed)": 0.002030313520414,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.240081481202054,
+            "medianAbsolutePercentError(elapsed)": 0.000503424976582127,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1256.1310096153802,
+            "medianAbsolutePercentError(elapsed)": 0.0032946181923266,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.24020046992179203,
+            "medianAbsolutePercentError(elapsed)": 0.00147142084867364,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1250.65107913669,
+            "medianAbsolutePercentError(elapsed)": 0.00169362042045763,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.24002245605605502,
+            "medianAbsolutePercentError(elapsed)": 0.000515218131638004,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1397.8583138173299,
+            "medianAbsolutePercentError(elapsed)": 0.00226663001324804,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 209.56164383561602,
+            "medianAbsolutePercentError(elapsed)": 0.000983965024765475,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3773.89236111111,
+            "medianAbsolutePercentError(elapsed)": 0.00357240411365644,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 8.88850333526564,
+            "medianAbsolutePercentError(elapsed)": 0.00735352947987314,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1654.60563380282,
+            "medianAbsolutePercentError(elapsed)": 0.00510903731845601,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1354.66077738516,
+            "medianAbsolutePercentError(elapsed)": 0.00086802946829728,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2906.11333333333,
+            "medianAbsolutePercentError(elapsed)": 0.00429555870276548,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.240109264147112,
+            "medianAbsolutePercentError(elapsed)": 0.00135547448361537,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1648.56441717791,
+            "medianAbsolutePercentError(elapsed)": 0.00108189332692667,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 12.2043936008182,
+            "medianAbsolutePercentError(elapsed)": 0.022267499413805,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1663.43066884176,
+            "medianAbsolutePercentError(elapsed)": 0.00186987159480653,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.24002942487552104,
+            "medianAbsolutePercentError(elapsed)": 0.00134582064727386,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1251.7825618945099,
+            "medianAbsolutePercentError(elapsed)": 0.0015449901864796,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.24001894875982402,
+            "medianAbsolutePercentError(elapsed)": 0.000821092872728873,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1982.83489681051,
+            "medianAbsolutePercentError(elapsed)": 0.00643526673961663,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.24018808081404303,
+            "medianAbsolutePercentError(elapsed)": 0.00148163847139664,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1460.6830985915499,
+            "medianAbsolutePercentError(elapsed)": 0.00605800603094819,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23997584142886302,
+            "medianAbsolutePercentError(elapsed)": 0.000854508821228664,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1570.67278287462,
+            "medianAbsolutePercentError(elapsed)": 0.00526993906692213,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23995463365176,
+            "medianAbsolutePercentError(elapsed)": 0.000473342684271151,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1250.08383961118,
+            "medianAbsolutePercentError(elapsed)": 0.00103264621846798,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23991181165924402,
+            "medianAbsolutePercentError(elapsed)": 0.000654820082964434,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1251.6199782844699,
+            "medianAbsolutePercentError(elapsed)": 0.00187003842341659,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.24029265940229202,
+            "medianAbsolutePercentError(elapsed)": 0.00241421370274444,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2812.23399014778,
+            "medianAbsolutePercentError(elapsed)": 0.00320221318850631,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.239840203418057,
+            "medianAbsolutePercentError(elapsed)": 0.000451330699890196,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1442.17245657568,
+            "medianAbsolutePercentError(elapsed)": 0.00118603575008343,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 727.8432364096079,
+            "medianAbsolutePercentError(elapsed)": 0.0017100584741332,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2087.50998185118,
+            "medianAbsolutePercentError(elapsed)": 0.0025743471433637,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 209.83310013991598,
+            "medianAbsolutePercentError(elapsed)": 0.0024414467070968,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 874.675996607294,
+            "medianAbsolutePercentError(elapsed)": 0.00236799817263234,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 31.213808873002495,
+            "medianAbsolutePercentError(elapsed)": 0.000853587074488899,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 70.1923776176689,
+            "medianAbsolutePercentError(elapsed)": 0.0010523967880169,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 25957.2051282051,
+            "medianAbsolutePercentError(elapsed)": 0.00173402006861057,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 236695.0,
+            "medianAbsolutePercentError(elapsed)": 0.00159022203866633,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 14373.5,
+            "medianAbsolutePercentError(elapsed)": 0.000837039615952477,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 19489.6271186441,
+            "medianAbsolutePercentError(elapsed)": 0.000440909920276195,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 8.875900871945731,
+            "medianAbsolutePercentError(elapsed)": 0.00618762379855903,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1829.6179966044099,
+            "medianAbsolutePercentError(elapsed)": 0.00572781854899652,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 1.92240664365446,
+            "medianAbsolutePercentError(elapsed)": 0.00160148958456789,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1827.66140350877,
+            "medianAbsolutePercentError(elapsed)": 0.0036465354394238,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1468.9131652661101,
+            "medianAbsolutePercentError(elapsed)": 0.00146283412357139,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 8128.4552238806,
+            "medianAbsolutePercentError(elapsed)": 0.00113670889961585,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1483.5657708628,
+            "medianAbsolutePercentError(elapsed)": 0.00241823881362325,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 23687.875,
+            "medianAbsolutePercentError(elapsed)": 0.00201826906712769,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.9498581372958301,
+            "medianAbsolutePercentError(elapsed)": 0.0014129538805967,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.9492541289291399,
+            "medianAbsolutePercentError(elapsed)": 0.000861426817193957,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.32493856534645504,
+            "medianAbsolutePercentError(elapsed)": 0.00121622161779392,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.27305296467178,
+            "medianAbsolutePercentError(elapsed)": 0.000553697350256856,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 35441.4137931034,
+            "medianAbsolutePercentError(elapsed)": 0.0178526622987919,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 51239.4,
+            "medianAbsolutePercentError(elapsed)": 0.0234753968845236,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 264.44139147970805,
+            "medianAbsolutePercentError(elapsed)": 0.00382860043187518,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 316.399350649351,
+            "medianAbsolutePercentError(elapsed)": 0.00121472142231788,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324602660822499,
+            "medianAbsolutePercentError(elapsed)": 0.000491801291214415,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 48.3833451620535,
+            "medianAbsolutePercentError(elapsed)": 0.00483005673731251,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 32.6896786453754,
+            "medianAbsolutePercentError(elapsed)": 0.000777343029557362,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.487017207207506,
+            "medianAbsolutePercentError(elapsed)": 0.000360841974803916,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.44382260663105,
+            "medianAbsolutePercentError(elapsed)": 0.0697281601968364,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 67.06976284584981,
+            "medianAbsolutePercentError(elapsed)": 0.00167549507288347,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 360.932699083862,
+            "medianAbsolutePercentError(elapsed)": 0.000263487739571379,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 553.29499518768,
+            "medianAbsolutePercentError(elapsed)": 0.0072193986448532,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 351.919034524901,
+            "medianAbsolutePercentError(elapsed)": 0.0016984076933042,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 320.052631578947,
+            "medianAbsolutePercentError(elapsed)": 0.000564762106984728,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 800.047916666667,
+            "medianAbsolutePercentError(elapsed)": 0.00184052429444155,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 351.16269242378496,
+            "medianAbsolutePercentError(elapsed)": 0.000683789783585386,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324595796753985,
+            "medianAbsolutePercentError(elapsed)": 0.000513284901063237,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.32463357074614996,
+            "medianAbsolutePercentError(elapsed)": 0.000694455071136406,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324687232246458,
+            "medianAbsolutePercentError(elapsed)": 0.000513797411125756,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 318.641978922717,
+            "medianAbsolutePercentError(elapsed)": 0.000795474160488293,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16.5474312240132,
+            "medianAbsolutePercentError(elapsed)": 0.000381680734319381,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1948.47775947282,
+            "medianAbsolutePercentError(elapsed)": 0.00386460019975443,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324660626689517,
+            "medianAbsolutePercentError(elapsed)": 0.000385736328520345,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 18.094757517206098,
+            "medianAbsolutePercentError(elapsed)": 0.0221380394548927,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.32459091659754,
+            "medianAbsolutePercentError(elapsed)": 0.000446127685252172,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324599886924566,
+            "medianAbsolutePercentError(elapsed)": 0.000130518840774251,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324648137643208,
+            "medianAbsolutePercentError(elapsed)": 0.000396962506122894,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324769703204609,
+            "medianAbsolutePercentError(elapsed)": 0.000790631584849963,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324611081903084,
+            "medianAbsolutePercentError(elapsed)": 0.000469292100990158,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324927,
+            "medianAbsolutePercentError(elapsed)": 0.00144388355253773,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324649116732579,
+            "medianAbsolutePercentError(elapsed)": 0.00050818348042474,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.32464629084616503,
+            "medianAbsolutePercentError(elapsed)": 0.000293893113453281,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1061.1516544117599,
+            "medianAbsolutePercentError(elapsed)": 0.00300155119354188,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 287.023,
+            "medianAbsolutePercentError(elapsed)": 0.00158393936471517,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 49.661174196665904,
+            "medianAbsolutePercentError(elapsed)": 0.000410392599328454,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 37020.8275862069,
+            "medianAbsolutePercentError(elapsed)": 0.000891884405261044,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 19490.7966101695,
+            "medianAbsolutePercentError(elapsed)": 0.00155849523161223,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 23.3865325474116,
+            "medianAbsolutePercentError(elapsed)": 0.0209792384315595,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 22.058716589950897,
+            "medianAbsolutePercentError(elapsed)": 0.0237095764133901,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2657.7953367875602,
+            "medianAbsolutePercentError(elapsed)": 0.00389575596521549,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 6854.67058823529,
+            "medianAbsolutePercentError(elapsed)": 0.000893079366220003,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
         }
     ],
     "ci-macos": [
@@ -488251,6 +489484,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.0146433653835136,
             "commit": "3f97f6fa",
             "commit_message": "fix test"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.578992004800307,
+            "medianAbsolutePercentError(elapsed)": 0.0656978264950067,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.5964316730230841,
+            "medianAbsolutePercentError(elapsed)": 0.0848867116148694,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.366340862452803,
+            "medianAbsolutePercentError(elapsed)": 0.0224016470376943,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.357582487045771,
+            "medianAbsolutePercentError(elapsed)": 0.0339782414523017,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 39030.851851851796,
+            "medianAbsolutePercentError(elapsed)": 0.177415621978972,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 35509.125,
+            "medianAbsolutePercentError(elapsed)": 0.060896845678934,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 213.92167005357499,
+            "medianAbsolutePercentError(elapsed)": 0.0334380195824866,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 269.916666666667,
+            "medianAbsolutePercentError(elapsed)": 0.204154488989271,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.365529480997511,
+            "medianAbsolutePercentError(elapsed)": 0.0463888918850251,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 74.2836312919995,
+            "medianAbsolutePercentError(elapsed)": 0.100057090520796,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 40.7822599280362,
+            "medianAbsolutePercentError(elapsed)": 0.101017866790201,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.656948769987465,
+            "medianAbsolutePercentError(elapsed)": 0.0740886617427453,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 5.15235040308845,
+            "medianAbsolutePercentError(elapsed)": 0.0591551581518653,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 72.47475330001281,
+            "medianAbsolutePercentError(elapsed)": 0.0582831341183051,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 250.507872016252,
+            "medianAbsolutePercentError(elapsed)": 0.0777215526814351,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 391.367028493894,
+            "medianAbsolutePercentError(elapsed)": 0.0304216646210807,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 242.222253600678,
+            "medianAbsolutePercentError(elapsed)": 0.0954307149782775,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 324.366538952746,
+            "medianAbsolutePercentError(elapsed)": 0.0437619409630022,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 715.683775811209,
+            "medianAbsolutePercentError(elapsed)": 0.0843488956055895,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 320.457733249843,
+            "medianAbsolutePercentError(elapsed)": 0.0418440020457089,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.385097465384977,
+            "medianAbsolutePercentError(elapsed)": 0.0648760392564143,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.69372761524347,
+            "medianAbsolutePercentError(elapsed)": 0.00646748287916371,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.385032807033052,
+            "medianAbsolutePercentError(elapsed)": 0.0320881771995502,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 246.10591900311502,
+            "medianAbsolutePercentError(elapsed)": 0.0943047467607297,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 21.450780093139,
+            "medianAbsolutePercentError(elapsed)": 0.0414988844692184,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1392.1438082556601,
+            "medianAbsolutePercentError(elapsed)": 0.0509483908139791,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.39147918318945296,
+            "medianAbsolutePercentError(elapsed)": 0.0160982715172494,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.383323759804036,
+            "medianAbsolutePercentError(elapsed)": 0.0349334403506695,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.389798506868139,
+            "medianAbsolutePercentError(elapsed)": 0.0223958920626628,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.363797701942196,
+            "medianAbsolutePercentError(elapsed)": 0.0629162799069853,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.26417866894554,
+            "medianAbsolutePercentError(elapsed)": 0.153512075445614,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.43809096042729,
+            "medianAbsolutePercentError(elapsed)": 0.0964395086490084,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.408575189464555,
+            "medianAbsolutePercentError(elapsed)": 0.116316825376675,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.386962118009549,
+            "medianAbsolutePercentError(elapsed)": 0.0296557706254964,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.49172150980637,
+            "medianAbsolutePercentError(elapsed)": 0.161201967002148,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.378722817495891,
+            "medianAbsolutePercentError(elapsed)": 0.0486323290213774,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3413.8406779661,
+            "medianAbsolutePercentError(elapsed)": 0.0562658541535821,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 208.699560527367,
+            "medianAbsolutePercentError(elapsed)": 0.0407581215985608,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 25.586303383841997,
+            "medianAbsolutePercentError(elapsed)": 0.0157307521124237,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 20175.0,
+            "medianAbsolutePercentError(elapsed)": 0.0651958189549554,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 12762.8865979381,
+            "medianAbsolutePercentError(elapsed)": 0.0247316633463873,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 30.4405113431761,
+            "medianAbsolutePercentError(elapsed)": 0.0629071592622166,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 9.04725754875876,
+            "medianAbsolutePercentError(elapsed)": 0.00989000940928428,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2154.12371134021,
+            "medianAbsolutePercentError(elapsed)": 0.0787026676068385,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4472.72727272727,
+            "medianAbsolutePercentError(elapsed)": 0.109008038451976,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.5316134592852889,
+            "medianAbsolutePercentError(elapsed)": 0.0233617677813813,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 596.3822019395319,
+            "medianAbsolutePercentError(elapsed)": 0.0151598900419217,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.548431821754227,
+            "medianAbsolutePercentError(elapsed)": 0.0237033410393353,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 397.116243264049,
+            "medianAbsolutePercentError(elapsed)": 0.0334137883980874,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.34703041792920797,
+            "medianAbsolutePercentError(elapsed)": 0.031029718022086,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 921.6568699485671,
+            "medianAbsolutePercentError(elapsed)": 0.0810401477867137,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 4.09321426661676,
+            "medianAbsolutePercentError(elapsed)": 0.0087154459019228,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 1140.08270676692,
+            "medianAbsolutePercentError(elapsed)": 0.0266666460520879,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 42020.0,
+            "medianAbsolutePercentError(elapsed)": 0.0747573005558599,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 49563.523809523795,
+            "medianAbsolutePercentError(elapsed)": 0.0698042203917003,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 31354.1666666667,
+            "medianAbsolutePercentError(elapsed)": 0.0693723676124861,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 34639.8928571429,
+            "medianAbsolutePercentError(elapsed)": 0.0320547403437441,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 228.195923460898,
+            "medianAbsolutePercentError(elapsed)": 0.207516993579859,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2384.7013698630103,
+            "medianAbsolutePercentError(elapsed)": 0.0210462463370658,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 223.142325086459,
+            "medianAbsolutePercentError(elapsed)": 0.0766183625016822,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3647.56126482213,
+            "medianAbsolutePercentError(elapsed)": 0.0492407989573985,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.350689324586551,
+            "medianAbsolutePercentError(elapsed)": 0.032077627346128,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 958.259062776304,
+            "medianAbsolutePercentError(elapsed)": 0.00942509450421931,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 60.439316946348406,
+            "medianAbsolutePercentError(elapsed)": 0.0371679949355778,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 2441.7735042735,
+            "medianAbsolutePercentError(elapsed)": 0.0308722102512179,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 33.5372258968427,
+            "medianAbsolutePercentError(elapsed)": 0.00968966093822372,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2756.38038277512,
+            "medianAbsolutePercentError(elapsed)": 0.0379428649684403,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.57656086678444,
+            "medianAbsolutePercentError(elapsed)": 0.0516789647551039,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 351.703577512777,
+            "medianAbsolutePercentError(elapsed)": 0.0448041281580984,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 4.3564048020310295,
+            "medianAbsolutePercentError(elapsed)": 0.0127987708411179,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 544.418882978723,
+            "medianAbsolutePercentError(elapsed)": 0.148218877489563,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 70.82312065698041,
+            "medianAbsolutePercentError(elapsed)": 0.0454207498461355,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 865.624636275461,
+            "medianAbsolutePercentError(elapsed)": 0.0790071071274573,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 249.21892434724398,
+            "medianAbsolutePercentError(elapsed)": 0.0568753183046397,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3517.85714285714,
+            "medianAbsolutePercentError(elapsed)": 0.0813463799998715,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 340.24100294985203,
+            "medianAbsolutePercentError(elapsed)": 0.0110976995691088,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2970.02923976608,
+            "medianAbsolutePercentError(elapsed)": 0.0124629300201915,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 218.83188282742498,
+            "medianAbsolutePercentError(elapsed)": 0.013858646491975,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3461.5838150289,
+            "medianAbsolutePercentError(elapsed)": 0.00455103803413121,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 225.943901402465,
+            "medianAbsolutePercentError(elapsed)": 0.0370342984287203,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 530.7989056087549,
+            "medianAbsolutePercentError(elapsed)": 0.0182771583236182,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3229.0462427745697,
+            "medianAbsolutePercentError(elapsed)": 0.0230088246870723,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 294.96019900497504,
+            "medianAbsolutePercentError(elapsed)": 0.0337705450478267,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2480.57383966245,
+            "medianAbsolutePercentError(elapsed)": 0.0580037367984707,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 921.0513866231651,
+            "medianAbsolutePercentError(elapsed)": 0.0612753781180769,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.38248311242985,
+            "medianAbsolutePercentError(elapsed)": 0.0229032142878212,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 988.46495119787,
+            "medianAbsolutePercentError(elapsed)": 0.0838156564704886,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 3.89784946236559,
+            "medianAbsolutePercentError(elapsed)": 0.136218422075398,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1007.9999999999999,
+            "medianAbsolutePercentError(elapsed)": 0.0731275205892103,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.383822586046287,
+            "medianAbsolutePercentError(elapsed)": 0.0226650472288401,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1143.32261768083,
+            "medianAbsolutePercentError(elapsed)": 0.0317631374767309,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 215.572368421053,
+            "medianAbsolutePercentError(elapsed)": 0.040831527729446,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2366.64692482916,
+            "medianAbsolutePercentError(elapsed)": 0.0202260936946805,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 17.7486589756779,
+            "medianAbsolutePercentError(elapsed)": 0.0341943540722441,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1124.6472457627099,
+            "medianAbsolutePercentError(elapsed)": 0.0556492357985229,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1289.95459459459,
+            "medianAbsolutePercentError(elapsed)": 0.0338644865328265,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2411.4779116465897,
+            "medianAbsolutePercentError(elapsed)": 0.0436906960117795,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.37451466472719497,
+            "medianAbsolutePercentError(elapsed)": 0.0196091170721487,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1367.4050632911399,
+            "medianAbsolutePercentError(elapsed)": 0.0268218237411509,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.38469889411438496,
+            "medianAbsolutePercentError(elapsed)": 0.00798355089552287,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1520.29220779221,
+            "medianAbsolutePercentError(elapsed)": 0.0848635731260027,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.400900793992537,
+            "medianAbsolutePercentError(elapsed)": 0.048482046396293,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 961.977648202138,
+            "medianAbsolutePercentError(elapsed)": 0.10331033640543,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.496371424189532,
+            "medianAbsolutePercentError(elapsed)": 0.00871952755471494,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1519.59474412172,
+            "medianAbsolutePercentError(elapsed)": 0.0548365924138723,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.9452626241103119,
+            "medianAbsolutePercentError(elapsed)": 0.133105872202271,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1805.21201413428,
+            "medianAbsolutePercentError(elapsed)": 0.106130112826638,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.380121842567127,
+            "medianAbsolutePercentError(elapsed)": 0.0246355580891544,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1213.81884057971,
+            "medianAbsolutePercentError(elapsed)": 0.026332502743593,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.38831078711766,
+            "medianAbsolutePercentError(elapsed)": 0.0270851603334285,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1019.4323144104801,
+            "medianAbsolutePercentError(elapsed)": 0.043553662131251,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.378129399703689,
+            "medianAbsolutePercentError(elapsed)": 0.00920759026132363,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 933.310498220641,
+            "medianAbsolutePercentError(elapsed)": 0.0272014040593682,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 2.1447905779694203,
+            "medianAbsolutePercentError(elapsed)": 0.0798435223780894,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2373.4969939879797,
+            "medianAbsolutePercentError(elapsed)": 0.0381252689365113,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.409811969676594,
+            "medianAbsolutePercentError(elapsed)": 0.0738915777405465,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1065.44171779141,
+            "medianAbsolutePercentError(elapsed)": 0.0713785309353095,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 4484.032710280369,
+            "medianAbsolutePercentError(elapsed)": 0.358962023417518,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4064.79847908745,
+            "medianAbsolutePercentError(elapsed)": 0.0203294561856117,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 204.314093694406,
+            "medianAbsolutePercentError(elapsed)": 0.0332327983282811,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 709.943409247757,
+            "medianAbsolutePercentError(elapsed)": 0.00926715602156566,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 24.2847333333333,
+            "medianAbsolutePercentError(elapsed)": 0.0177506663590281,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 48.191838786710804,
+            "medianAbsolutePercentError(elapsed)": 0.0209532650740075,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 18599.0566037736,
+            "medianAbsolutePercentError(elapsed)": 0.0187140418937473,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 137824.0,
+            "medianAbsolutePercentError(elapsed)": 0.0300987971505315,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 12131.2795698925,
+            "medianAbsolutePercentError(elapsed)": 0.0219080568818528,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 33973.9375,
+            "medianAbsolutePercentError(elapsed)": 0.0104878075451067,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 11.592155119493698,
+            "medianAbsolutePercentError(elapsed)": 0.0459007972521215,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1345.57392996109,
+            "medianAbsolutePercentError(elapsed)": 0.0204290581918176,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.83869884194587,
+            "medianAbsolutePercentError(elapsed)": 0.0121257713216067,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1371.77230046948,
+            "medianAbsolutePercentError(elapsed)": 0.014944356307449,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1620.48396946565,
+            "medianAbsolutePercentError(elapsed)": 0.0205790264733384,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 6271.84864864865,
+            "medianAbsolutePercentError(elapsed)": 0.0292264449064448,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1922.0257289879899,
+            "medianAbsolutePercentError(elapsed)": 0.0435337896006854,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 19451.2195121951,
+            "medianAbsolutePercentError(elapsed)": 0.0772151172925175,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
         }
     ],
     "ci-ubuntu-clang": [
@@ -732378,6 +734844,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00116300066457185,
             "commit": "3f97f6fa",
             "commit_message": "fix test"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.5570220476775259,
+            "medianAbsolutePercentError(elapsed)": 0.00477859655146802,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 212.783227848101,
+            "medianAbsolutePercentError(elapsed)": 0.00316657906132503,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.550341812894966,
+            "medianAbsolutePercentError(elapsed)": 0.000766808823302008,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 213.567193325049,
+            "medianAbsolutePercentError(elapsed)": 0.00946754970227952,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.27726761311944303,
+            "medianAbsolutePercentError(elapsed)": 0.0171474980180131,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 428.011869436202,
+            "medianAbsolutePercentError(elapsed)": 0.00797596625079084,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 3.54096448216105,
+            "medianAbsolutePercentError(elapsed)": 0.000784637819356327,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 636.7778450363201,
+            "medianAbsolutePercentError(elapsed)": 0.00371827921798515,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 25816.102564102603,
+            "medianAbsolutePercentError(elapsed)": 0.00912375654614237,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 28326.9473684211,
+            "medianAbsolutePercentError(elapsed)": 0.0410491498868451,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 30827.3428571429,
+            "medianAbsolutePercentError(elapsed)": 0.0357155703170371,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 32358.787878787898,
+            "medianAbsolutePercentError(elapsed)": 0.00726758938440696,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 106.811843093093,
+            "medianAbsolutePercentError(elapsed)": 0.00350587796982933,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1887.7588028169,
+            "medianAbsolutePercentError(elapsed)": 0.00325243805501185,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 121.84929197572501,
+            "medianAbsolutePercentError(elapsed)": 0.00220033773087201,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2960.1700288184397,
+            "medianAbsolutePercentError(elapsed)": 0.00297129573764357,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.27251397265162797,
+            "medianAbsolutePercentError(elapsed)": 0.00123654472592607,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 626.579640718563,
+            "medianAbsolutePercentError(elapsed)": 0.00481073495776104,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 50.9816248404934,
+            "medianAbsolutePercentError(elapsed)": 0.00308854769442517,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1830.94097807757,
+            "medianAbsolutePercentError(elapsed)": 0.00364011260526156,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 27.535245987621902,
+            "medianAbsolutePercentError(elapsed)": 0.00125447238175529,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2609.70588235294,
+            "medianAbsolutePercentError(elapsed)": 0.00193468736355563,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.554280703787974,
+            "medianAbsolutePercentError(elapsed)": 0.0065020299290289,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 230.608294930876,
+            "medianAbsolutePercentError(elapsed)": 0.00138797970015165,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 3.54485124657927,
+            "medianAbsolutePercentError(elapsed)": 0.00195951104253255,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 317.948318804483,
+            "medianAbsolutePercentError(elapsed)": 0.0142360054427878,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 46.2633920546468,
+            "medianAbsolutePercentError(elapsed)": 0.00176305849995786,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 692.635873229939,
+            "medianAbsolutePercentError(elapsed)": 0.00328964826100194,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 130.174776000907,
+            "medianAbsolutePercentError(elapsed)": 0.00143937439283018,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2647.3566666666698,
+            "medianAbsolutePercentError(elapsed)": 0.00189092110031685,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 185.188265874489,
+            "medianAbsolutePercentError(elapsed)": 0.00190146804155117,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2618.2909090909097,
+            "medianAbsolutePercentError(elapsed)": 0.00178432948009432,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 125.25731506849299,
+            "medianAbsolutePercentError(elapsed)": 0.00609268521458376,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2949.85057471264,
+            "medianAbsolutePercentError(elapsed)": 0.00369192742859605,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 116.87623914154301,
+            "medianAbsolutePercentError(elapsed)": 0.00329165218894056,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 297.269986168741,
+            "medianAbsolutePercentError(elapsed)": 0.000926632689490101,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2664.59860788863,
+            "medianAbsolutePercentError(elapsed)": 0.00121721750822444,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 151.185734194856,
+            "medianAbsolutePercentError(elapsed)": 0.00106317184733168,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1823.05210084034,
+            "medianAbsolutePercentError(elapsed)": 0.000954479493725568,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 687.0401606425701,
+            "medianAbsolutePercentError(elapsed)": 0.00111137386178529,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272335181282489,
+            "medianAbsolutePercentError(elapsed)": 0.00045079791767732,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 719.8738170347,
+            "medianAbsolutePercentError(elapsed)": 0.0117164394419452,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272691263397239,
+            "medianAbsolutePercentError(elapsed)": 0.00159091660371761,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 706.53737745098,
+            "medianAbsolutePercentError(elapsed)": 0.0031839789530624,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.5477457413528549,
+            "medianAbsolutePercentError(elapsed)": 0.0054430804229204,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 801.723846153846,
+            "medianAbsolutePercentError(elapsed)": 0.00470495165720162,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 111.27399958532,
+            "medianAbsolutePercentError(elapsed)": 0.00680114720432245,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1785.96223316913,
+            "medianAbsolutePercentError(elapsed)": 0.00154198646990372,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 12.0528047633971,
+            "medianAbsolutePercentError(elapsed)": 0.00492749550981556,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1195.65265486726,
+            "medianAbsolutePercentError(elapsed)": 0.00362326728775662,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 758.4812409812411,
+            "medianAbsolutePercentError(elapsed)": 0.00261406214109072,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 1875.97552447552,
+            "medianAbsolutePercentError(elapsed)": 0.00379886755435511,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272558373364333,
+            "medianAbsolutePercentError(elapsed)": 0.00104209973831266,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 906.8004552352049,
+            "medianAbsolutePercentError(elapsed)": 0.00285332660584586,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27234166210183197,
+            "medianAbsolutePercentError(elapsed)": 0.000617845309122815,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 933.9745222929939,
+            "medianAbsolutePercentError(elapsed)": 0.00297444637987839,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.273074480932182,
+            "medianAbsolutePercentError(elapsed)": 0.002396451648637,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 698.3363814500331,
+            "medianAbsolutePercentError(elapsed)": 0.00437724281480932,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272459868648905,
+            "medianAbsolutePercentError(elapsed)": 0.000972703056140168,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1108.17634408602,
+            "medianAbsolutePercentError(elapsed)": 0.00278764916877889,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27247595815792297,
+            "medianAbsolutePercentError(elapsed)": 0.000996235282837401,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 826.392307692308,
+            "medianAbsolutePercentError(elapsed)": 0.00126110914842094,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272931666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00256132132339451,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 880.306995884774,
+            "medianAbsolutePercentError(elapsed)": 0.00679839798639064,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.289965012824367,
+            "medianAbsolutePercentError(elapsed)": 0.0402556920815372,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 707.3459422283361,
+            "medianAbsolutePercentError(elapsed)": 0.000486730892470642,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.273212,
+            "medianAbsolutePercentError(elapsed)": 0.00293818261350059,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 711.667111407605,
+            "medianAbsolutePercentError(elapsed)": 0.00339962118494149,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272328275096113,
+            "medianAbsolutePercentError(elapsed)": 0.000335166998870404,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1810.10771992819,
+            "medianAbsolutePercentError(elapsed)": 0.0157702264286748,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272527076407954,
+            "medianAbsolutePercentError(elapsed)": 0.00135961298005548,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 880.893719806763,
+            "medianAbsolutePercentError(elapsed)": 0.0135932866466101,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 905.32103610675,
+            "medianAbsolutePercentError(elapsed)": 0.00636681611344108,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1790.04569420035,
+            "medianAbsolutePercentError(elapsed)": 0.00485798545340201,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 114.023480662983,
+            "medianAbsolutePercentError(elapsed)": 0.00109433152280094,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 528.09387755102,
+            "medianAbsolutePercentError(elapsed)": 0.0027619162627012,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 16.9680225839469,
+            "medianAbsolutePercentError(elapsed)": 0.00666122363203896,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 40.183080463356596,
+            "medianAbsolutePercentError(elapsed)": 0.00134965338658438,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 14216.039473684199,
+            "medianAbsolutePercentError(elapsed)": 0.000751993119190099,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 157884.375,
+            "medianAbsolutePercentError(elapsed)": 0.00488411825880254,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 16407.0151515152,
+            "medianAbsolutePercentError(elapsed)": 0.00848943266646813,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 28923.351351351397,
+            "medianAbsolutePercentError(elapsed)": 0.000606999025232866,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 8.722100005945661,
+            "medianAbsolutePercentError(elapsed)": 0.00109879023695769,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1061.20368663594,
+            "medianAbsolutePercentError(elapsed)": 0.0010808612990242,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.17960976152093,
+            "medianAbsolutePercentError(elapsed)": 0.00144626994599936,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1095.50530785563,
+            "medianAbsolutePercentError(elapsed)": 0.00575005553146096,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 971.075095057034,
+            "medianAbsolutePercentError(elapsed)": 0.00691598526855621,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 4960.85897435897,
+            "medianAbsolutePercentError(elapsed)": 0.00296224975743365,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1030.44032096289,
+            "medianAbsolutePercentError(elapsed)": 0.000545472591796185,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 22949.82,
+            "medianAbsolutePercentError(elapsed)": 0.00641515032199195,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.6169471270349001,
+            "medianAbsolutePercentError(elapsed)": 0.0408879126151181,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.576978275640904,
+            "medianAbsolutePercentError(elapsed)": 0.00243054349303282,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.310447266817791,
+            "medianAbsolutePercentError(elapsed)": 0.0246483839261416,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.92486121463615,
+            "medianAbsolutePercentError(elapsed)": 0.00701790262471118,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 29569.3142857143,
+            "medianAbsolutePercentError(elapsed)": 0.00503409553972252,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 36295.129032258104,
+            "medianAbsolutePercentError(elapsed)": 0.0408230200179159,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 255.46922582028697,
+            "medianAbsolutePercentError(elapsed)": 0.00500970638016657,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 301.815,
+            "medianAbsolutePercentError(elapsed)": 0.0011510269776126,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.28821833581072304,
+            "medianAbsolutePercentError(elapsed)": 0.00247736675007835,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 38.3290493020599,
+            "medianAbsolutePercentError(elapsed)": 0.00129390551755741,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 21.6073115204425,
+            "medianAbsolutePercentError(elapsed)": 0.00140073425182068,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.862778529573019,
+            "medianAbsolutePercentError(elapsed)": 0.000352467273935514,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.02583491236381,
+            "medianAbsolutePercentError(elapsed)": 0.00171020451148947,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 46.1465091203163,
+            "medianAbsolutePercentError(elapsed)": 0.00392994513720235,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 315.29699999999997,
+            "medianAbsolutePercentError(elapsed)": 0.000531645021605226,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 499.66360217300496,
+            "medianAbsolutePercentError(elapsed)": 0.000948158971895238,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 314.316846522782,
+            "medianAbsolutePercentError(elapsed)": 0.0010265114352741,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 294.912731767614,
+            "medianAbsolutePercentError(elapsed)": 0.000497779806658865,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 712.22614379085,
+            "medianAbsolutePercentError(elapsed)": 0.000267137624461281,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 326.67178175618096,
+            "medianAbsolutePercentError(elapsed)": 0.00264275611226994,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.288035922953275,
+            "medianAbsolutePercentError(elapsed)": 0.00073820114721783,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.28794988023915197,
+            "medianAbsolutePercentError(elapsed)": 0.00115712520157723,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.288191113762222,
+            "medianAbsolutePercentError(elapsed)": 0.000636927171792545,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 280.48733333333297,
+            "medianAbsolutePercentError(elapsed)": 0.00351410409729036,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 12.3785954078249,
+            "medianAbsolutePercentError(elapsed)": 0.00116566399246563,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1759.61130136986,
+            "medianAbsolutePercentError(elapsed)": 0.000700162301511294,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.287748088419028,
+            "medianAbsolutePercentError(elapsed)": 0.000543834332723713,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.28763649574482,
+            "medianAbsolutePercentError(elapsed)": 0.000632195665990581,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.287688891107292,
+            "medianAbsolutePercentError(elapsed)": 0.000685253239570825,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.287906500337192,
+            "medianAbsolutePercentError(elapsed)": 0.000373577935332052,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.288066333333333,
+            "medianAbsolutePercentError(elapsed)": 0.00109844686834759,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.28758149754392404,
+            "medianAbsolutePercentError(elapsed)": 0.00035130848002286,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.288118666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00144807666621232,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.288114608349761,
+            "medianAbsolutePercentError(elapsed)": 0.00120315460920809,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.287827243640514,
+            "medianAbsolutePercentError(elapsed)": 0.000586548565798603,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.28767113701514,
+            "medianAbsolutePercentError(elapsed)": 0.000744732768572498,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1245.2413419913398,
+            "medianAbsolutePercentError(elapsed)": 0.00149740576353407,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 267.931087289433,
+            "medianAbsolutePercentError(elapsed)": 0.000473841421032104,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 44.7477060770156,
+            "medianAbsolutePercentError(elapsed)": 0.00124413205513476,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 34668.3225806452,
+            "medianAbsolutePercentError(elapsed)": 0.000943716369626556,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 19763.388888888898,
+            "medianAbsolutePercentError(elapsed)": 0.00395079339995264,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 19.0475413325765,
+            "medianAbsolutePercentError(elapsed)": 0.000932652173797799,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.90194555501795,
+            "medianAbsolutePercentError(elapsed)": 0.0097335664039473,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2350.08350305499,
+            "medianAbsolutePercentError(elapsed)": 0.00129928727349368,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 6140.52095808383,
+            "medianAbsolutePercentError(elapsed)": 0.00215994663857396,
+            "commit": "a223934b",
+            "commit_message": "v2.2.4"
         }
     ],
     "ci-windows": [
