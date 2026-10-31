@@ -52,7 +52,7 @@ if (RPP_BUILD_TESTS OR RPP_BUILD_BENCHMARKS)
 
   macro(add_test_with_coverage TARGET)
     if (RPP_ENABLE_COVERAGE)
-      add_test(NAME ${TARGET} COMMAND ${CMAKE_COMMAND} -E env LLVM_PROFILE_FILE=${RPP_TEST_RESULTS_DIR}/${TARGET}.profraw $<TARGET_FILE:${TARGET}>)
+      add_test(NAME ${TARGET} COMMAND ${CMAKE_COMMAND} -E env LLVM_PROFILE_FILE=${RPP_TEST_RESULTS_DIR}/${TARGET}-%p.profraw $<TARGET_FILE:${TARGET}>)
     else()
       add_test(NAME ${TARGET} COMMAND $<TARGET_FILE:${TARGET}>)
     endif()
