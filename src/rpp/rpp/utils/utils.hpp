@@ -95,14 +95,14 @@ namespace rpp::utils
     struct static_mem_fn
     {
         template<typename TT>
-            requires (Inverse == false && std::invocable<decltype(Fn), TT &&>)
+            requires (Inverse == false && std::invocable<decltype(Fn), TT&&>)
         auto operator()(TT&& d) const
         {
             return (std::forward<TT>(d).*Fn)();
         }
 
         template<typename TT>
-            requires (Inverse == true && std::invocable<decltype(Fn), TT &&>)
+            requires (Inverse == true && std::invocable<decltype(Fn), TT&&>)
         auto operator()(TT&& d) const
         {
             return !(std::forward<TT>(d).*Fn)();
