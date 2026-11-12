@@ -23,11 +23,38 @@
 #include "disposable_observable.hpp"
 
 #include <atomic>
-#include <semaphore>
+#include <condition_variable>
+#include <mutex>
 #include <thread>
 
 namespace
 {
+    // wait() blocks until open() has been called once, then closes again.
+    class gate
+    {
+    public:
+        void open()
+        {
+            {
+                const std::lock_guard lock{m_mutex};
+                m_open = true;
+            }
+            m_cv.notify_one();
+        }
+
+        void wait()
+        {
+            std::unique_lock lock{m_mutex};
+            m_cv.wait(lock, [this] { return m_open; });
+            m_open = false;
+        }
+
+    private:
+        std::mutex              m_mutex{};
+        std::condition_variable m_cv{};
+        bool                    m_open{};
+    };
+
     // Runs its schedulables only when fire() is called, on the calling thread. On the thread set in
     // s_hold_now_on, the next now() blocks until s_release_now is signalled: the timeout handler
     // calls now() while it holds the operator's lock, so a test can pause it there.
@@ -36,8 +63,8 @@ namespace
     public:
         static inline rpp::schedulers::time_point  s_now{};
         static inline std::atomic<std::thread::id> s_hold_now_on{};
-        static inline std::binary_semaphore        s_now_held{0};
-        static inline std::binary_semaphore        s_release_now{0};
+        static inline gate                         s_now_held{};
+        static inline gate                         s_release_now{};
 
         class worker_strategy;
 
@@ -65,8 +92,8 @@ namespace
                 if (s_hold_now_on.load() == std::this_thread::get_id())
                 {
                     s_hold_now_on.store(std::thread::id{});
-                    s_now_held.release();
-                    s_release_now.acquire();
+                    s_now_held.open();
+                    s_release_now.wait();
                 }
                 return s_now;
             }
@@ -297,13 +324,13 @@ TEST_CASE("timeout does not pass a value that races the timer to the observer ha
         manual_scheduler::s_hold_now_on.store(std::this_thread::get_id());
         scheduler.fire();
     }};
-    manual_scheduler::s_now_held.acquire();
+    manual_scheduler::s_now_held.wait();
 
     std::thread value_thread{[&] { source.get_observer().on_next(1); }};
     // let the value pass the disposed check and block on the operator's lock
     std::this_thread::sleep_for(std::chrono::milliseconds{200});
 
-    manual_scheduler::s_release_now.release();
+    manual_scheduler::s_release_now.open();
     timer_thread.join();
     value_thread.join();
 
