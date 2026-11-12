@@ -82,6 +82,9 @@ namespace rpp::operators::details
         void on_next(T&& v) const
         {
             auto obs_with_timeout = disposable->get_observer_with_timeout_under_lock();
+            // the timer may have disposed and handed the observer to the fallback while we waited for the lock
+            if (disposable->is_disposed())
+                return;
             obs_with_timeout->observer.on_next(std::forward<T>(v));
             obs_with_timeout->timeout = rpp::schedulers::utils::get_worker_t<TScheduler>::now() + disposable->get_period();
         }

@@ -18,8 +18,143 @@
 #include <rpp/sources/error.hpp>
 #include <rpp/sources/just.hpp>
 #include <rpp/sources/never.hpp>
+#include <rpp/subjects/publish_subject.hpp>
 
 #include "disposable_observable.hpp"
+
+#include <atomic>
+#include <condition_variable>
+#include <mutex>
+#include <thread>
+
+namespace
+{
+    // wait() blocks until open() has been called once, then closes again.
+    class gate
+    {
+    public:
+        void open()
+        {
+            {
+                const std::lock_guard lock{m_mutex};
+                m_open = true;
+            }
+            m_cv.notify_one();
+        }
+
+        void wait()
+        {
+            std::unique_lock lock{m_mutex};
+            m_cv.wait(lock, [this] { return m_open; });
+            m_open = false;
+        }
+
+    private:
+        std::mutex              m_mutex{};
+        std::condition_variable m_cv{};
+        bool                    m_open{};
+    };
+
+    // Runs its schedulables only when fire() is called, on the calling thread. On the thread set in
+    // s_hold_now_on, the next now() blocks until s_release_now is signalled: the timeout handler
+    // calls now() while it holds the operator's lock, so a test can pause it there.
+    class manual_scheduler final
+    {
+    public:
+        static inline rpp::schedulers::time_point  s_now{};
+        static inline std::atomic<std::thread::id> s_hold_now_on{};
+        static inline gate                         s_now_held{};
+        static inline gate                         s_release_now{};
+
+        class worker_strategy;
+
+        struct state
+        {
+            rpp::schedulers::details::schedulables_queue<worker_strategy> queue{};
+        };
+
+        class worker_strategy
+        {
+        public:
+            explicit worker_strategy(std::shared_ptr<state> state)
+                : m_state{std::move(state)}
+            {
+            }
+
+            template<rpp::schedulers::constraint::schedulable_handler Handler, typename... Args, rpp::schedulers::constraint::schedulable_fn<Handler, Args...> Fn>
+            void defer_to(rpp::schedulers::time_point time_point, Fn&& fn, Handler&& handler, Args&&... args) const
+            {
+                m_state->queue.emplace(time_point, std::forward<Fn>(fn), std::forward<Handler>(handler), std::forward<Args>(args)...);
+            }
+
+            static rpp::schedulers::time_point now()
+            {
+                if (s_hold_now_on.load() == std::this_thread::get_id())
+                {
+                    s_hold_now_on.store(std::thread::id{});
+                    s_now_held.open();
+                    s_release_now.wait();
+                }
+                return s_now;
+            }
+
+        private:
+            std::shared_ptr<state> m_state;
+        };
+
+        rpp::schedulers::worker<worker_strategy> create_worker() const
+        {
+            return rpp::schedulers::worker<worker_strategy>{m_state};
+        }
+
+        void fire() const
+        {
+            const auto schedulable = m_state->queue.top();
+            m_state->queue.pop();
+            if (!schedulable->is_disposed())
+                (void)(*schedulable)();
+        }
+
+    private:
+        std::shared_ptr<state> m_state = std::make_shared<state>();
+    };
+
+    // Counts every call that reaches an instance which has been moved from.
+    class move_aware_strategy
+    {
+    public:
+        static constexpr auto preferred_disposables_mode = rpp::details::observers::disposables_mode::Auto;
+
+        explicit move_aware_strategy(std::atomic<size_t>& calls_on_moved_from)
+            : m_calls_on_moved_from{&calls_on_moved_from}
+        {
+        }
+
+        move_aware_strategy(move_aware_strategy&& other) noexcept
+            : m_calls_on_moved_from{other.m_calls_on_moved_from}
+        {
+            other.m_moved_from = true;
+        }
+
+        void on_next(const int&) const { count(); }
+        void on_next(int&&) const { count(); }
+        void on_error(const std::exception_ptr&) const { count(); }
+        void on_completed() const { count(); }
+
+        static void set_upstream(const rpp::disposable_wrapper&) { }
+        static bool is_disposed() { return false; }
+
+    private:
+        void count() const
+        {
+            if (m_moved_from)
+                m_calls_on_moved_from->fetch_add(1);
+        }
+
+        std::atomic<size_t>* m_calls_on_moved_from;
+        bool                 m_moved_from{};
+    };
+} // namespace
 
 
 TEST_CASE("timeout subscribes to passed observable in case of reaching timeout")
@@ -167,6 +302,39 @@ TEST_CASE("timeout handles exception from fallback")
     CHECK(mock.get_received_values() == std::vector<int>{});
     CHECK(mock.get_on_error_count() == 1);
     CHECK(mock.get_on_completed_count() == 0);
+}
+
+TEST_CASE("timeout does not pass a value that races the timer to the observer handed to the fallback")
+{
+    // The timer runs on one thread and a value arrives on another. The value passes the disposed check
+    // before the timer disposes, then waits for the lock the timer holds while it hands the observer
+    // to the fallback. Once it gets the lock, the value must not reach that moved-from observer.
+    const auto scheduler = manual_scheduler{};
+    auto       source    = rpp::subjects::publish_subject<int>{};
+    auto       fallback  = rpp::subjects::publish_subject<int>{};
+
+    std::atomic<size_t> calls_on_moved_from{};
+    source.get_observable()
+        | rpp::ops::timeout(std::chrono::seconds{1}, fallback.get_observable(), scheduler)
+        | rpp::ops::subscribe(rpp::observer<int, move_aware_strategy>{calls_on_moved_from});
+
+    manual_scheduler::s_now += std::chrono::seconds{1};
+
+    std::thread timer_thread{[&] {
+        manual_scheduler::s_hold_now_on.store(std::this_thread::get_id());
+        scheduler.fire();
+    }};
+    manual_scheduler::s_now_held.wait();
+
+    std::thread value_thread{[&] { source.get_observer().on_next(1); }};
+    // let the value pass the disposed check and block on the operator's lock
+    std::this_thread::sleep_for(std::chrono::milliseconds{200});
+
+    manual_scheduler::s_release_now.open();
+    timer_thread.join();
+    value_thread.join();
+
+    CHECK(calls_on_moved_from.load() == 0);
 }
 
 TEST_CASE("timeout satisfies disposable contracts")
