@@ -28,7 +28,7 @@ namespace rppgrpc
      * - to access values FROM stream you can subscribe to observable obtained via `reactor->get_observable()` (same observable WOULD emit on_completed in case of successful stream termination and on_error in case of some errors with grpc stream)
      * - to pass values TO stream you can emit values to observer obtained via `reactor->get_observer()`
      *
-     * @warning After `init()` the call may end at any moment (connection refused, deadline, cancel) and the reactor deletes itself in `OnDone`. Obtain the observer and emit the first values before `init()`: they are posted and sent once the call starts. Emitting from outside the reactor's callbacks after `init()` races with the end of the call (gRPC requires a hold for that, see `grpc::ClientBidiReactor::AddHold`).
+     * @warning After `init()` the call may end at any moment (connection refused, deadline, cancel) and the reactor deletes itself in `OnDone`, so obtain the observer and the observable before `init()` and do not use the reactor afterwards. The observer may be used from any thread, also after `init()`: the reactor holds the call (see `grpc::ClientBidiReactor::AddHold`) until its read side has ended, and values emitted after that are dropped.
      *
      * @snippet client_reactor.cpp bidi_reactor
      *
@@ -46,6 +46,9 @@ namespace rppgrpc
 
         void init()
         {
+            // The observer may write from outside the reactions after StartCall(), which gRPC allows
+            // only under a hold. OnReadDone(false) releases it.
+            Base::AddHold();
             // The first read is posted before StartCall(): gRPC keeps it until the call starts and
             // counts it as an outstanding operation. StartCall() is the last use of the reactor in
             // init(), because a call that ends at once may run OnDone (and so `delete this`) on a
@@ -79,7 +82,15 @@ namespace rppgrpc
         void OnReadDone(bool ok) override
         {
             if (!ok)
+            {
+                // One read is always posted, so each call ends its read side exactly once, here.
+                // A write that took the observer's lock before close_writes() has called StartWrite
+                // and is counted by gRPC, so OnDone comes after its OnWriteDone; later writes are
+                // dropped. This reaction is itself still counted, so RemoveHold() does not run OnDone.
+                details::base_writer<Request>::close_writes();
+                Base::RemoveHold();
                 return;
+            }
 
             details::base_reader<Response>::handle_read_done();
         }
