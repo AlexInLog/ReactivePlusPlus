@@ -14,12 +14,11 @@
 
 #include "rpp_trompeloil.hpp"
 
+#include <array>
 #include <atomic>
 #include <future>
-#include <latch>
 #include <limits>
 #include <thread>
-#include <vector>
 
 namespace
 {
@@ -30,13 +29,13 @@ namespace
         IMPLEMENT_MOCK2(Bidirectional);
     };
 
-    // The write side of the reactors, with a start_write that waits until it is released.
+    // The write side of the reactors, with a start_write that signals `entered` and waits for `release`.
     // on_done() does what the reactors' OnDone does with their write side: handle_on_done(), then `delete this`.
     struct blocking_writer final : rppgrpc::details::base_writer<int>
     {
-        blocking_writer(std::latch& entered, std::latch& release)
+        blocking_writer(std::promise<void>& entered, std::shared_future<void> release)
             : m_entered{entered}
-            , m_release{release}
+            , m_release{std::move(release)}
         {
         }
 
@@ -49,14 +48,14 @@ namespace
     private:
         void start_write(const int&) override
         {
-            m_entered.count_down();
+            m_entered.set_value();
             m_release.wait();
         }
 
         void finish_writes(const grpc::Status&) override { }
 
-        std::latch& m_entered;
-        std::latch& m_release;
+        std::promise<void>&      m_entered;
+        std::shared_future<void> m_release;
     };
 } // namespace
 
@@ -462,19 +461,19 @@ TEST_CASE("async client reactor: write that is under way when the call ends")
     // t0 is inside start_write. t1 has entered the observer and waits behind t0. Then the write side ends
     // and its owner is deleted, as in OnDone. Neither thread may touch the deleted owner afterwards: a write
     // that does is a use-after-free; AddressSanitizer reports it.
-    std::latch  entered{1};
-    std::latch  release{1};
-    auto* const writer   = new blocking_writer{entered, release};
-    const auto  observer = writer->get_observer();
+    std::promise<void> entered{};
+    std::promise<void> release{};
+    auto* const        writer   = new blocking_writer{entered, release.get_future().share()};
+    const auto         observer = writer->get_observer();
 
     std::thread t0{[&] { observer.on_next(1); }};
-    entered.wait();
+    entered.get_future().wait();
     std::thread t1{[&] { observer.on_next(2); }};
     std::this_thread::sleep_for(std::chrono::milliseconds{50}); // t1 waits behind t0
 
     auto done = std::async(std::launch::async, [writer] { writer->on_done(); });
     std::this_thread::sleep_for(std::chrono::milliseconds{50}); // on_done() runs while t0 is inside start_write
-    release.count_down();
+    release.set_value();
 
     done.get();
     t0.join();
@@ -507,7 +506,8 @@ TEST_CASE("async client reactor: writes from other threads while the call ends")
     const auto stub   = TestService::NewStub(server->InProcessChannel({}), {});
 
     // Starts one call, emits from `writers` threads, ends the call with `end_call` and waits for the reactor's
-    // terminal, which it emits from OnDone.
+    // terminal, which it emits from OnDone. The context must outlive the call: after a timeout the call is
+    // cancelled and OnDone is still awaited (a call that never ends is left to the process timeout).
     const auto run_call = [&](const auto& end_call) {
         grpc::ClientContext ctx{};
         const auto          done    = std::make_shared<std::promise<void>>();
@@ -519,24 +519,30 @@ TEST_CASE("async client reactor: writes from other threads while the call ends")
         const auto observer = reactor->get_observer();
         reactor->init();
 
-        std::atomic_bool         stop{};
-        std::vector<std::thread> threads{};
-        for (int i = 0; i < writers; ++i)
+        std::atomic_bool                 stop{};
+        std::array<std::thread, writers> threads{};
+        for (auto& t : threads)
         {
-            threads.emplace_back([&] {
+            t = std::thread{[&] {
                 Request request{};
                 for (uint32_t v = 0; v < writes && !stop; ++v)
                 {
                     request.set_value(v);
                     observer.on_next(request);
                 }
-            });
+            }};
         }
         end_call(ctx);
-        const bool ended = done->get_future().wait_for(std::chrono::seconds{5}) == std::future_status::ready;
-        stop             = true;
+        auto       on_done = done->get_future();
+        const bool ended   = on_done.wait_for(std::chrono::seconds{5}) == std::future_status::ready;
+        stop               = true;
         for (auto& t : threads)
             t.join();
+        if (!ended)
+        {
+            ctx.TryCancel();
+            on_done.wait();
+        }
         return ended;
     };
 
@@ -588,7 +594,8 @@ TEST_CASE("async client reactor: bidirectional call reaches OnDone however it en
     };
 
     // Starts one call on `channel`, writes once after init(), ends the call with `end_call` and returns the
-    // terminal the reactor emitted from OnDone.
+    // terminal the reactor emitted from OnDone. The context must outlive the call: after a timeout the call is
+    // cancelled and OnDone is still awaited (a call that never ends is left to the process timeout).
     const auto run_call = [&](const auto& end_call) {
         const auto stub    = TestService::NewStub(channel, {});
         const auto result  = std::make_shared<std::promise<terminal>>();
@@ -602,7 +609,11 @@ TEST_CASE("async client reactor: bidirectional call reaches OnDone however it en
         observer.on_next(Request{});
         end_call();
         auto f = result->get_future();
-        return f.wait_for(std::chrono::seconds{5}) == std::future_status::ready ? f.get() : terminal::none;
+        if (f.wait_for(std::chrono::seconds{5}) == std::future_status::ready)
+            return f.get();
+        ctx.TryCancel();
+        f.wait();
+        return terminal::none;
     };
 
     SUBCASE("server finishes with OK")

@@ -34,6 +34,10 @@ namespace rppgrpc::details
             m_subject.get_observable().subscribe(typename details::base_writer<TData>::observer_strategy{m_state});
         }
 
+        // The observer's shared state points back at this object, so a copy would write through the original.
+        base_writer(const base_writer&)            = delete;
+        base_writer& operator=(const base_writer&) = delete;
+
         virtual ~base_writer() noexcept = default;
 
         auto get_observer() const
