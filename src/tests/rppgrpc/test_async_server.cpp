@@ -215,6 +215,38 @@ TEST_CASE("Async server")
         }
     }
 
+    SUBCASE("bidirectional pipeline when the writer cancels right after WritesDone")
+    {
+        // The pipeline finishes the call on the half-close and OnCancel() may follow: one Finish per call.
+        const auto make_reactor = [](grpc::CallbackServerContext* context) {
+            const auto reactor = new rppgrpc::server_bidi_reactor<Request, Response>(context);
+            reactor->get_observable()
+                | rpp::ops::map([](const Request& request) {
+                      Response response{};
+                      response.set_value(request.value());
+                      return response;
+                  })
+                | rpp::ops::subscribe(reactor->get_observer());
+            return reactor;
+        };
+
+        std::atomic<int> created{};
+        const auto       call = NAMED_ALLOW_CALL(*mock_service, Bidirectional(trompeloeil::_)).LR_SIDE_EFFECT(++created;).LR_RETURN(make_reactor(_1));
+
+        for (int i = 0; i < 1000; ++i)
+        {
+            grpc::ClientContext context{};
+            const auto          writer = stub->Bidirectional(&context);
+            writer->WritesDone();
+            // every call reaches the service while the expectation above exists
+            while (created.load() <= i)
+                std::this_thread::yield();
+            context.TryCancel();
+            const auto code = writer->Finish().error_code();
+            CHECK((code == grpc::StatusCode::OK || code == grpc::StatusCode::CANCELLED));
+        }
+    }
+
     SUBCASE("server-side")
     {
         const auto reactor = new rppgrpc::server_write_reactor<Response>();
