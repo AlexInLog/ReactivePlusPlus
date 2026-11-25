@@ -55,7 +55,7 @@ namespace rppgrpc::details
             m_subject.get_disposable().dispose();
         }
 
-        // Values and terminals emitted to the observer after this call reach neither this object nor its stream.
+        // Values and terminals emitted to the observer after this call, and values still queued, reach neither this object nor its stream.
         // It waits for an emission that is inside start_write or finish_writes.
         void close_writes()
         {
@@ -67,6 +67,9 @@ namespace rppgrpc::details
         {
             std::lock_guard lock{m_state->mutex};
             m_state->queue.pop_front();
+
+            if (!m_state->owner)
+                return;
 
             if (!m_state->queue.empty())
             {

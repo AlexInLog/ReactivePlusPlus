@@ -19,6 +19,7 @@
 #include <future>
 #include <limits>
 #include <thread>
+#include <vector>
 
 namespace
 {
@@ -56,6 +57,20 @@ namespace
 
         std::promise<void>&      m_entered;
         std::shared_future<void> m_release;
+    };
+
+    // The write side of the reactors, recording what it passes to the stream.
+    struct recording_writer final : rppgrpc::details::base_writer<int>
+    {
+        using base_writer::close_writes;
+        using base_writer::handle_write_done;
+
+        std::vector<int> writes{};
+        int              finishes{};
+
+    private:
+        void start_write(const int& v) override { writes.push_back(v); }
+        void finish_writes(const grpc::Status&) override { ++finishes; }
     };
 } // namespace
 
@@ -478,6 +493,24 @@ TEST_CASE("async client reactor: write that is under way when the call ends")
     done.get();
     t0.join();
     t1.join();
+}
+
+TEST_CASE("async client reactor: values still queued when the write side closes are dropped")
+{
+    // A reactor closes its write side once its stream has ended (client_bidi_reactor in OnReadDone(false)).
+    // The completion of the write that was in flight then starts neither the next queued value nor the
+    // half-close.
+    recording_writer writer{};
+    const auto       observer = writer.get_observer();
+    observer.on_next(1);
+    observer.on_next(2);
+    observer.on_completed();
+
+    writer.close_writes();
+    writer.handle_write_done(); // OnWriteDone(true) for the value 1
+
+    CHECK(writer.writes == std::vector<int>{1});
+    CHECK(writer.finishes == 0);
 }
 
 TEST_CASE("async client reactor: writes from other threads while the call ends")
