@@ -127,16 +127,12 @@ TEST_CASE("Async server")
         }
     };
 
-    SUBCASE("bidirectionl")
+    SUBCASE("bidirectional")
     {
-        rppgrpc::server_bidi_reactor<Request, Response>* reactor{};
-        const auto                                       make_reactor = [&](grpc::CallbackServerContext* context) {
-            reactor = new rppgrpc::server_bidi_reactor<Request, Response>(context);
-            reactor->get_observable() | rpp::ops::map([](const Request& out) { return out.value(); }) | rpp::ops::subscribe(out_mock);
-            return reactor;
-        };
+        const auto reactor = new rppgrpc::server_bidi_reactor<Request, Response>();
+        reactor->get_observable() | rpp::ops::map([](const Request& out) { return out.value(); }) | rpp::ops::subscribe(out_mock);
 
-        const auto call = NAMED_REQUIRE_CALL(*mock_service, Bidirectional(trompeloeil::_)).LR_SIDE_EFFECT(obtained_context = _1;).LR_RETURN(make_reactor(_1)).IN_SEQUENCE(s);
+        const auto call = NAMED_REQUIRE_CALL(*mock_service, Bidirectional(trompeloeil::_)).LR_SIDE_EFFECT(obtained_context = _1;).RETURN(reactor).IN_SEQUENCE(s);
 
         const auto writer = stub->Bidirectional(&ctx);
 

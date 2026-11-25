@@ -23,12 +23,12 @@ namespace rppgrpc
     /**
      * @brief RPP's based implementation for grpc server bidirectional reactor.
      * @details To use it you need:
-     * - create it via `new` operator, passing the `grpc::CallbackServerContext*` of the call
+     * - create it via `new` operator: created with the call's `grpc::CallbackServerContext*`, the reactor completes the observable from `get_observable()` when the client has finished writing; created without it, only when the call has ended.
      * - return it from bidirection method of CallbackService interface
-     * - to access values FROM stream you can subscribe to observable obtained via `reactor->get_observable()` (same observable emits on_completed when the client has finished writing (`WritesDone()`) and on_error when the call is cancelled: by the client, by a deadline or by a lost connection)
+     * - to access values FROM stream you can subscribe to observable obtained via `reactor->get_observable()` (same observable emits on_completed as described above and on_error when the call is cancelled: by the client, by a deadline or by a lost connection)
      * - to pass values TO stream you can emit values to observer obtained via `reactor->get_observer()`
      *
-     * @warning grpc server reactor have to finish manually, so it is expected that you call `on_completed()` on reactor->get_observer(). A pipeline `reactor->get_observable() | ... | subscribe(reactor->get_observer())` does it once the client has finished writing.
+     * @warning grpc server reactor have to finish manually, so it is expected that you call `on_completed()` on reactor->get_observer(). A pipeline `reactor->get_observable() | ... | subscribe(reactor->get_observer())` does it once the client has finished writing, if the reactor was created with the context.
      *
      * @snippet server_reactor.cpp bidi_reactor
      *
@@ -42,6 +42,11 @@ namespace rppgrpc
         using Base = grpc::ServerBidiReactor<Request, Response>;
 
     public:
+        server_bidi_reactor()
+            : server_bidi_reactor(nullptr)
+        {
+        }
+
         explicit server_bidi_reactor(grpc::CallbackServerContext* context)
             : m_context{context}
         {
@@ -74,7 +79,7 @@ namespace rppgrpc
             {
                 // Either the client has finished writing or the call is cancelled. gRPC marks the context
                 // as cancelled before it reports a read that failed because of a cancel; OnCancel() reports that case.
-                if (!m_context->IsCancelled())
+                if (m_context && !m_context->IsCancelled())
                     details::base_reader<Request>::handle_on_done({});
                 return;
             }
