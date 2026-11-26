@@ -247823,6 +247823,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00179436842926281,
             "commit": "f058fa95",
             "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 1.34179276026305,
+            "medianAbsolutePercentError(elapsed)": 0.0321860693961094,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 599.431274346132,
+            "medianAbsolutePercentError(elapsed)": 0.018675011074452,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 1.29885141991558,
+            "medianAbsolutePercentError(elapsed)": 0.000700410385817457,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 591.8564043653071,
+            "medianAbsolutePercentError(elapsed)": 0.00285696555528163,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.324942272887359,
+            "medianAbsolutePercentError(elapsed)": 0.00131221746937869,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1553.97857142857,
+            "medianAbsolutePercentError(elapsed)": 0.00244401415054935,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 3.0079097712542002,
+            "medianAbsolutePercentError(elapsed)": 0.0291266255629098,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2317.12424849699,
+            "medianAbsolutePercentError(elapsed)": 0.00422972030956139,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 33958.3225806452,
+            "medianAbsolutePercentError(elapsed)": 0.0111261784765128,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 40182.5,
+            "medianAbsolutePercentError(elapsed)": 0.0263897783397281,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 52881.1,
+            "medianAbsolutePercentError(elapsed)": 0.0331925277874752,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 46160.2083333333,
+            "medianAbsolutePercentError(elapsed)": 0.0135603034652179,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 269.69441169535503,
+            "medianAbsolutePercentError(elapsed)": 0.00548234847087419,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4843.270142180099,
+            "medianAbsolutePercentError(elapsed)": 0.000618465985610494,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 309.760614272809,
+            "medianAbsolutePercentError(elapsed)": 0.00323876580677857,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 7168.94520547945,
+            "medianAbsolutePercentError(elapsed)": 0.00199665734749643,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.32473190848051803,
+            "medianAbsolutePercentError(elapsed)": 0.000408683112518118,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1662.94653179191,
+            "medianAbsolutePercentError(elapsed)": 0.00183764580101901,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 47.4055734283975,
+            "medianAbsolutePercentError(elapsed)": 0.00239902226853892,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 4897.69620253165,
+            "medianAbsolutePercentError(elapsed)": 0.00215775455521576,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 26.856199267865698,
+            "medianAbsolutePercentError(elapsed)": 0.00829034492732466,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 7083.43055555556,
+            "medianAbsolutePercentError(elapsed)": 0.00658110306781037,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.649102422167433,
+            "medianAbsolutePercentError(elapsed)": 0.00054123147642389,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 625.0302850356289,
+            "medianAbsolutePercentError(elapsed)": 0.00111764720611307,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 5.8052482573216295,
+            "medianAbsolutePercentError(elapsed)": 0.013000946051321,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 750.830322580645,
+            "medianAbsolutePercentError(elapsed)": 0.00832852451326988,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 69.3167498030979,
+            "medianAbsolutePercentError(elapsed)": 0.00571336028056417,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1731.1101973684201,
+            "medianAbsolutePercentError(elapsed)": 0.00183596080550671,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 342.712237412471,
+            "medianAbsolutePercentError(elapsed)": 0.000654843720588794,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 8344.620437956199,
+            "medianAbsolutePercentError(elapsed)": 0.000750097130233754,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 507.45701581027697,
+            "medianAbsolutePercentError(elapsed)": 0.0027068586367451,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 6785.37748344371,
+            "medianAbsolutePercentError(elapsed)": 0.00134355113092897,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 350.103552991193,
+            "medianAbsolutePercentError(elapsed)": 0.00123424924848284,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 8177.14285714286,
+            "medianAbsolutePercentError(elapsed)": 0.00291312899932771,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 312.63418160786597,
+            "medianAbsolutePercentError(elapsed)": 0.0017016230383695,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 795.159442724458,
+            "medianAbsolutePercentError(elapsed)": 0.000674480232265874,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 8506.487603305779,
+            "medianAbsolutePercentError(elapsed)": 0.00153545709039619,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 352.777230769231,
+            "medianAbsolutePercentError(elapsed)": 0.00596131009978248,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4528.103734439829,
+            "medianAbsolutePercentError(elapsed)": 0.00225533441676799,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1831.8064516129,
+            "medianAbsolutePercentError(elapsed)": 0.00368446908554975,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.324678203821668,
+            "medianAbsolutePercentError(elapsed)": 0.000491636940281621,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1845.06741573034,
+            "medianAbsolutePercentError(elapsed)": 0.00395847862492118,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.324761316337355,
+            "medianAbsolutePercentError(elapsed)": 0.000773622352605542,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1837.8548951049,
+            "medianAbsolutePercentError(elapsed)": 0.00215167649715392,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.32476898341974303,
+            "medianAbsolutePercentError(elapsed)": 0.000447348419810662,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2040.06432748538,
+            "medianAbsolutePercentError(elapsed)": 0.000808304232229117,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 300.57299843014096,
+            "medianAbsolutePercentError(elapsed)": 0.001540535052743,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5409.99069767442,
+            "medianAbsolutePercentError(elapsed)": 0.0021681533477856,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 11.9663859407449,
+            "medianAbsolutePercentError(elapsed)": 0.0054313883916234,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2429.96602972399,
+            "medianAbsolutePercentError(elapsed)": 0.00673220899517713,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1977.24903474903,
+            "medianAbsolutePercentError(elapsed)": 0.00500709944850833,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 4293.09885931559,
+            "medianAbsolutePercentError(elapsed)": 0.00380284694884294,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.326494791462047,
+            "medianAbsolutePercentError(elapsed)": 0.0054103880271208,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2485.33684210526,
+            "medianAbsolutePercentError(elapsed)": 0.015668955119624,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 17.4469346974662,
+            "medianAbsolutePercentError(elapsed)": 0.0259384006138779,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2462.87674418605,
+            "medianAbsolutePercentError(elapsed)": 0.0089614388740824,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.325939555598299,
+            "medianAbsolutePercentError(elapsed)": 0.00400478093965825,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1901.49277978339,
+            "medianAbsolutePercentError(elapsed)": 0.00360007838631377,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.335539761022512,
+            "medianAbsolutePercentError(elapsed)": 0.0189630008599527,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2927.37027027027,
+            "medianAbsolutePercentError(elapsed)": 0.00901142347941026,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.325041716605102,
+            "medianAbsolutePercentError(elapsed)": 0.00145619349921513,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2097.76824817518,
+            "medianAbsolutePercentError(elapsed)": 0.00369390565032292,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.32925679645433,
+            "medianAbsolutePercentError(elapsed)": 0.0141413195504633,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2246.88571428571,
+            "medianAbsolutePercentError(elapsed)": 0.00185450685574363,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.324843097609762,
+            "medianAbsolutePercentError(elapsed)": 0.00104037437992199,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1856.9580645161302,
+            "medianAbsolutePercentError(elapsed)": 0.00287004623956565,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.324648254782076,
+            "medianAbsolutePercentError(elapsed)": 0.000338281067440027,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1858.8130081300799,
+            "medianAbsolutePercentError(elapsed)": 0.00411894565137771,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.324687257605011,
+            "medianAbsolutePercentError(elapsed)": 0.000620574826038472,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4162.53790613718,
+            "medianAbsolutePercentError(elapsed)": 0.00184264241321625,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.32488955893154003,
+            "medianAbsolutePercentError(elapsed)": 0.000831865105470599,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2109.12592592593,
+            "medianAbsolutePercentError(elapsed)": 0.00111775963560328,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1027.82037533512,
+            "medianAbsolutePercentError(elapsed)": 0.00164457406391045,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3073.09705882353,
+            "medianAbsolutePercentError(elapsed)": 0.00589903403485139,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 285.520941759603,
+            "medianAbsolutePercentError(elapsed)": 0.000535165059380701,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1265.68832599119,
+            "medianAbsolutePercentError(elapsed)": 0.00180954740855564,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 46.5347126844181,
+            "medianAbsolutePercentError(elapsed)": 0.00204916859825151,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 94.2294133122862,
+            "medianAbsolutePercentError(elapsed)": 0.000376735005212465,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 37657.9285714286,
+            "medianAbsolutePercentError(elapsed)": 0.00189365523736957,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 348384.666666667,
+            "medianAbsolutePercentError(elapsed)": 0.0025150307136855,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 19334.5283018868,
+            "medianAbsolutePercentError(elapsed)": 0.00268923169248831,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 26037.6428571429,
+            "medianAbsolutePercentError(elapsed)": 0.00472862760100703,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 13.4758153846154,
+            "medianAbsolutePercentError(elapsed)": 0.00284760014107043,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 2735.56306306306,
+            "medianAbsolutePercentError(elapsed)": 0.0164990948590113,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 4.94931638114381,
+            "medianAbsolutePercentError(elapsed)": 0.0164436340488155,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 2707.26130653266,
+            "medianAbsolutePercentError(elapsed)": 0.00150692937994833,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 2089.27272727273,
+            "medianAbsolutePercentError(elapsed)": 0.00327855657564943,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 11864.8910891089,
+            "medianAbsolutePercentError(elapsed)": 0.00473467738909536,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 2107.7380952381,
+            "medianAbsolutePercentError(elapsed)": 0.00745768486227855,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 36539.9655172414,
+            "medianAbsolutePercentError(elapsed)": 0.00230414964487155,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.88730058226421,
+            "medianAbsolutePercentError(elapsed)": 0.0110065085806229,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.86656307147426,
+            "medianAbsolutePercentError(elapsed)": 0.000700643102913031,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.310796043777033,
+            "medianAbsolutePercentError(elapsed)": 0.000261469023912723,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.4885027440674,
+            "medianAbsolutePercentError(elapsed)": 0.00285836803251064,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 33677.3529411765,
+            "medianAbsolutePercentError(elapsed)": 0.0156056736100188,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 55164.047619047604,
+            "medianAbsolutePercentError(elapsed)": 0.00637036187616845,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 119.648787313433,
+            "medianAbsolutePercentError(elapsed)": 0.008337479409343,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 154.63775579346802,
+            "medianAbsolutePercentError(elapsed)": 0.00322124530800422,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31105595603209896,
+            "medianAbsolutePercentError(elapsed)": 0.00174434680304895,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 59.664849279161196,
+            "medianAbsolutePercentError(elapsed)": 0.000769059592503865,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 34.2681221706492,
+            "medianAbsolutePercentError(elapsed)": 0.00190191760476904,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.46706698450069695,
+            "medianAbsolutePercentError(elapsed)": 0.000831610657734723,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.66628386229937,
+            "medianAbsolutePercentError(elapsed)": 0.000219125542350467,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 63.5912727720335,
+            "medianAbsolutePercentError(elapsed)": 0.000429764971770662,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 197.789216643876,
+            "medianAbsolutePercentError(elapsed)": 0.0108742056602776,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 250.903841931943,
+            "medianAbsolutePercentError(elapsed)": 0.00360421511509884,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 165.87580668292,
+            "medianAbsolutePercentError(elapsed)": 0.0062407064824837,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 145.67444486262698,
+            "medianAbsolutePercentError(elapsed)": 0.0031932578378255,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 409.09522003034897,
+            "medianAbsolutePercentError(elapsed)": 0.00870379398220249,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 211.783969943644,
+            "medianAbsolutePercentError(elapsed)": 0.00898191628296875,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31084439441942296,
+            "medianAbsolutePercentError(elapsed)": 0.000588368390061468,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31115486514903096,
+            "medianAbsolutePercentError(elapsed)": 0.00109975900962283,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31083387878629803,
+            "medianAbsolutePercentError(elapsed)": 0.000946746792714685,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 198.1988863755,
+            "medianAbsolutePercentError(elapsed)": 0.00652687462769683,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 18.4706523481327,
+            "medianAbsolutePercentError(elapsed)": 0.00214187693686855,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1352.52832674572,
+            "medianAbsolutePercentError(elapsed)": 0.00367330074595025,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.310832720171548,
+            "medianAbsolutePercentError(elapsed)": 0.00127056098538668,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 19.6078252784577,
+            "medianAbsolutePercentError(elapsed)": 0.00134968772770945,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.310816454060034,
+            "medianAbsolutePercentError(elapsed)": 0.00125276349521282,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.311080524730113,
+            "medianAbsolutePercentError(elapsed)": 0.00114033803627861,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.310751171276525,
+            "medianAbsolutePercentError(elapsed)": 0.000674280307106177,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.311046707370616,
+            "medianAbsolutePercentError(elapsed)": 0.00126853199802951,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31135076939220796,
+            "medianAbsolutePercentError(elapsed)": 0.00212306494253645,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.310808881489597,
+            "medianAbsolutePercentError(elapsed)": 0.000908748696655283,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.310720262306337,
+            "medianAbsolutePercentError(elapsed)": 0.000745161428034417,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.31085081645441,
+            "medianAbsolutePercentError(elapsed)": 0.00102382665836902,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1030.29110512129,
+            "medianAbsolutePercentError(elapsed)": 0.00269484084284527,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 112.899494786628,
+            "medianAbsolutePercentError(elapsed)": 0.00120721796508247,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.1190201485817,
+            "medianAbsolutePercentError(elapsed)": 0.00141204908201295,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 17725.1384615385,
+            "medianAbsolutePercentError(elapsed)": 0.00235233305181377,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 19952.5882352941,
+            "medianAbsolutePercentError(elapsed)": 0.000600639775595191,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 24.281336342353402,
+            "medianAbsolutePercentError(elapsed)": 0.00170895015769056,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 19.6090444302904,
+            "medianAbsolutePercentError(elapsed)": 0.00073598278512713,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1950.90211132438,
+            "medianAbsolutePercentError(elapsed)": 0.00425729688174533,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4824.35746606335,
+            "medianAbsolutePercentError(elapsed)": 0.00141623727058324,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
         }
     ],
     "ci-macos": [
@@ -495649,6 +496882,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.180742193313432,
             "commit": "f058fa95",
             "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.511224955607922,
+            "medianAbsolutePercentError(elapsed)": 0.00268189902722879,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.45393878164624,
+            "medianAbsolutePercentError(elapsed)": 0.0472755300798097,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.36006085166971596,
+            "medianAbsolutePercentError(elapsed)": 0.066401635471423,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 8.562612059679271,
+            "medianAbsolutePercentError(elapsed)": 0.0601684119176853,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 40431.0769230769,
+            "medianAbsolutePercentError(elapsed)": 0.106932203357432,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 34967.1052631579,
+            "medianAbsolutePercentError(elapsed)": 0.187253379662499,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 384.661939440399,
+            "medianAbsolutePercentError(elapsed)": 0.114537766342394,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 441.680970957954,
+            "medianAbsolutePercentError(elapsed)": 0.203614444465008,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.363987369735979,
+            "medianAbsolutePercentError(elapsed)": 0.0746526963632126,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 59.886378170965706,
+            "medianAbsolutePercentError(elapsed)": 0.0780373065651505,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 37.5663862704485,
+            "medianAbsolutePercentError(elapsed)": 0.13182846917916,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.529183709045354,
+            "medianAbsolutePercentError(elapsed)": 0.043267399937704,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 5.1481863768666205,
+            "medianAbsolutePercentError(elapsed)": 0.23574299689301,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 219.44727973038,
+            "medianAbsolutePercentError(elapsed)": 0.750957937995771,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 425.783579115185,
+            "medianAbsolutePercentError(elapsed)": 0.0765130817734712,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 590.843346434587,
+            "medianAbsolutePercentError(elapsed)": 0.0361865173179309,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 316.504508780256,
+            "medianAbsolutePercentError(elapsed)": 0.178660476674473,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 404.376585365854,
+            "medianAbsolutePercentError(elapsed)": 0.377042291012937,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 952.980688497061,
+            "medianAbsolutePercentError(elapsed)": 0.00979374510809616,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 300.185873605948,
+            "medianAbsolutePercentError(elapsed)": 0.0365602002882937,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.346430502457098,
+            "medianAbsolutePercentError(elapsed)": 0.0311118244288312,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.91279458421315,
+            "medianAbsolutePercentError(elapsed)": 0.0554526871613059,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.896107700679287,
+            "medianAbsolutePercentError(elapsed)": 0.11318411692655,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 334.015174055341,
+            "medianAbsolutePercentError(elapsed)": 0.143508123281944,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 31.832046206762303,
+            "medianAbsolutePercentError(elapsed)": 0.347855842115272,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1234.25811965812,
+            "medianAbsolutePercentError(elapsed)": 0.103574681259086,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.411203656238046,
+            "medianAbsolutePercentError(elapsed)": 0.0818226306451457,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.41406326547531996,
+            "medianAbsolutePercentError(elapsed)": 0.0540486347212136,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.49040613991620396,
+            "medianAbsolutePercentError(elapsed)": 0.0239226919320777,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.451724891359763,
+            "medianAbsolutePercentError(elapsed)": 0.205420145917964,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.12314660746794,
+            "medianAbsolutePercentError(elapsed)": 0.100303582945616,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.436351161057906,
+            "medianAbsolutePercentError(elapsed)": 0.112609317612285,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.406002735176321,
+            "medianAbsolutePercentError(elapsed)": 0.167192363907606,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.39844125448525897,
+            "medianAbsolutePercentError(elapsed)": 0.121318350952323,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.02972276677062,
+            "medianAbsolutePercentError(elapsed)": 0.298857014648688,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.36426032762676996,
+            "medianAbsolutePercentError(elapsed)": 0.0554436364959855,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 7376.497005988021,
+            "medianAbsolutePercentError(elapsed)": 0.291682535063818,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 203.909979540805,
+            "medianAbsolutePercentError(elapsed)": 0.078414170737674,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 26.5643106855145,
+            "medianAbsolutePercentError(elapsed)": 0.11482721379758,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 19066.4761904762,
+            "medianAbsolutePercentError(elapsed)": 0.079234934601396,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 22971.9818181818,
+            "medianAbsolutePercentError(elapsed)": 0.320606822382793,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 80.77673758865251,
+            "medianAbsolutePercentError(elapsed)": 0.15971130527055,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 12.8590876670698,
+            "medianAbsolutePercentError(elapsed)": 0.227459434347039,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4006.5958333333297,
+            "medianAbsolutePercentError(elapsed)": 0.0964264236045856,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3936.5671641790996,
+            "medianAbsolutePercentError(elapsed)": 0.0124548531892478,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.898141851765214,
+            "medianAbsolutePercentError(elapsed)": 0.542254314514012,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 683.0409356725149,
+            "medianAbsolutePercentError(elapsed)": 0.0808900505167604,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.8333816854616071,
+            "medianAbsolutePercentError(elapsed)": 0.301386679395307,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 528.720972923359,
+            "medianAbsolutePercentError(elapsed)": 0.132971798101754,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.387113763190799,
+            "medianAbsolutePercentError(elapsed)": 0.130585685805585,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 957.7253218884119,
+            "medianAbsolutePercentError(elapsed)": 0.0482895886215959,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 6.37815027349911,
+            "medianAbsolutePercentError(elapsed)": 0.253581981370919,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 1311.2319391634999,
+            "medianAbsolutePercentError(elapsed)": 0.131469880498569,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 49932.5714285714,
+            "medianAbsolutePercentError(elapsed)": 0.0560368701472164,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 58995.1176470588,
+            "medianAbsolutePercentError(elapsed)": 0.0446848164760896,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 59002.277777777796,
+            "medianAbsolutePercentError(elapsed)": 0.135890164026425,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 68883.9285714286,
+            "medianAbsolutePercentError(elapsed)": 0.0571578644032917,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 198.221414642794,
+            "medianAbsolutePercentError(elapsed)": 0.0521485267894321,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2634.26004728132,
+            "medianAbsolutePercentError(elapsed)": 0.0957720973903323,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 258.02799999999996,
+            "medianAbsolutePercentError(elapsed)": 0.0177727097614001,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5118.05952380952,
+            "medianAbsolutePercentError(elapsed)": 0.194438572469007,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.49123680243045204,
+            "medianAbsolutePercentError(elapsed)": 0.0806594654549678,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1458.43515151515,
+            "medianAbsolutePercentError(elapsed)": 0.235532557089063,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 73.6035472475714,
+            "medianAbsolutePercentError(elapsed)": 0.152660665717246,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 4909.04471544715,
+            "medianAbsolutePercentError(elapsed)": 0.316757005856523,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 65.39837622127429,
+            "medianAbsolutePercentError(elapsed)": 0.0974547410359191,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2956.8617363343997,
+            "medianAbsolutePercentError(elapsed)": 0.0551992521885509,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.5483015603757859,
+            "medianAbsolutePercentError(elapsed)": 0.0403769684587864,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 444.346678398592,
+            "medianAbsolutePercentError(elapsed)": 0.0177378525645883,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 9.170503231428361,
+            "medianAbsolutePercentError(elapsed)": 0.0490259946864715,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 621.895342465753,
+            "medianAbsolutePercentError(elapsed)": 0.15530202439102,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 75.9888438133874,
+            "medianAbsolutePercentError(elapsed)": 0.095358452145067,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1471.59217301751,
+            "medianAbsolutePercentError(elapsed)": 0.132740057108822,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 241.890776126445,
+            "medianAbsolutePercentError(elapsed)": 0.029455856300049,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 6596.428571428571,
+            "medianAbsolutePercentError(elapsed)": 0.0814605588750076,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 369.752617409512,
+            "medianAbsolutePercentError(elapsed)": 0.0676920575344545,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5279.39593908629,
+            "medianAbsolutePercentError(elapsed)": 0.161588025790652,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 250.847911460193,
+            "medianAbsolutePercentError(elapsed)": 0.0811662496521432,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3948.5641025640994,
+            "medianAbsolutePercentError(elapsed)": 0.0652796947672383,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 426.860202931229,
+            "medianAbsolutePercentError(elapsed)": 0.0960079649573461,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 714.691983122363,
+            "medianAbsolutePercentError(elapsed)": 0.0376058920256834,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4771.73913043478,
+            "medianAbsolutePercentError(elapsed)": 0.036119706016639,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 694.14783966684,
+            "medianAbsolutePercentError(elapsed)": 0.169851911987132,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4188.92808219178,
+            "medianAbsolutePercentError(elapsed)": 0.212874685821381,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1206.72895863053,
+            "medianAbsolutePercentError(elapsed)": 0.366205707093363,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.425220649242782,
+            "medianAbsolutePercentError(elapsed)": 0.14577921699223,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 934.386531365314,
+            "medianAbsolutePercentError(elapsed)": 0.0190067745663439,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 3.5993460096253203,
+            "medianAbsolutePercentError(elapsed)": 0.18073586529924,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1160.59693318729,
+            "medianAbsolutePercentError(elapsed)": 0.240877692716805,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.989774736560794,
+            "medianAbsolutePercentError(elapsed)": 0.112837073857076,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1834.77595628415,
+            "medianAbsolutePercentError(elapsed)": 0.170623345241259,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 276.869179600887,
+            "medianAbsolutePercentError(elapsed)": 0.201462947263163,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3047.1479452054796,
+            "medianAbsolutePercentError(elapsed)": 0.256249786455449,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 47.8106639303766,
+            "medianAbsolutePercentError(elapsed)": 0.0324776159225744,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2417.36,
+            "medianAbsolutePercentError(elapsed)": 0.0517001817210048,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1577.34727272727,
+            "medianAbsolutePercentError(elapsed)": 0.0359378177532676,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 5231.31746031746,
+            "medianAbsolutePercentError(elapsed)": 0.0402862543404504,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.39017055360366,
+            "medianAbsolutePercentError(elapsed)": 0.10225496842732,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1401.91337386018,
+            "medianAbsolutePercentError(elapsed)": 0.165588820046629,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.37243902542968804,
+            "medianAbsolutePercentError(elapsed)": 0.0344979313485914,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1370.88915956151,
+            "medianAbsolutePercentError(elapsed)": 0.0367402794663862,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.399260411423544,
+            "medianAbsolutePercentError(elapsed)": 0.042168205091554,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1016.2978322337401,
+            "medianAbsolutePercentError(elapsed)": 0.101063488991934,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.363645552881185,
+            "medianAbsolutePercentError(elapsed)": 0.0670863965680246,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1529.45508100147,
+            "medianAbsolutePercentError(elapsed)": 0.0173758853668333,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.05749678855976,
+            "medianAbsolutePercentError(elapsed)": 0.0493214834578578,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1087.68756875688,
+            "medianAbsolutePercentError(elapsed)": 0.0134223425134709,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.3656912209889,
+            "medianAbsolutePercentError(elapsed)": 0.0379502191595478,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2684.95475113122,
+            "medianAbsolutePercentError(elapsed)": 0.0108433498813417,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.3328138313923301,
+            "medianAbsolutePercentError(elapsed)": 0.0620053766647054,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1768.5057306590302,
+            "medianAbsolutePercentError(elapsed)": 0.116512409097634,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.49806675766948494,
+            "medianAbsolutePercentError(elapsed)": 0.113289050816356,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1937.2632575757602,
+            "medianAbsolutePercentError(elapsed)": 0.0266954237764605,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 2.2614675786593703,
+            "medianAbsolutePercentError(elapsed)": 0.213759056569417,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3144.07894736842,
+            "medianAbsolutePercentError(elapsed)": 0.20539767950227,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.504220802188215,
+            "medianAbsolutePercentError(elapsed)": 0.0209841226933799,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1330.28156565657,
+            "medianAbsolutePercentError(elapsed)": 0.0932422094749744,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 8329.14525139665,
+            "medianAbsolutePercentError(elapsed)": 0.150112339077582,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 6896.993055555559,
+            "medianAbsolutePercentError(elapsed)": 0.274107167015142,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 223.22377938517198,
+            "medianAbsolutePercentError(elapsed)": 0.178830911078591,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1071.01449275362,
+            "medianAbsolutePercentError(elapsed)": 0.374009361643196,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 37.1856651939126,
+            "medianAbsolutePercentError(elapsed)": 0.0768536763496736,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 64.6783470398937,
+            "medianAbsolutePercentError(elapsed)": 0.105887477949279,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 21636.904761904803,
+            "medianAbsolutePercentError(elapsed)": 0.122868271861617,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 187000.0,
+            "medianAbsolutePercentError(elapsed)": 0.0824891461649781,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 17774.316666666702,
+            "medianAbsolutePercentError(elapsed)": 0.121017393921781,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 50433.7272727273,
+            "medianAbsolutePercentError(elapsed)": 0.212574813900567,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 27.5411535653444,
+            "medianAbsolutePercentError(elapsed)": 0.0186161958861961,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1925.9550102249498,
+            "medianAbsolutePercentError(elapsed)": 0.189763371050466,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 9.37972559288902,
+            "medianAbsolutePercentError(elapsed)": 0.209337762632571,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1421.5009208103102,
+            "medianAbsolutePercentError(elapsed)": 0.0932129701933011,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1676.95606060606,
+            "medianAbsolutePercentError(elapsed)": 0.0768993349224737,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 8247.60431654676,
+            "medianAbsolutePercentError(elapsed)": 0.0533388304264441,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1982.9676470588201,
+            "medianAbsolutePercentError(elapsed)": 0.0384815238766861,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 29055.9210526316,
+            "medianAbsolutePercentError(elapsed)": 0.0834538088074689,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
         }
     ],
     "ci-ubuntu-clang": [
@@ -743475,6 +745941,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00261870387135323,
             "commit": "f058fa95",
             "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.6410354768576341,
+            "medianAbsolutePercentError(elapsed)": 0.00420145521409091,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 270.185,
+            "medianAbsolutePercentError(elapsed)": 0.00145659313389039,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.638570976842389,
+            "medianAbsolutePercentError(elapsed)": 0.000622460424666954,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 270.81450094162,
+            "medianAbsolutePercentError(elapsed)": 0.00252849780019355,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.310726130866862,
+            "medianAbsolutePercentError(elapsed)": 0.000936317882881443,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 569.6482910694599,
+            "medianAbsolutePercentError(elapsed)": 0.00274991029430836,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 4.04133006075846,
+            "medianAbsolutePercentError(elapsed)": 0.000561967968721444,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 795.19616519174,
+            "medianAbsolutePercentError(elapsed)": 0.0041311041080077,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 32281.906250000004,
+            "medianAbsolutePercentError(elapsed)": 0.00927296719166771,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 39450.388888888905,
+            "medianAbsolutePercentError(elapsed)": 0.0840025858161084,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 38000.3571428571,
+            "medianAbsolutePercentError(elapsed)": 0.0206549701288559,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 42479.8,
+            "medianAbsolutePercentError(elapsed)": 0.0193444905738431,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 130.839423846359,
+            "medianAbsolutePercentError(elapsed)": 0.00587783483026713,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2433.78422273782,
+            "medianAbsolutePercentError(elapsed)": 0.00172274680025929,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 149.471918100384,
+            "medianAbsolutePercentError(elapsed)": 0.00189391346205583,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3689.0868055555597,
+            "medianAbsolutePercentError(elapsed)": 0.00164811859454925,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.310489003268519,
+            "medianAbsolutePercentError(elapsed)": 0.000499963595790156,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 776.9896219421789,
+            "medianAbsolutePercentError(elapsed)": 0.00285826878835574,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 58.7182122905028,
+            "medianAbsolutePercentError(elapsed)": 0.000709405577736096,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 2223.5290023201896,
+            "medianAbsolutePercentError(elapsed)": 0.00507490763619077,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 31.098788747069598,
+            "medianAbsolutePercentError(elapsed)": 0.000691548224630386,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 3176.57099697885,
+            "medianAbsolutePercentError(elapsed)": 0.000943923946811246,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 1.55417704001198,
+            "medianAbsolutePercentError(elapsed)": 0.000472964582526877,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 281.734863146254,
+            "medianAbsolutePercentError(elapsed)": 0.00369214816356634,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 4.0785611011099,
+            "medianAbsolutePercentError(elapsed)": 0.00913789582204138,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 395.77799801783897,
+            "medianAbsolutePercentError(elapsed)": 0.00454506961924758,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 55.966830065359495,
+            "medianAbsolutePercentError(elapsed)": 0.00129996087404985,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 847.688560885609,
+            "medianAbsolutePercentError(elapsed)": 0.0014094612971461,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 161.98177771595502,
+            "medianAbsolutePercentError(elapsed)": 0.00178829905692852,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3307.22769230769,
+            "medianAbsolutePercentError(elapsed)": 0.000513191967196661,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 223.923644841655,
+            "medianAbsolutePercentError(elapsed)": 0.00259973015670454,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3279.0128205128203,
+            "medianAbsolutePercentError(elapsed)": 0.00208084950131238,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 143.055454162572,
+            "medianAbsolutePercentError(elapsed)": 0.00332734768016913,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3714.73913043478,
+            "medianAbsolutePercentError(elapsed)": 0.00210601970221672,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 143.25385577323902,
+            "medianAbsolutePercentError(elapsed)": 0.00137080488639141,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 383.768820786143,
+            "medianAbsolutePercentError(elapsed)": 0.000579450257234269,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3445.4520958083804,
+            "medianAbsolutePercentError(elapsed)": 0.00292868200508656,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 197.597970067091,
+            "medianAbsolutePercentError(elapsed)": 0.00211408285894725,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2229.12840466926,
+            "medianAbsolutePercentError(elapsed)": 0.00515455269523401,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 849.318577075099,
+            "medianAbsolutePercentError(elapsed)": 0.00139188606250147,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310511782599323,
+            "medianAbsolutePercentError(elapsed)": 0.000508935282600529,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 853.164327002477,
+            "medianAbsolutePercentError(elapsed)": 0.0016866295337313,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.314644986540476,
+            "medianAbsolutePercentError(elapsed)": 0.00326331042684367,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 846.3115415657791,
+            "medianAbsolutePercentError(elapsed)": 0.00118173966093784,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.621196254719296,
+            "medianAbsolutePercentError(elapsed)": 0.000312920817239973,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 964.0748362956031,
+            "medianAbsolutePercentError(elapsed)": 0.00211381858976774,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 139.680708013172,
+            "medianAbsolutePercentError(elapsed)": 0.00137022264877856,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2243.15984405458,
+            "medianAbsolutePercentError(elapsed)": 0.000699205156006223,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 13.6896060876159,
+            "medianAbsolutePercentError(elapsed)": 0.00154006690274655,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1530.01804511278,
+            "medianAbsolutePercentError(elapsed)": 0.00262886148730707,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 896.7443609022561,
+            "medianAbsolutePercentError(elapsed)": 0.00192287844116664,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2424.23678646934,
+            "medianAbsolutePercentError(elapsed)": 0.00517402289539538,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310573713209244,
+            "medianAbsolutePercentError(elapsed)": 0.000573796941473611,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1161.40388349515,
+            "medianAbsolutePercentError(elapsed)": 0.00160047577792316,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31067431595714,
+            "medianAbsolutePercentError(elapsed)": 0.0008671075215895,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1192.1147880041399,
+            "medianAbsolutePercentError(elapsed)": 0.00148236111458619,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31064532264990496,
+            "medianAbsolutePercentError(elapsed)": 0.000580815185311146,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 840.824345146379,
+            "medianAbsolutePercentError(elapsed)": 0.00374023030559355,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310680644957441,
+            "medianAbsolutePercentError(elapsed)": 0.000890389308576892,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1378.32841823056,
+            "medianAbsolutePercentError(elapsed)": 0.000884248618331623,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310615165857715,
+            "medianAbsolutePercentError(elapsed)": 0.00119943314984922,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1028.76320939335,
+            "medianAbsolutePercentError(elapsed)": 0.00147503912248614,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310536560170413,
+            "medianAbsolutePercentError(elapsed)": 0.00110485656996568,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1079.48210526316,
+            "medianAbsolutePercentError(elapsed)": 0.00211820454696219,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.325461094164967,
+            "medianAbsolutePercentError(elapsed)": 0.036088559492608,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 875.595744680851,
+            "medianAbsolutePercentError(elapsed)": 0.00163832450533167,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.313009776168035,
+            "medianAbsolutePercentError(elapsed)": 0.00799915568397513,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 862.570996978852,
+            "medianAbsolutePercentError(elapsed)": 0.00233859263487815,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310692665531229,
+            "medianAbsolutePercentError(elapsed)": 0.000390693562992458,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2020.7263779527598,
+            "medianAbsolutePercentError(elapsed)": 0.00127870607196584,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31058898406215996,
+            "medianAbsolutePercentError(elapsed)": 0.000477991098200779,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 996.591184096802,
+            "medianAbsolutePercentError(elapsed)": 0.00202960924130798,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1179.04094165814,
+            "medianAbsolutePercentError(elapsed)": 0.00209890621745498,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2199.90978886756,
+            "medianAbsolutePercentError(elapsed)": 0.00174771056268905,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 139.02894630055502,
+            "medianAbsolutePercentError(elapsed)": 0.000792355471364634,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 658.3221065523579,
+            "medianAbsolutePercentError(elapsed)": 0.00208623628934603,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 19.9402216871013,
+            "medianAbsolutePercentError(elapsed)": 0.00253620747092184,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 52.241395862333796,
+            "medianAbsolutePercentError(elapsed)": 0.000740538360828228,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 17378.5573770492,
+            "medianAbsolutePercentError(elapsed)": 0.000744139587946019,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 204193.5,
+            "medianAbsolutePercentError(elapsed)": 0.00536094690094104,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 20202.4905660377,
+            "medianAbsolutePercentError(elapsed)": 0.000538665751589583,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 38300.9333333333,
+            "medianAbsolutePercentError(elapsed)": 0.00140916265602762,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 11.5052231113378,
+            "medianAbsolutePercentError(elapsed)": 0.00122452289396944,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1335.4315920397999,
+            "medianAbsolutePercentError(elapsed)": 0.00219831995949991,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.9007586662636795,
+            "medianAbsolutePercentError(elapsed)": 0.000425556187559872,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1334.67526377491,
+            "medianAbsolutePercentError(elapsed)": 0.00339938278429224,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1219.1999999999998,
+            "medianAbsolutePercentError(elapsed)": 0.00367630949865159,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 6534.60227272727,
+            "medianAbsolutePercentError(elapsed)": 0.00398378618011227,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1251.32426778243,
+            "medianAbsolutePercentError(elapsed)": 0.00347809791602578,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 27886.7435897436,
+            "medianAbsolutePercentError(elapsed)": 0.00187125328443869,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.550004500550228,
+            "medianAbsolutePercentError(elapsed)": 0.00297582392808053,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.5499995645552029,
+            "medianAbsolutePercentError(elapsed)": 0.000447477515705786,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.280046024131572,
+            "medianAbsolutePercentError(elapsed)": 0.012647079066575,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.54188857659243,
+            "medianAbsolutePercentError(elapsed)": 0.000888872637745018,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 26471.2666666667,
+            "medianAbsolutePercentError(elapsed)": 0.0441271476906592,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 30234.3235294118,
+            "medianAbsolutePercentError(elapsed)": 0.0159580549614958,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 109.59006273026,
+            "medianAbsolutePercentError(elapsed)": 0.00241466860293191,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 123.37533827509101,
+            "medianAbsolutePercentError(elapsed)": 0.00175198636408095,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27238683311947,
+            "medianAbsolutePercentError(elapsed)": 0.00101949580808693,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.680063197393096,
+            "medianAbsolutePercentError(elapsed)": 0.000766706567013445,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 28.3238397790055,
+            "medianAbsolutePercentError(elapsed)": 0.000424665139058307,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.5502746469464821,
+            "medianAbsolutePercentError(elapsed)": 0.000685731730773152,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.81556705201082,
+            "medianAbsolutePercentError(elapsed)": 0.00104904295951087,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 45.929946112394106,
+            "medianAbsolutePercentError(elapsed)": 0.000587609669364166,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 124.113425184236,
+            "medianAbsolutePercentError(elapsed)": 0.00310462225733047,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 181.94735006973502,
+            "medianAbsolutePercentError(elapsed)": 0.00118757734949177,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 123.067544361763,
+            "medianAbsolutePercentError(elapsed)": 0.0035099153380893,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 114.80046948356801,
+            "medianAbsolutePercentError(elapsed)": 0.00267063978053925,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 307.665428571429,
+            "medianAbsolutePercentError(elapsed)": 0.00161708473293529,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 151.640334572491,
+            "medianAbsolutePercentError(elapsed)": 0.00200294795295934,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272466596595308,
+            "medianAbsolutePercentError(elapsed)": 0.000870425298106093,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27247995919445,
+            "medianAbsolutePercentError(elapsed)": 0.00103824515145546,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.300544674129938,
+            "medianAbsolutePercentError(elapsed)": 0.0286279843182437,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 113.57213243989,
+            "medianAbsolutePercentError(elapsed)": 0.00121487527573108,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 11.436914179715199,
+            "medianAbsolutePercentError(elapsed)": 0.000574954844458679,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 742.076346284935,
+            "medianAbsolutePercentError(elapsed)": 0.000545295048600342,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272621904643526,
+            "medianAbsolutePercentError(elapsed)": 0.00141814936581003,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272348874265789,
+            "medianAbsolutePercentError(elapsed)": 0.000667028006366846,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27248354640968503,
+            "medianAbsolutePercentError(elapsed)": 0.000859710949914495,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272296204865437,
+            "medianAbsolutePercentError(elapsed)": 0.000665788527320997,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272351722416971,
+            "medianAbsolutePercentError(elapsed)": 0.00074011306387923,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272659998446679,
+            "medianAbsolutePercentError(elapsed)": 0.00134062091597947,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27815318358039703,
+            "medianAbsolutePercentError(elapsed)": 0.0276211091581539,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272698568904341,
+            "medianAbsolutePercentError(elapsed)": 0.00208938226375884,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272323637129115,
+            "medianAbsolutePercentError(elapsed)": 0.000468412943191751,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27253782206461097,
+            "medianAbsolutePercentError(elapsed)": 0.0012466481923279,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 901.368584758943,
+            "medianAbsolutePercentError(elapsed)": 0.00668103377377188,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 115.289298465695,
+            "medianAbsolutePercentError(elapsed)": 0.00426937732111089,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16.0051349204014,
+            "medianAbsolutePercentError(elapsed)": 0.00559759555059953,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14247.1973684211,
+            "medianAbsolutePercentError(elapsed)": 0.000951317935949128,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14747.3164556962,
+            "medianAbsolutePercentError(elapsed)": 0.00512178024885676,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16.4108563336146,
+            "medianAbsolutePercentError(elapsed)": 0.00320763960262357,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 5.44740488063501,
+            "medianAbsolutePercentError(elapsed)": 0.000368203151455127,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1196.39314285714,
+            "medianAbsolutePercentError(elapsed)": 0.00196487271642626,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3749.31272727273,
+            "medianAbsolutePercentError(elapsed)": 0.00222378881629982,
+            "commit": "f33da20b",
+            "commit_message": "Try enable back sonar (#776)"
         }
     ],
     "ci-windows": [
