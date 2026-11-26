@@ -127,7 +127,7 @@ TEST_CASE("Async server")
         }
     };
 
-    SUBCASE("bidirectionl")
+    SUBCASE("bidirectional")
     {
         const auto reactor = new rppgrpc::server_bidi_reactor<Request, Response>();
         reactor->get_observable() | rpp::ops::map([](const Request& out) { return out.value(); }) | rpp::ops::subscribe(out_mock);
@@ -141,6 +141,110 @@ TEST_CASE("Async server")
         test_common(writer, reactor);
         test_read(writer, reactor);
         test_write(writer, reactor);
+    }
+
+    SUBCASE("bidirectional with pipeline from observable to observer")
+    {
+        const auto make_reactor = [&](grpc::CallbackServerContext* context) {
+            const auto reactor = new rppgrpc::server_bidi_reactor<Request, Response>(context);
+            reactor->get_observable() | rpp::ops::map([](const Request& out) { return out.value(); }) | rpp::ops::subscribe(out_mock);
+            reactor->get_observable()
+                | rpp::ops::map([](const Request& request) {
+                      Response response{};
+                      response.set_value(request.value() * 10);
+                      return response;
+                  })
+                | rpp::ops::subscribe(reactor->get_observer());
+            return reactor;
+        };
+
+        const auto call = NAMED_REQUIRE_CALL(*mock_service, Bidirectional(trompeloeil::_)).LR_RETURN(make_reactor(_1)).IN_SEQUENCE(s);
+
+        SUBCASE("writer writes and calls WritesDone")
+        {
+            REQUIRE_CALL(*out_mock, on_next_rvalue(1)).IN_SEQUENCE(s);
+            REQUIRE_CALL(*out_mock, on_next_rvalue(2)).IN_SEQUENCE(s);
+            REQUIRE_CALL(*out_mock, on_next_rvalue(3)).IN_SEQUENCE(s);
+            const auto last = NAMED_REQUIRE_CALL(*out_mock, on_completed()).IN_SEQUENCE(s);
+
+            const auto writer = stub->Bidirectional(&ctx);
+            Request    request{};
+            for (uint32_t i : {1u, 2u, 3u})
+            {
+                request.set_value(i);
+                REQUIRE(writer->Write(request));
+            }
+            writer->WritesDone();
+
+            Response response{};
+            for (uint32_t i : {1u, 2u, 3u})
+            {
+                REQUIRE(writer->Read(&response));
+                REQUIRE(response.value() == i * 10);
+            }
+            REQUIRE(!writer->Read(&response));
+            const auto res = writer->Finish().ok();
+            REQUIRE(res);
+            wait(last);
+        }
+
+        SUBCASE("writer cancels")
+        {
+            const auto first = NAMED_REQUIRE_CALL(*out_mock, on_next_rvalue(1)).IN_SEQUENCE(s);
+            const auto last  = NAMED_REQUIRE_CALL(*out_mock, on_error(trompeloeil::_)).IN_SEQUENCE(s);
+
+            const auto writer = stub->Bidirectional(&ctx);
+            Request    request{};
+            request.set_value(1);
+            REQUIRE(writer->Write(request));
+            wait(first);
+
+            ctx.TryCancel();
+            wait(last);
+            CHECK(writer->Finish().error_code() == grpc::StatusCode::CANCELLED);
+        }
+
+        SUBCASE("deadline expires")
+        {
+            const auto last = NAMED_REQUIRE_CALL(*out_mock, on_error(trompeloeil::_)).IN_SEQUENCE(s);
+
+            ctx.set_deadline(std::chrono::system_clock::now() + std::chrono::milliseconds{500});
+            const auto writer = stub->Bidirectional(&ctx);
+            wait(last);
+            CHECK(writer->Finish().error_code() == grpc::StatusCode::DEADLINE_EXCEEDED);
+        }
+    }
+
+    SUBCASE("bidirectional pipeline when the writer cancels right after WritesDone")
+    {
+        // The pipeline finishes the call on the half-close and OnCancel() may follow: one Finish per call.
+        const auto make_reactor = [](grpc::CallbackServerContext* context) {
+            const auto reactor = new rppgrpc::server_bidi_reactor<Request, Response>(context);
+            reactor->get_observable()
+                | rpp::ops::map([](const Request& request) {
+                      Response response{};
+                      response.set_value(request.value());
+                      return response;
+                  })
+                | rpp::ops::subscribe(reactor->get_observer());
+            return reactor;
+        };
+
+        std::atomic<int> created{};
+        const auto       call = NAMED_ALLOW_CALL(*mock_service, Bidirectional(trompeloeil::_)).LR_SIDE_EFFECT(++created;).LR_RETURN(make_reactor(_1));
+
+        for (int i = 0; i < 1000; ++i)
+        {
+            grpc::ClientContext context{};
+            const auto          writer = stub->Bidirectional(&context);
+            writer->WritesDone();
+            // every call reaches the service while the expectation above exists
+            while (created.load() <= i)
+                std::this_thread::yield();
+            context.TryCancel();
+            const auto code = writer->Finish().error_code();
+            CHECK((code == grpc::StatusCode::OK || code == grpc::StatusCode::CANCELLED));
+        }
     }
 
     SUBCASE("server-side")
