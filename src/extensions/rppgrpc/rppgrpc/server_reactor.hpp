@@ -12,22 +12,25 @@
 
 #include <rpp/observables/fwd.hpp>
 
+#include <grpcpp/server_context.h>
 #include <grpcpp/support/server_callback.h>
 #include <rppgrpc/details/base.hpp>
 #include <rppgrpc/fwd.hpp>
 #include <rppgrpc/utils/exceptions.hpp>
+
+#include <atomic>
 
 namespace rppgrpc
 {
     /**
      * @brief RPP's based implementation for grpc server bidirectional reactor.
      * @details To use it you need:
-     * - create it via `new` operator
+     * - create it via `new` operator: created with the call's `grpc::CallbackServerContext*`, the reactor completes the observable from `get_observable()` when the client has finished writing; created without it, only when the call has ended.
      * - return it from bidirection method of CallbackService interface
-     * - to access values FROM stream you can subscribe to observable obtained via `reactor->get_observable()` (same observable WOULD emit on_completed in case of successful stream termination and on_error in case of some errors with grpc stream)
+     * - to access values FROM stream you can subscribe to observable obtained via `reactor->get_observable()` (same observable emits on_completed as described above and on_error when the call is cancelled: by the client, by a deadline or by a lost connection)
      * - to pass values TO stream you can emit values to observer obtained via `reactor->get_observer()`
      *
-     * @warning grpc server reactor have to finish manually, so it is expected that you call `on_completed()` on reactor->get_observer()
+     * @warning grpc server reactor have to finish manually, so it is expected that you call `on_completed()` on reactor->get_observer(). A pipeline `reactor->get_observable() | ... | subscribe(reactor->get_observer())` does it once the client has finished writing, if the reactor was created with the context.
      *
      * @snippet server_reactor.cpp bidi_reactor
      *
@@ -42,6 +45,12 @@ namespace rppgrpc
 
     public:
         server_bidi_reactor()
+            : server_bidi_reactor(nullptr)
+        {
+        }
+
+        explicit server_bidi_reactor(grpc::CallbackServerContext* context)
+            : m_context{context}
         {
             Base::StartSendInitialMetadata();
             details::base_reader<Request>::handle_read_done(true);
@@ -63,13 +72,19 @@ namespace rppgrpc
 
         void finish_writes(const grpc::Status& status) override
         {
-            Base::Finish(status);
+            finish(status);
         }
 
         void OnReadDone(bool ok) override
         {
             if (!ok)
+            {
+                // Either the client has finished writing or the call is cancelled. gRPC marks the context
+                // as cancelled before it reports a read that failed because of a cancel; OnCancel() reports that case.
+                if (m_context && !m_context->IsCancelled())
+                    details::base_reader<Request>::handle_on_done({});
                 return;
+            }
 
             details::base_reader<Request>::handle_read_done();
         }
@@ -95,8 +110,19 @@ namespace rppgrpc
             details::base_writer<Response>::handle_on_done();
             details::base_reader<Request>::handle_on_done(std::make_exception_ptr(rppgrpc::utils::reactor_failed{"OnCancel called"}));
 
-            Base::Finish(grpc::Status::CANCELLED);
+            finish(grpc::Status::CANCELLED);
         }
+
+        // gRPC allows one Finish per call, but the completed observer and OnCancel() can both ask for it:
+        // OnCancel() also runs when the call is cancelled after Finish(), before the status has been sent.
+        void finish(const grpc::Status& status)
+        {
+            if (!m_finish_called.exchange(true, std::memory_order::acq_rel))
+                Base::Finish(status);
+        }
+
+        grpc::CallbackServerContext* m_context;
+        std::atomic_bool             m_finish_called{false};
     };
 
     /**
@@ -137,14 +163,14 @@ namespace rppgrpc
 
         void finish_writes(const grpc::Status& status) override
         {
-            Base::Finish(status);
+            finish(status);
         }
 
         void OnWriteDone(bool ok) override
         {
             if (!ok)
             {
-                Base::Finish(grpc::Status::OK);
+                finish(grpc::Status::OK);
                 return;
             }
 
@@ -164,8 +190,18 @@ namespace rppgrpc
             details::base_writer<Response>::handle_on_done();
             details::base_reader<rpp::utils::none>::handle_on_done(std::make_exception_ptr(rppgrpc::utils::reactor_failed{"OnCancel called"}));
 
-            Base::Finish(grpc::Status::CANCELLED);
+            finish(grpc::Status::CANCELLED);
         }
+
+        // gRPC allows one Finish per call, but a failed write, the completed observer and OnCancel() can each ask for it:
+        // a cancel fails the write in flight, and OnCancel() also runs when the call is cancelled after Finish().
+        void finish(const grpc::Status& status)
+        {
+            if (!m_finish_called.exchange(true, std::memory_order::acq_rel))
+                Base::Finish(status);
+        }
+
+        std::atomic_bool m_finish_called{false};
     };
 
     /**

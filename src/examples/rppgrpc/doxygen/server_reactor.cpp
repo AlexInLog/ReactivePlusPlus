@@ -22,9 +22,9 @@ class server : public TestService::CallbackService
     //! [read_reactor]
 
     //! [bidi_reactor]
-    grpc::ServerBidiReactor<Request, Response>* Bidirectional(grpc::CallbackServerContext* /*context*/) override
+    grpc::ServerBidiReactor<Request, Response>* Bidirectional(grpc::CallbackServerContext* context) override
     {
-        const auto reactor = new rppgrpc::server_bidi_reactor<Request, Response>();
+        const auto reactor = new rppgrpc::server_bidi_reactor<Request, Response>(context);
         reactor->get_observable().subscribe([](const Request&) { }, []() { std::cout << "DONE" << std::endl; });
 
         reactor->get_observer().on_next(Response{});
