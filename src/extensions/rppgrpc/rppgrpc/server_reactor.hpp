@@ -173,7 +173,7 @@ namespace rppgrpc
         // a cancel fails the write in flight, and OnCancel() also runs when the call is cancelled after Finish().
         void finish(const grpc::Status& status)
         {
-            if (!m_finish_called.exchange(true))
+            if (!m_finish_called.exchange(true, std::memory_order::acq_rel))
                 Base::Finish(status);
         }
 
