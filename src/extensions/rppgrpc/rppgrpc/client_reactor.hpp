@@ -13,9 +13,12 @@
 #include <rpp/observables/fwd.hpp>
 
 #include <grpcpp/support/client_callback.h>
+#include <rppgrpc/client_status_hooks.hpp>
 #include <rppgrpc/details/base.hpp>
 #include <rppgrpc/fwd.hpp>
 #include <rppgrpc/utils/exceptions.hpp>
+
+#include <optional>
 
 namespace rppgrpc
 {
@@ -120,7 +123,10 @@ namespace rppgrpc
      * - to pass values TO stream you can emit values to observer obtained via `reactor->get_observer()`
      * - reactor provides `reactor->get_observable()` method but such as observable emits nothing and can be used only to be notified about completion/error
      *
-     * @warning After `init()` the call may end at any moment (connection refused, deadline, cancel) and the reactor deletes itself in `OnDone`. Obtain the observer and emit the first values before `init()`: they are posted and sent once the call starts. Emitting from outside the reactor's callbacks after `init()` races with the end of the call (gRPC requires a hold for that, see `grpc::ClientWriteReactor::AddHold`).
+     * @warning Obtain the observer and observable before `init()`. The reactor may delete itself in `OnDone`.
+     * With the default constructor, emit values before `init()`. For external writes after `init()`, construct the reactor
+     * with the context used to bind the RPC and the hooks installed on the stub's channel. If the interceptor was
+     * missing at binding, the call is cancelled and the observable reports a configuration error.
      *
      * @snippet client_reactor.cpp write_reactor
      *
@@ -136,8 +142,32 @@ namespace rppgrpc
     public:
         client_write_reactor() = default;
 
+        client_write_reactor(grpc::ClientContext& context, const client_status_hooks& hooks)
+            : m_registration{std::in_place, hooks, context, [this] {
+                                 this->close_writes();
+                                 // gRPC still counts its finish operation while the interceptor runs.
+                                 Base::RemoveHold();
+                             }}
+        {
+        }
+
         void init()
         {
+            if (m_registration)
+            {
+                auto& context         = m_registration->context();
+                m_missing_interceptor = !m_registration->claimed();
+                m_registration.reset();
+                if (m_missing_interceptor)
+                {
+                    this->close_writes();
+                    context.TryCancel();
+                }
+                else
+                {
+                    Base::AddHold();
+                }
+            }
             Base::StartCall();
         }
 
@@ -145,7 +175,10 @@ namespace rppgrpc
         using details::base_reader<rpp::utils::none>::get_observable;
 
     private:
-        void start_read(rpp::utils::none& data) override
+        std::optional<client_status_hooks::registration> m_registration;
+        bool                                             m_missing_interceptor{};
+
+        void start_read(rpp::utils::none&) override
         {
         }
 
@@ -172,7 +205,10 @@ namespace rppgrpc
         void OnDone(const grpc::Status& s) override
         {
             details::base_writer<Request>::handle_on_done();
-            details::base_reader<rpp::utils::none>::handle_on_done(s.ok() ? std::exception_ptr{} : std::make_exception_ptr(rppgrpc::utils::reactor_failed{s.error_message()}));
+            if (m_missing_interceptor)
+                details::base_reader<rpp::utils::none>::handle_on_done(std::make_exception_ptr(rppgrpc::utils::reactor_failed{"The client status interceptor did not bind this writer"}));
+            else
+                details::base_reader<rpp::utils::none>::handle_on_done(s.ok() ? std::exception_ptr{} : std::make_exception_ptr(rppgrpc::utils::reactor_failed{s.error_message()}));
 
             delete this;
         }
