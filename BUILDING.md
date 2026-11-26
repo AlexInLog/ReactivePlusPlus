@@ -32,6 +32,14 @@ But RPP is header-only library, so, without enabling any extra options is just c
 
 By default, it provides rpp, rppqt, rppgrpc, rppasio INTERFACE modules.
 
+For native builds using the bundled Conan provider, `protoc` and
+`grpc_cpp_plugin` are searched for in the resolved Conan packages before the
+system paths. Explicit cached tool paths still take precedence. If an existing
+build cached incompatible system tools, clear `PROTOC_PROGRAM`,
+`Protobuf_PROTOC_EXECUTABLE`, and `GRPC_CPP_PLUGIN_PROGRAM` with CMake's `-U`
+option when configuring, then regenerate the `.proto` outputs (or use a fresh
+build directory). Cross builds retain their build-machine tool lookup.
+
 ## Install
 
 This project doesn't require any special command-line flags to install to keep
