@@ -132,19 +132,32 @@ jobs:
     - name: Process coverage info
       run: cmake --build build -t coverage
 
-    - name: "Get PR information"
-      uses: potiuk/get-workflow-origin@v1_3
+    - name: Get PR information
       id: source-run-info
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        sourceRunId: ${{ github.event.workflow_run.id }}
+      if: github.event.workflow_run.event == 'pull_request'
+      env:
+        GH_TOKEN: ${{ github.token }}
+        HEAD_OWNER: ${{ github.event.workflow_run.head_repository.owner.login }}
+        HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+        HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+      shell: bash
+      run: |
+        matches=$(gh api --method GET --paginate "repos/$GITHUB_REPOSITORY/pulls" \
+          -f "head=$HEAD_OWNER:$HEAD_BRANCH" -f state=all |
+          jq -s --arg sha "$HEAD_SHA" '[.[][] | select(.head.sha == $sha) | {number, base: .base.ref}]')
+        if ! pr_number=$(jq -er 'select(length == 1) | .[0].number' <<< "$matches"); then
+          echo "Expected one PR for $HEAD_OWNER:$HEAD_BRANCH at $HEAD_SHA, got $matches" >&2
+          exit 1
+        fi
+        echo "pull-request-number=$pr_number" >> "$GITHUB_OUTPUT"
+        echo "base-branch=$(jq -r '.[0].base' <<< "$matches")" >> "$GITHUB_OUTPUT"
 
     - name: Submit to codecov.io
       uses: codecov/codecov-action@v6
       with:
         file: build/test_results/coverage.txt
         override_branch: ${{ github.event.workflow_run.head_branch }}
-        override_pr: ${{ steps.source-run-info.outputs.pullRequestNumber }}
+        override_pr: ${{ steps.source-run-info.outputs.pull-request-number }}
         override_commit: ${{ github.event.workflow_run.head_sha }}
         token: ${{ secrets.CODECOV_TOKEN }} # required
 
@@ -161,5 +174,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
+        PR_NUMBER: ${{ steps.source-run-info.outputs.pull-request-number }}
+        BASE_BRANCH: ${{ steps.source-run-info.outputs.base-branch }}
       run: |
-        sonar-scanner --define sonar.scm.revision=${{ github.event.workflow_run.head_sha }} --define sonar.pullrequest.key=${{ steps.source-run-info.outputs.pullRequestNumber }} --define sonar.pullrequest.branch=${{ steps.source-run-info.outputs.sourceHeadBranch }} --define sonar.pullrequest.base=${{ steps.source-run-info.outputs.targetBranch }}
+        sonar-scanner --define "sonar.scm.revision=$HEAD_SHA" --define "sonar.pullrequest.key=$PR_NUMBER" --define "sonar.pullrequest.branch=$HEAD_BRANCH" --define "sonar.pullrequest.base=$BASE_BRANCH"
