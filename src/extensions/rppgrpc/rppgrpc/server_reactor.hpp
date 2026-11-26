@@ -117,7 +117,7 @@ namespace rppgrpc
         // OnCancel() also runs when the call is cancelled after Finish(), before the status has been sent.
         void finish(const grpc::Status& status)
         {
-            if (!m_finish_called.exchange(true))
+            if (!m_finish_called.exchange(true, std::memory_order::acq_rel))
                 Base::Finish(status);
         }
 
