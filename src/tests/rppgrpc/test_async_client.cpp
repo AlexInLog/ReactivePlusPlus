@@ -14,10 +14,13 @@
 
 #include "rpp_trompeloil.hpp"
 
-#include <array>
 #include <atomic>
+#include <condition_variable>
 #include <future>
 #include <limits>
+#include <memory>
+#include <mutex>
+#include <optional>
 #include <thread>
 #include <vector>
 
@@ -31,19 +34,14 @@ namespace
     };
 
     // The write side of the reactors, with a start_write that signals `entered` and waits for `release`.
-    // on_done() does what the reactors' OnDone does with their write side: handle_on_done(), then `delete this`.
     struct blocking_writer final : rppgrpc::details::base_writer<int>
     {
+        using base_writer::handle_on_done;
+
         blocking_writer(std::promise<void>& entered, std::shared_future<void> release)
             : m_entered{entered}
             , m_release{std::move(release)}
         {
-        }
-
-        void on_done()
-        {
-            handle_on_done();
-            delete this;
         }
 
     private:
@@ -53,6 +51,7 @@ namespace
             m_release.wait();
         }
 
+        // The test emits no terminal, so the write side is never finished.
         void finish_writes(const grpc::Status&) override { }
 
         std::promise<void>&      m_entered;
@@ -71,6 +70,96 @@ namespace
     private:
         void start_write(const int& v) override { writes.push_back(v); }
         void finish_writes(const grpc::Status&) override { ++finishes; }
+    };
+
+    // Threads that live as long as this object. start() hands them an observer, and each of them emits up to
+    // `writes` values into it until stop() is called. stop() returns once every thread has left the observer.
+    class writer_threads
+    {
+    public:
+        explicit writer_threads(size_t count)
+        {
+            for (size_t i = 0; i < count; ++i)
+                m_threads.emplace_back([this] { run(); });
+        }
+
+        writer_threads(const writer_threads&)            = delete;
+        writer_threads& operator=(const writer_threads&) = delete;
+
+        ~writer_threads()
+        {
+            {
+                std::lock_guard lock{m_mutex};
+                m_exit = true;
+            }
+            m_cv.notify_all();
+            for (auto& t : m_threads)
+                t.join();
+        }
+
+        void start(rpp::dynamic_observer<Request> observer, uint32_t writes)
+        {
+            {
+                std::lock_guard lock{m_mutex};
+                m_observer.emplace(std::move(observer));
+                m_writes  = writes;
+                m_stop    = false;
+                m_running = m_threads.size();
+                ++m_round;
+            }
+            m_cv.notify_all();
+        }
+
+        void stop()
+        {
+            m_stop = true;
+            std::unique_lock lock{m_mutex};
+            m_cv.wait(lock, [this] { return m_running == 0; });
+            m_observer.reset();
+        }
+
+    private:
+        void run()
+        {
+            size_t round = 0;
+            while (true)
+            {
+                const rpp::dynamic_observer<Request>* observer{};
+                uint32_t                              writes{};
+                {
+                    std::unique_lock lock{m_mutex};
+                    m_cv.wait(lock, [&] { return m_exit || m_round != round; });
+                    if (m_exit)
+                        return;
+                    round    = m_round;
+                    observer = &*m_observer;
+                    writes   = m_writes;
+                }
+
+                Request request{};
+                for (uint32_t v = 0; v < writes && !m_stop; ++v)
+                {
+                    request.set_value(v);
+                    observer->on_next(request);
+                }
+
+                {
+                    std::lock_guard lock{m_mutex};
+                    --m_running;
+                }
+                m_cv.notify_all();
+            }
+        }
+
+        std::mutex                                    m_mutex{};
+        std::condition_variable                       m_cv{};
+        std::optional<rpp::dynamic_observer<Request>> m_observer{};
+        uint32_t                                      m_writes{};
+        size_t                                        m_round{};
+        size_t                                        m_running{};
+        bool                                          m_exit{};
+        std::atomic_bool                              m_stop{};
+        std::vector<std::thread>                      m_threads{};
     };
 } // namespace
 
@@ -474,11 +563,12 @@ TEST_CASE("async client reactor: call that ends during init()")
 TEST_CASE("async client reactor: write that is under way when the call ends")
 {
     // t0 is inside start_write. t1 has entered the observer and waits behind t0. Then the write side ends
-    // and its owner is deleted, as in OnDone. Neither thread may touch the deleted owner afterwards: a write
-    // that does is a use-after-free; AddressSanitizer reports it.
+    // and its owner is destroyed, as in OnDone. Ending the write side waits until t0 has left start_write,
+    // and neither thread may touch the destroyed owner afterwards: a write that does is a use-after-free;
+    // AddressSanitizer reports it.
     std::promise<void> entered{};
     std::promise<void> release{};
-    auto* const        writer   = new blocking_writer{entered, release.get_future().share()};
+    auto               writer   = std::make_unique<blocking_writer>(entered, release.get_future().share());
     const auto         observer = writer->get_observer();
 
     std::thread t0{[&] { observer.on_next(1); }};
@@ -486,11 +576,18 @@ TEST_CASE("async client reactor: write that is under way when the call ends")
     std::thread t1{[&] { observer.on_next(2); }};
     std::this_thread::sleep_for(std::chrono::milliseconds{50}); // t1 waits behind t0
 
-    auto done = std::async(std::launch::async, [writer] { writer->on_done(); });
-    std::this_thread::sleep_for(std::chrono::milliseconds{50}); // on_done() runs while t0 is inside start_write
+    std::atomic_bool closed{};
+    auto             done = std::async(std::launch::async, [&] {
+        writer->handle_on_done();
+        closed = true;
+        writer.reset();
+    });
+    std::this_thread::sleep_for(std::chrono::milliseconds{50}); // handle_on_done() runs while t0 is inside start_write
+    CHECK_FALSE(closed.load());                                 // and has not returned
     release.set_value();
 
     done.get();
+    CHECK(closed.load());
     t0.join();
     t1.join();
 }
@@ -519,7 +616,7 @@ TEST_CASE("async client reactor: writes from other threads while the call ends")
     // reactor after OnDone, or its stream after gRPC has destroyed it, is a use-after-free; AddressSanitizer
     // reports it.
     constexpr int      iterations = 200;
-    constexpr int      writers    = 2;
+    constexpr size_t   writers    = 2;
     constexpr uint32_t writes     = 1000;
 
     grpc::ServerBuilder builder{};
@@ -538,9 +635,12 @@ TEST_CASE("async client reactor: writes from other threads while the call ends")
     auto       server = builder.BuildAndStart();
     const auto stub   = TestService::NewStub(server->InProcessChannel({}), {});
 
-    // Starts one call, emits from `writers` threads, ends the call with `end_call` and waits for the reactor's
-    // terminal, which it emits from OnDone. The context must outlive the call: after a timeout the call is
-    // cancelled and OnDone is still awaited (a call that never ends is left to the process timeout).
+    // The same `writers` threads serve every call of a subcase.
+    writer_threads threads{writers};
+
+    // Starts one call, lets the writer threads emit into its observer, ends the call with `end_call` and waits for
+    // the reactor's terminal, which it emits from OnDone. The context must outlive the call: after a timeout the
+    // call is cancelled and OnDone is still awaited (a call that never ends is left to the process timeout).
     const auto run_call = [&](const auto& end_call) {
         grpc::ClientContext ctx{};
         const auto          done    = std::make_shared<std::promise<void>>();
@@ -549,28 +649,14 @@ TEST_CASE("async client reactor: writes from other threads while the call ends")
                                             [done](const std::exception_ptr&) { done->set_value(); },
                                             [done] { done->set_value(); });
         stub->async()->Bidirectional(&ctx, reactor);
-        const auto observer = reactor->get_observer();
+        auto observer = reactor->get_observer().as_dynamic();
         reactor->init();
 
-        std::atomic_bool                 stop{};
-        std::array<std::thread, writers> threads{};
-        for (auto& t : threads)
-        {
-            t = std::thread{[&] {
-                Request request{};
-                for (uint32_t v = 0; v < writes && !stop; ++v)
-                {
-                    request.set_value(v);
-                    observer.on_next(request);
-                }
-            }};
-        }
+        threads.start(std::move(observer), writes);
         end_call(ctx);
         auto       on_done = done->get_future();
         const bool ended   = on_done.wait_for(std::chrono::seconds{5}) == std::future_status::ready;
-        stop               = true;
-        for (auto& t : threads)
-            t.join();
+        threads.stop();
         if (!ended)
         {
             ctx.TryCancel();
