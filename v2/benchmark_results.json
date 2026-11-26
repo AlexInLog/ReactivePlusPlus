@@ -246590,6 +246590,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00228646470156681,
             "commit": "023d925e",
             "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 1.5677440058818701,
+            "medianAbsolutePercentError(elapsed)": 0.00568764419125184,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 316.028420744213,
+            "medianAbsolutePercentError(elapsed)": 0.00335239089744276,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 1.55557626507375,
+            "medianAbsolutePercentError(elapsed)": 0.000425020094277281,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 318.704977628635,
+            "medianAbsolutePercentError(elapsed)": 0.00508248964330697,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.311079779873573,
+            "medianAbsolutePercentError(elapsed)": 0.000614656959301246,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 703.375,
+            "medianAbsolutePercentError(elapsed)": 0.00522438745341044,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 3.44836447398814,
+            "medianAbsolutePercentError(elapsed)": 0.000503588757845789,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 1050.49772520473,
+            "medianAbsolutePercentError(elapsed)": 0.0042889896086283,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 33120.9696969697,
+            "medianAbsolutePercentError(elapsed)": 0.0218655723663092,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 36163.1875,
+            "medianAbsolutePercentError(elapsed)": 0.0245793693677286,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 54695.947368421,
+            "medianAbsolutePercentError(elapsed)": 0.0168791649524578,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 43777.25,
+            "medianAbsolutePercentError(elapsed)": 0.0211522312704428,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 121.279478279163,
+            "medianAbsolutePercentError(elapsed)": 0.00387237316803508,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2282.87919463087,
+            "medianAbsolutePercentError(elapsed)": 0.00299899004894693,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 151.033963378618,
+            "medianAbsolutePercentError(elapsed)": 0.0053088883993966,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3568.3020833333303,
+            "medianAbsolutePercentError(elapsed)": 0.00242968400291765,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.31109604863516604,
+            "medianAbsolutePercentError(elapsed)": 0.00142611274218154,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 739.263195950832,
+            "medianAbsolutePercentError(elapsed)": 0.00589424281780983,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 59.7528057049334,
+            "medianAbsolutePercentError(elapsed)": 0.00154717280400737,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 2200.0938086303904,
+            "medianAbsolutePercentError(elapsed)": 0.00462675676176319,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 32.7364445297996,
+            "medianAbsolutePercentError(elapsed)": 0.0033020586305043,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 3090.6106194690296,
+            "medianAbsolutePercentError(elapsed)": 0.00202507489419275,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.62235300936018,
+            "medianAbsolutePercentError(elapsed)": 0.000409896984983476,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 285.32536015221496,
+            "medianAbsolutePercentError(elapsed)": 0.0028144139943034,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 4.98131344500301,
+            "medianAbsolutePercentError(elapsed)": 0.00102172779785011,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 385.799924924925,
+            "medianAbsolutePercentError(elapsed)": 0.00791332227365295,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 61.9592521572387,
+            "medianAbsolutePercentError(elapsed)": 0.00232181953137747,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 838.0433386837881,
+            "medianAbsolutePercentError(elapsed)": 0.00313828549342627,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 135.21173681090698,
+            "medianAbsolutePercentError(elapsed)": 0.0021255939186309,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3421.3930817610103,
+            "medianAbsolutePercentError(elapsed)": 0.00186770637041769,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 236.732097334878,
+            "medianAbsolutePercentError(elapsed)": 0.0163114471725139,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3128.44648318043,
+            "medianAbsolutePercentError(elapsed)": 0.00148964253661453,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 156.571865443425,
+            "medianAbsolutePercentError(elapsed)": 0.00204859620506721,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3697.41071428571,
+            "medianAbsolutePercentError(elapsed)": 0.00386732205645039,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 132.262856488375,
+            "medianAbsolutePercentError(elapsed)": 0.00299047790192562,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 414.545997610514,
+            "medianAbsolutePercentError(elapsed)": 0.00394744524242643,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3571.57142857143,
+            "medianAbsolutePercentError(elapsed)": 0.00230883284654822,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 212.27425614489,
+            "medianAbsolutePercentError(elapsed)": 0.0115018854421845,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2104.73006134969,
+            "medianAbsolutePercentError(elapsed)": 0.00168021000891152,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 840.484312148029,
+            "medianAbsolutePercentError(elapsed)": 0.00535528909309589,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310773359942315,
+            "medianAbsolutePercentError(elapsed)": 0.000490559649777698,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 896.17215815486,
+            "medianAbsolutePercentError(elapsed)": 0.00329214452191681,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310846144603818,
+            "medianAbsolutePercentError(elapsed)": 0.00115410359134245,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 892.635664873175,
+            "medianAbsolutePercentError(elapsed)": 0.00510651217085186,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31101260283193,
+            "medianAbsolutePercentError(elapsed)": 0.00103660094711472,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 896.671322925226,
+            "medianAbsolutePercentError(elapsed)": 0.00449973376545356,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 145.01149920942902,
+            "medianAbsolutePercentError(elapsed)": 0.00214919424910447,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2345.05081300813,
+            "medianAbsolutePercentError(elapsed)": 0.00321229011286291,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 13.380075095624099,
+            "medianAbsolutePercentError(elapsed)": 0.000779163047377071,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1536.32710280374,
+            "medianAbsolutePercentError(elapsed)": 0.0039203140620509,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1307.33977272727,
+            "medianAbsolutePercentError(elapsed)": 0.00241691851520186,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2454.92105263158,
+            "medianAbsolutePercentError(elapsed)": 0.00324143603374626,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311021598179996,
+            "medianAbsolutePercentError(elapsed)": 0.00106550359655677,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1144.2984496124,
+            "medianAbsolutePercentError(elapsed)": 0.0105295788667957,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 18.045995468251,
+            "medianAbsolutePercentError(elapsed)": 0.000603023441765686,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1124.3382209188699,
+            "medianAbsolutePercentError(elapsed)": 0.00295721974670563,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310988040773738,
+            "medianAbsolutePercentError(elapsed)": 0.000839413806399267,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 869.037067545305,
+            "medianAbsolutePercentError(elapsed)": 0.00540798900297833,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311062022477694,
+            "medianAbsolutePercentError(elapsed)": 0.00138872368823374,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1279.40959821429,
+            "medianAbsolutePercentError(elapsed)": 0.00482574009963487,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.310875286371236,
+            "medianAbsolutePercentError(elapsed)": 0.000476987731110966,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 937.110412926391,
+            "medianAbsolutePercentError(elapsed)": 0.00711147734210453,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31089144760663295,
+            "medianAbsolutePercentError(elapsed)": 0.000497881125341059,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1035.1570996978899,
+            "medianAbsolutePercentError(elapsed)": 0.0042086629288894,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31090761397657996,
+            "medianAbsolutePercentError(elapsed)": 0.000875612007314929,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 887.6980155306301,
+            "medianAbsolutePercentError(elapsed)": 0.00646596380953681,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.31097090503724095,
+            "medianAbsolutePercentError(elapsed)": 0.000569592584848921,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 868.7052631578949,
+            "medianAbsolutePercentError(elapsed)": 0.00399005935155282,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.313782039333368,
+            "medianAbsolutePercentError(elapsed)": 0.00827584022574116,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2068.8461538461497,
+            "medianAbsolutePercentError(elapsed)": 0.00566913129203505,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311055357327384,
+            "medianAbsolutePercentError(elapsed)": 0.000807922615362498,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 976.7057591623039,
+            "medianAbsolutePercentError(elapsed)": 0.015313181596497,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 989.2589861751151,
+            "medianAbsolutePercentError(elapsed)": 0.00324231463109149,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2088.37798165138,
+            "medianAbsolutePercentError(elapsed)": 0.00262004544928282,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 112.82597631398599,
+            "medianAbsolutePercentError(elapsed)": 0.00173195073010083,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 602.990560100692,
+            "medianAbsolutePercentError(elapsed)": 0.00282430474738528,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 14.8255733628074,
+            "medianAbsolutePercentError(elapsed)": 0.000434058766697553,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 34.8087976727087,
+            "medianAbsolutePercentError(elapsed)": 0.000670827064572809,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 17455.508474576298,
+            "medianAbsolutePercentError(elapsed)": 0.00281901884276011,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 202029.59999999998,
+            "medianAbsolutePercentError(elapsed)": 0.00141659442002169,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 16791.53125,
+            "medianAbsolutePercentError(elapsed)": 0.000654959568733065,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 32779.228571428604,
+            "medianAbsolutePercentError(elapsed)": 0.00137309632935874,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 13.3752198783014,
+            "medianAbsolutePercentError(elapsed)": 0.000901643798498839,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1414.72077028886,
+            "medianAbsolutePercentError(elapsed)": 0.00386103277639157,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.59919358392456,
+            "medianAbsolutePercentError(elapsed)": 0.00188115348492585,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1399.52467532468,
+            "medianAbsolutePercentError(elapsed)": 0.00142263116527015,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1434.98928571429,
+            "medianAbsolutePercentError(elapsed)": 0.00944304655224501,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 6364.013245033109,
+            "medianAbsolutePercentError(elapsed)": 0.00457060425586529,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1155.99662542182,
+            "medianAbsolutePercentError(elapsed)": 0.005468772831257,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 24188.5476190476,
+            "medianAbsolutePercentError(elapsed)": 0.00047676617370454,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.6405191138664599,
+            "medianAbsolutePercentError(elapsed)": 0.00296896272951489,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.6361850939215798,
+            "medianAbsolutePercentError(elapsed)": 0.00128188397469726,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272988666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00278017587999382,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.74714213876392,
+            "medianAbsolutePercentError(elapsed)": 0.00147698087767192,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 25691.0526315789,
+            "medianAbsolutePercentError(elapsed)": 0.0146714474096483,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 43378.8518518519,
+            "medianAbsolutePercentError(elapsed)": 0.00783619015819716,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 98.4679758580308,
+            "medianAbsolutePercentError(elapsed)": 0.00634216725201544,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 139.90046523016701,
+            "medianAbsolutePercentError(elapsed)": 0.00513458181783336,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272454486563249,
+            "medianAbsolutePercentError(elapsed)": 0.00062469786991757,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.1149260848832,
+            "medianAbsolutePercentError(elapsed)": 0.000860927559721062,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 29.1449598088203,
+            "medianAbsolutePercentError(elapsed)": 0.00076146325312773,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.546633874540474,
+            "medianAbsolutePercentError(elapsed)": 0.00395384857514203,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.54076635544797,
+            "medianAbsolutePercentError(elapsed)": 0.000507689985572148,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 51.9000390641955,
+            "medianAbsolutePercentError(elapsed)": 0.00291413792214514,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 166.836342931511,
+            "medianAbsolutePercentError(elapsed)": 0.00924515452877212,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 249.390286209887,
+            "medianAbsolutePercentError(elapsed)": 0.00129763518845831,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 163.67320445886799,
+            "medianAbsolutePercentError(elapsed)": 0.00339657919203268,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 144.120882488126,
+            "medianAbsolutePercentError(elapsed)": 0.00709381599411846,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 344.242152466368,
+            "medianAbsolutePercentError(elapsed)": 0.00259009319163311,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 220.619298601257,
+            "medianAbsolutePercentError(elapsed)": 0.0219825526521215,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27239917569759,
+            "medianAbsolutePercentError(elapsed)": 0.000529109728286115,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272377511763939,
+            "medianAbsolutePercentError(elapsed)": 0.000715822281801455,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272390990296585,
+            "medianAbsolutePercentError(elapsed)": 0.000558933519645986,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 154.239347234814,
+            "medianAbsolutePercentError(elapsed)": 0.00108435030902225,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14.859267042837399,
+            "medianAbsolutePercentError(elapsed)": 0.00182378041254113,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1049.46820809249,
+            "medianAbsolutePercentError(elapsed)": 0.00213577254037798,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.274195327802961,
+            "medianAbsolutePercentError(elapsed)": 0.00368821953290375,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.198124406457701,
+            "medianAbsolutePercentError(elapsed)": 0.00370542083841127,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27224670981809995,
+            "medianAbsolutePercentError(elapsed)": 0.000286518300141746,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272483768135354,
+            "medianAbsolutePercentError(elapsed)": 0.00106647901985114,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272437434116319,
+            "medianAbsolutePercentError(elapsed)": 0.00093318055537989,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272680136064613,
+            "medianAbsolutePercentError(elapsed)": 0.000932188199257141,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272562936646019,
+            "medianAbsolutePercentError(elapsed)": 0.00108653931064066,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272400887177754,
+            "medianAbsolutePercentError(elapsed)": 0.000974309216439029,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272300295474574,
+            "medianAbsolutePercentError(elapsed)": 0.000836409479732564,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272424340314287,
+            "medianAbsolutePercentError(elapsed)": 0.00119187013933215,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 762.325910931174,
+            "medianAbsolutePercentError(elapsed)": 0.0111710234623811,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 112.63378509196501,
+            "medianAbsolutePercentError(elapsed)": 0.0016679855149469,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 12.9380880949134,
+            "medianAbsolutePercentError(elapsed)": 0.000625799927046718,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16591.2898550725,
+            "medianAbsolutePercentError(elapsed)": 0.00248080941113851,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 25707.6585365854,
+            "medianAbsolutePercentError(elapsed)": 0.00245574185127528,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 18.5553166501039,
+            "medianAbsolutePercentError(elapsed)": 0.00445458007184187,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 13.889435420664299,
+            "medianAbsolutePercentError(elapsed)": 0.000431194101416508,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1519.7956852791901,
+            "medianAbsolutePercentError(elapsed)": 0.00685530586608503,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4039.94755244755,
+            "medianAbsolutePercentError(elapsed)": 0.00179436842926281,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
         }
     ],
     "ci-macos": [
@@ -493183,6 +494416,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.131827547869055,
             "commit": "023d925e",
             "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.561910687375491,
+            "medianAbsolutePercentError(elapsed)": 0.0173188450038692,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.574851961789193,
+            "medianAbsolutePercentError(elapsed)": 0.0353674473208315,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.366539879160999,
+            "medianAbsolutePercentError(elapsed)": 0.0176661336864261,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.40054406832336,
+            "medianAbsolutePercentError(elapsed)": 0.0352720658320269,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 37277.7777777778,
+            "medianAbsolutePercentError(elapsed)": 0.0849607166607881,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 49400.3913043478,
+            "medianAbsolutePercentError(elapsed)": 0.0684492316604306,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 203.89660493827202,
+            "medianAbsolutePercentError(elapsed)": 0.0962102821528678,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 248.155269174808,
+            "medianAbsolutePercentError(elapsed)": 0.061833729668286,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.388801985469415,
+            "medianAbsolutePercentError(elapsed)": 0.0295834377341471,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 62.7034227240649,
+            "medianAbsolutePercentError(elapsed)": 0.0396980087297826,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 34.9067172650903,
+            "medianAbsolutePercentError(elapsed)": 0.0275390442506509,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.5485966306817489,
+            "medianAbsolutePercentError(elapsed)": 0.023257369874339,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.28701597028716,
+            "medianAbsolutePercentError(elapsed)": 0.00781566707352896,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 68.93360401241941,
+            "medianAbsolutePercentError(elapsed)": 0.0189305223871516,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 241.50448479545003,
+            "medianAbsolutePercentError(elapsed)": 0.0501298533118993,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 364.7109644989,
+            "medianAbsolutePercentError(elapsed)": 0.0379395761953089,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 236.722463318868,
+            "medianAbsolutePercentError(elapsed)": 0.0245541133399365,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 256.003551496702,
+            "medianAbsolutePercentError(elapsed)": 0.0451220426645988,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 587.168942842691,
+            "medianAbsolutePercentError(elapsed)": 0.0393888082431726,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 323.239664082687,
+            "medianAbsolutePercentError(elapsed)": 0.0486711678780226,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.367953525595916,
+            "medianAbsolutePercentError(elapsed)": 0.0259151536525129,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.95331680796058,
+            "medianAbsolutePercentError(elapsed)": 0.0204143666123365,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.362157484248409,
+            "medianAbsolutePercentError(elapsed)": 0.0158230845063976,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 232.290493381468,
+            "medianAbsolutePercentError(elapsed)": 0.0204362538460591,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 18.4148480347349,
+            "medianAbsolutePercentError(elapsed)": 0.0306057664122524,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1209.49386845039,
+            "medianAbsolutePercentError(elapsed)": 0.00785975121008061,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.38366836143744204,
+            "medianAbsolutePercentError(elapsed)": 0.0498306295598084,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.365208272363672,
+            "medianAbsolutePercentError(elapsed)": 0.0270373479017174,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.360928238769067,
+            "medianAbsolutePercentError(elapsed)": 0.0251055136548808,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.353059515077181,
+            "medianAbsolutePercentError(elapsed)": 0.0111027144301219,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.0304144247413,
+            "medianAbsolutePercentError(elapsed)": 0.047003772335391,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.347344859893344,
+            "medianAbsolutePercentError(elapsed)": 0.0115988471727556,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.356901994690211,
+            "medianAbsolutePercentError(elapsed)": 0.0120624436004317,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.356344642266131,
+            "medianAbsolutePercentError(elapsed)": 0.0328733959247609,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.8584804072817,
+            "medianAbsolutePercentError(elapsed)": 0.0514648048407939,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.34178594194052,
+            "medianAbsolutePercentError(elapsed)": 0.00753139863119539,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3378.42857142857,
+            "medianAbsolutePercentError(elapsed)": 0.117292773326362,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 200.97681750741802,
+            "medianAbsolutePercentError(elapsed)": 0.0141783908827854,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 24.8039953748124,
+            "medianAbsolutePercentError(elapsed)": 0.0394021753812739,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 21119.4905660377,
+            "medianAbsolutePercentError(elapsed)": 0.0559006152588188,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 13440.4069767442,
+            "medianAbsolutePercentError(elapsed)": 0.0336463223787166,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 32.4867127421396,
+            "medianAbsolutePercentError(elapsed)": 0.0288329366254769,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 9.36798540843358,
+            "medianAbsolutePercentError(elapsed)": 0.0240768489848588,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2095.13696060038,
+            "medianAbsolutePercentError(elapsed)": 0.0592587194201827,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3861.2525252525306,
+            "medianAbsolutePercentError(elapsed)": 0.00950612349892329,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.736009906271634,
+            "medianAbsolutePercentError(elapsed)": 0.254115468798303,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 720.513256288239,
+            "medianAbsolutePercentError(elapsed)": 0.0874738100921874,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 1.51807080986489,
+            "medianAbsolutePercentError(elapsed)": 0.0677069040576502,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 593.9007803790411,
+            "medianAbsolutePercentError(elapsed)": 0.333829790019299,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.569178941365089,
+            "medianAbsolutePercentError(elapsed)": 0.0606500772966613,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1069.42714819427,
+            "medianAbsolutePercentError(elapsed)": 0.0375531633046171,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 5.39708592260504,
+            "medianAbsolutePercentError(elapsed)": 0.110473688328903,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2209.5685185185202,
+            "medianAbsolutePercentError(elapsed)": 0.045713827759553,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 53811.2352941176,
+            "medianAbsolutePercentError(elapsed)": 0.219761050465082,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 56282.227272727294,
+            "medianAbsolutePercentError(elapsed)": 0.101076770023399,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 44821.722222222204,
+            "medianAbsolutePercentError(elapsed)": 0.226378041471893,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 66867.0952380952,
+            "medianAbsolutePercentError(elapsed)": 0.517994858611825,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 243.21661621258,
+            "medianAbsolutePercentError(elapsed)": 0.144501816826084,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3193.14979757085,
+            "medianAbsolutePercentError(elapsed)": 0.058843588515122,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 311.201939393939,
+            "medianAbsolutePercentError(elapsed)": 0.217495934779891,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 8395.09219858156,
+            "medianAbsolutePercentError(elapsed)": 0.26865209196199,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.498240921309229,
+            "medianAbsolutePercentError(elapsed)": 0.0704354036038159,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1148.57609710551,
+            "medianAbsolutePercentError(elapsed)": 0.130547160988107,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 70.4784426905407,
+            "medianAbsolutePercentError(elapsed)": 0.0590391890971004,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 4569.77511961723,
+            "medianAbsolutePercentError(elapsed)": 0.021663442473011,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 66.614650849945,
+            "medianAbsolutePercentError(elapsed)": 0.384672840238008,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 5752.56828193833,
+            "medianAbsolutePercentError(elapsed)": 0.0965040051130474,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.9257563579361521,
+            "medianAbsolutePercentError(elapsed)": 0.493725548734518,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 474.287375415282,
+            "medianAbsolutePercentError(elapsed)": 0.278015645813682,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 5.244763664102489,
+            "medianAbsolutePercentError(elapsed)": 0.107069610890746,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1030.72033898305,
+            "medianAbsolutePercentError(elapsed)": 0.0968496482076224,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 82.24280287040949,
+            "medianAbsolutePercentError(elapsed)": 0.103863623673507,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1169.01408450704,
+            "medianAbsolutePercentError(elapsed)": 0.189672992421629,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 259.611333333333,
+            "medianAbsolutePercentError(elapsed)": 0.0894699447983014,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5780.55757575758,
+            "medianAbsolutePercentError(elapsed)": 0.264756295680287,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 515.184270690444,
+            "medianAbsolutePercentError(elapsed)": 0.197256450533415,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3909.1726618704997,
+            "medianAbsolutePercentError(elapsed)": 0.16523740448958,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 350.546647230321,
+            "medianAbsolutePercentError(elapsed)": 0.0866844176932819,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4873.90131578947,
+            "medianAbsolutePercentError(elapsed)": 0.273962973610469,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 269.828571428571,
+            "medianAbsolutePercentError(elapsed)": 0.0982685380449688,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 654.784200385356,
+            "medianAbsolutePercentError(elapsed)": 0.103130046662609,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3659.94623655914,
+            "medianAbsolutePercentError(elapsed)": 0.0662806554975624,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 335.050864361702,
+            "medianAbsolutePercentError(elapsed)": 0.0422846346213902,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2846.67138810198,
+            "medianAbsolutePercentError(elapsed)": 0.108672317031197,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1278.42336683417,
+            "medianAbsolutePercentError(elapsed)": 0.119344722974668,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.5131808247155519,
+            "medianAbsolutePercentError(elapsed)": 0.0904208066464261,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1337.15429403202,
+            "medianAbsolutePercentError(elapsed)": 0.101610032280458,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 4.42929661962081,
+            "medianAbsolutePercentError(elapsed)": 0.203133038822071,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1721.34831460674,
+            "medianAbsolutePercentError(elapsed)": 0.159305814654487,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.569045468296161,
+            "medianAbsolutePercentError(elapsed)": 0.261518250842425,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1600.11823647295,
+            "medianAbsolutePercentError(elapsed)": 0.273354669249779,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 319.194853926561,
+            "medianAbsolutePercentError(elapsed)": 0.101366444056985,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3048.96907216495,
+            "medianAbsolutePercentError(elapsed)": 0.124886753219827,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 19.3858659651381,
+            "medianAbsolutePercentError(elapsed)": 0.0732209893700981,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1504.9891156462602,
+            "medianAbsolutePercentError(elapsed)": 0.151211067390293,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1660.0,
+            "medianAbsolutePercentError(elapsed)": 0.202497354497355,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 3836.30844155844,
+            "medianAbsolutePercentError(elapsed)": 0.0982202804977654,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.43357706718783595,
+            "medianAbsolutePercentError(elapsed)": 0.12001013605484,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1814.4075993091499,
+            "medianAbsolutePercentError(elapsed)": 0.184299520887983,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.5323619507185571,
+            "medianAbsolutePercentError(elapsed)": 0.0530767832620397,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2141.10929853181,
+            "medianAbsolutePercentError(elapsed)": 0.255624864893005,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.447113521252413,
+            "medianAbsolutePercentError(elapsed)": 0.107805999795841,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1019.91046099291,
+            "medianAbsolutePercentError(elapsed)": 0.0172501010872838,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.38836983253037405,
+            "medianAbsolutePercentError(elapsed)": 0.0199671778055055,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1731.7275747508302,
+            "medianAbsolutePercentError(elapsed)": 0.0159695920942501,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.18793379604912,
+            "medianAbsolutePercentError(elapsed)": 0.0324797002476916,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2263.93510815308,
+            "medianAbsolutePercentError(elapsed)": 0.0657247705985494,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.39492216268564095,
+            "medianAbsolutePercentError(elapsed)": 0.0144866068340915,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1384.87172774869,
+            "medianAbsolutePercentError(elapsed)": 0.0469026279494749,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.378792990297261,
+            "medianAbsolutePercentError(elapsed)": 0.0531685274158759,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1596.21820809249,
+            "medianAbsolutePercentError(elapsed)": 0.165810618066842,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.426536786122846,
+            "medianAbsolutePercentError(elapsed)": 0.113716146365167,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1346.4658169177299,
+            "medianAbsolutePercentError(elapsed)": 0.131984536346763,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 3.29529420100614,
+            "medianAbsolutePercentError(elapsed)": 0.0686084730112287,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3136.95652173913,
+            "medianAbsolutePercentError(elapsed)": 0.187806694657581,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.49038887257712,
+            "medianAbsolutePercentError(elapsed)": 0.0527207030849054,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2245.69333333333,
+            "medianAbsolutePercentError(elapsed)": 0.120924473229822,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 6938.508064516131,
+            "medianAbsolutePercentError(elapsed)": 0.253142833265681,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5962.55405405405,
+            "medianAbsolutePercentError(elapsed)": 0.21528537066494,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 284.44187743190696,
+            "medianAbsolutePercentError(elapsed)": 0.0480871818076967,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1393.83865248227,
+            "medianAbsolutePercentError(elapsed)": 0.187006343890972,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 35.1783360558779,
+            "medianAbsolutePercentError(elapsed)": 0.0565181803557068,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 66.8150285430628,
+            "medianAbsolutePercentError(elapsed)": 0.0361287227317689,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 30334.65625,
+            "medianAbsolutePercentError(elapsed)": 0.197515182119641,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 205500.0,
+            "medianAbsolutePercentError(elapsed)": 0.301267578815657,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 24421.2,
+            "medianAbsolutePercentError(elapsed)": 0.0840931047247578,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 43232.882352941204,
+            "medianAbsolutePercentError(elapsed)": 0.197780075451954,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 26.4173256564016,
+            "medianAbsolutePercentError(elapsed)": 0.0760707502618216,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 2696.3984375,
+            "medianAbsolutePercentError(elapsed)": 0.058319711198063,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 7.21557777078086,
+            "medianAbsolutePercentError(elapsed)": 0.114703549461608,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 2709.29411764706,
+            "medianAbsolutePercentError(elapsed)": 0.0378675696271968,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 3400.5319865319902,
+            "medianAbsolutePercentError(elapsed)": 0.0321584377990095,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 12875.882978723399,
+            "medianAbsolutePercentError(elapsed)": 0.278104192589698,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1959.8756613756602,
+            "medianAbsolutePercentError(elapsed)": 0.0676474597628564,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 20750.0,
+            "medianAbsolutePercentError(elapsed)": 0.180742193313432,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
         }
     ],
     "ci-ubuntu-clang": [
@@ -739776,6 +742242,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00326715509003927,
             "commit": "023d925e",
             "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.319659051464811,
+            "medianAbsolutePercentError(elapsed)": 0.0456247169888178,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 170.71956425732398,
+            "medianAbsolutePercentError(elapsed)": 0.0124498871730329,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.34920693932316904,
+            "medianAbsolutePercentError(elapsed)": 0.0813384375326645,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 169.698748510131,
+            "medianAbsolutePercentError(elapsed)": 0.00668198898007551,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.233331338448562,
+            "medianAbsolutePercentError(elapsed)": 0.00833579022770363,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 334.506632064591,
+            "medianAbsolutePercentError(elapsed)": 0.0180110214916009,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 1.77184858581893,
+            "medianAbsolutePercentError(elapsed)": 0.0117680675163366,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 474.30901856763904,
+            "medianAbsolutePercentError(elapsed)": 0.00465071200701013,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 15270.805555555602,
+            "medianAbsolutePercentError(elapsed)": 0.0472378218794761,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 16505.3650793651,
+            "medianAbsolutePercentError(elapsed)": 0.0384221714299144,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 17932.1320754717,
+            "medianAbsolutePercentError(elapsed)": 0.0800142355323124,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 18761.132075471698,
+            "medianAbsolutePercentError(elapsed)": 0.040660448271314,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 171.66331585081602,
+            "medianAbsolutePercentError(elapsed)": 0.00555386898018973,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3085.06629834254,
+            "medianAbsolutePercentError(elapsed)": 0.00182030746429287,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 203.714711729622,
+            "medianAbsolutePercentError(elapsed)": 0.00677711280241186,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4726.34562211982,
+            "medianAbsolutePercentError(elapsed)": 0.00606781459560449,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.233989804294802,
+            "medianAbsolutePercentError(elapsed)": 0.00257268496841335,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1105.73799582463,
+            "medianAbsolutePercentError(elapsed)": 0.00212357129542775,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 43.595259140217,
+            "medianAbsolutePercentError(elapsed)": 0.00200075231179219,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 3258.89684813754,
+            "medianAbsolutePercentError(elapsed)": 0.00145266498184528,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 23.5129344026321,
+            "medianAbsolutePercentError(elapsed)": 0.00173781505235705,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 4699.10288065844,
+            "medianAbsolutePercentError(elapsed)": 0.00154159473399361,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.472354798165164,
+            "medianAbsolutePercentError(elapsed)": 0.0170964568610429,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 437.22112836046904,
+            "medianAbsolutePercentError(elapsed)": 0.0140517251996624,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 6.51144429641601,
+            "medianAbsolutePercentError(elapsed)": 0.00396317349753103,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 532.425829875519,
+            "medianAbsolutePercentError(elapsed)": 0.00253569154581441,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 38.2904381470999,
+            "medianAbsolutePercentError(elapsed)": 0.00142037756332732,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1200.1486068111499,
+            "medianAbsolutePercentError(elapsed)": 0.00422940922374239,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 219.474585635359,
+            "medianAbsolutePercentError(elapsed)": 0.00164886371624051,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4451.77011494253,
+            "medianAbsolutePercentError(elapsed)": 0.00102982245590038,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 325.05169286578,
+            "medianAbsolutePercentError(elapsed)": 0.00105463916830779,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4374.072,
+            "medianAbsolutePercentError(elapsed)": 0.0031252675568238,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 220.01606732976302,
+            "medianAbsolutePercentError(elapsed)": 0.000749332545009695,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4799.44052863436,
+            "medianAbsolutePercentError(elapsed)": 0.00145869643511869,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 197.255340967356,
+            "medianAbsolutePercentError(elapsed)": 0.00223982361022377,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 490.676881478143,
+            "medianAbsolutePercentError(elapsed)": 0.00243361945097458,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4610.35874439462,
+            "medianAbsolutePercentError(elapsed)": 0.00167151449753036,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 223.486775956284,
+            "medianAbsolutePercentError(elapsed)": 0.00494451827592653,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2982.1318407960202,
+            "medianAbsolutePercentError(elapsed)": 0.00389603485851851,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1231.48502994012,
+            "medianAbsolutePercentError(elapsed)": 0.00115462570666353,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23751226885077498,
+            "medianAbsolutePercentError(elapsed)": 0.000709019056792968,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1242.72539489672,
+            "medianAbsolutePercentError(elapsed)": 0.000810355784236415,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.238069699778849,
+            "medianAbsolutePercentError(elapsed)": 0.00195308230114924,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1229.0207468879698,
+            "medianAbsolutePercentError(elapsed)": 0.00351466938840951,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.311369030198582,
+            "medianAbsolutePercentError(elapsed)": 0.00320770742824896,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1363.59288990826,
+            "medianAbsolutePercentError(elapsed)": 0.00172956536823952,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 188.650545198734,
+            "medianAbsolutePercentError(elapsed)": 0.00140504054248804,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2996.58040201005,
+            "medianAbsolutePercentError(elapsed)": 0.00188049549712151,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 6.5975276593815195,
+            "medianAbsolutePercentError(elapsed)": 0.000805145765013947,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1530.3957219251301,
+            "medianAbsolutePercentError(elapsed)": 0.00221682274059744,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1152.50105932203,
+            "medianAbsolutePercentError(elapsed)": 0.00281206048243053,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2696.74592074592,
+            "medianAbsolutePercentError(elapsed)": 0.00676673028033879,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.226482958984826,
+            "medianAbsolutePercentError(elapsed)": 0.00230525003317308,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1657.70023419204,
+            "medianAbsolutePercentError(elapsed)": 0.0614392520168541,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.341012075795791,
+            "medianAbsolutePercentError(elapsed)": 0.10901684456086,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2270.71458333333,
+            "medianAbsolutePercentError(elapsed)": 0.269546819614776,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.375984175044703,
+            "medianAbsolutePercentError(elapsed)": 0.337986831231786,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1945.32040816327,
+            "medianAbsolutePercentError(elapsed)": 0.118798461624464,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.334277033245829,
+            "medianAbsolutePercentError(elapsed)": 0.051968112853601,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2570.74333333333,
+            "medianAbsolutePercentError(elapsed)": 0.128117129292541,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.231781488993981,
+            "medianAbsolutePercentError(elapsed)": 0.00692692894898755,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1422.344873502,
+            "medianAbsolutePercentError(elapsed)": 0.0105033499505079,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23516863549274203,
+            "medianAbsolutePercentError(elapsed)": 0.020101295766836,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1512.7389380531,
+            "medianAbsolutePercentError(elapsed)": 0.00629208004515537,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.22887233839566798,
+            "medianAbsolutePercentError(elapsed)": 0.00195483108088783,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1193.7494199536,
+            "medianAbsolutePercentError(elapsed)": 0.00582092411018993,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.22948826567286998,
+            "medianAbsolutePercentError(elapsed)": 0.012975585120959,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1192.26077812829,
+            "medianAbsolutePercentError(elapsed)": 0.00870666772387912,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.223769559262226,
+            "medianAbsolutePercentError(elapsed)": 0.00323833577552037,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2673.99666666667,
+            "medianAbsolutePercentError(elapsed)": 0.000623079105125549,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.223774540975225,
+            "medianAbsolutePercentError(elapsed)": 0.00224605410578296,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1344.0927230047,
+            "medianAbsolutePercentError(elapsed)": 0.0022695282116682,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 708.2794819359241,
+            "medianAbsolutePercentError(elapsed)": 0.000890006862793475,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1956.53412969283,
+            "medianAbsolutePercentError(elapsed)": 0.00129393135447305,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 179.003777303334,
+            "medianAbsolutePercentError(elapsed)": 0.00043304716312578,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 834.58942795076,
+            "medianAbsolutePercentError(elapsed)": 0.000634225513281735,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 28.8089678893324,
+            "medianAbsolutePercentError(elapsed)": 0.00368534813204629,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 73.5884018880647,
+            "medianAbsolutePercentError(elapsed)": 0.00890519744818635,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 23743.1041666667,
+            "medianAbsolutePercentError(elapsed)": 0.00144827118872399,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 249002.75,
+            "medianAbsolutePercentError(elapsed)": 0.00424075297059411,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 14932.116883116902,
+            "medianAbsolutePercentError(elapsed)": 0.00119174047051703,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 31162.7575757576,
+            "medianAbsolutePercentError(elapsed)": 0.00216591603829673,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 7.4499547183481205,
+            "medianAbsolutePercentError(elapsed)": 0.0034632501938355,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1736.4709302325598,
+            "medianAbsolutePercentError(elapsed)": 0.000979196476459713,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 2.32246620001918,
+            "medianAbsolutePercentError(elapsed)": 0.00177458309425954,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1713.66050420168,
+            "medianAbsolutePercentError(elapsed)": 0.00197481077488088,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1383.35629453682,
+            "medianAbsolutePercentError(elapsed)": 0.00192037713513252,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 7668.73134328358,
+            "medianAbsolutePercentError(elapsed)": 0.00256333345724479,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1459.3073713491,
+            "medianAbsolutePercentError(elapsed)": 0.00169316743955915,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 22278.2115384615,
+            "medianAbsolutePercentError(elapsed)": 0.00185328679505061,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.6400437316815429,
+            "medianAbsolutePercentError(elapsed)": 0.00221976051723362,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.638968351755623,
+            "medianAbsolutePercentError(elapsed)": 0.000633963120851168,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.444048459924954,
+            "medianAbsolutePercentError(elapsed)": 0.0349927080193818,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.40180396595332,
+            "medianAbsolutePercentError(elapsed)": 0.00111975594391488,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 33204.0,
+            "medianAbsolutePercentError(elapsed)": 0.0151751883456578,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 45390.6818181818,
+            "medianAbsolutePercentError(elapsed)": 0.0363425690098532,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 133.30917051812202,
+            "medianAbsolutePercentError(elapsed)": 0.00666746952811508,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 150.015382424156,
+            "medianAbsolutePercentError(elapsed)": 0.00304536248312166,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.35809671751537503,
+            "medianAbsolutePercentError(elapsed)": 0.0763913883158689,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 58.7793982544786,
+            "medianAbsolutePercentError(elapsed)": 0.00134283507739475,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 31.738454871858398,
+            "medianAbsolutePercentError(elapsed)": 0.00118260391663023,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.55509433009518,
+            "medianAbsolutePercentError(elapsed)": 0.000960366810617524,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.67846537915849,
+            "medianAbsolutePercentError(elapsed)": 0.000495595507476459,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 55.8114346419431,
+            "medianAbsolutePercentError(elapsed)": 0.00417225591127317,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 156.89053853421498,
+            "medianAbsolutePercentError(elapsed)": 0.000685559834864168,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 223.915712408485,
+            "medianAbsolutePercentError(elapsed)": 0.0032240393332351,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 141.227488151659,
+            "medianAbsolutePercentError(elapsed)": 0.00130367082677981,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 141.264410561547,
+            "medianAbsolutePercentError(elapsed)": 0.00890533975594229,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 386.679618768328,
+            "medianAbsolutePercentError(elapsed)": 0.0125899239782877,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 195.484461391802,
+            "medianAbsolutePercentError(elapsed)": 0.00395088418605439,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.436673528080192,
+            "medianAbsolutePercentError(elapsed)": 0.00746091251120315,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.329496814007241,
+            "medianAbsolutePercentError(elapsed)": 0.00210715434685092,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.333115443992182,
+            "medianAbsolutePercentError(elapsed)": 0.0185719396961092,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 136.58386357851901,
+            "medianAbsolutePercentError(elapsed)": 0.000664042377478142,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14.314464688132599,
+            "medianAbsolutePercentError(elapsed)": 0.000626667621662273,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 937.527429467085,
+            "medianAbsolutePercentError(elapsed)": 0.0016083720476403,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.358724880061585,
+            "medianAbsolutePercentError(elapsed)": 0.000844453300661539,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.393980939036322,
+            "medianAbsolutePercentError(elapsed)": 0.000543074570250714,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.329335944867796,
+            "medianAbsolutePercentError(elapsed)": 0.00102610473255498,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.310850658165678,
+            "medianAbsolutePercentError(elapsed)": 0.00115543944807663,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.358785387397969,
+            "medianAbsolutePercentError(elapsed)": 0.086934340659031,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.32931159496388196,
+            "medianAbsolutePercentError(elapsed)": 0.000804395287458757,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.350844982221664,
+            "medianAbsolutePercentError(elapsed)": 0.00985923683492549,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.35859880100312796,
+            "medianAbsolutePercentError(elapsed)": 0.000664003468182768,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.310837840870698,
+            "medianAbsolutePercentError(elapsed)": 0.00102892784148882,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.311456579464421,
+            "medianAbsolutePercentError(elapsed)": 0.00280976852366755,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1179.31639722864,
+            "medianAbsolutePercentError(elapsed)": 0.00283770883930894,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 140.919894488408,
+            "medianAbsolutePercentError(elapsed)": 0.00184084567664513,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 20.162539193781598,
+            "medianAbsolutePercentError(elapsed)": 0.00143768017067921,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 18410.086206896503,
+            "medianAbsolutePercentError(elapsed)": 0.0012125449017638,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 24923.6274509804,
+            "medianAbsolutePercentError(elapsed)": 0.0128482870820478,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 21.1930651001256,
+            "medianAbsolutePercentError(elapsed)": 0.00165008342088882,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 6.52791800985342,
+            "medianAbsolutePercentError(elapsed)": 0.000955579343336657,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1512.0380577427802,
+            "medianAbsolutePercentError(elapsed)": 0.00579028271982572,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4801.34977578475,
+            "medianAbsolutePercentError(elapsed)": 0.00261870387135323,
+            "commit": "f058fa95",
+            "commit_message": "Fix CI: use native packages and get PR info in different way (#775)"
         }
     ],
     "ci-windows": [
