@@ -158,6 +158,33 @@ TEST_CASE("Async server")
         test_write(writer, reactor);
     }
 
+    SUBCASE("server-side when the reader cancels during a write")
+    {
+        // The cancel fails the write in flight and OnCancel() follows: one Finish per call.
+        const auto make_reactor = [] {
+            const auto reactor = new rppgrpc::server_write_reactor<Response>();
+            Response   response{};
+            for (uint32_t i = 0; i < 50; ++i)
+            {
+                response.set_value(i);
+                reactor->get_observer().on_next(response);
+            }
+            return reactor;
+        };
+
+        const auto call = NAMED_ALLOW_CALL(*mock_service, ServerSide(trompeloeil::_, trompeloeil::_)).LR_RETURN(make_reactor());
+
+        for (int i = 0; i < 200; ++i)
+        {
+            grpc::ClientContext context{};
+            const auto          reader = stub->ServerSide(&context, {});
+            Response            response{};
+            REQUIRE(reader->Read(&response));
+            context.TryCancel();
+            CHECK(reader->Finish().error_code() == grpc::StatusCode::CANCELLED);
+        }
+    }
+
     SUBCASE("client-side")
     {
         const auto reactor = new rppgrpc::server_read_reactor<Request>();

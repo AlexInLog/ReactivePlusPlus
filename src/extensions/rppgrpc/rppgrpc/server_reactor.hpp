@@ -17,6 +17,8 @@
 #include <rppgrpc/fwd.hpp>
 #include <rppgrpc/utils/exceptions.hpp>
 
+#include <atomic>
+
 namespace rppgrpc
 {
     /**
@@ -137,14 +139,14 @@ namespace rppgrpc
 
         void finish_writes(const grpc::Status& status) override
         {
-            Base::Finish(status);
+            finish(status);
         }
 
         void OnWriteDone(bool ok) override
         {
             if (!ok)
             {
-                Base::Finish(grpc::Status::OK);
+                finish(grpc::Status::OK);
                 return;
             }
 
@@ -164,8 +166,18 @@ namespace rppgrpc
             details::base_writer<Response>::handle_on_done();
             details::base_reader<rpp::utils::none>::handle_on_done(std::make_exception_ptr(rppgrpc::utils::reactor_failed{"OnCancel called"}));
 
-            Base::Finish(grpc::Status::CANCELLED);
+            finish(grpc::Status::CANCELLED);
         }
+
+        // gRPC allows one Finish per call, but a failed write, the completed observer and OnCancel() can each ask for it:
+        // a cancel fails the write in flight, and OnCancel() also runs when the call is cancelled after Finish().
+        void finish(const grpc::Status& status)
+        {
+            if (!m_finish_called.exchange(true))
+                Base::Finish(status);
+        }
+
+        std::atomic_bool m_finish_called{false};
     };
 
     /**
