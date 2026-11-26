@@ -245357,6 +245357,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.000893079366220003,
             "commit": "a223934b",
             "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.717011913468704,
+            "medianAbsolutePercentError(elapsed)": 0.00233878944873697,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 430.071668063705,
+            "medianAbsolutePercentError(elapsed)": 0.00187873480301807,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.7093409785313,
+            "medianAbsolutePercentError(elapsed)": 0.000334403126400778,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 430.889847924373,
+            "medianAbsolutePercentError(elapsed)": 0.00248877704129344,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.237543304617254,
+            "medianAbsolutePercentError(elapsed)": 0.00184765480093783,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1098.27263479145,
+            "medianAbsolutePercentError(elapsed)": 0.00190195096405066,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 1.77398675992119,
+            "medianAbsolutePercentError(elapsed)": 0.00538667692723917,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 1652.48391608392,
+            "medianAbsolutePercentError(elapsed)": 0.00298642500320553,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 14660.4788732394,
+            "medianAbsolutePercentError(elapsed)": 0.0225102875403127,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 15177.4482758621,
+            "medianAbsolutePercentError(elapsed)": 0.0471475934558848,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 26205.209302325602,
+            "medianAbsolutePercentError(elapsed)": 0.0316237015715721,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 19835.6964285714,
+            "medianAbsolutePercentError(elapsed)": 0.0313891537674027,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 181.784467078938,
+            "medianAbsolutePercentError(elapsed)": 0.0115173019052995,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3360.0801282051298,
+            "medianAbsolutePercentError(elapsed)": 0.00141470143208671,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 217.131647940075,
+            "medianAbsolutePercentError(elapsed)": 0.000961120870605006,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4942.0710900473905,
+            "medianAbsolutePercentError(elapsed)": 0.00299299166003918,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.236320666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00327652174692576,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1173.72925764192,
+            "medianAbsolutePercentError(elapsed)": 0.000801277551487353,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 43.894147049338905,
+            "medianAbsolutePercentError(elapsed)": 0.00156634107193979,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 3446.27331189711,
+            "medianAbsolutePercentError(elapsed)": 0.000300797210523354,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 23.770831916196197,
+            "medianAbsolutePercentError(elapsed)": 0.002191180339618,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 4923.904306220101,
+            "medianAbsolutePercentError(elapsed)": 0.00197807479055799,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.351073923709546,
+            "medianAbsolutePercentError(elapsed)": 0.00111404063011405,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 442.26287597857396,
+            "medianAbsolutePercentError(elapsed)": 0.000776462277114241,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 2.3272594707778302,
+            "medianAbsolutePercentError(elapsed)": 0.00392925318046931,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 533.2715078630899,
+            "medianAbsolutePercentError(elapsed)": 0.00339074602395046,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 52.537482574088195,
+            "medianAbsolutePercentError(elapsed)": 0.00791172066147339,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1249.5582750582798,
+            "medianAbsolutePercentError(elapsed)": 0.00159132197722188,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 250.33920066266302,
+            "medianAbsolutePercentError(elapsed)": 0.00915625585327663,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5985.05699481865,
+            "medianAbsolutePercentError(elapsed)": 0.0029023058636086,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 377.947516731243,
+            "medianAbsolutePercentError(elapsed)": 0.00234927233606019,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4908.32510288066,
+            "medianAbsolutePercentError(elapsed)": 0.00176248008527627,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 271.204539722573,
+            "medianAbsolutePercentError(elapsed)": 0.00352774280310993,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5791.9693877551,
+            "medianAbsolutePercentError(elapsed)": 0.00479608001106623,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 221.187486468933,
+            "medianAbsolutePercentError(elapsed)": 0.00380924801612882,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 560.780638516993,
+            "medianAbsolutePercentError(elapsed)": 0.00366903170622472,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5859.5441176470595,
+            "medianAbsolutePercentError(elapsed)": 0.00112474736485439,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 251.16674618320602,
+            "medianAbsolutePercentError(elapsed)": 0.00454579229746408,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3113.70606060606,
+            "medianAbsolutePercentError(elapsed)": 0.00511129134302832,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1272.95200892857,
+            "medianAbsolutePercentError(elapsed)": 0.00282436720125603,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23360139300942803,
+            "medianAbsolutePercentError(elapsed)": 0.000547930696778265,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1286.0905027933,
+            "medianAbsolutePercentError(elapsed)": 0.00212350559662779,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.232907493976715,
+            "medianAbsolutePercentError(elapsed)": 0.0017132252952792,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1296.54981084489,
+            "medianAbsolutePercentError(elapsed)": 0.00443522375081579,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23540072580646998,
+            "medianAbsolutePercentError(elapsed)": 0.000673283867307386,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1434.7005012531301,
+            "medianAbsolutePercentError(elapsed)": 0.00208426983539125,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 230.996181491465,
+            "medianAbsolutePercentError(elapsed)": 0.00162810724515362,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3735.79636363636,
+            "medianAbsolutePercentError(elapsed)": 0.00384636072869692,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 6.68776601334665,
+            "medianAbsolutePercentError(elapsed)": 0.00503512318972206,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1653.59195402299,
+            "medianAbsolutePercentError(elapsed)": 0.00119233374597309,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1441.2374371859298,
+            "medianAbsolutePercentError(elapsed)": 0.00936236938894312,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2964.48387096774,
+            "medianAbsolutePercentError(elapsed)": 0.00254136408604543,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23756443236079203,
+            "medianAbsolutePercentError(elapsed)": 0.00277430748146019,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1708.50224215247,
+            "medianAbsolutePercentError(elapsed)": 0.00179375248880128,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 9.139952498091441,
+            "medianAbsolutePercentError(elapsed)": 0.00522162481290307,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1740.19515885023,
+            "medianAbsolutePercentError(elapsed)": 0.00161971316931645,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.236469687370836,
+            "medianAbsolutePercentError(elapsed)": 0.00333705216129464,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1305.01459854015,
+            "medianAbsolutePercentError(elapsed)": 0.00255806264723095,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23508895842401598,
+            "medianAbsolutePercentError(elapsed)": 0.00161459384950036,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2008.1333333333298,
+            "medianAbsolutePercentError(elapsed)": 0.00459630214928182,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23449466666666702,
+            "medianAbsolutePercentError(elapsed)": 0.00191508771352891,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1480.72738537794,
+            "medianAbsolutePercentError(elapsed)": 0.00335826787540403,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.235957455669173,
+            "medianAbsolutePercentError(elapsed)": 0.0023321329613449,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1598.55769230769,
+            "medianAbsolutePercentError(elapsed)": 0.00236324778079662,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23676200332897201,
+            "medianAbsolutePercentError(elapsed)": 0.000863585412298065,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1312.99016393443,
+            "medianAbsolutePercentError(elapsed)": 0.00596294144571251,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.237720378606187,
+            "medianAbsolutePercentError(elapsed)": 0.0039173423288372,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1309.93701799486,
+            "medianAbsolutePercentError(elapsed)": 0.003912183684295,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.238085740151969,
+            "medianAbsolutePercentError(elapsed)": 0.00617336620557211,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2911.72481572482,
+            "medianAbsolutePercentError(elapsed)": 0.00404206737307906,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.236408733755185,
+            "medianAbsolutePercentError(elapsed)": 0.00165711378498947,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1478.82019363762,
+            "medianAbsolutePercentError(elapsed)": 0.00252784534746899,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 671.029257314329,
+            "medianAbsolutePercentError(elapsed)": 0.00736296572635763,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2100.84285714286,
+            "medianAbsolutePercentError(elapsed)": 0.00426624782119269,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 193.940927555856,
+            "medianAbsolutePercentError(elapsed)": 0.0020608203055773,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 892.012437810945,
+            "medianAbsolutePercentError(elapsed)": 0.00360160986669873,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 32.4012258240262,
+            "medianAbsolutePercentError(elapsed)": 0.0022801842471436,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 69.4793383026023,
+            "medianAbsolutePercentError(elapsed)": 0.00351685277585204,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 25951.9545454545,
+            "medianAbsolutePercentError(elapsed)": 0.00199919674112401,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 253519.2,
+            "medianAbsolutePercentError(elapsed)": 0.00938417297981667,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 15615.8507462687,
+            "medianAbsolutePercentError(elapsed)": 0.0174972414769012,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 18025.4666666667,
+            "medianAbsolutePercentError(elapsed)": 0.0138278468029107,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 6.450371474686739,
+            "medianAbsolutePercentError(elapsed)": 0.0168875470914158,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1864.60181818182,
+            "medianAbsolutePercentError(elapsed)": 0.00192200629630861,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 2.61115918058684,
+            "medianAbsolutePercentError(elapsed)": 0.00764785549927792,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1898.89509306261,
+            "medianAbsolutePercentError(elapsed)": 0.00312959755376345,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1531.71407624633,
+            "medianAbsolutePercentError(elapsed)": 0.00143764792938097,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 8173.28368794326,
+            "medianAbsolutePercentError(elapsed)": 0.00265766002381789,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1532.42026825633,
+            "medianAbsolutePercentError(elapsed)": 0.00616340321527543,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 21332.911111111098,
+            "medianAbsolutePercentError(elapsed)": 0.00254456267682933,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.9127989085132521,
+            "medianAbsolutePercentError(elapsed)": 0.00210994098962639,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.887636304894494,
+            "medianAbsolutePercentError(elapsed)": 0.00161299680449982,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.223062196385579,
+            "medianAbsolutePercentError(elapsed)": 0.00487334179372735,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.6518501393028302,
+            "medianAbsolutePercentError(elapsed)": 0.00311848287927439,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14185.7160493827,
+            "medianAbsolutePercentError(elapsed)": 0.0347268526878802,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 29923.5714285714,
+            "medianAbsolutePercentError(elapsed)": 0.213430956986388,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 291.278605641299,
+            "medianAbsolutePercentError(elapsed)": 0.0993349526772377,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 377.76981132075497,
+            "medianAbsolutePercentError(elapsed)": 0.142132453037153,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.296053675733259,
+            "medianAbsolutePercentError(elapsed)": 0.0588608613021507,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 41.531973307912295,
+            "medianAbsolutePercentError(elapsed)": 0.00218527947458285,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 23.468288799526402,
+            "medianAbsolutePercentError(elapsed)": 0.000791449618973649,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.33413671246391297,
+            "medianAbsolutePercentError(elapsed)": 0.00389738847476758,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.00102477166449,
+            "medianAbsolutePercentError(elapsed)": 0.00293601862305804,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 48.9506283662478,
+            "medianAbsolutePercentError(elapsed)": 0.00295630439247344,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 253.56693272520002,
+            "medianAbsolutePercentError(elapsed)": 0.00728527449328574,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 370.317376437675,
+            "medianAbsolutePercentError(elapsed)": 0.00426111354736869,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 250.69554636164497,
+            "medianAbsolutePercentError(elapsed)": 0.00299500532725694,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 219.871181163651,
+            "medianAbsolutePercentError(elapsed)": 0.00947059231731381,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 534.8568432092289,
+            "medianAbsolutePercentError(elapsed)": 0.00318776663383644,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 256.23925150367603,
+            "medianAbsolutePercentError(elapsed)": 0.00588283601442622,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.22149627698691599,
+            "medianAbsolutePercentError(elapsed)": 0.00158137810850954,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.22169832412603802,
+            "medianAbsolutePercentError(elapsed)": 0.00173471745175699,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.221537784771107,
+            "medianAbsolutePercentError(elapsed)": 0.00193327515480223,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 223.24984397753298,
+            "medianAbsolutePercentError(elapsed)": 0.002109972302923,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 8.705993620056748,
+            "medianAbsolutePercentError(elapsed)": 0.00223730108766564,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1387.4610472541501,
+            "medianAbsolutePercentError(elapsed)": 0.00691990850075459,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.221390860865362,
+            "medianAbsolutePercentError(elapsed)": 0.000880595477601622,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 9.06578116242449,
+            "medianAbsolutePercentError(elapsed)": 0.00516557700456507,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.22221191828781398,
+            "medianAbsolutePercentError(elapsed)": 0.00361546016970537,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.221321713091081,
+            "medianAbsolutePercentError(elapsed)": 0.000520708516188803,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.221301418854688,
+            "medianAbsolutePercentError(elapsed)": 0.000545809656560627,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.221958403253097,
+            "medianAbsolutePercentError(elapsed)": 0.00231610630641059,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.222304976502656,
+            "medianAbsolutePercentError(elapsed)": 0.00232490405367759,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.224071047068551,
+            "medianAbsolutePercentError(elapsed)": 0.00198183172445875,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.221585417642924,
+            "medianAbsolutePercentError(elapsed)": 0.00121868315292413,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.221774149296452,
+            "medianAbsolutePercentError(elapsed)": 0.00212205466587333,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 653.201014584654,
+            "medianAbsolutePercentError(elapsed)": 0.00448367151761212,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 195.88237533308,
+            "medianAbsolutePercentError(elapsed)": 0.000925306215294382,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 30.5853614995537,
+            "medianAbsolutePercentError(elapsed)": 0.000637891209731461,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 24387.2765957447,
+            "medianAbsolutePercentError(elapsed)": 0.000305449569403563,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 17336.9552238806,
+            "medianAbsolutePercentError(elapsed)": 0.000868101965685936,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 10.9301888041146,
+            "medianAbsolutePercentError(elapsed)": 0.0219571861003533,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 8.046731625668771,
+            "medianAbsolutePercentError(elapsed)": 0.00339542620427937,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1831.20985691574,
+            "medianAbsolutePercentError(elapsed)": 0.000958258277549864,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4010.1310344827602,
+            "medianAbsolutePercentError(elapsed)": 0.00228646470156681,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
         }
     ],
     "ci-macos": [
@@ -490717,6 +491950,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.0772151172925175,
             "commit": "a223934b",
             "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.522575236086665,
+            "medianAbsolutePercentError(elapsed)": 0.0252308262433543,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.51152793855574,
+            "medianAbsolutePercentError(elapsed)": 0.0179960434878745,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.333945980754584,
+            "medianAbsolutePercentError(elapsed)": 0.0115932487292593,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.0110420781018,
+            "medianAbsolutePercentError(elapsed)": 0.0240322061866836,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 23688.4545454545,
+            "medianAbsolutePercentError(elapsed)": 0.0403140216694454,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 28560.399999999998,
+            "medianAbsolutePercentError(elapsed)": 0.0354223564954684,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 240.11974248927004,
+            "medianAbsolutePercentError(elapsed)": 0.101462899295797,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 290.719696969697,
+            "medianAbsolutePercentError(elapsed)": 0.0866902126123912,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.378601530032254,
+            "medianAbsolutePercentError(elapsed)": 0.0524417185493233,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 57.670578195007494,
+            "medianAbsolutePercentError(elapsed)": 0.0296721420708807,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 32.5206161951666,
+            "medianAbsolutePercentError(elapsed)": 0.0156896440921749,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.47982582179533095,
+            "medianAbsolutePercentError(elapsed)": 0.0152313133472772,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.9245205026455006,
+            "medianAbsolutePercentError(elapsed)": 0.0477669392622881,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 71.6572381502149,
+            "medianAbsolutePercentError(elapsed)": 0.053770239528953,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 266.602021626704,
+            "medianAbsolutePercentError(elapsed)": 0.0688050030353634,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 381.81988527724695,
+            "medianAbsolutePercentError(elapsed)": 0.0234524471564604,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 246.059288537549,
+            "medianAbsolutePercentError(elapsed)": 0.0491805515778161,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 262.977138976913,
+            "medianAbsolutePercentError(elapsed)": 0.0461423486008686,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 632.23125,
+            "medianAbsolutePercentError(elapsed)": 0.0648209529591477,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 381.352002967359,
+            "medianAbsolutePercentError(elapsed)": 0.0789425330617428,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.34555179578622197,
+            "medianAbsolutePercentError(elapsed)": 0.0195660697129096,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.74243207894088,
+            "medianAbsolutePercentError(elapsed)": 0.0165046133426447,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.369912943842607,
+            "medianAbsolutePercentError(elapsed)": 0.0224750258544293,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 216.994923857868,
+            "medianAbsolutePercentError(elapsed)": 0.0477227463778149,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 20.5027537211064,
+            "medianAbsolutePercentError(elapsed)": 0.0936579305337407,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1329.43217286915,
+            "medianAbsolutePercentError(elapsed)": 0.025908991951958,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.376351040866211,
+            "medianAbsolutePercentError(elapsed)": 0.0928731615279496,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.354946618265932,
+            "medianAbsolutePercentError(elapsed)": 0.0304460625832314,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.35855573286493303,
+            "medianAbsolutePercentError(elapsed)": 0.0352338615467035,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.35426958713391205,
+            "medianAbsolutePercentError(elapsed)": 0.0382913190027993,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.08355628811344,
+            "medianAbsolutePercentError(elapsed)": 0.0178795197334711,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.35675610371090805,
+            "medianAbsolutePercentError(elapsed)": 0.0108749885637144,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.357179946882628,
+            "medianAbsolutePercentError(elapsed)": 0.0171233829751321,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.351041823005928,
+            "medianAbsolutePercentError(elapsed)": 0.0276643475292209,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.1697234306902,
+            "medianAbsolutePercentError(elapsed)": 0.0793858608526159,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.342624401672847,
+            "medianAbsolutePercentError(elapsed)": 0.0213027835623863,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3316.49709302326,
+            "medianAbsolutePercentError(elapsed)": 0.0521849019943219,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 227.536580594679,
+            "medianAbsolutePercentError(elapsed)": 0.0332068923256435,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 25.8478465813238,
+            "medianAbsolutePercentError(elapsed)": 0.0260380405094989,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 19131.8196721311,
+            "medianAbsolutePercentError(elapsed)": 0.042777491236818,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 13715.0945945946,
+            "medianAbsolutePercentError(elapsed)": 0.0441316101108687,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 36.496321925067,
+            "medianAbsolutePercentError(elapsed)": 0.133622124893238,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 9.92186433898784,
+            "medianAbsolutePercentError(elapsed)": 0.0483955657395577,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2478.60054347826,
+            "medianAbsolutePercentError(elapsed)": 0.226667685489417,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3959.5531135531096,
+            "medianAbsolutePercentError(elapsed)": 0.0381813264945009,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 1.00927550655935,
+            "medianAbsolutePercentError(elapsed)": 0.00455820483151011,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 583.013312852023,
+            "medianAbsolutePercentError(elapsed)": 0.0137240486377407,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 1.01212858626409,
+            "medianAbsolutePercentError(elapsed)": 0.010549052258249,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 395.917924181082,
+            "medianAbsolutePercentError(elapsed)": 0.00697651403610236,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.33888475801428103,
+            "medianAbsolutePercentError(elapsed)": 0.00620094455174428,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 863.486144101346,
+            "medianAbsolutePercentError(elapsed)": 0.00732190267639268,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 4.2653809769375,
+            "medianAbsolutePercentError(elapsed)": 0.0485980038541838,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2344.5021276595703,
+            "medianAbsolutePercentError(elapsed)": 0.410007239999529,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 48284.7083333333,
+            "medianAbsolutePercentError(elapsed)": 0.232276166620091,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 27210.4615384615,
+            "medianAbsolutePercentError(elapsed)": 0.0538256113531514,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 56916.65625,
+            "medianAbsolutePercentError(elapsed)": 0.112260341612274,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 65719.94444444441,
+            "medianAbsolutePercentError(elapsed)": 0.180442297022748,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 202.637172284644,
+            "medianAbsolutePercentError(elapsed)": 0.129329781896252,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2798.53179190751,
+            "medianAbsolutePercentError(elapsed)": 0.0818301964213048,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 235.527666666667,
+            "medianAbsolutePercentError(elapsed)": 0.203474822873082,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3548.37223974763,
+            "medianAbsolutePercentError(elapsed)": 0.0153267156128527,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.359570505331807,
+            "medianAbsolutePercentError(elapsed)": 0.0476197212510977,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 909.007839721254,
+            "medianAbsolutePercentError(elapsed)": 0.0256550795773954,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 57.4266967839088,
+            "medianAbsolutePercentError(elapsed)": 0.020606408817175,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 2301.39427312775,
+            "medianAbsolutePercentError(elapsed)": 0.017137459405242,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 66.1985234744492,
+            "medianAbsolutePercentError(elapsed)": 0.0545408677593434,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2756.68259385666,
+            "medianAbsolutePercentError(elapsed)": 0.0258571513960267,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 1.0392104890993499,
+            "medianAbsolutePercentError(elapsed)": 0.0171594367531362,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 326.400995899238,
+            "medianAbsolutePercentError(elapsed)": 0.0320905839954043,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 4.12824205161395,
+            "medianAbsolutePercentError(elapsed)": 0.00914811662663268,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 461.754526315789,
+            "medianAbsolutePercentError(elapsed)": 0.0171694909739271,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 65.8957840461025,
+            "medianAbsolutePercentError(elapsed)": 0.00925149784120158,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1620.48192771084,
+            "medianAbsolutePercentError(elapsed)": 0.0234806291384823,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 232.61082059533402,
+            "medianAbsolutePercentError(elapsed)": 0.0451546908992865,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3289.36,
+            "medianAbsolutePercentError(elapsed)": 0.0225917794553126,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 337.99340245051803,
+            "medianAbsolutePercentError(elapsed)": 0.00976545698190297,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3408.3043478260897,
+            "medianAbsolutePercentError(elapsed)": 0.00888782863555699,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 214.921419034904,
+            "medianAbsolutePercentError(elapsed)": 0.00837206452567932,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3392.2955974842803,
+            "medianAbsolutePercentError(elapsed)": 0.013960076523344,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 229.787019921955,
+            "medianAbsolutePercentError(elapsed)": 0.0293949628887571,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 538.424563260985,
+            "medianAbsolutePercentError(elapsed)": 0.0077197436867579,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3356.56081081081,
+            "medianAbsolutePercentError(elapsed)": 0.00593911802368382,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 297.960921551473,
+            "medianAbsolutePercentError(elapsed)": 0.0360679043331553,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2245.3980952381,
+            "medianAbsolutePercentError(elapsed)": 0.016557057069507,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 861.6811715481169,
+            "medianAbsolutePercentError(elapsed)": 0.0190174140350219,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.33786203132379,
+            "medianAbsolutePercentError(elapsed)": 0.00868274979110788,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 843.903392330384,
+            "medianAbsolutePercentError(elapsed)": 0.00829733742426003,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 2.6747358599995,
+            "medianAbsolutePercentError(elapsed)": 0.0147927199799276,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1745.87004405286,
+            "medianAbsolutePercentError(elapsed)": 0.242975512067711,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.433029491223676,
+            "medianAbsolutePercentError(elapsed)": 0.226765930689868,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1090.27736318408,
+            "medianAbsolutePercentError(elapsed)": 0.040166709287395,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 205.37311099531001,
+            "medianAbsolutePercentError(elapsed)": 0.0363945108793115,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2454.75,
+            "medianAbsolutePercentError(elapsed)": 0.0489771964885242,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 36.090064026559205,
+            "medianAbsolutePercentError(elapsed)": 0.267632541593933,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1276.28735632184,
+            "medianAbsolutePercentError(elapsed)": 0.132409697056986,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1099.0236753100298,
+            "medianAbsolutePercentError(elapsed)": 0.0166704293456781,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2278.89,
+            "medianAbsolutePercentError(elapsed)": 0.0289747554316008,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.488830298509925,
+            "medianAbsolutePercentError(elapsed)": 0.0216502735259632,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1959.19677790564,
+            "medianAbsolutePercentError(elapsed)": 0.341052495506903,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.352693349776218,
+            "medianAbsolutePercentError(elapsed)": 0.00724456609936364,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1319.85555555556,
+            "medianAbsolutePercentError(elapsed)": 0.0552198261735931,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.339501039164786,
+            "medianAbsolutePercentError(elapsed)": 0.0109997490912827,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 846.4854918612881,
+            "medianAbsolutePercentError(elapsed)": 0.00637559894466902,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.340360847652898,
+            "medianAbsolutePercentError(elapsed)": 0.00690690981618268,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1489.59627329193,
+            "medianAbsolutePercentError(elapsed)": 0.0151612546110187,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.41748572042836,
+            "medianAbsolutePercentError(elapsed)": 0.0753968239439036,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1131.7349137931,
+            "medianAbsolutePercentError(elapsed)": 0.0310927062646686,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.34745303826192997,
+            "medianAbsolutePercentError(elapsed)": 0.0167881440974684,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1731.91722595078,
+            "medianAbsolutePercentError(elapsed)": 0.347766010623796,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.344263153418897,
+            "medianAbsolutePercentError(elapsed)": 0.0131374735845906,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 860.091432685385,
+            "medianAbsolutePercentError(elapsed)": 0.00405841969225718,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.341448428406799,
+            "medianAbsolutePercentError(elapsed)": 0.00971846019113572,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 852.519586104952,
+            "medianAbsolutePercentError(elapsed)": 0.00405184626908777,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.74012237385484,
+            "medianAbsolutePercentError(elapsed)": 0.0123851725694414,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1991.2523020257802,
+            "medianAbsolutePercentError(elapsed)": 0.0114006580353866,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.338541405560218,
+            "medianAbsolutePercentError(elapsed)": 0.00590718911411962,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1019.8551859099799,
+            "medianAbsolutePercentError(elapsed)": 0.00992979515188679,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 3011.73421052632,
+            "medianAbsolutePercentError(elapsed)": 0.00754787337567307,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3861.9115044247797,
+            "medianAbsolutePercentError(elapsed)": 0.00701292082015713,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 187.134384140397,
+            "medianAbsolutePercentError(elapsed)": 0.0061041658141689,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 711.644951140065,
+            "medianAbsolutePercentError(elapsed)": 0.00694402958313592,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 22.083833358245602,
+            "medianAbsolutePercentError(elapsed)": 0.00132065004966525,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 45.567072688444206,
+            "medianAbsolutePercentError(elapsed)": 0.00448330669189356,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 17631.0289855072,
+            "medianAbsolutePercentError(elapsed)": 0.0237235314569217,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 141083.375,
+            "medianAbsolutePercentError(elapsed)": 0.0222404146120561,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 13366.554054054099,
+            "medianAbsolutePercentError(elapsed)": 0.0634592000518815,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 31522.15625,
+            "medianAbsolutePercentError(elapsed)": 0.0133482433712527,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 10.572612652526301,
+            "medianAbsolutePercentError(elapsed)": 0.0151015580094487,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1256.6511627907,
+            "medianAbsolutePercentError(elapsed)": 0.0103130653791374,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.45745358766303,
+            "medianAbsolutePercentError(elapsed)": 0.0101167475087128,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1269.70173410405,
+            "medianAbsolutePercentError(elapsed)": 0.0244703624392005,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1808.85106382979,
+            "medianAbsolutePercentError(elapsed)": 0.0611499668703526,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 10377.5164835165,
+            "medianAbsolutePercentError(elapsed)": 0.384780858221693,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 2623.22818791946,
+            "medianAbsolutePercentError(elapsed)": 0.0264313532745072,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 39492.0,
+            "medianAbsolutePercentError(elapsed)": 0.131827547869055,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
         }
     ],
     "ci-ubuntu-clang": [
@@ -736077,6 +738543,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00215994663857396,
             "commit": "a223934b",
             "commit_message": "v2.2.4"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.674383668048704,
+            "medianAbsolutePercentError(elapsed)": 0.00383035133618124,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 242.96194605009597,
+            "medianAbsolutePercentError(elapsed)": 0.0188956701320006,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.653510277720814,
+            "medianAbsolutePercentError(elapsed)": 0.00623079983673658,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 241.1649508657,
+            "medianAbsolutePercentError(elapsed)": 0.00781237321578797,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.328781575114234,
+            "medianAbsolutePercentError(elapsed)": 0.0113733642478187,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 504.90300130491505,
+            "medianAbsolutePercentError(elapsed)": 0.0031991349341987,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 2.93506200869377,
+            "medianAbsolutePercentError(elapsed)": 0.00318827692230492,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 725.7383647798739,
+            "medianAbsolutePercentError(elapsed)": 0.0138927906738461,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 35342.65625,
+            "medianAbsolutePercentError(elapsed)": 0.0391174826777767,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 40360.3928571429,
+            "medianAbsolutePercentError(elapsed)": 0.0301622964330011,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 40914.25,
+            "medianAbsolutePercentError(elapsed)": 0.0147089198268701,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 43331.695652173905,
+            "medianAbsolutePercentError(elapsed)": 0.0221677249590712,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 283.091,
+            "medianAbsolutePercentError(elapsed)": 0.0198983890642605,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4844.203389830511,
+            "medianAbsolutePercentError(elapsed)": 0.0243601049039803,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 327.618241042345,
+            "medianAbsolutePercentError(elapsed)": 0.0160084528748067,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 7147.18518518519,
+            "medianAbsolutePercentError(elapsed)": 0.00186392427188995,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.33393362692449996,
+            "medianAbsolutePercentError(elapsed)": 0.00851316969589583,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1613.3310249307501,
+            "medianAbsolutePercentError(elapsed)": 0.00640363771028486,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 47.4264956909114,
+            "medianAbsolutePercentError(elapsed)": 0.00348917185017407,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 4704.71138211382,
+            "medianAbsolutePercentError(elapsed)": 0.0164236787166989,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 26.3846854610366,
+            "medianAbsolutePercentError(elapsed)": 0.00640715775727211,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 6658.1835443038,
+            "medianAbsolutePercentError(elapsed)": 0.000935574536541553,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.652659201795148,
+            "medianAbsolutePercentError(elapsed)": 0.0046332630337884,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 636.240568954855,
+            "medianAbsolutePercentError(elapsed)": 0.000787058366444919,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 3.2486994612831297,
+            "medianAbsolutePercentError(elapsed)": 0.00458981214889716,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 753.9655913978489,
+            "medianAbsolutePercentError(elapsed)": 0.00172804031293179,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 54.6618999494694,
+            "medianAbsolutePercentError(elapsed)": 0.0114255212094372,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1738.07573149742,
+            "medianAbsolutePercentError(elapsed)": 0.0291823287183205,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 349.042469781117,
+            "medianAbsolutePercentError(elapsed)": 0.0136020082941757,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 6729.06395348837,
+            "medianAbsolutePercentError(elapsed)": 0.0107314039312751,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 530.338411819021,
+            "medianAbsolutePercentError(elapsed)": 0.00109789571628866,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 6668.78612716763,
+            "medianAbsolutePercentError(elapsed)": 0.00828525135322866,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 348.81045358966696,
+            "medianAbsolutePercentError(elapsed)": 0.0124295435906217,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 7144.160493827159,
+            "medianAbsolutePercentError(elapsed)": 0.00573917809477607,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 323.608570606845,
+            "medianAbsolutePercentError(elapsed)": 0.0157007469493276,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 751.026948288419,
+            "medianAbsolutePercentError(elapsed)": 0.00297822226429884,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 6757.1059602649,
+            "medianAbsolutePercentError(elapsed)": 0.00184586282879879,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 351.395090016367,
+            "medianAbsolutePercentError(elapsed)": 0.0146754688578599,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4429.24789915966,
+            "medianAbsolutePercentError(elapsed)": 0.00733394935914814,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1697.49556213018,
+            "medianAbsolutePercentError(elapsed)": 0.00406837660976181,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.335421487732093,
+            "medianAbsolutePercentError(elapsed)": 0.000892558921551083,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1779.6054628224601,
+            "medianAbsolutePercentError(elapsed)": 0.0261916951728574,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.332395635318871,
+            "medianAbsolutePercentError(elapsed)": 0.0149199310902832,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1714.32881355932,
+            "medianAbsolutePercentError(elapsed)": 0.00122566419305268,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.6638373791615599,
+            "medianAbsolutePercentError(elapsed)": 0.0160413308444787,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1971.54006968641,
+            "medianAbsolutePercentError(elapsed)": 0.00310800087197569,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 309.094917988707,
+            "medianAbsolutePercentError(elapsed)": 0.00384803309819582,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4611.07657657658,
+            "medianAbsolutePercentError(elapsed)": 0.0108987917393281,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 12.851543186278299,
+            "medianAbsolutePercentError(elapsed)": 0.0139114911815464,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2324.8783185840703,
+            "medianAbsolutePercentError(elapsed)": 0.0217550222584292,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1949.00854700855,
+            "medianAbsolutePercentError(elapsed)": 0.00648955293507118,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 4257.20392156863,
+            "medianAbsolutePercentError(elapsed)": 0.0153404192584961,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.325959348018068,
+            "medianAbsolutePercentError(elapsed)": 0.00267307896561321,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2309.8479657387597,
+            "medianAbsolutePercentError(elapsed)": 0.00537949532350407,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.326495142052052,
+            "medianAbsolutePercentError(elapsed)": 0.00519744992212704,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2401.87941787942,
+            "medianAbsolutePercentError(elapsed)": 0.00404452671933903,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.328725265304231,
+            "medianAbsolutePercentError(elapsed)": 0.012696300724063,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1735.3384615384598,
+            "medianAbsolutePercentError(elapsed)": 0.0125606342613803,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.33559647563068,
+            "medianAbsolutePercentError(elapsed)": 0.0221060582304708,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2870.26,
+            "medianAbsolutePercentError(elapsed)": 0.00162510456296228,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.33446197927037497,
+            "medianAbsolutePercentError(elapsed)": 0.00681502734458732,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2033.6888489208598,
+            "medianAbsolutePercentError(elapsed)": 0.00298884965533433,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.335661729818056,
+            "medianAbsolutePercentError(elapsed)": 0.0193833531460995,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2246.4547461368697,
+            "medianAbsolutePercentError(elapsed)": 0.00746509576856757,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.32507448982576403,
+            "medianAbsolutePercentError(elapsed)": 0.000610372383777216,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1773.9724025973999,
+            "medianAbsolutePercentError(elapsed)": 0.00733155749380786,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.335596497314143,
+            "medianAbsolutePercentError(elapsed)": 0.0144623443132686,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1790.97901049475,
+            "medianAbsolutePercentError(elapsed)": 0.0116578222063608,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.325041254595629,
+            "medianAbsolutePercentError(elapsed)": 0.000802760624335987,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4034.0669144981402,
+            "medianAbsolutePercentError(elapsed)": 0.000327181377060495,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.32856059238541996,
+            "medianAbsolutePercentError(elapsed)": 0.0117219486645822,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2048.0199637023597,
+            "medianAbsolutePercentError(elapsed)": 0.00803115525596833,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1249.64551422319,
+            "medianAbsolutePercentError(elapsed)": 0.00361178221307343,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3203.28048780488,
+            "medianAbsolutePercentError(elapsed)": 0.0176808560528077,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 291.388454275695,
+            "medianAbsolutePercentError(elapsed)": 0.00760159918426549,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1283.80637813212,
+            "medianAbsolutePercentError(elapsed)": 0.0068902031977353,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 47.504524991878206,
+            "medianAbsolutePercentError(elapsed)": 0.00131366333389141,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 107.4082906381,
+            "medianAbsolutePercentError(elapsed)": 0.0102160337102125,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 37518.8518518519,
+            "medianAbsolutePercentError(elapsed)": 0.0043030853158814,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 368015.0,
+            "medianAbsolutePercentError(elapsed)": 0.0179170062658351,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 18610.9454545455,
+            "medianAbsolutePercentError(elapsed)": 0.00204746619198112,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 35235.7272727273,
+            "medianAbsolutePercentError(elapsed)": 0.0108024503325869,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 9.72408272062112,
+            "medianAbsolutePercentError(elapsed)": 0.0365197046480484,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 2556.45742092457,
+            "medianAbsolutePercentError(elapsed)": 0.00378203604163542,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.1963881754834,
+            "medianAbsolutePercentError(elapsed)": 0.0225122775495987,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 2479.17961165049,
+            "medianAbsolutePercentError(elapsed)": 0.00443536388280899,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 2014.0176470588199,
+            "medianAbsolutePercentError(elapsed)": 0.00201649332350258,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 11799.382022471898,
+            "medianAbsolutePercentError(elapsed)": 0.00362378175577248,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 2204.852248394,
+            "medianAbsolutePercentError(elapsed)": 0.000950846458518163,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 36073.8666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00212231357702529,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.597386202094866,
+            "medianAbsolutePercentError(elapsed)": 0.0741254055802309,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.62105102909585,
+            "medianAbsolutePercentError(elapsed)": 0.118442090847357,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.324562735337839,
+            "medianAbsolutePercentError(elapsed)": 0.0785630354873826,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.5838972696829097,
+            "medianAbsolutePercentError(elapsed)": 0.00434437918066142,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 27144.8947368421,
+            "medianAbsolutePercentError(elapsed)": 0.0457959333045888,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 29697.057142857102,
+            "medianAbsolutePercentError(elapsed)": 0.0186228241409112,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 108.118025151374,
+            "medianAbsolutePercentError(elapsed)": 0.00484612382088413,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 124.076881950385,
+            "medianAbsolutePercentError(elapsed)": 0.00657332386539448,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.273210429938884,
+            "medianAbsolutePercentError(elapsed)": 0.00304658862201479,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.7152473075389,
+            "medianAbsolutePercentError(elapsed)": 0.0015338942391177,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 28.3185971911475,
+            "medianAbsolutePercentError(elapsed)": 0.000478446781383643,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.550637323551658,
+            "medianAbsolutePercentError(elapsed)": 0.000948559393102717,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.8161957040934698,
+            "medianAbsolutePercentError(elapsed)": 0.000913208443860354,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 46.0419191019244,
+            "medianAbsolutePercentError(elapsed)": 0.00272829754252137,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 125.14430077148802,
+            "medianAbsolutePercentError(elapsed)": 0.00966203412742674,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 186.631732700383,
+            "medianAbsolutePercentError(elapsed)": 0.00267393515432161,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 122.657571315819,
+            "medianAbsolutePercentError(elapsed)": 0.00210698609777088,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 115.397171059326,
+            "medianAbsolutePercentError(elapsed)": 0.00328880685102254,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 301.949985289791,
+            "medianAbsolutePercentError(elapsed)": 0.00139466949066357,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 150.57938957476,
+            "medianAbsolutePercentError(elapsed)": 0.00787486669612271,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272291792404926,
+            "medianAbsolutePercentError(elapsed)": 0.000944045408019837,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.273205895798108,
+            "medianAbsolutePercentError(elapsed)": 0.00318327497248844,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.293555021446178,
+            "medianAbsolutePercentError(elapsed)": 0.0460451631587091,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 113.29652996845401,
+            "medianAbsolutePercentError(elapsed)": 0.00166413880858971,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 11.168986170096899,
+            "medianAbsolutePercentError(elapsed)": 0.00085121303429568,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 736.400675675676,
+            "medianAbsolutePercentError(elapsed)": 0.0011926599451013,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272475584652929,
+            "medianAbsolutePercentError(elapsed)": 0.000616594333304611,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27230724475796697,
+            "medianAbsolutePercentError(elapsed)": 0.000748393670897761,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272327435791492,
+            "medianAbsolutePercentError(elapsed)": 0.000548725349729507,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272824789373181,
+            "medianAbsolutePercentError(elapsed)": 0.00163519145076907,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272377731760054,
+            "medianAbsolutePercentError(elapsed)": 0.00109494286310107,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27221737236264704,
+            "medianAbsolutePercentError(elapsed)": 0.000548715301461486,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.293225711773225,
+            "medianAbsolutePercentError(elapsed)": 0.0298757489518182,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27244246601697,
+            "medianAbsolutePercentError(elapsed)": 0.000958551703859146,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27268992966564004,
+            "medianAbsolutePercentError(elapsed)": 0.00151531156227842,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272247520452324,
+            "medianAbsolutePercentError(elapsed)": 0.000335464432693891,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 894.1219325153371,
+            "medianAbsolutePercentError(elapsed)": 0.0047475568819386,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 115.71128529796,
+            "medianAbsolutePercentError(elapsed)": 0.00606765631283112,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.9092744753887,
+            "medianAbsolutePercentError(elapsed)": 0.000474544566066021,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14436.2835820896,
+            "medianAbsolutePercentError(elapsed)": 0.00261920361097834,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14611.243902438999,
+            "medianAbsolutePercentError(elapsed)": 0.00210638104765358,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16.4034747382535,
+            "medianAbsolutePercentError(elapsed)": 0.00467951174530458,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 5.44720878095296,
+            "medianAbsolutePercentError(elapsed)": 0.000506523596197985,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1195.25257731959,
+            "medianAbsolutePercentError(elapsed)": 0.00527539869014709,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3776.37254901961,
+            "medianAbsolutePercentError(elapsed)": 0.00326715509003927,
+            "commit": "023d925e",
+            "commit_message": "rppgrpc: server_write_reactor calls Finish at most once per call (#774)"
         }
     ],
     "ci-windows": [
