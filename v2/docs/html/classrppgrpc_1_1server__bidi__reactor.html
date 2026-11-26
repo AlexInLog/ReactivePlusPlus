@@ -131,19 +131,25 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('classrppgrpc_1
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="server__reactor_8hpp_source.html">server_reactor.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac42adcfabecb0748e200a98167617e62" id="r_ac42adcfabecb0748e200a98167617e62"><td class="memItemLeft"><a id="ac42adcfabecb0748e200a98167617e62" name="ac42adcfabecb0748e200a98167617e62"></a>
+&#160;</td><td class="memItemRight"><b>server_bidi_reactor</b> (grpc::CallbackServerContext *context)</td></tr>
+</table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="conceptrpp_1_1constraint_1_1decayed__type.html">rpp::constraint::decayed_type</a> Request, <a class="el" href="conceptrpp_1_1constraint_1_1decayed__type.html">rpp::constraint::decayed_type</a> Response&gt;<br />
 class rppgrpc::server_bidi_reactor&lt; Request, Response &gt;</div><p>RPP's based implementation for grpc server bidirectional reactor. </p>
 <p>To use it you need:</p><ul>
-<li>create it via <span class="tt">new</span> operator</li>
+<li>create it via <span class="tt">new</span> operator: created with the call's <span class="tt">grpc::CallbackServerContext*</span>, the reactor completes the observable from <span class="tt">get_observable()</span> when the client has finished writing; created without it, only when the call has ended.</li>
 <li>return it from bidirection method of CallbackService interface</li>
-<li>to access values FROM stream you can subscribe to observable obtained via <span class="tt">reactor-&gt;get_observable()</span> (same observable WOULD emit on_completed in case of successful stream termination and on_error in case of some errors with grpc stream)</li>
+<li>to access values FROM stream you can subscribe to observable obtained via <span class="tt">reactor-&gt;get_observable()</span> (same observable emits on_completed as described above and on_error when the call is cancelled: by the client, by a deadline or by a lost connection)</li>
 <li>to pass values TO stream you can emit values to observer obtained via <span class="tt">reactor-&gt;get_observer()</span></li>
 </ul>
-<dl class="section warning"><dt>Warning</dt><dd>grpc server reactor have to finish manually, so it is expected that you call <span class="tt">on_completed()</span> on reactor-&gt;get_observer()</dd></dl>
-<div class="fragment"><div class="line">    grpc::ServerBidiReactor&lt;Request, Response&gt;* Bidirectional(grpc::CallbackServerContext* <span class="comment">/*context*/</span>)<span class="keyword"> override</span></div>
+<dl class="section warning"><dt>Warning</dt><dd>grpc server reactor have to finish manually, so it is expected that you call <span class="tt">on_completed()</span> on reactor-&gt;get_observer(). A pipeline <span class="tt">reactor-&gt;get_observable() | ... | subscribe(reactor-&gt;get_observer())</span> does it once the client has finished writing, if the reactor was created with the context.</dd></dl>
+<div class="fragment"><div class="line">    grpc::ServerBidiReactor&lt;Request, Response&gt;* Bidirectional(grpc::CallbackServerContext* context)<span class="keyword"> override</span></div>
 <div class="line"><span class="keyword">    </span>{</div>
-<div class="line">        <span class="keyword">const</span> <span class="keyword">auto</span> reactor = <span class="keyword">new</span> rppgrpc::server_bidi_reactor&lt;Request, Response&gt;();</div>
+<div class="line">        <span class="keyword">const</span> <span class="keyword">auto</span> reactor = <span class="keyword">new</span> rppgrpc::server_bidi_reactor&lt;Request, Response&gt;(context);</div>
 <div class="line">        reactor-&gt;get_observable().subscribe([](<span class="keyword">const</span> Request&amp;) { }, []() { std::cout &lt;&lt; <span class="stringliteral">&quot;DONE&quot;</span> &lt;&lt; std::endl; });</div>
 <div class="line"> </div>
 <div class="line">        reactor-&gt;get_observer().on_next(Response{});</div>

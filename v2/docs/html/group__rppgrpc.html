@@ -138,9 +138,9 @@ Topics</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RppGrpc is extension of RPP which enables support of grpc library. </p>
 <p>gRPC provides way to handle requests and responses with help of reactors. RppGrpc is set of reactors (for both: client and server side) with all possible stream modes (client, server or bidirectional stream) to pass such an reactors to gRPC and handle them via RPP.</p>
-<dl class="section user"><dt>Server-side example:</dt><dd><div class="fragment"><div class="line">    grpc::ServerBidiReactor&lt;Request, Response&gt;* Bidirectional(grpc::CallbackServerContext* <span class="comment">/*context*/</span>)<span class="keyword"> override</span></div>
+<dl class="section user"><dt>Server-side example:</dt><dd><div class="fragment"><div class="line">    grpc::ServerBidiReactor&lt;Request, Response&gt;* Bidirectional(grpc::CallbackServerContext* context)<span class="keyword"> override</span></div>
 <div class="line"><span class="keyword">    </span>{</div>
-<div class="line">        <span class="keyword">const</span> <span class="keyword">auto</span> reactor = <span class="keyword">new</span> rppgrpc::server_bidi_reactor&lt;Request, Response&gt;();</div>
+<div class="line">        <span class="keyword">const</span> <span class="keyword">auto</span> reactor = <span class="keyword">new</span> rppgrpc::server_bidi_reactor&lt;Request, Response&gt;(context);</div>
 <div class="line">        reactor-&gt;get_observable().subscribe([](<span class="keyword">const</span> Request&amp;) { }, []() { std::cout &lt;&lt; <span class="stringliteral">&quot;DONE&quot;</span> &lt;&lt; std::endl; });</div>
 <div class="line"> </div>
 <div class="line">        reactor-&gt;get_observer().on_next(Response{});</div>
