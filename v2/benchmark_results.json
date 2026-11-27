@@ -250289,6 +250289,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00736699939489623,
             "commit": "9555b86c",
             "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 1.2352398480672702,
+            "medianAbsolutePercentError(elapsed)": 0.0678073452478463,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 559.134615384615,
+            "medianAbsolutePercentError(elapsed)": 0.0100085946261943,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 1.15037817170217,
+            "medianAbsolutePercentError(elapsed)": 0.000564792355416864,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 555.2834951456309,
+            "medianAbsolutePercentError(elapsed)": 0.0044222408863629,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.288612930211165,
+            "medianAbsolutePercentError(elapsed)": 0.00321809761083781,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1447.0963855421699,
+            "medianAbsolutePercentError(elapsed)": 0.00376882238908179,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 2.63102733710635,
+            "medianAbsolutePercentError(elapsed)": 0.011823901476824,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2145.28305400372,
+            "medianAbsolutePercentError(elapsed)": 0.00906339812808851,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 32798.5428571429,
+            "medianAbsolutePercentError(elapsed)": 0.0204553495392635,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 33426.1333333333,
+            "medianAbsolutePercentError(elapsed)": 0.0176931682153821,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 47571.8333333333,
+            "medianAbsolutePercentError(elapsed)": 0.0142383023480583,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 42140.32,
+            "medianAbsolutePercentError(elapsed)": 0.0355886442660235,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 254.65077262693197,
+            "medianAbsolutePercentError(elapsed)": 0.00621953684662362,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4471.7781954887205,
+            "medianAbsolutePercentError(elapsed)": 0.00159935970090767,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 297.17708333333303,
+            "medianAbsolutePercentError(elapsed)": 0.00634825706679991,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 6604.25433526012,
+            "medianAbsolutePercentError(elapsed)": 0.00162730478963923,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.28762675841843,
+            "medianAbsolutePercentError(elapsed)": 0.000263835714841358,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1542.84822695035,
+            "medianAbsolutePercentError(elapsed)": 0.00117132441399262,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 38.2150991425509,
+            "medianAbsolutePercentError(elapsed)": 0.00220284706266739,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 4533.34801762115,
+            "medianAbsolutePercentError(elapsed)": 0.00182162436902728,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 21.5234025842886,
+            "medianAbsolutePercentError(elapsed)": 0.00305495721588041,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 6521.85350318471,
+            "medianAbsolutePercentError(elapsed)": 0.00197472778993904,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.5758516418545361,
+            "medianAbsolutePercentError(elapsed)": 0.00102106093862669,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 581.297657082002,
+            "medianAbsolutePercentError(elapsed)": 0.00310599038759337,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 4.03414572902558,
+            "medianAbsolutePercentError(elapsed)": 0.00158273967197728,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 689.607210626186,
+            "medianAbsolutePercentError(elapsed)": 0.00248568376642094,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 59.2793187844177,
+            "medianAbsolutePercentError(elapsed)": 0.00518328040279078,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1604.809375,
+            "medianAbsolutePercentError(elapsed)": 0.00271153428378047,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 331.25032383419705,
+            "medianAbsolutePercentError(elapsed)": 0.000833616989883365,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 7594.12582781457,
+            "medianAbsolutePercentError(elapsed)": 0.00184549569788136,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 494.77557603686597,
+            "medianAbsolutePercentError(elapsed)": 0.00105555078755161,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 6268.01212121212,
+            "medianAbsolutePercentError(elapsed)": 0.00413478120134244,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 364.20927762039696,
+            "medianAbsolutePercentError(elapsed)": 0.000607357291274984,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 7433.60144927536,
+            "medianAbsolutePercentError(elapsed)": 0.00189919601063691,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 302.506208718626,
+            "medianAbsolutePercentError(elapsed)": 0.00105645248199629,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 762.4054054054051,
+            "medianAbsolutePercentError(elapsed)": 0.00171742371527357,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 7785.28571428571,
+            "medianAbsolutePercentError(elapsed)": 0.00211383269043514,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 362.067605633803,
+            "medianAbsolutePercentError(elapsed)": 0.00139886228408425,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4143.4624505928905,
+            "medianAbsolutePercentError(elapsed)": 0.00146284234465483,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1694.1652892562,
+            "medianAbsolutePercentError(elapsed)": 0.00292944934920567,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.28773697855966,
+            "medianAbsolutePercentError(elapsed)": 0.000422657188578299,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1704.8931552587599,
+            "medianAbsolutePercentError(elapsed)": 0.000896043821082714,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.287594100711697,
+            "medianAbsolutePercentError(elapsed)": 0.000392893611762858,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1708.41777777778,
+            "medianAbsolutePercentError(elapsed)": 0.000918626060998322,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.287690317668677,
+            "medianAbsolutePercentError(elapsed)": 0.000706280991236357,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1906.18151815182,
+            "medianAbsolutePercentError(elapsed)": 0.0038543865490559,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 296.090293453725,
+            "medianAbsolutePercentError(elapsed)": 0.00300718235413074,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5000.75965665236,
+            "medianAbsolutePercentError(elapsed)": 0.0076634416417629,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 10.990044152847,
+            "medianAbsolutePercentError(elapsed)": 0.00276946545993271,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2269.33052631579,
+            "medianAbsolutePercentError(elapsed)": 0.000773161980118281,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1985.3126213592202,
+            "medianAbsolutePercentError(elapsed)": 0.00211644468445142,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 4079.40074906367,
+            "medianAbsolutePercentError(elapsed)": 0.0037401577342823,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.28755425542026203,
+            "medianAbsolutePercentError(elapsed)": 0.000221656945601862,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2245.01714285714,
+            "medianAbsolutePercentError(elapsed)": 0.00618320188817339,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 15.5284949575607,
+            "medianAbsolutePercentError(elapsed)": 0.0108086392010048,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2251.1444201312897,
+            "medianAbsolutePercentError(elapsed)": 0.00260836991048749,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.289221959046492,
+            "medianAbsolutePercentError(elapsed)": 0.00606810441050023,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1708.89171974522,
+            "medianAbsolutePercentError(elapsed)": 0.00128469001487956,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.287592815980162,
+            "medianAbsolutePercentError(elapsed)": 0.00031156286334105,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2630.59487179487,
+            "medianAbsolutePercentError(elapsed)": 0.000668534254372812,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.287620216661461,
+            "medianAbsolutePercentError(elapsed)": 0.000308736474524877,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1930.27226890756,
+            "medianAbsolutePercentError(elapsed)": 0.00274742738249916,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.28755586877794803,
+            "medianAbsolutePercentError(elapsed)": 0.000379793598070027,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2100.9690346083803,
+            "medianAbsolutePercentError(elapsed)": 0.000409493549396419,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.28783082198939997,
+            "medianAbsolutePercentError(elapsed)": 0.0010894508403146,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1712.94444444444,
+            "medianAbsolutePercentError(elapsed)": 0.000535162113280345,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.287581611153513,
+            "medianAbsolutePercentError(elapsed)": 0.000358891640071757,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1721.79640718563,
+            "medianAbsolutePercentError(elapsed)": 0.00196123216638706,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.287588931620245,
+            "medianAbsolutePercentError(elapsed)": 0.000385558475552869,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3874.2871621621603,
+            "medianAbsolutePercentError(elapsed)": 0.0018196812107213,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.28752222158792595,
+            "medianAbsolutePercentError(elapsed)": 0.000293202146951016,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1924.38691588785,
+            "medianAbsolutePercentError(elapsed)": 0.00117864578445779,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1058.8246097337,
+            "medianAbsolutePercentError(elapsed)": 0.000901120891889522,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2984.34104046243,
+            "medianAbsolutePercentError(elapsed)": 0.00190815465354513,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 266.18435754189903,
+            "medianAbsolutePercentError(elapsed)": 0.000413292934489945,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1163.88964181994,
+            "medianAbsolutePercentError(elapsed)": 0.00835805145860036,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 43.2388566256882,
+            "medianAbsolutePercentError(elapsed)": 0.00129797070089409,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 87.7917749579575,
+            "medianAbsolutePercentError(elapsed)": 0.000893922196753773,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 36069.413793103406,
+            "medianAbsolutePercentError(elapsed)": 0.00202400881591766,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 326909.75,
+            "medianAbsolutePercentError(elapsed)": 0.00469139084448883,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 17075.984375,
+            "medianAbsolutePercentError(elapsed)": 0.00180007031001354,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 25237.0333333333,
+            "medianAbsolutePercentError(elapsed)": 0.00166832043394843,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 12.1444149583396,
+            "medianAbsolutePercentError(elapsed)": 0.00135865107083383,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 2489.53828306264,
+            "medianAbsolutePercentError(elapsed)": 0.000954192613934065,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 4.60132393382122,
+            "medianAbsolutePercentError(elapsed)": 0.0200051585500294,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 2501.89680589681,
+            "medianAbsolutePercentError(elapsed)": 0.000718441867980369,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 2004.51305970149,
+            "medianAbsolutePercentError(elapsed)": 0.00326292345445258,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 10828.7196261682,
+            "medianAbsolutePercentError(elapsed)": 0.00226262701239976,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 2045.20532319392,
+            "medianAbsolutePercentError(elapsed)": 0.00184813585603644,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 35058.303030303,
+            "medianAbsolutePercentError(elapsed)": 0.0021668843079548,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.64499967448562,
+            "medianAbsolutePercentError(elapsed)": 0.00207309019387552,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.63461740768723,
+            "medianAbsolutePercentError(elapsed)": 0.00137790912323482,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27241208716252496,
+            "medianAbsolutePercentError(elapsed)": 0.00122115763943649,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.74309976747341,
+            "medianAbsolutePercentError(elapsed)": 0.00221722763019743,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 25260.638297872298,
+            "medianAbsolutePercentError(elapsed)": 0.0124450222526136,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 41786.25,
+            "medianAbsolutePercentError(elapsed)": 0.00360865597079469,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 97.9007700385019,
+            "medianAbsolutePercentError(elapsed)": 0.00500492763046573,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 134.90721781418,
+            "medianAbsolutePercentError(elapsed)": 0.00954430302223626,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272631050812044,
+            "medianAbsolutePercentError(elapsed)": 0.00150304859326728,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.0926938043811,
+            "medianAbsolutePercentError(elapsed)": 0.000478906556710859,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 29.163671008475102,
+            "medianAbsolutePercentError(elapsed)": 0.000698673157343779,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.5462005993493301,
+            "medianAbsolutePercentError(elapsed)": 0.00289385813245618,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.54075173707759,
+            "medianAbsolutePercentError(elapsed)": 0.000629693708786815,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 51.375720058464495,
+            "medianAbsolutePercentError(elapsed)": 0.00438708635867362,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 161.84366176252,
+            "medianAbsolutePercentError(elapsed)": 0.000817485602481001,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 226.875,
+            "medianAbsolutePercentError(elapsed)": 0.00255905722947079,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 161.27803884711798,
+            "medianAbsolutePercentError(elapsed)": 0.00321461847362821,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 133.501344243133,
+            "medianAbsolutePercentError(elapsed)": 0.00586777546964563,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 338.956104651163,
+            "medianAbsolutePercentError(elapsed)": 0.00133881559235832,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 186.005106926269,
+            "medianAbsolutePercentError(elapsed)": 0.00818083356631451,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272260275331297,
+            "medianAbsolutePercentError(elapsed)": 0.000719149869469728,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272828010751022,
+            "medianAbsolutePercentError(elapsed)": 0.00188802684559256,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272462546221524,
+            "medianAbsolutePercentError(elapsed)": 0.00139123131487371,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 153.392668577463,
+            "medianAbsolutePercentError(elapsed)": 0.00271630861622578,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.122195025429798,
+            "medianAbsolutePercentError(elapsed)": 0.0117860096917589,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1037.40643863179,
+            "medianAbsolutePercentError(elapsed)": 0.00120635193629501,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.274412916840641,
+            "medianAbsolutePercentError(elapsed)": 0.00178179016135034,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.4439770653482,
+            "medianAbsolutePercentError(elapsed)": 0.00142019890010788,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272407483513702,
+            "medianAbsolutePercentError(elapsed)": 0.000797766958917817,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272481079345076,
+            "medianAbsolutePercentError(elapsed)": 0.0011807135939269,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272634090539659,
+            "medianAbsolutePercentError(elapsed)": 0.00109639518933003,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272626964265287,
+            "medianAbsolutePercentError(elapsed)": 0.00131036772216362,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27295112979997,
+            "medianAbsolutePercentError(elapsed)": 0.00173729713498128,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272326788840951,
+            "medianAbsolutePercentError(elapsed)": 0.000639728939382434,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27241719541820003,
+            "medianAbsolutePercentError(elapsed)": 0.00123943165565286,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272320918679409,
+            "medianAbsolutePercentError(elapsed)": 0.000577677910115821,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 765.524417731029,
+            "medianAbsolutePercentError(elapsed)": 0.0046613276407352,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 109.52878247580199,
+            "medianAbsolutePercentError(elapsed)": 0.00218404653924519,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 12.9616375416801,
+            "medianAbsolutePercentError(elapsed)": 0.00190480296887861,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15793.835616438399,
+            "medianAbsolutePercentError(elapsed)": 0.00351845658792216,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 17450.241379310297,
+            "medianAbsolutePercentError(elapsed)": 0.00100727824391374,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 18.5130758807588,
+            "medianAbsolutePercentError(elapsed)": 0.00151044208253916,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 13.8925289312457,
+            "medianAbsolutePercentError(elapsed)": 0.000844262595106415,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1514.65563909774,
+            "medianAbsolutePercentError(elapsed)": 0.00236926772808364,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4024.9999999999995,
+            "medianAbsolutePercentError(elapsed)": 0.00203646129330617,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
         }
     ],
     "ci-macos": [
@@ -500581,6 +501814,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00989469251346128,
             "commit": "9555b86c",
             "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.564194289863309,
+            "medianAbsolutePercentError(elapsed)": 0.0166361859590874,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.583750166539256,
+            "medianAbsolutePercentError(elapsed)": 0.0408369485555947,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.388649234718857,
+            "medianAbsolutePercentError(elapsed)": 0.0323909608241657,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.449356995681731,
+            "medianAbsolutePercentError(elapsed)": 0.0226638146402823,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 42743.32,
+            "medianAbsolutePercentError(elapsed)": 0.173781817417796,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 52909.090909090904,
+            "medianAbsolutePercentError(elapsed)": 0.087237796510488,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 185.82017543859598,
+            "medianAbsolutePercentError(elapsed)": 0.0455224297659369,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 232.105580357143,
+            "medianAbsolutePercentError(elapsed)": 0.0402235866537232,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.39435124354561,
+            "medianAbsolutePercentError(elapsed)": 0.00534525100533207,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 61.9390272835113,
+            "medianAbsolutePercentError(elapsed)": 0.041319108055744,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 60.086733343917004,
+            "medianAbsolutePercentError(elapsed)": 0.0382428097616354,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.614248968436847,
+            "medianAbsolutePercentError(elapsed)": 0.0998916613981093,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.56407026668292,
+            "medianAbsolutePercentError(elapsed)": 0.0773354990153894,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 73.622243226213,
+            "medianAbsolutePercentError(elapsed)": 0.0501500781617799,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 248.68066666666698,
+            "medianAbsolutePercentError(elapsed)": 0.0917649821648216,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 386.200434153401,
+            "medianAbsolutePercentError(elapsed)": 0.0964866437083429,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 262.48177842565605,
+            "medianAbsolutePercentError(elapsed)": 0.0942215487665843,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 331.790229885057,
+            "medianAbsolutePercentError(elapsed)": 0.148016093810174,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 589.688834655278,
+            "medianAbsolutePercentError(elapsed)": 0.041754608344834,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 317.446129032258,
+            "medianAbsolutePercentError(elapsed)": 0.0897783753837322,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.344524654753258,
+            "medianAbsolutePercentError(elapsed)": 0.0249468488336298,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.91080349919827,
+            "medianAbsolutePercentError(elapsed)": 0.0341225503065241,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.340120523874223,
+            "medianAbsolutePercentError(elapsed)": 0.010103478684953,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 218.897987371744,
+            "medianAbsolutePercentError(elapsed)": 0.020838245447754,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 22.395997478726798,
+            "medianAbsolutePercentError(elapsed)": 0.101382909153972,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1398.0034722222201,
+            "medianAbsolutePercentError(elapsed)": 0.109897813688213,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.371892456386249,
+            "medianAbsolutePercentError(elapsed)": 0.0165246410473857,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.369635441601331,
+            "medianAbsolutePercentError(elapsed)": 0.0176452583808176,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.34095676581512097,
+            "medianAbsolutePercentError(elapsed)": 0.0163020613071817,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.33965751986099896,
+            "medianAbsolutePercentError(elapsed)": 0.0122846865916689,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.7126624303030911,
+            "medianAbsolutePercentError(elapsed)": 0.243850239053815,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.34290537680341,
+            "medianAbsolutePercentError(elapsed)": 0.0150817490478079,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.339155251404801,
+            "medianAbsolutePercentError(elapsed)": 0.00484174258738458,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.350840390787037,
+            "medianAbsolutePercentError(elapsed)": 0.0482521673844414,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.93187515435235,
+            "medianAbsolutePercentError(elapsed)": 0.306427044923639,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.375618877152521,
+            "medianAbsolutePercentError(elapsed)": 0.0153706112673184,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3433.13953488372,
+            "medianAbsolutePercentError(elapsed)": 0.0455909868836087,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 208.401510512349,
+            "medianAbsolutePercentError(elapsed)": 0.028795237301638,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 24.9785683669096,
+            "medianAbsolutePercentError(elapsed)": 0.0309878885788045,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 18882.2608695652,
+            "medianAbsolutePercentError(elapsed)": 0.0376984551556115,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 21265.4259259259,
+            "medianAbsolutePercentError(elapsed)": 0.147711809648548,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 28.9873191053939,
+            "medianAbsolutePercentError(elapsed)": 0.0312521946281393,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 10.034248639449801,
+            "medianAbsolutePercentError(elapsed)": 0.0663404261634493,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2058.83018867925,
+            "medianAbsolutePercentError(elapsed)": 0.0775812665059855,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4335.01515151515,
+            "medianAbsolutePercentError(elapsed)": 0.0437986228240893,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 2.14037784781762,
+            "medianAbsolutePercentError(elapsed)": 0.361622754447408,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 779.506972111554,
+            "medianAbsolutePercentError(elapsed)": 0.195506749543787,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 2.06273793208467,
+            "medianAbsolutePercentError(elapsed)": 0.183407437403776,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 537.497441728255,
+            "medianAbsolutePercentError(elapsed)": 0.0467880206252893,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.49679426153775197,
+            "medianAbsolutePercentError(elapsed)": 0.181459526306604,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1814.85948158254,
+            "medianAbsolutePercentError(elapsed)": 0.0613551142328096,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 6.851341579691691,
+            "medianAbsolutePercentError(elapsed)": 0.0945090272926505,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2346.90069284065,
+            "medianAbsolutePercentError(elapsed)": 0.136510930391695,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 55718.75,
+            "medianAbsolutePercentError(elapsed)": 0.151427771556551,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 63885.41666666669,
+            "medianAbsolutePercentError(elapsed)": 0.178190491504529,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 79217.2857142857,
+            "medianAbsolutePercentError(elapsed)": 0.0761087351346819,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 66191.6666666667,
+            "medianAbsolutePercentError(elapsed)": 0.210226254089639,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 337.443958788636,
+            "medianAbsolutePercentError(elapsed)": 0.0802685743096724,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3202.67857142857,
+            "medianAbsolutePercentError(elapsed)": 0.30091103034134,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 271.69084290114796,
+            "medianAbsolutePercentError(elapsed)": 0.106934673175648,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5068.04128440367,
+            "medianAbsolutePercentError(elapsed)": 0.062406448026187,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.47134180885604804,
+            "medianAbsolutePercentError(elapsed)": 0.159306646454099,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1660.6777609682301,
+            "medianAbsolutePercentError(elapsed)": 0.151906988828517,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 63.4284420289855,
+            "medianAbsolutePercentError(elapsed)": 0.138458002946607,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 3150.68518518518,
+            "medianAbsolutePercentError(elapsed)": 0.0932215094416449,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 35.049134544561795,
+            "medianAbsolutePercentError(elapsed)": 0.04517305690067,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 3304.51713395639,
+            "medianAbsolutePercentError(elapsed)": 0.0495971765939933,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.609892177626858,
+            "medianAbsolutePercentError(elapsed)": 0.130822957868813,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 453.049203049203,
+            "medianAbsolutePercentError(elapsed)": 0.295921413844578,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 8.09476063308507,
+            "medianAbsolutePercentError(elapsed)": 0.072521116761936,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 750.682383759005,
+            "medianAbsolutePercentError(elapsed)": 0.232940457122377,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 142.194538059268,
+            "medianAbsolutePercentError(elapsed)": 0.0884167609017809,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1457.4074074074101,
+            "medianAbsolutePercentError(elapsed)": 0.170238163224288,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 306.457785087719,
+            "medianAbsolutePercentError(elapsed)": 0.0331330770404183,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 7286.4262295082,
+            "medianAbsolutePercentError(elapsed)": 0.065950974214494,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 373.439220183486,
+            "medianAbsolutePercentError(elapsed)": 0.0310815670580539,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4937.407239818999,
+            "medianAbsolutePercentError(elapsed)": 0.026212047615415,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 352.640607210626,
+            "medianAbsolutePercentError(elapsed)": 0.162994028191016,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 7847.58947368421,
+            "medianAbsolutePercentError(elapsed)": 0.0829341963215948,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 254.01165851824,
+            "medianAbsolutePercentError(elapsed)": 0.0767334318861866,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 568.400945874934,
+            "medianAbsolutePercentError(elapsed)": 0.0233212555265629,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5384.12921348315,
+            "medianAbsolutePercentError(elapsed)": 0.191601780588528,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 341.635596082405,
+            "medianAbsolutePercentError(elapsed)": 0.021486219760169,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3178.53560371517,
+            "medianAbsolutePercentError(elapsed)": 0.0763750774518016,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1203.85537190083,
+            "medianAbsolutePercentError(elapsed)": 0.00473556778921728,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.631722917541115,
+            "medianAbsolutePercentError(elapsed)": 0.169619907990731,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1348.8676975945,
+            "medianAbsolutePercentError(elapsed)": 0.118092932170198,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 6.1946486041463995,
+            "medianAbsolutePercentError(elapsed)": 0.318394793951296,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1864.10602409639,
+            "medianAbsolutePercentError(elapsed)": 0.0978130806573286,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.01295891747439,
+            "medianAbsolutePercentError(elapsed)": 0.139120318065661,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1569.08885542169,
+            "medianAbsolutePercentError(elapsed)": 0.0830499445015616,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 404.37392795883403,
+            "medianAbsolutePercentError(elapsed)": 0.241930193597225,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3678.05666666667,
+            "medianAbsolutePercentError(elapsed)": 0.336791784963681,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 18.3762064774433,
+            "medianAbsolutePercentError(elapsed)": 0.0573468428591227,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1162.38933333333,
+            "medianAbsolutePercentError(elapsed)": 0.0423092190242236,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 2382.4466858789597,
+            "medianAbsolutePercentError(elapsed)": 0.0236760895999633,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 3335.91011235955,
+            "medianAbsolutePercentError(elapsed)": 0.09494593785066,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.516506007012788,
+            "medianAbsolutePercentError(elapsed)": 0.0278037162385546,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2713.38861386139,
+            "medianAbsolutePercentError(elapsed)": 0.156658425787561,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.910865601023301,
+            "medianAbsolutePercentError(elapsed)": 0.267686543473233,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1889.1661538461499,
+            "medianAbsolutePercentError(elapsed)": 0.183830103206128,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.848956967523426,
+            "medianAbsolutePercentError(elapsed)": 0.375017264041724,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1136.5458333333302,
+            "medianAbsolutePercentError(elapsed)": 0.162896256149024,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.423185674253319,
+            "medianAbsolutePercentError(elapsed)": 0.123108729414733,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2073.49896480331,
+            "medianAbsolutePercentError(elapsed)": 0.28236440355467,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.65892117962466,
+            "medianAbsolutePercentError(elapsed)": 0.234876808962523,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2032.9416475972503,
+            "medianAbsolutePercentError(elapsed)": 0.340170374687104,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.514781119756141,
+            "medianAbsolutePercentError(elapsed)": 0.0288472025131809,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1973.88666666667,
+            "medianAbsolutePercentError(elapsed)": 0.0958380470497711,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 1.01703645047992,
+            "medianAbsolutePercentError(elapsed)": 0.428120864876341,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1440.7581552306,
+            "medianAbsolutePercentError(elapsed)": 0.245469464857476,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.566487081711967,
+            "medianAbsolutePercentError(elapsed)": 0.155582515385326,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 936.817330210773,
+            "medianAbsolutePercentError(elapsed)": 0.091222551671972,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 3.7927957163719,
+            "medianAbsolutePercentError(elapsed)": 0.106264189810056,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2724.02666666667,
+            "medianAbsolutePercentError(elapsed)": 0.139937703580041,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.530725445451221,
+            "medianAbsolutePercentError(elapsed)": 0.0494121120230836,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1850.3615819208999,
+            "medianAbsolutePercentError(elapsed)": 0.252422892124381,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 8583.25,
+            "medianAbsolutePercentError(elapsed)": 0.0160535892821434,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5257.35294117647,
+            "medianAbsolutePercentError(elapsed)": 0.0904663855191814,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 290.43470437018,
+            "medianAbsolutePercentError(elapsed)": 0.063653097953251,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1780.19289340102,
+            "medianAbsolutePercentError(elapsed)": 0.0324333031164619,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 37.6099215673296,
+            "medianAbsolutePercentError(elapsed)": 0.0195805504907293,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 65.2604498679537,
+            "medianAbsolutePercentError(elapsed)": 0.29954164328956,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 41316.40625,
+            "medianAbsolutePercentError(elapsed)": 0.0456808338994566,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 186937.5,
+            "medianAbsolutePercentError(elapsed)": 0.23979274611399,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 13855.1,
+            "medianAbsolutePercentError(elapsed)": 0.0839233251937924,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 137483.40000000002,
+            "medianAbsolutePercentError(elapsed)": 0.394982192804743,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 13.3707483848262,
+            "medianAbsolutePercentError(elapsed)": 0.159791851018078,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1969.4119850187299,
+            "medianAbsolutePercentError(elapsed)": 0.196478416577818,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 8.05470798860047,
+            "medianAbsolutePercentError(elapsed)": 0.0779752945750194,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 2296.8051948051902,
+            "medianAbsolutePercentError(elapsed)": 0.52167888058057,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 2969.22641509434,
+            "medianAbsolutePercentError(elapsed)": 0.229474196112316,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 13389.676056338,
+            "medianAbsolutePercentError(elapsed)": 0.0844477246568419,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 2553.97022332506,
+            "medianAbsolutePercentError(elapsed)": 0.218637925789128,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 43796.2962962963,
+            "medianAbsolutePercentError(elapsed)": 0.0565636557756532,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
         }
     ],
     "ci-ubuntu-clang": [
@@ -750873,6 +753339,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00157061579900793,
             "commit": "9555b86c",
             "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.55056549930386,
+            "medianAbsolutePercentError(elapsed)": 0.00192891075919623,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 214.162757201646,
+            "medianAbsolutePercentError(elapsed)": 0.00408723203703277,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.551049766496263,
+            "medianAbsolutePercentError(elapsed)": 0.00194211305204331,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 215.357863279791,
+            "medianAbsolutePercentError(elapsed)": 0.0086834886097564,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.272811865627505,
+            "medianAbsolutePercentError(elapsed)": 0.00103024292368914,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 429.047106824926,
+            "medianAbsolutePercentError(elapsed)": 0.0152150965200937,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 3.54070095260706,
+            "medianAbsolutePercentError(elapsed)": 0.00035696876348986,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 630.78842676311,
+            "medianAbsolutePercentError(elapsed)": 0.00329613554488719,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 26135.358974359,
+            "medianAbsolutePercentError(elapsed)": 0.0130602536534295,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 27295.6428571429,
+            "medianAbsolutePercentError(elapsed)": 0.0141225395846122,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 30981.972222222204,
+            "medianAbsolutePercentError(elapsed)": 0.0330998214181574,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 33750.242424242395,
+            "medianAbsolutePercentError(elapsed)": 0.042032798419209,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 106.885143570537,
+            "medianAbsolutePercentError(elapsed)": 0.00477433462437951,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1899.69320066335,
+            "medianAbsolutePercentError(elapsed)": 0.0022972351936532,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 123.85212632539,
+            "medianAbsolutePercentError(elapsed)": 0.00277546769604516,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2894.35507246377,
+            "medianAbsolutePercentError(elapsed)": 0.00272177458288436,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.272480729165972,
+            "medianAbsolutePercentError(elapsed)": 0.000887236457831475,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 630.694614443085,
+            "medianAbsolutePercentError(elapsed)": 0.00504210201467449,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 50.7188636253454,
+            "medianAbsolutePercentError(elapsed)": 0.00161811256821477,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1824.8244147157202,
+            "medianAbsolutePercentError(elapsed)": 0.00541578581612683,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 27.5151258563621,
+            "medianAbsolutePercentError(elapsed)": 0.00104215898543306,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2558.88666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00325908937995343,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.817397158175655,
+            "medianAbsolutePercentError(elapsed)": 0.000746823984357674,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 228.314584259671,
+            "medianAbsolutePercentError(elapsed)": 0.00380004644067525,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 3.54675150260893,
+            "medianAbsolutePercentError(elapsed)": 0.0024235285746243,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 321.342805100182,
+            "medianAbsolutePercentError(elapsed)": 0.0108840755095318,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 46.272250754487196,
+            "medianAbsolutePercentError(elapsed)": 0.0115386055092486,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 688.306912991657,
+            "medianAbsolutePercentError(elapsed)": 0.00355417207134046,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 131.53117835855102,
+            "medianAbsolutePercentError(elapsed)": 0.0032129984373995,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2653.24019607843,
+            "medianAbsolutePercentError(elapsed)": 0.00852135027007237,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 182.465517241379,
+            "medianAbsolutePercentError(elapsed)": 0.00278047450885321,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2648.2196796338703,
+            "medianAbsolutePercentError(elapsed)": 0.00549287213282593,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 125.161443726375,
+            "medianAbsolutePercentError(elapsed)": 0.00151660003278803,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2939.39481268012,
+            "medianAbsolutePercentError(elapsed)": 0.00445431046279523,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 116.359577221743,
+            "medianAbsolutePercentError(elapsed)": 0.0034725853327391,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 300.030463946339,
+            "medianAbsolutePercentError(elapsed)": 0.00111075058131678,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2682.64903846154,
+            "medianAbsolutePercentError(elapsed)": 0.00812778433266961,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 150.17317653646901,
+            "medianAbsolutePercentError(elapsed)": 0.002006810982655,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1794.52080123267,
+            "medianAbsolutePercentError(elapsed)": 0.00584854261041754,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 695.6039783001811,
+            "medianAbsolutePercentError(elapsed)": 0.00456831837866799,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272267600052413,
+            "medianAbsolutePercentError(elapsed)": 0.000388421077826648,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 704.350553505535,
+            "medianAbsolutePercentError(elapsed)": 0.00279371848539296,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272357516215019,
+            "medianAbsolutePercentError(elapsed)": 0.000800424924622908,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 714.290760869565,
+            "medianAbsolutePercentError(elapsed)": 0.00859012034021337,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.5446224110122799,
+            "medianAbsolutePercentError(elapsed)": 0.000803153215474519,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 806.895877009085,
+            "medianAbsolutePercentError(elapsed)": 0.00341235954720753,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 111.59431805812599,
+            "medianAbsolutePercentError(elapsed)": 0.00294079139328633,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1802.72134038801,
+            "medianAbsolutePercentError(elapsed)": 0.00778811004553038,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 10.9070122241928,
+            "medianAbsolutePercentError(elapsed)": 0.00148288772815371,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1193.8463949843301,
+            "medianAbsolutePercentError(elapsed)": 0.00431482816613812,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 738.059205776173,
+            "medianAbsolutePercentError(elapsed)": 0.00316085102473434,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 1871.07922535211,
+            "medianAbsolutePercentError(elapsed)": 0.00324110182170121,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27233935308137197,
+            "medianAbsolutePercentError(elapsed)": 0.000344191144873996,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 907.135714285714,
+            "medianAbsolutePercentError(elapsed)": 0.0023870420155668,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272340763519056,
+            "medianAbsolutePercentError(elapsed)": 0.000570651792734766,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 932.339673913044,
+            "medianAbsolutePercentError(elapsed)": 0.00210586759450837,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27300368791532303,
+            "medianAbsolutePercentError(elapsed)": 0.00305230714297343,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 704.093137254902,
+            "medianAbsolutePercentError(elapsed)": 0.00533947402210623,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272773716363071,
+            "medianAbsolutePercentError(elapsed)": 0.00126481882272809,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1111.99241603467,
+            "medianAbsolutePercentError(elapsed)": 0.00197497308287761,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272461659408064,
+            "medianAbsolutePercentError(elapsed)": 0.000804013505725831,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 834.880390561432,
+            "medianAbsolutePercentError(elapsed)": 0.00393919165515856,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272315039246134,
+            "medianAbsolutePercentError(elapsed)": 0.000607666631864773,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 874.2551271534049,
+            "medianAbsolutePercentError(elapsed)": 0.00640625577421112,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.289487441841524,
+            "medianAbsolutePercentError(elapsed)": 0.036287491520813,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 713.027380211574,
+            "medianAbsolutePercentError(elapsed)": 0.00257567072609044,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272362769270157,
+            "medianAbsolutePercentError(elapsed)": 0.000382985887127305,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 726.671293375394,
+            "medianAbsolutePercentError(elapsed)": 0.00226399037238151,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272441325078894,
+            "medianAbsolutePercentError(elapsed)": 0.000763660360836188,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1651.1270801815401,
+            "medianAbsolutePercentError(elapsed)": 0.00357807455574703,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272369121390586,
+            "medianAbsolutePercentError(elapsed)": 0.000542192746661382,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 834.091994382023,
+            "medianAbsolutePercentError(elapsed)": 0.00369506810063574,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 891.379965457686,
+            "medianAbsolutePercentError(elapsed)": 0.00504679747674947,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1696.28877887789,
+            "medianAbsolutePercentError(elapsed)": 0.00276937016698805,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 115.12091826637601,
+            "medianAbsolutePercentError(elapsed)": 0.000876054227164919,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 535.514046328241,
+            "medianAbsolutePercentError(elapsed)": 0.00616373896297572,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 15.7414390045983,
+            "medianAbsolutePercentError(elapsed)": 0.00563106811042036,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 40.1730569948187,
+            "medianAbsolutePercentError(elapsed)": 0.00161313088865386,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 14284.234567901201,
+            "medianAbsolutePercentError(elapsed)": 0.00515148574073717,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 159051.14285714302,
+            "medianAbsolutePercentError(elapsed)": 0.00266408201144457,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 15013.3823529412,
+            "medianAbsolutePercentError(elapsed)": 0.00140515739951825,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 29012.1538461538,
+            "medianAbsolutePercentError(elapsed)": 0.000849236040306288,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 8.721469805561929,
+            "medianAbsolutePercentError(elapsed)": 0.000695676748674518,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1109.91610414658,
+            "medianAbsolutePercentError(elapsed)": 0.00206133402791273,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.1792629101817,
+            "medianAbsolutePercentError(elapsed)": 0.00159890071247229,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1104.74256410256,
+            "medianAbsolutePercentError(elapsed)": 0.003795713559802,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 950.540807914262,
+            "medianAbsolutePercentError(elapsed)": 0.00293111203658301,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 4910.330143540669,
+            "medianAbsolutePercentError(elapsed)": 0.0029574392921591,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1027.77777777778,
+            "medianAbsolutePercentError(elapsed)": 0.000433689559754346,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 22855.1538461538,
+            "medianAbsolutePercentError(elapsed)": 0.00238749774162844,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.554780955860774,
+            "medianAbsolutePercentError(elapsed)": 0.00307517096837863,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.550781256004882,
+            "medianAbsolutePercentError(elapsed)": 0.00175431015343324,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.274367857447344,
+            "medianAbsolutePercentError(elapsed)": 0.00674617569230035,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.53985702259209,
+            "medianAbsolutePercentError(elapsed)": 0.000383127922726758,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 26143.7555555556,
+            "medianAbsolutePercentError(elapsed)": 0.0158014231892666,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 30756.3428571429,
+            "medianAbsolutePercentError(elapsed)": 0.036000484118154,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 108.451536427464,
+            "medianAbsolutePercentError(elapsed)": 0.00211561213535095,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 123.44796913514101,
+            "medianAbsolutePercentError(elapsed)": 0.00168093306937186,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272537529163998,
+            "medianAbsolutePercentError(elapsed)": 0.000773814174303569,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.7063518939577,
+            "medianAbsolutePercentError(elapsed)": 0.0012311570245792,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 28.3413798817876,
+            "medianAbsolutePercentError(elapsed)": 0.000746012549048051,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.817204979904527,
+            "medianAbsolutePercentError(elapsed)": 0.000916118034457274,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.54131969118895,
+            "medianAbsolutePercentError(elapsed)": 0.000963162348937056,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 46.2000970702436,
+            "medianAbsolutePercentError(elapsed)": 0.00335217371441067,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 124.54848448255001,
+            "medianAbsolutePercentError(elapsed)": 0.00279650615810573,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 183.34008613814,
+            "medianAbsolutePercentError(elapsed)": 0.000813376575501116,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 123.135698652229,
+            "medianAbsolutePercentError(elapsed)": 0.00364898918287235,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 114.50848,
+            "medianAbsolutePercentError(elapsed)": 0.00216251945710233,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 307.176218532405,
+            "medianAbsolutePercentError(elapsed)": 0.00275120230923995,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 151.213804046014,
+            "medianAbsolutePercentError(elapsed)": 0.00426650063300228,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272250074932664,
+            "medianAbsolutePercentError(elapsed)": 0.000585921284567486,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272294533862064,
+            "medianAbsolutePercentError(elapsed)": 0.000709883725637919,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.306265737985168,
+            "medianAbsolutePercentError(elapsed)": 0.0171732824324215,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 114.230738522954,
+            "medianAbsolutePercentError(elapsed)": 0.00021344697502814,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 11.4362725767016,
+            "medianAbsolutePercentError(elapsed)": 0.00061376657817634,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 739.639684813754,
+            "medianAbsolutePercentError(elapsed)": 0.00168987857681139,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.273011333333333,
+            "medianAbsolutePercentError(elapsed)": 0.00245966344023417,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272266180961976,
+            "medianAbsolutePercentError(elapsed)": 0.000438226351227646,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272215345530928,
+            "medianAbsolutePercentError(elapsed)": 0.000761317516716597,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272493870453418,
+            "medianAbsolutePercentError(elapsed)": 0.000886609514607098,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27223867950989,
+            "medianAbsolutePercentError(elapsed)": 0.000669558228425358,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272472472685462,
+            "medianAbsolutePercentError(elapsed)": 0.00123552801433325,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.28738957963323203,
+            "medianAbsolutePercentError(elapsed)": 0.0546081697013191,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272411885645586,
+            "medianAbsolutePercentError(elapsed)": 0.000544897381182454,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272361482312741,
+            "medianAbsolutePercentError(elapsed)": 0.000860649468877457,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272393709792635,
+            "medianAbsolutePercentError(elapsed)": 0.0010131071198522,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 887.029360967185,
+            "medianAbsolutePercentError(elapsed)": 0.00238441323453986,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 115.956919060052,
+            "medianAbsolutePercentError(elapsed)": 0.00359883928475019,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.9566106346484,
+            "medianAbsolutePercentError(elapsed)": 0.000423379419628337,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14258.7222222222,
+            "medianAbsolutePercentError(elapsed)": 0.00103270596698627,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14967.3246753247,
+            "medianAbsolutePercentError(elapsed)": 0.0015955895849336,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16.3958475734792,
+            "medianAbsolutePercentError(elapsed)": 0.00429101401827708,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 5.45047901992856,
+            "medianAbsolutePercentError(elapsed)": 0.00133755061196426,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1182.78414096916,
+            "medianAbsolutePercentError(elapsed)": 0.00451256881164559,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3710.7581227436804,
+            "medianAbsolutePercentError(elapsed)": 0.00225423306924645,
+            "commit": "6bf82bc7",
+            "commit_message": "rppgrpc tests: address SonarCloud findings in the client reactor tests (#777)"
         }
     ],
     "ci-windows": [
