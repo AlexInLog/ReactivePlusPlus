@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"switch_on_next_8cpp-example.html":[2,3,32],
 "take_8cpp-example.html":[2,3,33],
 "take_8hpp_source.html":[2,2,0,0,1,0,3,36],
 "take__last_8hpp_source.html":[2,2,0,0,1,0,3,37],

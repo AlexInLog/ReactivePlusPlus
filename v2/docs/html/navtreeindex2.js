@@ -234,7 +234,8 @@ var NAVTREEINDEX2 =
 "structrpp_1_1utils_1_1static__mem__fn.html":[2,1,0,0,5,29],
 "structrpp_1_1utils_1_1timeout__reached.html":[2,1,0,0,5,30],
 "structrpp_1_1utils_1_1types.html":[2,1,0,0,5,32],
-"structrppgrpc_1_1details_1_1base__writer_1_1observer__strategy.html":[2,1,0,2,0,0,0],
+"structrppgrpc_1_1details_1_1base__writer_1_1observer__strategy.html":[2,1,0,2,0,0,1],
+"structrppgrpc_1_1details_1_1base__writer_1_1write__state.html":[2,1,0,2,0,0,0],
 "structrppgrpc_1_1utils_1_1reactor__failed.html":[2,1,0,2,1,0],
 "structrppqt_1_1details_1_1from__signal__on__event.html":[2,1,0,3,0,0],
 "structrppqt_1_1details_1_1from__signal__on__event_3_01_arg_01_4.html":[2,1,0,3,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "subscribe_8hpp_source.html":[2,2,0,0,1,0,3,33],
 "subscribe__on_8hpp_source.html":[2,2,0,0,1,0,3,34],
 "subscribe_on_8cpp-example.html":[2,3,31],
-"switch__on__next_8hpp_source.html":[2,2,0,0,1,0,3,35],
-"switch_on_next_8cpp-example.html":[2,3,32]
+"switch__on__next_8hpp_source.html":[2,2,0,0,1,0,3,35]
 };

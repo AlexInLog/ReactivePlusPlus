@@ -550,5 +550,6 @@ var hierarchy =
     [ "rpp::schedulers::current_thread::worker_strategy", "classrpp_1_1schedulers_1_1current__thread_1_1worker__strategy.html", null ],
     [ "rpp::schedulers::immediate::worker_strategy", "classrpp_1_1schedulers_1_1immediate_1_1worker__strategy.html", null ],
     [ "rpp::schedulers::new_thread::worker_strategy", "classrpp_1_1schedulers_1_1new__thread_1_1worker__strategy.html", null ],
-    [ "rpp::schedulers::test_scheduler::worker_strategy", "classrpp_1_1schedulers_1_1test__scheduler_1_1worker__strategy.html", null ]
+    [ "rpp::schedulers::test_scheduler::worker_strategy", "classrpp_1_1schedulers_1_1test__scheduler_1_1worker__strategy.html", null ],
+    [ "rppgrpc::details::base_writer&lt; TData &gt;::write_state", "structrppgrpc_1_1details_1_1base__writer_1_1write__state.html", null ]
 ];
