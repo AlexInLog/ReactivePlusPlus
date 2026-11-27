@@ -19,6 +19,7 @@
 #include "rpp/subjects/publish_subject.hpp"
 
 #include <deque>
+#include <memory>
 #include <mutex>
 
 namespace rppgrpc::details
@@ -29,8 +30,13 @@ namespace rppgrpc::details
     public:
         base_writer()
         {
-            m_subject.get_observable().subscribe(typename details::base_writer<TData>::observer_strategy{*this});
+            m_state->owner = this;
+            m_subject.get_observable().subscribe(typename details::base_writer<TData>::observer_strategy{m_state});
         }
+
+        // The observer's shared state points back at this object, so a copy would write through the original.
+        base_writer(const base_writer&)            = delete;
+        base_writer& operator=(const base_writer&) = delete;
 
         virtual ~base_writer() noexcept = default;
 
@@ -45,54 +51,85 @@ namespace rppgrpc::details
 
         void handle_on_done()
         {
+            close_writes();
             m_subject.get_disposable().dispose();
+        }
+
+        // Values and terminals emitted to the observer after this call, and values still queued, reach neither this object nor its stream.
+        // It waits for an emission that is inside start_write or finish_writes.
+        void close_writes()
+        {
+            std::lock_guard lock{m_state->mutex};
+            m_state->owner = nullptr;
         }
 
         void handle_write_done()
         {
-            std::lock_guard lock{m_write_mutex};
-            m_write.pop_front();
+            std::lock_guard lock{m_state->mutex};
+            m_state->queue.pop_front();
 
-            if (!m_write.empty())
+            if (!m_state->owner)
+                return;
+
+            if (!m_state->queue.empty())
             {
-                start_write(m_write.front());
+                start_write(m_state->queue.front());
             }
-            else if (m_finished)
+            else if (m_state->finished)
             {
                 finish_writes(grpc::Status::OK);
             }
         }
 
+        // Shared by this object and the observer subscribed to the subject, so it outlives this object: an emission
+        // that has passed the subject when this object ends still locks a live mutex and finds no owner.
+        struct write_state
+        {
+            std::mutex        mutex{};
+            std::deque<TData> queue{};
+            bool              finished{};
+            base_writer*      owner{};
+        };
+
         struct observer_strategy
         {
             static constexpr auto preferred_disposables_mode = rpp::details::observers::disposables_mode::Auto;
 
-            std::reference_wrapper<base_writer> owner{};
+            std::shared_ptr<write_state> state{};
 
             template<rpp::constraint::decayed_same_as<TData> T>
             void on_next(T&& message) const
             {
-                std::lock_guard lock{owner.get().m_write_mutex};
-                owner.get().m_write.push_back(std::forward<T>(message));
-                if (owner.get().m_write.size() == 1)
-                    owner.get().start_write(owner.get().m_write.front());
+                std::lock_guard lock{state->mutex};
+                if (!state->owner)
+                    return;
+
+                state->queue.push_back(std::forward<T>(message));
+                if (state->queue.size() == 1)
+                    state->owner->start_write(state->queue.front());
             }
 
             void on_error(const std::exception_ptr&) const
             {
-                std::lock_guard lock{owner.get().m_write_mutex};
-                owner.get().m_finished = true;
+                std::lock_guard lock{state->mutex};
+                if (!state->owner)
+                    return;
 
-                if (owner.get().m_write.size() == 0)
-                    owner.get().finish_writes(grpc::Status{grpc::StatusCode::INTERNAL, "Internal error happens"});
+                state->finished = true;
+
+                if (state->queue.size() == 0)
+                    state->owner->finish_writes(grpc::Status{grpc::StatusCode::INTERNAL, "Internal error happens"});
             }
             void on_completed() const
             {
-                std::lock_guard lock{owner.get().m_write_mutex};
-                owner.get().m_finished = true;
+                std::lock_guard lock{state->mutex};
+                if (!state->owner)
+                    return;
 
-                if (owner.get().m_write.size() == 0)
-                    owner.get().finish_writes(grpc::Status::OK);
+                state->finished = true;
+
+                if (state->queue.size() == 0)
+                    state->owner->finish_writes(grpc::Status::OK);
             }
 
             static constexpr bool is_disposed() { return false; }
@@ -102,9 +139,7 @@ namespace rppgrpc::details
     private:
         rpp::subjects::serialized_publish_subject<TData> m_subject{};
 
-        std::mutex        m_write_mutex{};
-        std::deque<TData> m_write{};
-        bool              m_finished{};
+        std::shared_ptr<write_state> m_state = std::make_shared<write_state>();
     };
 
     template<rpp::constraint::decayed_type TData>
