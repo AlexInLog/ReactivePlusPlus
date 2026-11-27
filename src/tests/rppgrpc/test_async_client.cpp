@@ -51,8 +51,10 @@ namespace
             m_release.wait();
         }
 
-        // The test emits no terminal, so the write side is never finished.
-        void finish_writes(const grpc::Status&) override { }
+        void finish_writes(const grpc::Status&) override
+        {
+            // The test emits no terminal, so the write side is never finished.
+        }
 
         std::promise<void>&      m_entered;
         std::shared_future<void> m_release;
@@ -128,7 +130,7 @@ namespace
                 uint32_t                              writes{};
                 {
                     std::unique_lock lock{m_mutex};
-                    m_cv.wait(lock, [&] { return m_exit || m_round != round; });
+                    m_cv.wait(lock, [this, &round] { return m_exit || m_round != round; });
                     if (m_exit)
                         return;
                     round    = m_round;
