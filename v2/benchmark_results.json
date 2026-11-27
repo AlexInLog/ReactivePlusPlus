@@ -249056,6 +249056,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00141623727058324,
             "commit": "f33da20b",
             "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.745473579881573,
+            "medianAbsolutePercentError(elapsed)": 0.00869140999006716,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 439.513636363636,
+            "medianAbsolutePercentError(elapsed)": 0.00663778058844363,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.7268970964354851,
+            "medianAbsolutePercentError(elapsed)": 0.00222672946960884,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 436.004214559387,
+            "medianAbsolutePercentError(elapsed)": 0.00417552846521304,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.242964403623917,
+            "medianAbsolutePercentError(elapsed)": 0.0102888708063783,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1137.21226874391,
+            "medianAbsolutePercentError(elapsed)": 0.0111728437343591,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 1.8589699384693,
+            "medianAbsolutePercentError(elapsed)": 0.0219178119451216,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 1692.77059773829,
+            "medianAbsolutePercentError(elapsed)": 0.00325960345881763,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 15941.242424242399,
+            "medianAbsolutePercentError(elapsed)": 0.0563274445156732,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 16345.5076923077,
+            "medianAbsolutePercentError(elapsed)": 0.024670211924643,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 27316.1794871795,
+            "medianAbsolutePercentError(elapsed)": 0.0159317538675153,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 22002.68,
+            "medianAbsolutePercentError(elapsed)": 0.026529066320121,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 185.616765480896,
+            "medianAbsolutePercentError(elapsed)": 0.00950390078479952,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3410.6377245509,
+            "medianAbsolutePercentError(elapsed)": 0.00441432265766047,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 220.262457044674,
+            "medianAbsolutePercentError(elapsed)": 0.000816260387948847,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5098.37444933921,
+            "medianAbsolutePercentError(elapsed)": 0.0203421048790318,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.24247077730506403,
+            "medianAbsolutePercentError(elapsed)": 0.00236629727700979,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1196.84439359268,
+            "medianAbsolutePercentError(elapsed)": 0.00304766504237351,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 44.837327523602,
+            "medianAbsolutePercentError(elapsed)": 0.00590109642814288,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 3526.87692307692,
+            "medianAbsolutePercentError(elapsed)": 0.00177763261628565,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 24.4648359008707,
+            "medianAbsolutePercentError(elapsed)": 0.00768202734959921,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 5111.7300000000005,
+            "medianAbsolutePercentError(elapsed)": 0.00546892123294951,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.372040600250741,
+            "medianAbsolutePercentError(elapsed)": 0.0154605654958063,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 461.211961301671,
+            "medianAbsolutePercentError(elapsed)": 0.00754429167223065,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 2.45051636707488,
+            "medianAbsolutePercentError(elapsed)": 0.00767518249872323,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 553.1940713293191,
+            "medianAbsolutePercentError(elapsed)": 0.00133236136571397,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 52.839655622228,
+            "medianAbsolutePercentError(elapsed)": 0.00495444753887484,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1266.10843373494,
+            "medianAbsolutePercentError(elapsed)": 0.0019642357585836,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 246.939549839228,
+            "medianAbsolutePercentError(elapsed)": 0.0026303673092021,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5799.22598870056,
+            "medianAbsolutePercentError(elapsed)": 0.00132257841700941,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 371.68560361523595,
+            "medianAbsolutePercentError(elapsed)": 0.0040804657930203,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4743.8281938326,
+            "medianAbsolutePercentError(elapsed)": 0.00141904053623069,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 265.811377943577,
+            "medianAbsolutePercentError(elapsed)": 0.00308794936367156,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5671.73684210526,
+            "medianAbsolutePercentError(elapsed)": 0.003981933660886,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 210.329225675924,
+            "medianAbsolutePercentError(elapsed)": 0.00135830696863748,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 564.391646191646,
+            "medianAbsolutePercentError(elapsed)": 0.00127660177295883,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 5923.74175824176,
+            "medianAbsolutePercentError(elapsed)": 0.0017235423974603,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 258.04885270170195,
+            "medianAbsolutePercentError(elapsed)": 0.00334179050494517,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3142.08504398827,
+            "medianAbsolutePercentError(elapsed)": 0.00173734797926632,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1287.93026004728,
+            "medianAbsolutePercentError(elapsed)": 0.00186265405598813,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23765313212829,
+            "medianAbsolutePercentError(elapsed)": 0.00116961797560548,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1303.42035928144,
+            "medianAbsolutePercentError(elapsed)": 0.00114004107287772,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.236820049743081,
+            "medianAbsolutePercentError(elapsed)": 0.00232575297106519,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1306.13137032843,
+            "medianAbsolutePercentError(elapsed)": 0.00155650606947858,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.238360460228009,
+            "medianAbsolutePercentError(elapsed)": 0.00319539191402352,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1448.9557399723399,
+            "medianAbsolutePercentError(elapsed)": 0.00171900963068167,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 232.16602228792402,
+            "medianAbsolutePercentError(elapsed)": 0.0010508984387792,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3750.11827956989,
+            "medianAbsolutePercentError(elapsed)": 0.00126866427939206,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 6.69975100507398,
+            "medianAbsolutePercentError(elapsed)": 0.0173329601507389,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1697.68529411765,
+            "medianAbsolutePercentError(elapsed)": 0.00331830098658467,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1465.04911838791,
+            "medianAbsolutePercentError(elapsed)": 0.000891503005673714,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2955.24712643678,
+            "medianAbsolutePercentError(elapsed)": 0.00244307972043489,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23820851218823103,
+            "medianAbsolutePercentError(elapsed)": 0.000738097101418699,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1709.0516666666701,
+            "medianAbsolutePercentError(elapsed)": 0.00391336815674139,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 9.39851755314816,
+            "medianAbsolutePercentError(elapsed)": 0.0091574538244963,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1735.74281391831,
+            "medianAbsolutePercentError(elapsed)": 0.00241907614812018,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.239291824336457,
+            "medianAbsolutePercentError(elapsed)": 0.00197782226870003,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1317.8547008547,
+            "medianAbsolutePercentError(elapsed)": 0.00359021941181609,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.24033483345638,
+            "medianAbsolutePercentError(elapsed)": 0.00222215562847247,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2025.9457627118602,
+            "medianAbsolutePercentError(elapsed)": 0.00253274290520764,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23847828658857498,
+            "medianAbsolutePercentError(elapsed)": 0.0014573398541057,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1508.13196480938,
+            "medianAbsolutePercentError(elapsed)": 0.0147037148190696,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.241751874645282,
+            "medianAbsolutePercentError(elapsed)": 0.0152935039020355,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1605.06836461126,
+            "medianAbsolutePercentError(elapsed)": 0.00389182352505621,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.23991598908985798,
+            "medianAbsolutePercentError(elapsed)": 0.00468716691024128,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1450.81208053691,
+            "medianAbsolutePercentError(elapsed)": 0.0410231641497727,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.242347078853802,
+            "medianAbsolutePercentError(elapsed)": 0.0192619848247336,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2224.1931407942197,
+            "medianAbsolutePercentError(elapsed)": 0.251416849418819,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.266084450334195,
+            "medianAbsolutePercentError(elapsed)": 0.107633506926912,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3116.99076923077,
+            "medianAbsolutePercentError(elapsed)": 0.0324925265373421,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.241942666666667,
+            "medianAbsolutePercentError(elapsed)": 0.0224159931344535,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1487.0899031811898,
+            "medianAbsolutePercentError(elapsed)": 0.00160352821536893,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 681.37583001328,
+            "medianAbsolutePercentError(elapsed)": 0.00346235064225868,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2153.47302158273,
+            "medianAbsolutePercentError(elapsed)": 0.00999267221680245,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 199.42788060697,
+            "medianAbsolutePercentError(elapsed)": 0.00198368694748752,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 918.6011080332411,
+            "medianAbsolutePercentError(elapsed)": 0.0126489568644648,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 33.0811710968724,
+            "medianAbsolutePercentError(elapsed)": 0.00393406323131422,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 70.4271363698913,
+            "medianAbsolutePercentError(elapsed)": 0.00166223294276705,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 26660.3333333333,
+            "medianAbsolutePercentError(elapsed)": 0.00102036111166024,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 255171.0,
+            "medianAbsolutePercentError(elapsed)": 0.000999896643416779,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 15727.3421052632,
+            "medianAbsolutePercentError(elapsed)": 0.00167686030586124,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 18338.775862069,
+            "medianAbsolutePercentError(elapsed)": 0.00461113444070585,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 6.79525553359043,
+            "medianAbsolutePercentError(elapsed)": 0.0194726831458247,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1988.83625730994,
+            "medianAbsolutePercentError(elapsed)": 0.00587690008748326,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 2.71208033873196,
+            "medianAbsolutePercentError(elapsed)": 0.00188784130341134,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1948.27040816327,
+            "medianAbsolutePercentError(elapsed)": 0.00136523853736584,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1591.3422103861499,
+            "medianAbsolutePercentError(elapsed)": 0.00426296625431247,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 8313.629032258059,
+            "medianAbsolutePercentError(elapsed)": 0.00550725976029102,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1567.39389312977,
+            "medianAbsolutePercentError(elapsed)": 0.00175275913553992,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 22189.319148936203,
+            "medianAbsolutePercentError(elapsed)": 0.00308591030880843,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.01628665764884,
+            "medianAbsolutePercentError(elapsed)": 0.0232965840448752,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.0148817070453298,
+            "medianAbsolutePercentError(elapsed)": 0.00124780145090646,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.335820121610457,
+            "medianAbsolutePercentError(elapsed)": 0.0123349458390896,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2.36154333333333,
+            "medianAbsolutePercentError(elapsed)": 0.0371021483743066,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 35950.9393939394,
+            "medianAbsolutePercentError(elapsed)": 0.00312808862252564,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 54411.5,
+            "medianAbsolutePercentError(elapsed)": 0.0200622968859993,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 274.14631550944404,
+            "medianAbsolutePercentError(elapsed)": 0.00492745845584455,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 328.32432432432404,
+            "medianAbsolutePercentError(elapsed)": 0.00645528519882283,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.33603233453222503,
+            "medianAbsolutePercentError(elapsed)": 0.000957008783924518,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.1295377994012,
+            "medianAbsolutePercentError(elapsed)": 0.00262291710805958,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 33.7084028776978,
+            "medianAbsolutePercentError(elapsed)": 0.00864021639564948,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.5048281762637951,
+            "medianAbsolutePercentError(elapsed)": 0.00114470820942649,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.0535616575599,
+            "medianAbsolutePercentError(elapsed)": 0.131062085756892,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 69.48247978436659,
+            "medianAbsolutePercentError(elapsed)": 0.00435268481574516,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 371.430968967701,
+            "medianAbsolutePercentError(elapsed)": 0.00229192698659792,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 545.748060246463,
+            "medianAbsolutePercentError(elapsed)": 0.00162228787190432,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 366.517598343685,
+            "medianAbsolutePercentError(elapsed)": 0.00690934686993057,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 328.942502818489,
+            "medianAbsolutePercentError(elapsed)": 0.00286176320729525,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 826.1181601903249,
+            "medianAbsolutePercentError(elapsed)": 0.00345704411878509,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 362.993650793651,
+            "medianAbsolutePercentError(elapsed)": 0.00212740937089697,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.33584241721238195,
+            "medianAbsolutePercentError(elapsed)": 0.00140621657310539,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.337672076858015,
+            "medianAbsolutePercentError(elapsed)": 0.00383334722320836,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.335512081525804,
+            "medianAbsolutePercentError(elapsed)": 0.0034841842668606,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 339.525852272727,
+            "medianAbsolutePercentError(elapsed)": 0.00137226590145719,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16.8739934365558,
+            "medianAbsolutePercentError(elapsed)": 0.0143588893109378,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2020.2117647058801,
+            "medianAbsolutePercentError(elapsed)": 0.00138784415332945,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.33608796861449597,
+            "medianAbsolutePercentError(elapsed)": 0.00207716485635297,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 17.8975657708392,
+            "medianAbsolutePercentError(elapsed)": 0.0107958124784885,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.335552003391744,
+            "medianAbsolutePercentError(elapsed)": 0.00941193205652274,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.33612572443980704,
+            "medianAbsolutePercentError(elapsed)": 0.00589454050820666,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.33603244824545797,
+            "medianAbsolutePercentError(elapsed)": 0.000499113103572494,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.32980032227002404,
+            "medianAbsolutePercentError(elapsed)": 0.0131481462090666,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.33572876220867504,
+            "medianAbsolutePercentError(elapsed)": 0.0146023666700929,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.33574674567046997,
+            "medianAbsolutePercentError(elapsed)": 0.000898318319308682,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.337876136896451,
+            "medianAbsolutePercentError(elapsed)": 0.00751897808024887,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.336106436190257,
+            "medianAbsolutePercentError(elapsed)": 0.00656460764275864,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1076.57733050847,
+            "medianAbsolutePercentError(elapsed)": 0.0147794812318453,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 297.853121516165,
+            "medianAbsolutePercentError(elapsed)": 0.00271150324814688,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.121425202589705,
+            "medianAbsolutePercentError(elapsed)": 0.0154681830988459,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 38468.133333333295,
+            "medianAbsolutePercentError(elapsed)": 0.0031937550527221,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 20188.0784313725,
+            "medianAbsolutePercentError(elapsed)": 0.00341074284230017,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 24.917189217144003,
+            "medianAbsolutePercentError(elapsed)": 0.0148098379478268,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 21.373262422241,
+            "medianAbsolutePercentError(elapsed)": 0.0179302138843918,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2739.0470588235303,
+            "medianAbsolutePercentError(elapsed)": 0.0260161614307035,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 7081.17575757576,
+            "medianAbsolutePercentError(elapsed)": 0.00736699939489623,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
         }
     ],
     "ci-macos": [
@@ -498115,6 +499348,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.0834538088074689,
             "commit": "f33da20b",
             "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.580555206475191,
+            "medianAbsolutePercentError(elapsed)": 0.0624386985734325,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.5762734810338079,
+            "medianAbsolutePercentError(elapsed)": 0.0332383454569738,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.374938338353381,
+            "medianAbsolutePercentError(elapsed)": 0.0138307868051385,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.3149172375456395,
+            "medianAbsolutePercentError(elapsed)": 0.0254755484647199,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 35531.8529411765,
+            "medianAbsolutePercentError(elapsed)": 0.0597968820780898,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 26486.142857142902,
+            "medianAbsolutePercentError(elapsed)": 0.0373779552358601,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 236.258564437194,
+            "medianAbsolutePercentError(elapsed)": 0.0986933475877771,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 223.996723996724,
+            "medianAbsolutePercentError(elapsed)": 0.0546206415058875,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.385173466525189,
+            "medianAbsolutePercentError(elapsed)": 0.0456907612508402,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 70.4729254095032,
+            "medianAbsolutePercentError(elapsed)": 0.0240094211959123,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 33.473991114402104,
+            "medianAbsolutePercentError(elapsed)": 0.0226410474167419,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.5162905589650381,
+            "medianAbsolutePercentError(elapsed)": 0.008034598841575,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 6.292390467900439,
+            "medianAbsolutePercentError(elapsed)": 0.184342575267638,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 69.3695135274083,
+            "medianAbsolutePercentError(elapsed)": 0.0472652847958799,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 314.208333333333,
+            "medianAbsolutePercentError(elapsed)": 0.0934212712397733,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 429.890462307372,
+            "medianAbsolutePercentError(elapsed)": 0.102939670286061,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 286.14503401360497,
+            "medianAbsolutePercentError(elapsed)": 0.19539457832681,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 247.20833333333303,
+            "medianAbsolutePercentError(elapsed)": 0.0653133796282113,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 585.680884676145,
+            "medianAbsolutePercentError(elapsed)": 0.0231868451332925,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 352.403953057443,
+            "medianAbsolutePercentError(elapsed)": 0.0378967504017415,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.370929469606407,
+            "medianAbsolutePercentError(elapsed)": 0.0766217077333933,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.54291666666667,
+            "medianAbsolutePercentError(elapsed)": 0.183734826874206,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.37481258512355103,
+            "medianAbsolutePercentError(elapsed)": 0.0306679428196832,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 227.657471720579,
+            "medianAbsolutePercentError(elapsed)": 0.0623001684411971,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 55.984082397003704,
+            "medianAbsolutePercentError(elapsed)": 0.193462217133124,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1573.6833976834,
+            "medianAbsolutePercentError(elapsed)": 0.22421022189006,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.45944755535107096,
+            "medianAbsolutePercentError(elapsed)": 0.366188189816199,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.762305101595707,
+            "medianAbsolutePercentError(elapsed)": 0.794015547455664,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.706193501119505,
+            "medianAbsolutePercentError(elapsed)": 0.371776259610352,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.401570512606222,
+            "medianAbsolutePercentError(elapsed)": 0.0639745953892489,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1.80075583576586,
+            "medianAbsolutePercentError(elapsed)": 0.579696329071516,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.49243865229173905,
+            "medianAbsolutePercentError(elapsed)": 0.466930644374148,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.339520144861928,
+            "medianAbsolutePercentError(elapsed)": 0.00789658694165123,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.691767226425663,
+            "medianAbsolutePercentError(elapsed)": 0.389068590662731,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4.901474793674289,
+            "medianAbsolutePercentError(elapsed)": 0.378882951664478,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.39193778866566,
+            "medianAbsolutePercentError(elapsed)": 0.0630384465918258,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 5429.6052631578905,
+            "medianAbsolutePercentError(elapsed)": 0.336913938349925,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 213.486407968458,
+            "medianAbsolutePercentError(elapsed)": 0.0710716391067403,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 26.7990026648373,
+            "medianAbsolutePercentError(elapsed)": 0.0368023398446773,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 20067.6037735849,
+            "medianAbsolutePercentError(elapsed)": 0.0362743631690391,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 18970.3947368421,
+            "medianAbsolutePercentError(elapsed)": 0.252258677518755,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 64.7621440536013,
+            "medianAbsolutePercentError(elapsed)": 0.388152983629486,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 23.7808912610666,
+            "medianAbsolutePercentError(elapsed)": 0.0311727173063497,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 2229.21141649049,
+            "medianAbsolutePercentError(elapsed)": 0.113969747904089,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 4247.06666666667,
+            "medianAbsolutePercentError(elapsed)": 0.0253995688622756,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.548980146255731,
+            "medianAbsolutePercentError(elapsed)": 0.0320766504917231,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 541.864907651715,
+            "medianAbsolutePercentError(elapsed)": 0.0773007797875421,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.5290198846807,
+            "medianAbsolutePercentError(elapsed)": 0.0236734884159299,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 525.397833579517,
+            "medianAbsolutePercentError(elapsed)": 0.0452533239361351,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.338737218170486,
+            "medianAbsolutePercentError(elapsed)": 0.00794946574839827,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1088.86817713697,
+            "medianAbsolutePercentError(elapsed)": 0.0158221664519735,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 4.358684815560849,
+            "medianAbsolutePercentError(elapsed)": 0.0717077225815749,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 1740.42122186495,
+            "medianAbsolutePercentError(elapsed)": 0.0487172723641784,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 65948.69230769231,
+            "medianAbsolutePercentError(elapsed)": 0.226124622718682,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 59381.5789473684,
+            "medianAbsolutePercentError(elapsed)": 0.124581303404599,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 53978.1052631579,
+            "medianAbsolutePercentError(elapsed)": 0.166141795285194,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 55335.5263157895,
+            "medianAbsolutePercentError(elapsed)": 0.0858477711396267,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 231.267086766844,
+            "medianAbsolutePercentError(elapsed)": 0.0560642108286887,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2852.47857142857,
+            "medianAbsolutePercentError(elapsed)": 0.0553441519205868,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 256.43095599393,
+            "medianAbsolutePercentError(elapsed)": 0.0935517151697969,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4513.27419354839,
+            "medianAbsolutePercentError(elapsed)": 0.0846648731533482,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.393032007657711,
+            "medianAbsolutePercentError(elapsed)": 0.0398135798680772,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 976.300387596899,
+            "medianAbsolutePercentError(elapsed)": 0.0487114137869504,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 62.661017884742805,
+            "medianAbsolutePercentError(elapsed)": 0.0222878200209466,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 2749.0299999999997,
+            "medianAbsolutePercentError(elapsed)": 0.107269533379763,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 36.8483782605989,
+            "medianAbsolutePercentError(elapsed)": 0.048968243929764,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 3125.1150684931504,
+            "medianAbsolutePercentError(elapsed)": 0.0273378254328895,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.629488481643303,
+            "medianAbsolutePercentError(elapsed)": 0.0716411347620269,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 343.092063492063,
+            "medianAbsolutePercentError(elapsed)": 0.0648281211631085,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 4.981684485104039,
+            "medianAbsolutePercentError(elapsed)": 0.0789814168230657,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 561.712577714013,
+            "medianAbsolutePercentError(elapsed)": 0.0321822067484099,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 90.37184288869679,
+            "medianAbsolutePercentError(elapsed)": 0.200730622043317,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 1060.8064516129,
+            "medianAbsolutePercentError(elapsed)": 0.222017587192455,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 262.543159413321,
+            "medianAbsolutePercentError(elapsed)": 0.0669329368423007,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3568.3323076923098,
+            "medianAbsolutePercentError(elapsed)": 0.0629263421200867,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 372.279077322937,
+            "medianAbsolutePercentError(elapsed)": 0.024154930453775,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3469.5306122449,
+            "medianAbsolutePercentError(elapsed)": 0.0610495371267571,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 240.98859126984098,
+            "medianAbsolutePercentError(elapsed)": 0.08023608440109,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3550.29299363057,
+            "medianAbsolutePercentError(elapsed)": 0.0218622677234208,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 252.24373228689802,
+            "medianAbsolutePercentError(elapsed)": 0.0468879882599503,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 564.381607929515,
+            "medianAbsolutePercentError(elapsed)": 0.015656063349639,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 3553.45394736842,
+            "medianAbsolutePercentError(elapsed)": 0.0212738178245635,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 297.81175059952,
+            "medianAbsolutePercentError(elapsed)": 0.0353788197341054,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2275.1824175824204,
+            "medianAbsolutePercentError(elapsed)": 0.0155783063937118,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 895.816521048451,
+            "medianAbsolutePercentError(elapsed)": 0.0145380705105626,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.37603596412128903,
+            "medianAbsolutePercentError(elapsed)": 0.0199326976530271,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 952.829805249788,
+            "medianAbsolutePercentError(elapsed)": 0.0285833256113156,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 2.7839871755919003,
+            "medianAbsolutePercentError(elapsed)": 0.0176416007698014,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 918.605839416058,
+            "medianAbsolutePercentError(elapsed)": 0.0265877198147976,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.35465271455575204,
+            "medianAbsolutePercentError(elapsed)": 0.00425655509755267,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1101.94226579521,
+            "medianAbsolutePercentError(elapsed)": 0.0587658791474973,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 217.631473705259,
+            "medianAbsolutePercentError(elapsed)": 0.035242845169391,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2293.6099999999997,
+            "medianAbsolutePercentError(elapsed)": 0.0240089220897622,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 19.478639444110797,
+            "medianAbsolutePercentError(elapsed)": 0.0517532414789003,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1110.13320647003,
+            "medianAbsolutePercentError(elapsed)": 0.028547092969211,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 1100.97636176773,
+            "medianAbsolutePercentError(elapsed)": 0.0125072459921436,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 2340.4297029703,
+            "medianAbsolutePercentError(elapsed)": 0.0417774473028935,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.373168171551005,
+            "medianAbsolutePercentError(elapsed)": 0.0333572376529811,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1274.55797101449,
+            "medianAbsolutePercentError(elapsed)": 0.0716856570531837,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.35436165665732,
+            "medianAbsolutePercentError(elapsed)": 0.022285821332922,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1249.54268292683,
+            "medianAbsolutePercentError(elapsed)": 0.0262790882157803,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.345762812389287,
+            "medianAbsolutePercentError(elapsed)": 0.0311091809488218,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 957.9831932773111,
+            "medianAbsolutePercentError(elapsed)": 0.048829897556445,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.339478597313521,
+            "medianAbsolutePercentError(elapsed)": 0.00573665318772218,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1326.3075933075902,
+            "medianAbsolutePercentError(elapsed)": 0.00869766211402632,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.570670964935567,
+            "medianAbsolutePercentError(elapsed)": 0.0077467575810894,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1099.15244487057,
+            "medianAbsolutePercentError(elapsed)": 0.0272504150184949,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.368318970220045,
+            "medianAbsolutePercentError(elapsed)": 0.0252793960591688,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1237.22124863089,
+            "medianAbsolutePercentError(elapsed)": 0.00584141630074561,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.390684963063407,
+            "medianAbsolutePercentError(elapsed)": 0.0389443271570395,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 918.237556561086,
+            "medianAbsolutePercentError(elapsed)": 0.0135597979247159,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.362426107033547,
+            "medianAbsolutePercentError(elapsed)": 0.00927644486857897,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 903.3018867924529,
+            "medianAbsolutePercentError(elapsed)": 0.0213232654035778,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 2.1502056753482,
+            "medianAbsolutePercentError(elapsed)": 0.065696402105693,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2101.69734513274,
+            "medianAbsolutePercentError(elapsed)": 0.0134363884572907,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.359019139847452,
+            "medianAbsolutePercentError(elapsed)": 0.0220651623528943,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1157.8879753340202,
+            "medianAbsolutePercentError(elapsed)": 0.0505369216016711,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 3547.24012158055,
+            "medianAbsolutePercentError(elapsed)": 0.0288164770524728,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 4170.12648221344,
+            "medianAbsolutePercentError(elapsed)": 0.0127806589982877,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 201.180936313792,
+            "medianAbsolutePercentError(elapsed)": 0.0171726483044329,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 769.075429424944,
+            "medianAbsolutePercentError(elapsed)": 0.0204682138169457,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 23.483326737622598,
+            "medianAbsolutePercentError(elapsed)": 0.0481411172524258,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 46.6324714032544,
+            "medianAbsolutePercentError(elapsed)": 0.0134125028648129,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 19402.5483870968,
+            "medianAbsolutePercentError(elapsed)": 0.0475110135973306,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 139638.888888889,
+            "medianAbsolutePercentError(elapsed)": 0.0126442230308443,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 12655.9139784946,
+            "medianAbsolutePercentError(elapsed)": 0.0292504019039715,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 34395.1034482759,
+            "medianAbsolutePercentError(elapsed)": 0.0258842260187535,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 11.0418362498192,
+            "medianAbsolutePercentError(elapsed)": 0.0121240457197982,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1308.00710900474,
+            "medianAbsolutePercentError(elapsed)": 0.0188105474545974,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.93235265536174,
+            "medianAbsolutePercentError(elapsed)": 0.026957819972176,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1253.38569880823,
+            "medianAbsolutePercentError(elapsed)": 0.0130731221975311,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 1481.46365914787,
+            "medianAbsolutePercentError(elapsed)": 0.00730094205958859,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 5573.12254901961,
+            "medianAbsolutePercentError(elapsed)": 0.00767802270413941,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1725.66019417476,
+            "medianAbsolutePercentError(elapsed)": 0.0138375933895339,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 16210.2615384615,
+            "medianAbsolutePercentError(elapsed)": 0.00989469251346128,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
         }
     ],
     "ci-ubuntu-clang": [
@@ -747174,6 +749640,1239 @@
             "medianAbsolutePercentError(elapsed)": 0.00222378881629982,
             "commit": "f33da20b",
             "commit_message": "Try enable back sonar (#776)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp",
+            "median(elapsed)": 0.6054418056951331,
+            "medianAbsolutePercentError(elapsed)": 0.0339530032373033,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rxcpp",
+            "median(elapsed)": 214.127215849844,
+            "medianAbsolutePercentError(elapsed)": 0.0108083618850844,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp",
+            "median(elapsed)": 0.58391721480126,
+            "medianAbsolutePercentError(elapsed)": 0.0683252447849413,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rxcpp",
+            "median(elapsed)": 214.369991652755,
+            "medianAbsolutePercentError(elapsed)": 0.00718087825725175,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.274656645744767,
+            "medianAbsolutePercentError(elapsed)": 0.00633597346819921,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 433.413166397415,
+            "medianAbsolutePercentError(elapsed)": 0.00332666087985959,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 3.53955106296118,
+            "medianAbsolutePercentError(elapsed)": 0.000555333152177113,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 633.979349186483,
+            "medianAbsolutePercentError(elapsed)": 0.00656350642562245,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 26134.829268292702,
+            "medianAbsolutePercentError(elapsed)": 0.0284444069058983,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 27269.8684210526,
+            "medianAbsolutePercentError(elapsed)": 0.0230905729890409,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp",
+            "median(elapsed)": 29974.1891891892,
+            "medianAbsolutePercentError(elapsed)": 0.0284465574660994,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 32407.199999999997,
+            "medianAbsolutePercentError(elapsed)": 0.0141185326711968,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 110.21217928244401,
+            "medianAbsolutePercentError(elapsed)": 0.00679686792276003,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1880.45519713262,
+            "medianAbsolutePercentError(elapsed)": 0.00219360131790816,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 121.551446183025,
+            "medianAbsolutePercentError(elapsed)": 0.000333923309605599,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2904.60487804878,
+            "medianAbsolutePercentError(elapsed)": 0.00206333661890306,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 0.272609059731504,
+            "medianAbsolutePercentError(elapsed)": 0.00123412482991021,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 638.4670807453421,
+            "medianAbsolutePercentError(elapsed)": 0.00273161298101065,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp",
+            "median(elapsed)": 50.6528003947693,
+            "medianAbsolutePercentError(elapsed)": 0.000701730112428732,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rxcpp",
+            "median(elapsed)": 1823.1648177496,
+            "medianAbsolutePercentError(elapsed)": 0.00196945216886238,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp",
+            "median(elapsed)": 27.5235279825059,
+            "medianAbsolutePercentError(elapsed)": 0.000818327649491666,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rxcpp",
+            "median(elapsed)": 2573.51666666667,
+            "medianAbsolutePercentError(elapsed)": 0.00217175444345636,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 0.550530230958425,
+            "medianAbsolutePercentError(elapsed)": 0.000490740842530334,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 229.464887940235,
+            "medianAbsolutePercentError(elapsed)": 0.00650135904420102,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp",
+            "median(elapsed)": 3.8227394440259297,
+            "medianAbsolutePercentError(elapsed)": 0.0024640370761011,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 317.553204353083,
+            "medianAbsolutePercentError(elapsed)": 0.00451876618705196,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp",
+            "median(elapsed)": 46.2980786180152,
+            "medianAbsolutePercentError(elapsed)": 0.000744683581288358,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rxcpp",
+            "median(elapsed)": 683.128463476071,
+            "medianAbsolutePercentError(elapsed)": 0.00347126055952691,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 131.387602852441,
+            "medianAbsolutePercentError(elapsed)": 0.00349538937202454,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2633.14004914005,
+            "medianAbsolutePercentError(elapsed)": 0.00216380273981134,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 181.474511672225,
+            "medianAbsolutePercentError(elapsed)": 0.00168120325084214,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2615.44389027431,
+            "medianAbsolutePercentError(elapsed)": 0.00244105296870126,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 125.034822841836,
+            "medianAbsolutePercentError(elapsed)": 0.00203918862027637,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2926.84045584046,
+            "medianAbsolutePercentError(elapsed)": 0.00242207694704506,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 116.16951536131499,
+            "medianAbsolutePercentError(elapsed)": 0.00355413050427203,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 300.135381411091,
+            "medianAbsolutePercentError(elapsed)": 0.000692032795515961,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 2679.82063882064,
+            "medianAbsolutePercentError(elapsed)": 0.00357856017589175,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp",
+            "median(elapsed)": 150.416331396215,
+            "medianAbsolutePercentError(elapsed)": 0.00154432351089524,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1771.9670510708402,
+            "medianAbsolutePercentError(elapsed)": 0.00168216293301563,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 688.147570485903,
+            "medianAbsolutePercentError(elapsed)": 0.00430140422315244,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27233827114289905,
+            "medianAbsolutePercentError(elapsed)": 0.000961687143308393,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 721.36741016109,
+            "medianAbsolutePercentError(elapsed)": 0.00548696863493956,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27255882559894096,
+            "medianAbsolutePercentError(elapsed)": 0.00123901124511249,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 706.79914268218,
+            "medianAbsolutePercentError(elapsed)": 0.00431955825733086,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.544992495459416,
+            "medianAbsolutePercentError(elapsed)": 0.00150519864550691,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 819.529130087789,
+            "medianAbsolutePercentError(elapsed)": 0.00106690327647071,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 111.214664737096,
+            "medianAbsolutePercentError(elapsed)": 0.00283574811826358,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1802.20251177394,
+            "medianAbsolutePercentError(elapsed)": 0.00199097255377005,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 11.1729687396589,
+            "medianAbsolutePercentError(elapsed)": 0.000858246329285184,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1209.62722513089,
+            "medianAbsolutePercentError(elapsed)": 0.00413997917930282,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp",
+            "median(elapsed)": 744.201015965167,
+            "medianAbsolutePercentError(elapsed)": 0.00186837357150222,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rxcpp",
+            "median(elapsed)": 1851.35093167702,
+            "medianAbsolutePercentError(elapsed)": 0.00190946418168865,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27252325334384897,
+            "medianAbsolutePercentError(elapsed)": 0.000696535698753813,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 925.993103448276,
+            "medianAbsolutePercentError(elapsed)": 0.00123608582575668,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272332097714914,
+            "medianAbsolutePercentError(elapsed)": 0.000723732537740018,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 947.5497512437811,
+            "medianAbsolutePercentError(elapsed)": 0.00305226798526913,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272610217964693,
+            "medianAbsolutePercentError(elapsed)": 0.00156994175717086,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 693.3086719223769,
+            "medianAbsolutePercentError(elapsed)": 0.0017211306268744,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.277043386325164,
+            "medianAbsolutePercentError(elapsed)": 0.0168076541692066,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1107.14712389381,
+            "medianAbsolutePercentError(elapsed)": 0.00948195624750359,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27259918704086,
+            "medianAbsolutePercentError(elapsed)": 0.0014409134858806,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 842.210564930301,
+            "medianAbsolutePercentError(elapsed)": 0.00284185523282325,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27228305912597095,
+            "medianAbsolutePercentError(elapsed)": 0.000910140333504468,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 903.278959810875,
+            "medianAbsolutePercentError(elapsed)": 0.00337649623905534,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.30834678225425,
+            "medianAbsolutePercentError(elapsed)": 0.00810405803470354,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 705.2280701754389,
+            "medianAbsolutePercentError(elapsed)": 0.00276358637857942,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.272326975499954,
+            "medianAbsolutePercentError(elapsed)": 0.000476683072740372,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 709.847960444994,
+            "medianAbsolutePercentError(elapsed)": 0.00148998396517886,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27258320315590095,
+            "medianAbsolutePercentError(elapsed)": 0.00098513789196625,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1634.45512820513,
+            "medianAbsolutePercentError(elapsed)": 0.00376784904183056,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 0.27252829925106703,
+            "medianAbsolutePercentError(elapsed)": 0.000664221709761067,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 843.126510878324,
+            "medianAbsolutePercentError(elapsed)": 0.00179962057237386,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 881.8502164502161,
+            "medianAbsolutePercentError(elapsed)": 0.00495619524575816,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 1675.0734094616598,
+            "medianAbsolutePercentError(elapsed)": 0.00120809834426337,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp",
+            "median(elapsed)": 114.941203333714,
+            "medianAbsolutePercentError(elapsed)": 0.0014165611637318,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rxcpp",
+            "median(elapsed)": 530.768981481482,
+            "medianAbsolutePercentError(elapsed)": 0.00645237095317962,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp",
+            "median(elapsed)": 15.6732503803521,
+            "medianAbsolutePercentError(elapsed)": 0.00292318504654055,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rxcpp",
+            "median(elapsed)": 40.0563511187608,
+            "medianAbsolutePercentError(elapsed)": 0.00170518457256065,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 14218.740740740699,
+            "medianAbsolutePercentError(elapsed)": 0.000669172670906409,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 158852.375,
+            "medianAbsolutePercentError(elapsed)": 0.00625965731015366,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp",
+            "median(elapsed)": 15248.9710144928,
+            "medianAbsolutePercentError(elapsed)": 0.00603273724900845,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rxcpp",
+            "median(elapsed)": 38778.870967741896,
+            "medianAbsolutePercentError(elapsed)": 0.0212673903551919,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp",
+            "median(elapsed)": 8.71778725135394,
+            "medianAbsolutePercentError(elapsed)": 0.00103332880882608,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rxcpp",
+            "median(elapsed)": 1063.6602739726,
+            "medianAbsolutePercentError(elapsed)": 0.000818464777681594,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp",
+            "median(elapsed)": 5.17806147413371,
+            "medianAbsolutePercentError(elapsed)": 0.00057030792477048,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rxcpp",
+            "median(elapsed)": 1077.00555555556,
+            "medianAbsolutePercentError(elapsed)": 0.00251594360353039,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp",
+            "median(elapsed)": 955.308035714286,
+            "medianAbsolutePercentError(elapsed)": 0.00484018633899222,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rxcpp",
+            "median(elapsed)": 4864.879069767439,
+            "medianAbsolutePercentError(elapsed)": 0.00220762551022566,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp",
+            "median(elapsed)": 1032.5055387713999,
+            "medianAbsolutePercentError(elapsed)": 0.00139209644768046,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rxcpp",
+            "median(elapsed)": 22746.7924528302,
+            "medianAbsolutePercentError(elapsed)": 0.00146810145552438,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.555257954305152,
+            "medianAbsolutePercentError(elapsed)": 0.00966361216696786,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "General",
+            "name": "Subscribe empty callbacks to empty observable via pipe operator",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.551288204184581,
+            "medianAbsolutePercentError(elapsed)": 0.00349057533273423,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27859799999999996,
+            "medianAbsolutePercentError(elapsed)": 0.0129016380655362,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.5585218801455496,
+            "medianAbsolutePercentError(elapsed)": 0.00271455169759856,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 25313.8222222222,
+            "medianAbsolutePercentError(elapsed)": 0.011849541030146,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "from array of 1000 - create + as_blocking + subscribe + new_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 29627.282051282,
+            "medianAbsolutePercentError(elapsed)": 0.012761419352527,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 109.788021845784,
+            "medianAbsolutePercentError(elapsed)": 0.00477664716668359,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "concat_as_source of just(1 immediate) and just(1,2 immediate)create + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 123.42087794432501,
+            "medianAbsolutePercentError(elapsed)": 0.00123656781243019,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "defer from array of 1 - defer + create + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27297176239217397,
+            "medianAbsolutePercentError(elapsed)": 0.00318059918071609,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + immediate",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 50.733775227542495,
+            "medianAbsolutePercentError(elapsed)": 0.00137030140383387,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Sources",
+            "name": "interval - interval + take(3) + subscribe + current_thread",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 28.3485478328345,
+            "medianAbsolutePercentError(elapsed)": 0.00051483051111876,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "immediate scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.5540575145851621,
+            "medianAbsolutePercentError(elapsed)": 0.00617098662690165,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3.8140297510850596,
+            "medianAbsolutePercentError(elapsed)": 0.000886875059695807,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Schedulers",
+            "name": "current_thread scheduler create worker + schedule + recursive schedule",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 46.3188276691461,
+            "medianAbsolutePercentError(elapsed)": 0.010394723947111,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + merge() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 124.27049534934001,
+            "medianAbsolutePercentError(elapsed)": 0.00215090993674342,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1), immediate_just(1)) + concat() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 185.119415661627,
+            "medianAbsolutePercentError(elapsed)": 0.00200475700589137,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + merge_with(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 123.240177909563,
+            "medianAbsolutePercentError(elapsed)": 0.00339695435303326,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + with_latest_from(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 114.61992110453599,
+            "medianAbsolutePercentError(elapsed)": 0.00152543832489381,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(immediate_just(1),immediate_just(1)) + switch_on_next() + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 303.220779220779,
+            "medianAbsolutePercentError(elapsed)": 0.00194820692811485,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Combining Operators",
+            "name": "immediate_just(1) + zip(immediate_just(2)) + subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 152.44701126191202,
+            "medianAbsolutePercentError(elapsed)": 0.00273966203267174,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(false)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.0,
+            "medianAbsolutePercentError(elapsed)": 0,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Conditional Operators",
+            "name": "immediate_just+take_while(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272585526341299,
+            "medianAbsolutePercentError(elapsed)": 0.000783136207452195,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+map(v*2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27240495179353,
+            "medianAbsolutePercentError(elapsed)": 0.000626768386458884,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+scan(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.309732000713658,
+            "medianAbsolutePercentError(elapsed)": 0.00493379132991028,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+flat_map(immediate_just(v*2))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 114.25494316553599,
+            "medianAbsolutePercentError(elapsed)": 0.00145162357409689,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+buffer(2)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 11.7059389565479,
+            "medianAbsolutePercentError(elapsed)": 0.00289463415238439,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Transforming Operators",
+            "name": "immediate_just+window(2)+subscribe + subscsribe inner",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 737.467997247075,
+            "medianAbsolutePercentError(elapsed)": 0.00191703179930387,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272438702474608,
+            "medianAbsolutePercentError(elapsed)": 0.00108002407382546,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+take_last(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272415001547971,
+            "medianAbsolutePercentError(elapsed)": 0.0009747172109406,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just+filter(true)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272606457840686,
+            "medianAbsolutePercentError(elapsed)": 0.00162879586764586,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+first()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27230340356564003,
+            "medianAbsolutePercentError(elapsed)": 0.000745437505743273,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+last()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272357888189922,
+            "medianAbsolutePercentError(elapsed)": 0.000684089570635502,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2)+skip(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.272469371455649,
+            "medianAbsolutePercentError(elapsed)": 0.000903454225144814,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,1,2)+distinct_until_changed()+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.309756332603021,
+            "medianAbsolutePercentError(elapsed)": 0.00630758462518319,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Filtering Operators",
+            "name": "immediate_just(1,2,3)+element_at(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.273641738184549,
+            "medianAbsolutePercentError(elapsed)": 0.00400794052747674,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Utility Operators",
+            "name": "immediate_just(1)+subscribe_on(immediate)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27278904156289396,
+            "medianAbsolutePercentError(elapsed)": 0.00058576685548468,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Aggregating Operators",
+            "name": "immediate_just+reduce(10, std::plus)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 0.27241526863855203,
+            "medianAbsolutePercentError(elapsed)": 0.00149747132480984,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_next(1), on_error())+on_error_resume_next(immediate_just(2)))+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 879.404984423676,
+            "medianAbsolutePercentError(elapsed)": 0.00360473111857607,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Error Handling Operators",
+            "name": "create(on_error())+retry(1)+subscribe",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 117.256207804097,
+            "medianAbsolutePercentError(elapsed)": 0.004317511545633,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "publish_subject with 1 observer - on_next",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 15.9333204323667,
+            "medianAbsolutePercentError(elapsed)": 0.00177401489648737,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "subscribe 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14237.9259259259,
+            "medianAbsolutePercentError(elapsed)": 0.00148932828797416,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Subjects",
+            "name": "100 on_next to 100 observers to publish_subject",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 14941.6086956522,
+            "medianAbsolutePercentError(elapsed)": 0.0015455531281133,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 16.0852251465636,
+            "medianAbsolutePercentError(elapsed)": 0.0058104335894793,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "basic sample with immediate scheduler",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 5.4468550437676795,
+            "medianAbsolutePercentError(elapsed)": 0.000306992434114238,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "mix operators with disposables and without disposables",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 1186.92840375587,
+            "medianAbsolutePercentError(elapsed)": 0.00324824669961345,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
+        },
+        {
+            "title": "Scenarios",
+            "name": "single disposable and looooooong indentity chain",
+            "source": "rpp (Optimizations disabled)",
+            "median(elapsed)": 3798.2132352941203,
+            "medianAbsolutePercentError(elapsed)": 0.00157061579900793,
+            "commit": "9555b86c",
+            "commit_message": "rppgrpc: client_bidi_reactor holds the call for writes from outside the reactions (#772)"
         }
     ],
     "ci-windows": [
